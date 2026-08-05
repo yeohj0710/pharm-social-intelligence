@@ -289,3 +289,28 @@ nav button { font-size: 14px; padding: 13px 12px; }
   .modal { padding: 21px 17px; }
   .modal h2 { font-size: 22px; }
 }
+
+/* Dense content results */
+.view-section > .content-list .list-head { padding: 10px 18px; }
+.view-section > .content-list .content-list-row { gap: 16px; padding: 12px 18px; }
+.view-section > .content-list .content-list-primary { gap: 10px; }
+.view-section > .content-list .list-index { width: 34px; height: 34px; border-radius: 10px; font-size: 12px; }
+.view-section > .content-list .content-list-copy strong { font-size: 13px; line-height: 1.35; }
+.view-section > .content-list .content-list-copy span { margin-top: 2px; font-size: 11px; }
+.view-section > .content-list .content-list-copy small { display: none; }
+.view-section > .content-list .content-list-metrics { gap: 12px; }
+.view-section > .content-list .content-list-metrics > div { min-width: 48px; }
+.view-section > .content-list .content-list-metrics small { margin-bottom: 2px; font-size: 9px; }
+.view-section > .content-list .content-list-metrics strong { font-size: 11px; }
+.view-section > .content-list .content-list-metrics .badge { padding: 4px 7px; font-size: 10px; }
+
+@media (max-width: 820px) {
+  .view-section > .content-list .content-list-row { padding: 13px 16px; }
+  .view-section > .content-list .content-list-metrics { margin-top: 12px; }
+}
+
+@media (max-width: 520px) {
+  .view-section > .content-list .content-list-row { padding: 12px 13px; }
+  .view-section > .content-list .content-list-metrics { gap: 8px; margin-top: 10px; }
+  .view-section > .content-list .content-list-metrics > div { padding: 7px 8px; }
+}
