@@ -283,18 +283,31 @@ function ContentRow({ item, onOpen, compact = false }) {
           <span className="crow-format">{display(item.format)}</span>
         </span>
       </div>
-      <div className="crow-score">
-        <Multiple value={item.multiple} />
-        <span className="crow-views">{formatCount(item.views)}</span>
-      </div>
+      <div className="cell cell-mult"><span className="cell-label">배수</span><Multiple value={item.multiple} /></div>
+      <div className="cell cell-views"><span className="cell-label">조회수</span><b>{formatCount(item.views)}</b></div>
       {!compact && (
-        <div className="crow-side">
-          <span className="crow-sub"><b>{formatCount(item.likes)}</b> 좋아요</span>
-          <span className="crow-sub"><b>{formatCount(item.comments)}</b> 댓글</span>
-          <InstagramLink href={item.url} label={name} />
-        </div>
+        <>
+          <div className="cell cell-likes"><span className="cell-label">좋아요</span><b>{formatCount(item.likes)}</b></div>
+          <div className="cell cell-comments"><span className="cell-label">댓글</span><b>{formatCount(item.comments)}</b></div>
+          <div className="cell cell-link"><InstagramLink href={item.url} label={name} /></div>
+        </>
       )}
     </button>
+  );
+}
+
+// 목록 머리말은 행과 같은 격자를 써야 열이 어긋나지 않는다.
+function ContentListHead() {
+  return (
+    <div className="crow crow-head">
+      <span />
+      <span>콘텐츠</span>
+      <span className="cell cell-mult">배수</span>
+      <span className="cell cell-views">조회수</span>
+      <span className="cell cell-likes">좋아요</span>
+      <span className="cell cell-comments">댓글</span>
+      <span className="cell cell-link">원본</span>
+    </div>
   );
 }
 
@@ -457,7 +470,7 @@ function DetailModal({ item, onClose, onNavigate, onOpenFormat }) {
 /* ---------- 화면 ---------- */
 
 function ContentsView({ items, params, onOpen, onNavigate }) {
-  const [sort, setSort] = useState('multiple');
+  const [sort, setSort] = useState('default');
   const [keyword, setKeyword] = useState('all');
   const [format, setFormat] = useState('all');
 
@@ -482,7 +495,8 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
   const filtered = scoped
     .filter((item) => (keyword === 'all' || item.keywords.includes(keyword)) && (format === 'all' || item.format === format));
 
-  const sorted = [...filtered].sort((a, b) => {
+  // 기본은 원장 순서 그대로 둔다. 정렬은 필요할 때만 고른다.
+  const sorted = sort === 'default' ? filtered : [...filtered].sort((a, b) => {
     if (sort === 'views') return b.viewSort - a.viewSort;
     if (sort === 'recent') return (a.ageValue ?? 99999) - (b.ageValue ?? 99999);
     return b.multipleSort - a.multipleSort;
@@ -495,7 +509,7 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
       <PageHead
         kicker="CONTENTS"
         title="콘텐츠 목록"
-        description={`계정 중앙 조회수 대비 배수로 정렬합니다. 배수는 ${measured}건에서 계산했고, 나머지는 조회수를 아직 못 읽었습니다.`}
+        description={`훅 문구, 인플루언서, 조회수와 배수를 함께 봅니다. 배수는 ${measured}건에서 계산했고, 나머지는 조회수를 아직 못 읽었습니다.`}
       >
         <div className="head-count"><strong>{sorted.length}</strong><span>건</span></div>
       </PageHead>
@@ -508,12 +522,13 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
       )}
 
       <div className="toolbar">
-        <SortTabs value={sort} onChange={setSort} options={[['multiple', '배수순'], ['views', '조회수순'], ['recent', '최신순']]} />
+        <SortTabs value={sort} onChange={setSort} options={[['default', '기본'], ['multiple', '배수순'], ['views', '조회수순'], ['recent', '최신순']]} />
         <Chips options={formatCounts} value={format} onChange={setFormat} allLabel="형식 전체" />
       </div>
       <Chips options={keywordCounts} value={keyword} onChange={setKeyword} allLabel="주제 전체" />
 
       <div className="list">
+        <ContentListHead />
         {sorted.map((item) => <ContentRow key={item.uid} item={item} onOpen={onOpen} />)}
         {sorted.length === 0 && <EmptyState label="콘텐츠" />}
       </div>
@@ -522,7 +537,7 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
 }
 
 function AccountsView({ items, onOpen }) {
-  const [sort, setSort] = useState('followers');
+  const [sort, setSort] = useState('default');
   const [type, setType] = useState('all');
 
   const typeCounts = useMemo(() => {
@@ -532,7 +547,7 @@ function AccountsView({ items, onOpen }) {
   }, [items]);
 
   const filtered = items.filter((item) => type === 'all' || item.type === type);
-  const sorted = [...filtered].sort((a, b) => {
+  const sorted = sort === 'default' ? filtered : [...filtered].sort((a, b) => {
     if (sort === 'median') return (b.medianViews ?? -1) - (a.medianViews ?? -1);
     return b.followerValue - a.followerValue;
   });
@@ -544,7 +559,7 @@ function AccountsView({ items, onOpen }) {
       </PageHead>
 
       <div className="toolbar">
-        <SortTabs value={sort} onChange={setSort} options={[['followers', '팔로워순'], ['median', '중앙 조회수순']]} />
+        <SortTabs value={sort} onChange={setSort} options={[['default', '기본'], ['followers', '팔로워순'], ['median', '중앙 조회수순']]} />
       </div>
       <Chips options={typeCounts} value={type} onChange={setType} allLabel="유형 전체" />
 
@@ -569,7 +584,7 @@ function AccountsView({ items, onOpen }) {
 }
 
 function FormatsView({ items, onOpen }) {
-  const sorted = [...items].sort((a, b) => (b.medianMultiple ?? -1) - (a.medianMultiple ?? -1));
+  const sorted = items;
   const measured = items.filter((item) => item.sampleCount > 0).length;
   return (
     <section className="view">
@@ -628,8 +643,8 @@ function Overview({ data, onOpen, onNavigate }) {
   const { accounts, contents, formats } = data;
 
   const withMultiple = contents.filter((item) => item.multiple !== null);
-  const topContents = [...withMultiple].sort((a, b) => b.multiple - a.multiple).slice(0, 5);
-  const topFormats = [...formats].filter((item) => item.sampleCount > 0).sort((a, b) => b.medianMultiple - a.medianMultiple).slice(0, 5);
+  const previewContents = contents.slice(0, 5);
+  const previewFormats = formats.slice(0, 5);
   const reels = contents.filter((item) => item.format === '릴스').length;
 
   const coverage = [
@@ -648,54 +663,9 @@ function Overview({ data, onOpen, onNavigate }) {
     <section className="view">
       <PageHead
         kicker="PHARM SOCIAL INTELLIGENCE"
-        title="터진 콘텐츠부터 봅니다"
-        description={`인플루언서 ${accounts.length}명과 콘텐츠 ${contents.length}건. 계정 중앙 조회수 대비 배수가 높은 순서로 정리했습니다.`}
+        title="약사·메디컬 콘텐츠 레퍼런스"
+        description={`인플루언서 ${accounts.length}명, 콘텐츠 ${contents.length}건, 포맷 ${formats.length}개. 공개 Instagram 프로필에서 모았습니다.`}
       />
-
-      <section className="panel panel-flush">
-        <div className="panel-head">
-          <h2>배수 상위 콘텐츠</h2>
-          <button className="text-link" onClick={() => onNavigate('contents', {})}>전체 목록 <ArrowUpRight size={13} /></button>
-        </div>
-        <div className="list list-inset">
-          {topContents.map((item) => <ContentRow key={item.uid} item={item} onOpen={onOpen} compact />)}
-          {topContents.length === 0 && <EmptyState label="배수" />}
-        </div>
-      </section>
-
-      <div className="panel-grid">
-        <section className="panel">
-          <div className="panel-head">
-            <h2>포맷별 성과</h2>
-            <button className="text-link" onClick={() => onNavigate('formats', {})}>전체 목록 <ArrowUpRight size={13} /></button>
-          </div>
-          <div className="frank">
-            {topFormats.map((item) => (
-              <button className="frank-row" key={item.uid} onClick={() => onOpen(item)}>
-                <span className="frank-copy">
-                  <strong>{item.title}</strong>
-                  <small>측정 {item.sampleCount}건 · 최고 {formatMultiple(item.topMultiple)}</small>
-                </span>
-                <Multiple value={item.medianMultiple} />
-              </button>
-            ))}
-          </div>
-          <p className="panel-note">표본이 2~6건이라 순위는 참고용입니다.</p>
-        </section>
-
-        <section className="panel">
-          <div className="panel-head"><h2>수집 현황</h2></div>
-          <div className="cover-list">
-            {coverage.map((row) => (
-              <div className="cover" key={row.label}>
-                <div className="cover-label"><span>{row.label}</span><strong>{row.done}/{row.total}</strong></div>
-                <div className="cover-track"><div className="cover-fill" style={{ width: `${Math.round((row.done / row.total) * 100)}%` }} /></div>
-                <small>{row.note}</small>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
 
       <section className="panel">
         <div className="panel-head">
@@ -711,6 +681,50 @@ function Overview({ data, onOpen, onNavigate }) {
           ))}
         </div>
       </section>
+
+      <section className="panel panel-flush">
+        <div className="panel-head">
+          <h2>콘텐츠</h2>
+          <button className="text-link" onClick={() => onNavigate('contents', {})}>전체 목록 <ArrowUpRight size={13} /></button>
+        </div>
+        <div className="list list-inset">
+          {previewContents.map((item) => <ContentRow key={item.uid} item={item} onOpen={onOpen} compact />)}
+          {previewContents.length === 0 && <EmptyState label="콘텐츠" />}
+        </div>
+      </section>
+
+      <div className="panel-grid">
+        <section className="panel">
+          <div className="panel-head">
+            <h2>포맷 카드</h2>
+            <button className="text-link" onClick={() => onNavigate('formats', {})}>전체 목록 <ArrowUpRight size={13} /></button>
+          </div>
+          <div className="frank">
+            {previewFormats.map((item) => (
+              <button className="frank-row" key={item.uid} onClick={() => onOpen(item)}>
+                <span className="frank-copy">
+                  <strong>{item.title}</strong>
+                  <small>{display(item.definition)}</small>
+                </span>
+                <span className="frank-tag">{display(item.length)}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section className="panel">
+          <div className="panel-head"><h2>수집 현황</h2></div>
+          <div className="cover-list">
+            {coverage.map((row) => (
+              <div className="cover" key={row.label}>
+                <div className="cover-label"><span>{row.label}</span><strong>{row.done}/{row.total}</strong></div>
+                <div className="cover-track"><div className="cover-fill" style={{ width: `${Math.round((row.done / row.total) * 100)}%` }} /></div>
+                <small>{row.note}</small>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
 
       <p className="foot">
         공개 Instagram 프로필에서 확인한 데이터입니다. 조회수·좋아요·댓글은 원본에 기록된 값만 표시하고, 없으면 미기록으로 둡니다.
