@@ -15,7 +15,6 @@ import {
   LayoutDashboard,
   Menu,
   Search,
-  SlidersHorizontal,
   Sparkles,
   Tag,
   Users,
@@ -49,19 +48,14 @@ function metricValue(value) {
   return number;
 }
 
-function formatNumber(value) {
-  const number = Number(value) || 0;
-  if (number >= 10000) return `${(number / 10000).toFixed(number >= 100000 ? 0 : 1).replace('.0', '')}만`;
-  if (number >= 1000) return `${(number / 1000).toFixed(number >= 10000 ? 0 : 1).replace('.0', '')}천`;
-  return new Intl.NumberFormat('ko-KR').format(number);
-}
-
 function display(value, fallback = '미기록') {
   return value === null || value === undefined || String(value).trim() === '' ? fallback : value;
 }
 
+// 경과일 → 게시일 → 미기록 순으로 내려간다. 원본에 값이 없으면 날짜를 지어내지 않는다.
 function displayAge(age, date) {
-  if (age) return String(age).endsWith('전') ? age : `${age} 전`;
+  const raw = String(age ?? '').trim();
+  if (/\d/.test(raw)) return raw.endsWith('전') ? raw : `${raw} 전`;
   return display(date);
 }
 
@@ -177,51 +171,39 @@ function Badge({ children, tone = 'neutral' }) {
   return <span className={`badge badge-${tone}`}>{children}</span>;
 }
 
-function DataCard({ item, onOpen }) {
-  const isContent = item.kind === 'content';
-  const isFormat = item.kind === 'format';
+function ContentListRow({ item, onOpen }) {
+  const name = display(item.name);
   return (
-    <button className="data-card" onClick={() => onOpen(item)}>
-      <div className="card-kicker">
-        <span>{isContent ? item.category : isFormat ? item.hookType : item.category}</span>
-        <ChevronRight size={15} />
+    <button className="content-list-row" onClick={() => onOpen(item)}>
+      <div className="content-list-primary">
+        <div className="list-index">{display(item.format, '콘텐츠').slice(0, 1)}</div>
+        <div className="content-list-copy">
+          <strong>{display(item.summary, '제목 미기록')}</strong>
+          <span className="content-list-author">
+            <span className="author-name">{name}</span>
+            <b>@{display(item.handle)}</b>
+          </span>
+        </div>
       </div>
-      <h3>{isContent ? item.summary : isFormat ? item.title : item.title}</h3>
-      <p>{isContent ? display(item.hook) : isFormat ? display(item.definition) : display(item.angle)}</p>
-      <div className="card-footer">
-        <Badge tone={isContent ? 'coral' : 'lime'}>{isContent ? display(item.transfer, '검토') : display(item.status, '후보')}</Badge>
-        <span className="muted">{isContent ? display(item.format) : isFormat ? display(item.length) : display(item.category)}</span>
+      <div className="content-list-metrics">
+        <div><small>조회수</small><strong>{display(item.views)}</strong></div>
+        <div><small>좋아요</small><strong>{display(item.likes)}</strong></div>
+        <div><small>댓글</small><strong>{display(item.comments)}</strong></div>
+        <div><small>게시일</small><strong>{displayAge(item.age, item.date)}</strong></div>
+      </div>
+      <div className="content-list-tail">
+        <Badge tone={item.ad === '광고아님' ? 'lime' : 'neutral'}>{display(item.format)}</Badge>
+        <a className="table-link" href={item.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()} aria-label={`${name} 원본 Instagram 열기`}><Camera size={18} /></a>
+        <ChevronRight size={18} className="row-chevron" />
       </div>
     </button>
   );
 }
 
-function ContentListRow({ item, onOpen }) {
-  return <button className="content-list-row" onClick={() => onOpen(item)}>
-    <div className="content-list-primary">
-      <div className="list-index">{display(item.format, '콘텐츠').slice(0, 1)}</div>
-      <div className="content-list-copy">
-        <strong>{display(item.summary, '제목 미기록')}</strong>
-        <span>{display(item.name)} <b>@{display(item.handle)}</b></span>
-        <small>{display(item.hook, '훅 문구 미기록')}</small>
-      </div>
-    </div>
-    <div className="content-list-metrics">
-      <div><small>조회수</small><strong>{display(item.views)}</strong></div>
-      <div><small>좋아요</small><strong>{display(item.likes)}</strong></div>
-      <div><small>댓글</small><strong>{display(item.comments)}</strong></div>
-      <div><small>게시일</small><strong>{displayAge(item.age, item.date)}</strong></div>
-      <Badge tone={item.ad === '광고아님' ? 'lime' : 'neutral'}>{display(item.format)}</Badge>
-      <a className="table-link" href={item.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()} aria-label={`${item.name} 원본 Instagram 열기`}><Camera size={16} /></a>
-      <ChevronRight size={16} className="row-chevron" />
-    </div>
-  </button>;
-}
-
 function FormatListRow({ item, onOpen }) {
   return <button className="format-list-row" onClick={() => onOpen(item)}>
     <div className="format-list-primary"><div className="list-index">포</div><div><strong>{item.title}</strong><span>{display(item.definition)}</span></div></div>
-    <div className="format-list-meta"><Badge tone="lime">{display(item.hookType)}</Badge><span>{display(item.length)}</span><span>난이도 {display(item.difficulty)}</span><span>이식 {display(item.portability)}</span><ChevronRight size={16} /></div>
+    <div className="format-list-meta"><Badge tone="lime">{display(item.hookType)}</Badge><span>{display(item.length)}</span><span>난이도 {display(item.difficulty)}</span><span>이식 {display(item.portability)}</span><ChevronRight size={18} /></div>
   </button>;
 }
 
@@ -239,12 +221,13 @@ function DetailModal({ item, onClose }) {
   if (!item) return null;
   const isAccount = item.kind === 'account';
   const isContent = item.kind === 'content';
+  const isFormat = item.kind === 'format';
   return (
     <div className="modal-backdrop" onMouseDown={onClose}>
       <div className="modal" onMouseDown={(event) => event.stopPropagation()}>
         <div className="modal-head">
           <div>
-            <div className="eyebrow">{isAccount ? '계정 상세' : isContent ? '콘텐츠 상세' : item.kind === 'format' ? '포맷 상세' : '주제 상세'}</div>
+            <div className="eyebrow">{isAccount ? '인플루언서 상세' : isContent ? '콘텐츠 상세' : isFormat ? '포맷 상세' : '주제 상세'}</div>
             <h2>{isAccount ? item.name : isContent ? item.summary : item.title}</h2>
             <p className="modal-subtitle">{isAccount ? `@${item.handle}` : isContent ? `@${item.handle} · ${display(item.date)}` : item.id}</p>
           </div>
@@ -278,7 +261,7 @@ function DetailModal({ item, onClose }) {
               <Badge tone="coral">{display(item.category)}</Badge>
               <Badge>{display(item.format)}</Badge>
               <Badge tone={item.ad === '광고아님' ? 'lime' : 'neutral'}>{display(item.ad, '광고 판정 미기록')}</Badge>
-              <span className="muted">{display(item.views, '조회수 미기록')} 조회 · {display(item.likes, '좋아요 미기록')} 좋아요</span>
+              <span className="muted">조회수 {display(item.views)} · 좋아요 {display(item.likes)} · 댓글 {display(item.comments)}</span>
             </div>
             <div className="hook-box"><span>HOOK · {display(item.hookType, '미기록')}</span><strong>{display(item.hook)}</strong></div>
             <div className="detail-grid content-grid">
@@ -335,7 +318,7 @@ function AccountsView({ items, onOpen }) {
   const types = useMemo(() => [...new Set(items.map((item) => item.type).filter(Boolean))].sort(), [items]);
   const categories = useMemo(() => [...new Set(items.map((item) => item.category).filter(Boolean))].sort(), [items]);
   const filtered = items.filter((item) => (type === 'all' || item.type === type) && (category === 'all' || item.category === category));
-  return <DataViewHeader eyebrow="인플루언서 목록" title="인플루언서 목록" description="약사·메디컬 계정 · 카테고리 · 팔로워 · Instagram 링크" count={filtered.length}>
+  return <DataViewHeader eyebrow="ACCOUNTS" title="인플루언서 목록" description="약사·메디컬 계정, 주력 카테고리, 팔로워 수, 원본 Instagram 링크" count={filtered.length}>
     <div className="filter-row"><Filter size={16} /><FilterSelect label="계정 유형" value={type} onChange={setType} options={types} /><FilterSelect label="카테고리" value={category} onChange={setCategory} options={categories} /></div>
     <div className="account-table-wrap"><table><thead><tr><th>계정</th><th>유형</th><th>팔로워</th><th>주력 카테고리</th><th>배정 적합</th><th></th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id} onClick={() => onOpen(item)}><td><div className="table-account"><div className="avatar">{String(item.name || item.handle).slice(0, 1)}</div><div><strong>{item.name}</strong><span>@{item.handle}</span></div></div></td><td><Badge>{display(item.type)}</Badge></td><td className="number-cell">{display(item.followers)}</td><td>{display(item.category)}</td><td>{display(item.assignment, '공용')}</td><td><a className="table-link" href={item.link} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()} aria-label={`${item.name} Instagram 열기`}><Camera size={16} /></a></td></tr>)}</tbody></table>{filtered.length === 0 && <EmptyState label="계정" />}</div>
   </DataViewHeader>;
@@ -347,26 +330,26 @@ function ContentsView({ items, onOpen }) {
   const categories = useMemo(() => [...new Set(items.map((item) => item.category).filter(Boolean))].sort(), [items]);
   const formats = useMemo(() => [...new Set(items.map((item) => item.format).filter(Boolean))].sort(), [items]);
   const filtered = items.filter((item) => (category === 'all' || item.category === category) && (format === 'all' || item.format === format));
-  return <DataViewHeader eyebrow="콘텐츠 목록" title="콘텐츠 목록" description="제목 · 인플루언서명 · 핸들 · 조회수 · 게시일 · 원본 Instagram 링크" count={filtered.length}>
+  return <DataViewHeader eyebrow="CONTENTS" title="콘텐츠 목록" description="콘텐츠 제목, 인플루언서명과 핸들, 조회수·좋아요·댓글, 게시일, 원본 Instagram 링크" count={filtered.length}>
     <div className="filter-row"><Filter size={16} /><FilterSelect label="카테고리" value={category} onChange={setCategory} options={categories} /><FilterSelect label="형식" value={format} onChange={setFormat} options={formats} /></div>
     <div className="content-list"><div className="list-head"><span>콘텐츠 정보</span><span>성과 지표</span></div>{filtered.map((item) => <ContentListRow key={item.id} item={item} onOpen={onOpen} />)}</div>{filtered.length === 0 && <EmptyState label="콘텐츠" />}
   </DataViewHeader>;
 }
 
 function FormatsView({ items, onOpen }) {
-  return <DataViewHeader eyebrow="포맷 목록" title="포맷 목록" description="릴스 제작용 훅 · 비트 · 편집 장치 · 이식 가능성" count={items.length}>
+  return <DataViewHeader eyebrow="FORMATS" title="포맷 목록" description="릴스 제작용 훅 유형, 구조 비트, 편집 장치, 이식 가능성" count={items.length}>
     <div className="list-panel">{items.map((item) => <FormatListRow key={item.id} item={item} onOpen={onOpen} />)}</div>
   </DataViewHeader>;
 }
 
 function TopicsView({ items, onOpen }) {
-  return <DataViewHeader eyebrow="주제 목록" title="주제 목록" description="제품 · 증상 · 성분 · 약사 권위 연결 주제" count={items.length}>
-    <div className="topic-list">{items.map((item) => <button className="topic-row" key={item.id} onClick={() => onOpen(item)}><div className="topic-index">{String(item.title || '?').slice(0, 1)}</div><div className="topic-main"><strong>{item.title}</strong><span>{display(item.angle)} · {display(item.category)}</span></div><div className="topic-tags"><Badge tone="lime">권위 {display(item.authority)}</Badge><Badge>{display(item.product, '제품 연결 미기록')}</Badge></div><ChevronRight size={17} /></button>)}</div>
+  return <DataViewHeader eyebrow="TOPICS" title="주제 목록" description="제품·증상·성분별 주제 후보, 약사 권위 활용도, 제품 연결 가능성" count={items.length}>
+    <div className="topic-list">{items.map((item) => <button className="topic-row" key={item.id} onClick={() => onOpen(item)}><div className="topic-index">{String(item.title || '?').slice(0, 1)}</div><div className="topic-main"><strong>{item.title}</strong><span>{display(item.angle)} · {display(item.category)}</span></div><div className="topic-tags"><Badge tone="lime">권위 {display(item.authority)}</Badge><Badge>{display(item.product, '제품 연결 미기록')}</Badge></div><ChevronRight size={18} /></button>)}</div>
   </DataViewHeader>;
 }
 
 function DataViewHeader({ eyebrow, title, description, count, children }) {
-  return <section className="view-section"><div className="section-intro"><div><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><p>{description}</p></div><div className="result-count"><strong>{count}</strong><span>건</span></div></div>{children}</section>;
+  return <section className="view-section"><div className="section-intro"><div><div className="eyebrow mono">{eyebrow}</div><h1>{title}</h1><p>{description}</p></div><div className="result-count"><strong>{count}</strong><span>건</span></div></div>{children}</section>;
 }
 
 function Overview({ data, onOpen, onNavigate }) {
@@ -376,7 +359,7 @@ function Overview({ data, onOpen, onNavigate }) {
   const categoryCounts = Object.entries(accounts.reduce((acc, item) => { const key = item.category || '기타'; acc[key] = (acc[key] || 0) + 1; return acc; }, {})).sort((a, b) => b[1] - a[1]).slice(0, 5);
   return <>
     <section className="hero-panel">
-      <div className="hero-copy"><div className="eyebrow light">PHARM SOCIAL INTELLIGENCE · 2026.08</div><h1>약사·메디컬<br /><em>콘텐츠 인덱스</em></h1><p>공개 Instagram 프로필 · 계정 · 콘텐츠 · 포맷 · 주제 데이터</p><div className="hero-actions"><button className="primary-button" onClick={() => onNavigate('accounts')}>인플루언서 목록 <ArrowUpRight size={16} /></button><button className="ghost-button" onClick={() => onNavigate('contents')}>콘텐츠 목록 <ChevronRight size={16} /></button></div></div>
+      <div className="hero-copy"><div className="eyebrow mono light">PHARM SOCIAL INTELLIGENCE · 2026.08</div><h1>약사·메디컬<br /><em>콘텐츠 인덱스</em></h1><p>공개 Instagram 프로필에서 모은 인플루언서·콘텐츠·포맷·주제 데이터</p><div className="hero-actions"><button className="primary-button" onClick={() => onNavigate('accounts')}>인플루언서 목록 <ArrowUpRight size={16} /></button><button className="ghost-button" onClick={() => onNavigate('contents')}>콘텐츠 목록 <ChevronRight size={16} /></button></div></div>
       <div className="hero-summary"><div><span>인플루언서</span><strong>{accounts.length}</strong></div><div><span>콘텐츠</span><strong>{contents.length}</strong></div><div><span>포맷</span><strong>{formats.length}</strong></div><div><span>주제</span><strong>{topics.length}</strong></div></div>
     </section>
     <div className="stat-grid"><StatCard label="인플루언서 목록" value={accounts.length} detail="약사·메디컬 공개 계정" accent="stat-lime" /><StatCard label="콘텐츠 목록" value={contents.length} detail="훅·구조·편집 장치" accent="stat-coral" /><StatCard label="포맷 목록" value={formats.length} detail="제작용 구조 템플릿" accent="stat-blue" /><StatCard label="주제 목록" value={topics.length} detail="이식 가능한 주제 후보" accent="stat-yellow" /></div>
@@ -385,7 +368,7 @@ function Overview({ data, onOpen, onNavigate }) {
       <section className="panel category-panel"><div className="panel-head"><div><div className="eyebrow">계정 카테고리</div><h2>카테고리 분포</h2></div><CircleDot size={18} className="muted-icon" /></div><div className="bar-list">{categoryCounts.map(([label, value]) => <div className="bar-row" key={label}><div className="bar-label"><span>{label}</span><strong>{value}</strong></div><div className="bar-track"><div className="bar-fill" style={{ width: `${Math.max(10, (value / categoryCounts[0][1]) * 100)}%` }} /></div></div>)}</div><div className="category-foot"><span><span className="dot dot-lime"></span>상위 5개 카테고리</span><strong>{categoryCounts.reduce((sum, [, value]) => sum + value, 0)}개 계정</strong></div></section>
     </div>
     <section className="panel recent-panel"><div className="panel-head"><div><div className="eyebrow">콘텐츠 성과 지표</div><h2>주요 콘텐츠</h2></div><button className="text-button" onClick={() => onNavigate('contents')}>전체 목록 <ArrowUpRight size={14} /></button></div><div className="content-list compact-content-list"><div className="list-head"><span>콘텐츠 정보</span><span>성과 지표</span></div>{topContents.map((item) => <ContentListRow key={item.id} item={item} onOpen={onOpen} />)}</div></section>
-    <div className="data-note"><Check size={15} /> 공개 Instagram 프로필 확인 데이터 · 인플루언서 {accounts.length}개 · 2026.08.05 기준</div>
+    <div className="data-note"><Check size={16} /> 공개 Instagram 프로필에서 확인한 데이터 · 인플루언서 계정 {accounts.length}개 · 2026.08.05 기준</div>
   </>;
 }
 
@@ -398,7 +381,7 @@ function App() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    Promise.all(Object.entries(DATA_FILES).map(async ([key, path]) => [key, await parseCsv(path)])).then((entries) => setData(normalizeData(Object.fromEntries(entries)))).catch(() => setError('원장 데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.'));
+    Promise.all(Object.entries(DATA_FILES).map(async ([key, path]) => [key, await parseCsv(path)])).then((entries) => setData(normalizeData(Object.fromEntries(entries)))).catch(() => setError('공개 데이터 파일을 읽지 못했습니다. 잠시 후 새로고침해 주세요.'));
   }, []);
 
   useEffect(() => {
@@ -414,7 +397,7 @@ function App() {
   }, [data, search]);
 
   if (error) return <div className="fatal-error"><Database size={30} /><h1>데이터를 불러오지 못했습니다.</h1><p>{error}</p></div>;
-  if (!data) return <div className="loading-screen"><div className="loading-mark"><Sparkles size={22} /></div><strong>데이터 준비 중</strong><span>계정·콘텐츠 목록 불러오는 중</span></div>;
+  if (!data) return <div className="loading-screen"><div className="loading-mark"><Sparkles size={22} /></div><strong>데이터 준비 중</strong><span>인플루언서·콘텐츠 목록을 불러옵니다</span></div>;
 
   const currentData = filteredData || data;
   const renderView = () => {
@@ -427,7 +410,7 @@ function App() {
 
   return <div className="app-shell">
     <aside className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''}`}><div className="brand"><div className="brand-mark"><Sparkles size={17} /></div><div><strong>PHARM<span>·</span>SI</strong><small>social intelligence</small></div></div><div className="workspace-switcher"><span className="workspace-dot"></span><div><small>WORKSPACE</small><strong>웰니스 콘텐츠팀</strong></div><ChevronRight size={15} /></div><nav>{NAV_ITEMS.map(({ id, label, icon: Icon, key }) => <button key={id} className={view === id ? 'active' : ''} onClick={() => { setView(id); setSidebarOpen(false); }}><Icon size={17} /><span>{label}</span>{key && <em>{data[key].length}</em>}</button>)}</nav><div className="sidebar-bottom"><div className="source-card"><div className="source-icon"><Database size={16} /></div><div><strong>공개 데이터 인덱스</strong><span>2026.08.05 업데이트</span></div></div><div className="sidebar-legal">Team workspace · Internal use</div></div></aside>
-    <main className="main-content"><header className="topbar"><button className="mobile-menu" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="메뉴 열기"><Menu size={20} /></button><div className="breadcrumb"><span>WORKSPACE</span><ChevronRight size={14} /><strong>{NAV_ITEMS.find((item) => item.id === view)?.label}</strong></div><div className="topbar-actions"><SearchBar value={search} onChange={setSearch} placeholder="계정, 주제, 훅 검색" /></div></header><div className="content-wrap">{view !== 'overview' && <div className="global-search"><SearchBar value={search} onChange={setSearch} placeholder="현재 원장에서 검색" />{search && <button className="clear-search" onClick={() => setSearch('')} aria-label="검색어 지우기"><X size={15} /></button>}</div>}{renderView()}</div></main><DetailModal item={selected} onClose={() => setSelected(null)} />
+    <main className="main-content"><header className="topbar"><button className="mobile-menu" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="메뉴 열기"><Menu size={20} /></button><div className="breadcrumb"><span>WORKSPACE</span><ChevronRight size={14} /><strong>{NAV_ITEMS.find((item) => item.id === view)?.label}</strong></div><div className="topbar-actions"><SearchBar value={search} onChange={setSearch} placeholder="인플루언서·주제·훅 검색" /></div></header><div className="content-wrap">{view !== 'overview' && <div className="global-search"><SearchBar value={search} onChange={setSearch} placeholder="현재 목록에서 검색" />{search && <button className="clear-search" onClick={() => setSearch('')} aria-label="검색어 지우기"><X size={15} /></button>}</div>}{renderView()}</div></main><DetailModal item={selected} onClose={() => setSelected(null)} />
   </div>;
 }
 
