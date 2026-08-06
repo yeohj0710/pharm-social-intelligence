@@ -374,6 +374,34 @@ function EmptyState({ label }) {
   return <div className="empty"><strong>{label} 데이터가 없습니다</strong><span>검색어나 필터를 바꿔보세요.</span></div>;
 }
 
+// 목록을 끊어서 그린다. 수천 건을 한 번에 그리면 DOM 노드가 수만 개가 되어 스크롤이 버벅인다.
+// 이미지 자체는 브라우저 lazy loading 이 이미 걸러 준다.
+const PAGE = 50;
+
+function useIncremental(total, deps) {
+  const [limit, setLimit] = useState(PAGE);
+  const sentinel = useRef(null);
+
+  useEffect(() => { setLimit(PAGE); }, deps);
+
+  useEffect(() => {
+    if (limit >= total) return undefined;
+    const node = sentinel.current;
+    if (!node) return undefined;
+    const observer = new IntersectionObserver(
+      (entries) => { if (entries[0].isIntersecting) setLimit((n) => n + PAGE); },
+      { rootMargin: '700px' },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [limit, total]);
+
+  const more = limit < total
+    ? <div className="more" ref={sentinel}>{total - limit}건 더 있습니다</div>
+    : null;
+  return [limit, more];
+}
+
 function PageHead({ kicker, title, description, children }) {
   return (
     <div className="head">
@@ -555,6 +583,7 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
   });
 
   const measured = scoped.filter((item) => item.multiple !== null).length;
+  const [limit, more] = useIncremental(sorted.length, [sort, keyword, format, params.handle, params.formatId, items]);
 
   return (
     <section className="view">
@@ -581,8 +610,9 @@ function ContentsView({ items, params, onOpen, onNavigate }) {
 
       <div className="list">
         <ContentListHead />
-        {sorted.map((item) => <ContentRow key={item.uid} item={item} onOpen={onOpen} />)}
+        {sorted.slice(0, limit).map((item) => <ContentRow key={item.uid} item={item} onOpen={onOpen} />)}
         {sorted.length === 0 && <EmptyState label="콘텐츠" />}
+        {more}
       </div>
     </section>
   );
@@ -603,6 +633,7 @@ function AccountsView({ items, onOpen }) {
     if (sort === 'median') return (b.medianViews ?? -1) - (a.medianViews ?? -1);
     return b.followerValue - a.followerValue;
   });
+  const [limit, more] = useIncremental(sorted.length, [sort, type, items]);
 
   return (
     <section className="view">
@@ -616,7 +647,7 @@ function AccountsView({ items, onOpen }) {
       <Chips options={typeCounts} value={type} onChange={setType} allLabel="유형 전체" />
 
       <div className="list">
-        {sorted.map((item) => (
+        {sorted.slice(0, limit).map((item) => (
           <button className="arow" key={item.uid} onClick={() => onOpen(item)}>
             <div className="arow-copy">
               <strong>{item.name}</strong>
@@ -630,6 +661,7 @@ function AccountsView({ items, onOpen }) {
           </button>
         ))}
         {sorted.length === 0 && <EmptyState label="인플루언서" />}
+        {more}
       </div>
     </section>
   );
