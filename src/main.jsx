@@ -127,11 +127,12 @@ function normalizeData(raw) {
     type: row['계정유형'],
     country: row['국가'],
     followers: row['팔로워'],
-    followerValue: metricValue(row['팔로워']),
+    followerValue: numberOrNull(row['팔로워수치']) ?? metricValue(row['팔로워']),
     posts: row['게시물수'],
     category: row['주력카테고리'],
     medianViews: numberOrNull(row['최근12개중앙조회수']),
     topViews: numberOrNull(row['최고조회수']),
+    adoptedCount: numberOrNull(row['이계정채택수']),
     assignment: row['배정적합(김·오·선)'],
     grade: row['등급(S·A·B·제외)'],
     status: row['허수판정'],
@@ -151,6 +152,7 @@ function normalizeData(raw) {
       handle: row['계정핸들'],
       name: row['계정명'],
       followers: row['팔로워'],
+      followerValue: numberOrNull(row['팔로워수치']) ?? metricValue(row['팔로워']),
       type: row['계정유형'],
       date: row['게시일'],
       age: row['경과일'],
@@ -180,6 +182,10 @@ function normalizeData(raw) {
       why: row['왜터졌나(가설)'],
       suggestions: row['우리버전제안(훅 문구 3개)'],
       ad: row['광고판정'],
+      assignment: row['배정가능(김주성·오약·선영·공용·불가)'],
+      grade: row['등급'],
+      gateJudgment: row['게이트판정'],
+      gateReason: row['게이트근거'],
       note: row['사람메모'],
     };
   });
@@ -398,7 +404,10 @@ function DetailModal({ item, onClose, onNavigate, onOpenFormat }) {
               <div><span>형식·길이</span><strong>{display(item.format)}{item.seconds !== null ? ` · ${item.seconds}초` : ''}</strong></div>
               <div><span>훅 유형</span><strong>{display(item.hookType)}</strong></div>
               <div><span>광고 판정</span><strong>{display(item.ad)}</strong></div>
+              <div><span>게이트 판정</span><strong>{display(item.gateJudgment)}</strong></div>
+              <div><span>등급·배정</span><strong>{display(item.grade)} · {display(item.assignment)}</strong></div>
             </div>
+            <DetailSection label="게이트 근거" value={item.gateReason} />
             <DetailSection label="한줄 요약" value={item.summary} />
             <DetailSection label="구조" value={item.structure} />
             <DetailSection label="편집 장치" value={item.edit} />
