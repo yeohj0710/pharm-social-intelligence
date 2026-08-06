@@ -1,3 +1,3 @@
-feat: mine 200 Instagram accounts in in-app browser
+feat: mine 220 Instagram accounts in in-app browser
 
-Persist 200 account queue outcomes and the in-app-browser mining state.
+Persist 220 account queue outcomes and the final three-audit stagnation state.
