@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import Papa from 'papaparse';
 import { ArrowUpRight, Menu, Search, X } from 'lucide-react';
@@ -145,6 +145,12 @@ function normalizeData(raw) {
     const views = numberOrNull(row['조회수']);
     const multiple = numberOrNull(row['배수']);
     const thumb = String(row['썸네일파일'] ?? '').trim();
+    // 캡처파일에는 중간 프레임 파일명이 여러 개 들어온다. 없으면 커버 한 장으로 끝난다.
+    const frames = String(row['캡처파일'] ?? '')
+      .split(/[;,|]/)
+      .map((name) => name.trim())
+      .filter(Boolean)
+      .map((name) => `/data/frames/${name}`);
     return {
       kind: 'content',
       uid: `content-${index}`,
@@ -168,6 +174,7 @@ function normalizeData(raw) {
       multiple,
       multipleSort: multiple ?? -1,
       thumb: thumb ? `/data/thumbs/${thumb}` : '',
+      frames,
       metricAt: row['지표수집일시'],
       category: row['카테고리'],
       keywords: categoryKeywords(row['카테고리']),
@@ -260,9 +267,32 @@ function Multiple({ value, size = 'md' }) {
   );
 }
 
-function Thumb({ src, alt, format }) {
-  if (!src) return <div className="thumb thumb-empty"><span>{format === '캐러셀' ? '캐' : '릴'}</span></div>;
-  return <img className="thumb" src={src} alt={alt} loading="lazy" />;
+// 커버 + 중간 프레임. 마우스를 올리면 순환한다.
+// 중간 프레임은 올리기 전까지 요청하지 않는다 — 목록 초기 로딩을 건드리지 않으려고.
+function Thumb({ src, frames = [], format }) {
+  const shots = [src, ...frames].filter(Boolean);
+  const [index, setIndex] = useState(0);
+  const timer = useRef(null);
+
+  useEffect(() => () => clearInterval(timer.current), []);
+
+  const start = () => {
+    if (shots.length < 2 || timer.current) return;
+    timer.current = setInterval(() => setIndex((i) => (i + 1) % shots.length), 650);
+  };
+  const stop = () => {
+    clearInterval(timer.current);
+    timer.current = null;
+    setIndex(0);
+  };
+
+  if (!shots.length) return <span className="shot shot-empty">{format === '캐러셀' ? '캐' : '릴'}</span>;
+  return (
+    <span className="shot" onMouseEnter={start} onMouseLeave={stop}>
+      <img src={shots[index]} alt="" loading="lazy" />
+      {shots.length > 1 && <span className="shot-count">{shots.length}</span>}
+    </span>
+  );
 }
 
 function InstagramLink({ href, label }) {
@@ -277,7 +307,7 @@ function ContentRow({ item, onOpen, compact = false }) {
   const name = display(item.name);
   return (
     <button className={`crow ${compact ? 'crow-compact' : ''}`} onClick={() => onOpen(item)}>
-      <Thumb src={item.thumb} alt="" format={item.format} />
+      <Thumb src={item.thumb} frames={item.frames} format={item.format} />
       <div className="crow-copy">
         <strong className="crow-hook">{display(item.hook, display(item.summary, '훅 문구 미기록'))}</strong>
         <span className="crow-summary">{display(item.summary)}</span>
@@ -399,6 +429,19 @@ function DetailModal({ item, onClose, onNavigate, onOpenFormat }) {
                 </div>
               </div>
             </div>
+            {item.frames.length > 0 && (
+              <div className="frames">
+                <span className="frames-label">영상 흐름 {item.frames.length}컷</span>
+                <div className="frames-strip">
+                  {item.frames.map((frame, order) => (
+                    <figure key={frame}>
+                      <img src={frame} alt="" loading="lazy" />
+                      <figcaption>{order + 1}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="dgrid">
               <div><span>카테고리</span><strong>{display(item.category)}</strong></div>
               <div><span>형식·길이</span><strong>{display(item.format)}{item.seconds !== null ? ` · ${item.seconds}초` : ''}</strong></div>
