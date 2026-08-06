@@ -1,3 +1,3 @@
-feat: mine 220 Instagram accounts in in-app browser
+채굴 341/343 · 채택 67건 · 약사 인플루언서 범위 적용
 
-Persist 220 account queue outcomes and the final three-audit stagnation state.
+사용자 요청에 따라 병원·기관·메디컬 인접 계정을 브라우저에서 제외하고 약사 인플루언서 계정을 추가 채굴했다.
