@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0b1220" />
     <title>Pharm Social Intelligence</title>
+    <!-- 자료 네 벌은 JS 를 다 받은 뒤에야 요청이 나간다. 미리 걸어 두면
+         번들을 받는 동안 같이 내려와서 목록이 그만큼 빨리 뜬다. -->
+    <link rel="preload" as="fetch" href="/data/contents.csv" crossorigin />
+    <link rel="preload" as="fetch" href="/data/accounts.csv" crossorigin />
+    <link rel="preload" as="fetch" href="/data/formats.csv" crossorigin />
+    <link rel="preload" as="fetch" href="/data/topics.csv" crossorigin />
   </head>
   <body>
     <div id="root"></div>

@@ -138,6 +138,7 @@ function normalizeData(raw) {
     status: row['허수판정'],
     source: row['발굴경로(엔진·시드계정)'],
     note: row['사람메모'],
+    minedAt: row['마지막정면채굴일시'],
     link: instagramUrl(row['핸들']),
   }));
 
@@ -252,7 +253,17 @@ function normalizeData(raw) {
     format.topMultiple = values.length ? Math.max(...values) : null;
   });
 
-  return { accounts, contents, formats, topics };
+  // 화면에 적는 "언제 기준"은 원장에서 뽑는다. 손으로 박아 두면 자료만 갱신되고
+  // 날짜는 그대로 남아 거짓말이 된다(실제로 8월 13일 자료에 8월 5일이 붙어 있었다).
+  const stamps = [
+    ...contents.map((item) => item.metricAt),
+    ...accounts.map((item) => item.minedAt),
+  ]
+    .map((value) => String(value ?? '').trim().slice(0, 10))
+    .filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value));
+  const updatedAt = stamps.length ? stamps.reduce((a, b) => (a > b ? a : b)) : null;
+
+  return { accounts, contents, formats, topics, updatedAt };
 }
 
 /* ---------- 조각 ---------- */
@@ -802,7 +813,7 @@ function Overview({ data, onOpen, onNavigate }) {
             {coverage.map((row) => (
               <div className="cover" key={row.label}>
                 <div className="cover-label"><span>{row.label}</span><strong>{row.done}/{row.total}</strong></div>
-                <div className="cover-track"><div className="cover-fill" style={{ width: `${Math.round((row.done / row.total) * 100)}%` }} /></div>
+                <div className="cover-track"><div className="cover-fill" style={{ width: `${row.total ? Math.round((row.done / row.total) * 100) : 0}%` }} /></div>
                 <small>{row.note}</small>
               </div>
             ))}
@@ -853,12 +864,34 @@ function App() {
     setNavOpen(false);
   };
 
+  // 글자를 칠 때마다 네 목록의 모든 칸을 훑으면 항목이 늘수록 한 타에 화면이 멈춘다.
+  // 항목마다 찾을 거리를 한 번만 만들어 붙여 두고, 치는 동안은 120ms 로 묶는다.
+  const [query, setQuery] = useState('');
+  useEffect(() => {
+    const timer = setTimeout(() => setQuery(search.trim().toLowerCase()), 120);
+    return () => clearTimeout(timer);
+  }, [search]);
+
   const filteredData = useMemo(() => {
-    if (!data || !search.trim()) return data;
-    const query = search.toLowerCase();
-    const includes = (item) => Object.values(item).some((value) => String(value || '').toLowerCase().includes(query));
-    return Object.fromEntries(Object.entries(data).map(([key, items]) => [key, items.filter(includes)]));
-  }, [data, search]);
+    if (!data || !query) return data;
+    const includes = (item) => {
+      if (item._hay === undefined) {
+        item._hay = Object.entries(item)
+          .filter(([key]) => key !== '_hay')
+          .map(([, value]) => String(value ?? ''))
+          .join(' ')
+          .toLowerCase();
+      }
+      return item._hay.includes(query);
+    };
+    return {
+      ...data,
+      accounts: data.accounts.filter(includes),
+      contents: data.contents.filter(includes),
+      formats: data.formats.filter(includes),
+      topics: data.topics.filter(includes),
+    };
+  }, [data, query]);
 
   if (error) return <div className="screen"><h1>데이터를 불러오지 못했습니다</h1><p>{error}</p></div>;
   if (!data) return <div className="screen"><h1>데이터 준비 중</h1><p>인플루언서·콘텐츠 목록을 불러옵니다.</p></div>;
@@ -890,7 +923,7 @@ function App() {
         </nav>
         <div className="sidebar-foot">
           <span>공개 데이터 인덱스</span>
-          <span>2026.08.05 기준</span>
+          <span>{data.updatedAt ? `${data.updatedAt.replace(/-/g, '.')} 기준` : '수집일 미기록'}</span>
         </div>
       </aside>
 

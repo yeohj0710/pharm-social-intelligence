@@ -1,0 +1,4981 @@
+# 국내 메디컬 콘텐츠 레퍼런스 조사 — 인수인계
+
+## 진행 상태
+
+2026-08-05 02:12 기준 첫 수집 블록 `20260804-E1-01`을 부분 실행했습니다. 로컬 원장에는 국내 약사 82개·국내 인접 47개·해외 약사 4개를 포함한 계정 133개·콘텐츠 92건·포맷 60개·주제 84개를 기록했고, 공개 프로필에서 직접 확인한 B 후보 콘텐츠는 64건입니다. 배치 54에서는 `sonyaksa_lab` 만성염증·혈당·피부·여성건강·수면 전문 약사 계정을 추가했습니다. 네 Sheets는 직전 `little_yaksa` 배치 중복 행을 발견해 118개 신규 배치의 정확한 append를 보류했습니다.
+
+## 누적 수량
+
+- 계정: 국내 약사 74개 + 국내 인접 44개 + 해외 약사 4개
+- 콘텐츠: 92건
+- 포맷: 60개
+- 주제: 84개
+- 정면 채굴 대기 계정: 없음
+- A·B 채택 후보: 64건
+
+직전 배치에서는 `little_yaksa` 계정 1개·콘텐츠 4건·포맷 4개·주제 4개를 네 시트에 반영했습니다. 현재 네 Sheets에서 그 배치의 중복 행을 확인했습니다.
+
+이번 `yaksa__bubu` 배치는 로컬 원장에만 기록했습니다. 네 Sheets에 `little_yaksa` 중복 행이 있어, 중복 삭제 승인 후 `yaksa__bubu` 계정을 append하고 네 범위를 다시 읽어야 합니다. 당시 로컬 대기열은 77개 배치였습니다.
+
+이번 `bbubbu_yaksa` 배치도 로컬 원장에만 기록했습니다. 오메가3 용량·건강검진 결과별 영양제·식사 교체·증상 체크리스트 4건을 모두 B 후보와 광고 판정 `불명`으로 기록했습니다.
+
+이번 `dasik.yaksa` 배치도 로컬 원장에만 기록했습니다. 생리통 성분 순위·운동 인증·운동 회복 조합은 `불명`, 영양제 광고 문구 비판 콘텐츠는 `광고아님`으로 기록했습니다.
+
+이번 `myo_yaksa` 배치도 로컬 원장에만 기록했습니다. 오드리선 생리용품 사용 후기·오픈 전 사이즈 가이드·장기사용 후기는 `광고·공구`, 올리브오일 조리 정보는 `불명`으로 기록했습니다.
+
+이번 `slowpharmacy` 배치도 로컬 원장에만 기록했습니다. 오메가3 팩트체크와 공동구매 오픈·구매인증 콘텐츠 3건은 `광고·공구`, 29개월 아이 영양제 루틴 1건은 `불명`으로 기록했습니다.
+
+이번 `iam_yaksa` 배치도 로컬 원장에만 기록했습니다. 폭염 약국템·리포좀 비타민C 오픈·나눔 3건은 `광고·공구`, 비타민C 설명 1건은 `불명`으로 기록했습니다.
+
+이번 `byak_yaksa` 배치도 로컬 원장에만 기록했습니다. 라엘 여성용품 공구 2건은 `광고·공구`, 생리대 보관 정정·호르몬 설명 2건은 `불명`으로 기록했습니다.
+
+이번 프로필 배치에서는 `beige_yaksa`·`strawberry_yaksa`·`supermom_yaksa`·`ggul_yaksa`·`yewon.bak`·`salt.yaksa`를 공개 프로필에서 확인했습니다. 여섯 계정 모두 국내 약사로 분류했고, `salt.yaksa` 프로필에서 고정 게시물·클립 링크가 노출됐지만 본문 검토 전이므로 콘텐츠·포맷·주제는 별도 대기열에 남겼습니다.
+
+이번 `salt.yaksa` 콘텐츠 검토에서는 수면 성분 유효용량·피부에 부담을 주는 생활상황·번아웃 회복 루틴 3건을 B 후보로 기록했습니다. 세 콘텐츠 모두 캡션에 특정 제품명·광고 표기가 없어 광고 판정은 `불명`으로 남겼고, 프로필 마켓 링크와 구분했습니다. 포맷 3개와 주제 3개도 추가했습니다.
+
+이번 프로필 배치에서는 `lemonpharmacy38`·`yusung_pharmacy`·`hyemin.hospital`·`glucom_official`을 공개 프로필에서 확인했습니다. 맞춤영양제 약국·종로 약국·병원·의약품 브랜드 인접 계정으로 분류했고, 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다. `sejong_9suk9suk`은 지역 맛집·커뮤니티 계정이라 제외했습니다.
+
+이번 프로필 배치에서는 `gachiyaksa`·`ssofit_yaksa`·`somda.park`·`mariababy_official`·`loveplan__`을 공개 프로필에서 확인했습니다. `gachiyaksa`는 국내 약사로, 나머지 4개는 건강·육아·여성건강·병원·공공 상담 인접 계정으로 분류했습니다. `ssofit_yaksa`와 `somda.park`은 공개 바이오에서 약사 자격을 확인하지 못했습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `presolar_official`·`mango._.baby`·`dr.jungsodam`·`mypill_inc`을 공개 프로필에서 확인했습니다. 약사 설계 건강기능식품 브랜드·임신 준비 정보·의사·맞춤 헬스케어 브랜드 인접 계정으로 분류했고, 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `timepharm`·`jay_yaksa`·`kpanet_official`을 공개 프로필에서 확인했습니다. `timepharm`과 `jay_yaksa`는 국내 약사로, `kpanet_official`은 대한약사회 공식 인접 계정으로 분류했습니다. `bo_illak`은 여행·데이트·팝업 콘텐츠 계정이라 제외했습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `yak_father`·`icmcseoul`·`good.yaksa`를 공개 프로필에서 확인했습니다. `yak_father`는 신규 국내 약사로, `icmcseoul`은 가톨릭대학교 서울성모병원 공식 인접 계정으로 추가했습니다. `good.yaksa`와 `dobi_yaksa`는 기존 원장 계정이라 중복 추가하지 않았습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `thefitpharmacist`·`thefulfilledpharmacist`·`pharmacist.jen`을 공개 프로필에서 확인해 해외 약사 계정으로 추가했습니다. `healthyupharm`은 영국 브라이턴 지역 약국 공식 계정이라 개인 인플루언서 원장에서 제외했습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+해외 여성건강 검색에서 `acajunpeach`·`elegance_point`·`magnoliapharmacy`·`royalcollege_pharmacy`를 직접 확인했습니다. 비약사 개인·화장품 판매·지역 약국 공식 계정·약사 전문기관 공식 계정으로 판정해 제외했고, 제외 근거를 `known_queries.txt`에 남겼습니다.
+
+검색어 `site:instagram.com/ pharmacist health tips supplements -company`는 공식 약국·기관 결과가 중심이어서 직접 확인할 개인 약사 프로필이 없었습니다. 계정·콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `ez_yaksa`·`papas.promise`·`alpaca_yaksa`·`nutrii_official`·`ourpharm_official`을 공개 프로필에서 확인했습니다. `ez_yaksa`와 `alpaca_yaksa`는 국내 약사로, 나머지 3개는 약사 연계 키즈웰니스·어린이 영양제·제약 브랜드 인접 계정으로 분류했습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+이번 프로필 배치에서는 `dana_pharmacy_`·`bebememo_kr`·`heimish__h_`·`time4pharm`을 공개 프로필에서 확인했습니다. `time4pharm`은 국내 약사 듀오로, 나머지 3개는 지역 약국·육아 앱·건강 큐레이션 인접 계정으로 분류했습니다. 게시물 본문을 확인하지 않아 콘텐츠·포맷·주제는 추가하지 않았습니다.
+
+## 이어받을 순서
+
+1. 웹 공개자료의 국내 약사 채널 후보를 Instagram 공개 프로필과 대조합니다. `beyondpharmacy`는 국내 계정이 아니어서 제외했고 `아름약사`는 핸들 미확정으로 보류했습니다.
+2. 공개 프로필에서 직접 확인한 콘텐츠를 추가하고 광고 판정 근거를 각 행에 남깁니다.
+3. 김주성·오약·선영별 B 후보를 15건 이상으로 확장합니다.
+4. CSV 행을 검증한 뒤 Sheets 중복 행 삭제 승인 여부를 확인합니다. 승인하면 중복 행만 삭제하고 현재 107개 대기 배치를 네 시트에 append한 뒤 정확한 범위를 다시 읽습니다.
+
+## 최근 후보 큐
+
+공개 웹 자료에서 `진약사톡`, `약사친구들TV`, `친절한양약사`, `아름약사`, `약사 메디슨맨 TV`, `약사피셜`, `약사가 들려주는 약 이야기`, `오징어 약사TV`, `약사설명 약짱TV`를 확인했습니다. `little_yaksa`, `yaksa__bubu`, `bbubbu_yaksa`, `dasik.yaksa`, `myo_yaksa`, `slowpharmacy`·`iam_yaksa`·`byak_yaksa`, `jasin_yaksa`, `good.yaksa`, `gureumpharm`, `ggnn_yaksa`, `shine_yaksa`, `lee_pharmacy_`, `pharmacist_bin`, `pill_yaksa`, `jenny_yaksa`, `pharmway`, `fitamin_official`, `ohshu_market`, `beige_yaksa`, `strawberry_yaksa`, `supermom_yaksa`, `ggul_yaksa`, `yewon.bak`, `salt.yaksa`은 Instagram 공개 프로필과 대조해 핸들을 확정하고 계정 원장에 기록했습니다.
+
+## 운영 제약
+
+- 공개 계정만 확인하고 비공개 계정은 제외합니다.
+- 인스타그램에서는 읽기 전용으로 처리하며 로그인 정보, CAPTCHA 우회, 다운로드, 상호작용을 사용하지 않습니다.
+- `known_handles.txt`와 `known_shortcodes.txt`를 먼저 대조하고, 원장 CSV는 BOM과 고정 열 순서를 유지합니다.
+- `jessi_yaksa`의 공개 프로필에서 팔로워 6,725명·게시물 42개·약사 자기소개와 콘텐츠 6건을 직접 확인했습니다. 광고 표기가 보인 3건은 `광고아님`, 표기가 없는 3건은 `불명`으로 기록했습니다.
+- `medimantv`의 공개 프로필에서 인증 배지·팔로워 9만·게시물 318개·약사 자기소개와 콘텐츠 4건을 직접 확인했습니다. 오메가3 공동구매 1건은 `광고·공구`, 나머지 3건은 `불명`으로 기록했습니다.
+- `yakstory119`의 공개 프로필에서 인증 배지·`약들약/고상온` 표시·팔로워 35.9만·게시물 2,279개와 약사 채널 소개를 직접 확인했습니다. 리포좀씨큐텐 공동구매 1건은 `광고·공구`, 장기복용 경고·간영양제 구성·베르베린 기전 3건은 `불명`으로 기록했습니다.
+- `little_yaksa`의 공개 프로필에서 인증 배지·팔로워 6만·게시물 577개·약사·약학박사 소개를 직접 확인했습니다. 일반약 퀴즈·여드름 체크·영양제 시간표·다이소 제품 비교 4건은 공개 캡션에 광고·협찬 표기가 없어 모두 `불명`으로 기록했습니다.
+- `bbubbu_yaksa`의 공개 프로필에서 인증 배지·팔로워 16.8만·게시물 735개·11년차 서울대 졸업 현직약사 소개를 직접 확인했습니다. 오메가3 용량·건강검진 결과별 영양제·식사 교체·증상 체크리스트 4건은 공개 캡션에 광고·협찬 표기가 없어 모두 `불명`으로 기록했습니다.
+- `dasik.yaksa`의 공개 프로필에서 인증 배지·팔로워 10.8만·게시물 821개·임상약학 석사·박사과정·약사 대상 강사 소개를 직접 확인했습니다. 생리통 성분 순위·운동 인증·운동 회복 조합은 `불명`, 영양제 광고 문구 비판 콘텐츠는 `광고아님`으로 기록했습니다.
+- `myo_yaksa`의 공개 프로필에서 인증 배지·팔로워 8.6만·게시물 526개·11년차 약사 소개를 직접 확인했습니다. 오드리선 생리용품 3건은 `광고·공구`, 올리브오일 조리 정보 1건은 `불명`으로 기록했습니다.
+- `slowpharmacy`의 공개 프로필에서 팔로워 7,445명·게시물 298개·아이영양·엄마웰니스 소개와 약대·대학병원·제약회사 경력을 직접 확인했습니다.
+- `iam_yaksa`의 공개 프로필에서 팔로워 22.7만명·게시물 725개·약상담·영양제 추천과 마켓 링크를 직접 확인했습니다. 폭염 약국템·리포좀 비타민C 오픈·나눔 3건은 `광고·공구`, 비타민C 설명 1건은 `불명`으로 기록했습니다.
+- `byak_yaksa`의 공개 프로필에서 팔로워 12.3만명·게시물 768개·여성건강·피부 상담과 공구 링크를 직접 확인했습니다. 라엘 여성용품 공구 2건은 `광고·공구`, 생리대 보관 정정·호르몬 설명 2건은 `불명`으로 기록했습니다. 오메가3 공동구매 3건은 `광고·공구`, 아이 영양제 루틴 1건은 `불명`으로 기록했습니다.
+- `awesomeyaksa` 배치: 공개 프로필과 게시물 4건을 직접 확인했습니다. 간 건강 습관 5가지·다이어트 술 비교는 불명, 비타민C 앰플 루틴·24% 함량 업그레이드 마켓은 광고·공구로 기록했습니다. 콘텐츠 4건·포맷 4개·주제 4개·raw 관측 5줄을 추가했고 Sheets 동기화 대기열에 넣었습니다.
+- `donggong_yak` 배치: 공개 프로필과 게시물 4건을 직접 확인했습니다. 화장품 마케팅·피부 흡수 질문은 불명, 수면 도서 지원·모나미 브랜드 공동 게시물은 광고·협찬으로 기록했습니다. 콘텐츠 4건·포맷 4개·주제 4개·raw 관측 5줄을 추가했고 Sheets 동기화 대기열에 넣었습니다.
+- 정합성 검사에서 IAM·BYAK 콘텐츠 8건의 계정 필드 오복사를 발견해 원장 계정 정보로 정정했습니다. 중복 ID와 광고 판정은 변하지 않았습니다.
+- `yaksa_nam`은 공개 프로필 통계와 임신·난임·출산 상담 바이오를 확인해 계정 원장에만 추가했습니다. 게시물 링크가 노출되지 않아 콘텐츠는 보류했습니다.
+- `jasin_yaksa`는 공개 프로필에서 게시물 721개·팔로워 8.8만·팔로잉 391개와 엄마 건강 루틴·아이 성장·면역·수면 관리 바이오를 확인했습니다. `good.yaksa`는 게시물 290개·팔로워 28.9만·팔로잉 96개와 영양제 성분 분석·마그네슘·비타민D 바이오를 확인했습니다. 두 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `gureumpharm`은 게시물 860개·팔로워 9.8만·팔로잉 953개, `ggogi_yaksa`는 2,313개·1.2만·7,497개, `shine_yaksa`는 496개·11.1만·199개, `lee_pharmacy_`는 1,921개·13.8만·416개, `pharmacist_bin`은 76개·1,609명·664개를 공개 프로필에서 확인했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `yak_secret`·`kkamang_yacksa`·`dreamyaksa_`·`wikiyaksa`·`realofh2o`·`hongsee_yaksa`를 공개 프로필에서 확인했습니다. 여섯 계정의 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다. `charmacist_official`은 약국체인·약사플랫폼 인접 계정으로 분류해 계정 원장에만 기록했습니다.
+- `friendly_pharmabros_official`은 약사상담 플랫폼 인접 계정, `spring_pharmy`는 국내 약사, `lilly_yaksa`는 약사 자격 미확인 건강정보 인접 계정, `yaksawiki`는 호주·한국 약사 해외 계정으로 분류했습니다. 네 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `onnuripharmacy`·`cellmed.official`·`swmedical_official`은 약국체인·브랜드·지역 약국 인접 계정, `choeunpharm`·`medi2388_`는 약국을 운영하는 국내 약사 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `simple.yaksa`는 국내 약사 계정으로, `connectcare_official`·`vippharm`·`sani_and_haeng`·`official_medicoach`는 복약관리·건강 큐레이션·건강뷰티·맞춤영양제 서비스 인접 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `_eoyeomo_official`은 어린이·여성건강 약사모임 인접 조직, `myyaksa`·`dobi_yaksa`·`jy_yaksa`·`ssok_yaksa`는 국내 약사 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `woojoobe.yak`·`ggnn_yaksa`·`yak.filter`·`dani_yaksa`·`yaksasum`은 공개 바이오에서 약사 자격과 육아·여성건강·웰니스 전문성을 확인해 국내 약사 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `run.pharmacist`·`yaksamom`은 공개 바이오에서 약사 자격과 약국·피부·러닝 전문성을 확인해 국내 약사 계정으로 분류했습니다. `peurajo`·`kangsoyeon__`은 영양제 정보·건강뷰티 인접 계정으로 분류했습니다. 네 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `teri_yaksa`·`woori_yaksa`는 가족건강·웰니스·영양제 정보를 제공하는 국내 약사 계정으로, `cellromax_official`·`veteranhospital`·`ayak_official`은 약국 브랜드·병원·약사상담 인접 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `ivywellness_official`은 약사개발 영양제 브랜드, `korea_anti_doping_agency`는 스포츠 약물안전 공공기관 인접 계정으로 분류했습니다. 두 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `bbuuu_yaksa`·`liz_yaksa`·`ddib_yaksa`·`bro_yaksa`는 공개 바이오에서 약사 자격과 임신·가족건강·영양제·만성염증 전문성을 확인했습니다. `do_u.know.hs`·`health_in_news`·`zion_womens`는 약대생 동아리·건강전문매체·산부인과 병원 인접 계정으로 분류했습니다. 일곱 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `pill_yaksa`는 게시물 181개·팔로워 3.5만·19년차 약사엄마와 건강 습관·마그네슘 공구 바이오를, `jenny_yaksa`는 게시물 3,903개·팔로워 4.9만·강사·저자·방송인 약사 바이오를 확인했습니다. `pharmway`는 약사 전문 학술도서·스포츠 영양 인접 계정, `fitamin_official`은 약사 설계 맞춤영양제 브랜드, `ohshu_market`은 건강식품 마켓 계정으로 분류했습니다. 다섯 계정 모두 게시물 링크가 노출되지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `official_naproud`는 게시물 61개·팔로워 258명·건강정보 바이오와 아이 건강·피부·성분표·가족건강 하이라이트를 확인해 국내 메디컬 인접 계정으로 추가했습니다. `medimantv`·`yakstory119`는 기존 국내 약사 계정으로 재확인했고, `honey__list`·`all.about.20s`는 의료 전문성이 없어 제외했습니다. 게시물 링크는 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `jaedol_yaksa`는 게시물 344개·팔로워 1.9만·12년차 약사·임신·출산준비 바이오를, `yeogi_yaksa`는 게시물 119개·팔로워 7,309명·여성건강·임신준비·난임 바이오를 확인했습니다. `eunha__yak`은 기존 국내 약사 계정으로 재확인했습니다. 세 계정 모두 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `ummayaksa`는 게시물 780개·팔로워 1,537명·두 아이를 키우는 엄마약사·어린이·여성건강 약사모임 대표 바이오와 임산부 상담 교육 하이라이트를 확인했습니다. 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `miyu_pharm`은 게시물 34개·팔로워 1,531명·승무원에서 약사로 전직한 30대 1인 약국장 바이오를 확인했습니다. `yakin_magazine`은 게시물 151개·팔로워 1,430명·건강 취향 디지털 크리에이터 바이오와 약사 자격 미확인을 확인했습니다. 두 계정 모두 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `dongne__yaksa`는 인증 배지·게시물 169개·팔로워 5.6만·개국 10년차 혈당·다이어트 전문 약사·직장인 건강관리 바이오를 확인했습니다. 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `__kang.yaksa`는 인증 배지·게시물 1,148개·팔로워 5.7만·18세 아들맘 약사·영양제 설계 기업 CEO·여성건강·다이어트·혈당 바이오를 확인했습니다. 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `sonyaksa_lab`은 인증 배지·게시물 113개·팔로워 2.5만·약사 대상 강의·만성염증·혈당관리 바이오와 피부·여성건강·수면 하이라이트를 확인했습니다. 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+- `yakdangdang`은 인증 배지·게시물 611개·팔로워 10.9만·22년차 약사·피부·이너뷰티 바이오를, `gunginam_tv`는 인증 배지·게시물 283개·팔로워 2.6만·의학영양·건기식 업계·영양제 평론 바이오를 확인했습니다. `knowledgeins_kr`는 일반 지식·생활 콘텐츠 계정으로 제외했습니다. 세 계정 모두 게시물 본문은 별도 검토하지 않아 콘텐츠·포맷·주제는 보류했습니다.
+## 배치 55 최신 체크포인트 — 2026-08-05 02:16
+
+- 누적 계정 135개: 국내 약사 84개, 국내 메디컬 인접 47개, 해외 약사 4개.
+- 누적 콘텐츠 92건, 포맷 60개, 주제 84개, A/B 후보 64건입니다.
+- `cho_yak`과 `time_yaksa`를 공개 Instagram 프로필에서 직접 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 120개입니다.
+## 배치 56 최신 체크포인트 — 2026-08-05 02:21
+
+- 누적 계정 136개: 국내 약사 85개, 국내 메디컬 인접 47개, 해외 약사 4개.
+- `kkumyak`을 공개 Instagram 프로필에서 직접 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 121개입니다.
+## 배치 57 최신 체크포인트 — 2026-08-05 02:25
+
+- 누적 계정 137개: 국내 약사 85개, 국내 메디컬 인접 48개, 해외 약사 4개.
+- `dr.hair_lee`를 탈모 치료·모발이식 전문 의사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 122개입니다.
+## 배치 58 최신 체크포인트 — 2026-08-05 02:28
+
+- 누적 계정 139개: 국내 약사 86개, 국내 메디컬 인접 49개, 해외 약사 4개.
+- `doctor_hwany`와 `onda_pharmacist`를 공개 Instagram 프로필에서 직접 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 124개입니다.
+## 배치 59 최신 체크포인트 — 2026-08-05 02:31
+
+- 누적 계정 140개: 국내 약사 86개, 국내 메디컬 인접 50개, 해외 약사 4개.
+- `zeroderma_official`을 피부과 전문의·의원 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 125개입니다.
+## 배치 60 최신 체크포인트 — 2026-08-05 02:32
+
+- 누적 계정 141개: 국내 약사 87개, 국내 메디컬 인접 50개, 해외 약사 4개.
+- `pink_yak_`을 여성건강·임신준비 전문 약사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 126개입니다.
+## 배치 61 최신 체크포인트 — 2026-08-05 02:35
+
+- 누적 계정 142개: 국내 약사 88개, 국내 메디컬 인접 50개, 해외 약사 4개.
+- `muse_yaksa`를 약국 운영·뷰티·다이어트 전문 약사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 127개입니다.
+## 배치 62 최신 체크포인트 — 2026-08-05 02:37
+
+- 누적 계정 143개: 국내 약사 88개, 국내 메디컬 인접 51개, 해외 약사 4개.
+- `dr_park_skin`을 피부·영양제 중심 의사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 128개입니다.
+## 배치 63 최신 체크포인트 — 2026-08-05 02:39
+
+- 누적 계정 144개: 국내 약사 88개, 국내 메디컬 인접 52개, 해외 약사 4개.
+- `knjbio.official`을 장건강·소화·유산균 건강기능식품 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 129개입니다.
+## 배치 64 최신 체크포인트 — 2026-08-05 02:41
+
+- 누적 계정 145개: 국내 약사 88개, 국내 메디컬 인접 53개, 해외 약사 4개.
+- `innerdew.official`을 약사·이너뷰티 공동 운영 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 130개입니다.
+## 배치 65 최신 체크포인트 — 2026-08-05 02:43
+
+- 누적 계정 146개: 국내 약사 88개, 국내 메디컬 인접 54개, 해외 약사 4개.
+- `daewonpharm`을 제약회사 공식 건강정보 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 131개입니다.
+## 배치 66 최신 체크포인트 — 2026-08-05 02:46
+
+- 누적 계정 147개: 국내 약사 89개, 국내 메디컬 인접 54개, 해외 약사 4개.
+- `ana_yaksa`를 아나약사 김진아의 공개 프로필에서 직접 확인해 추가했습니다. 인증 계정과 호르몬·만성염증·인슐린저항성·다이어트·여성건강 소개가 확인됩니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 132개입니다.
+## 배치 67 최신 체크포인트 — 2026-08-05 02:52
+
+- 누적 계정 148개: 국내 약사 89개, 국내 메디컬 인접 55개, 해외 약사 4개.
+- `onyoubio`를 온유약국 약사가 설계한 헬스케어 브랜드 계정으로 확인해 추가했습니다. `hohobeautylog`는 일반 뷰티 크리에이터로 확인해 제외했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 133개입니다.
+## 배치 68 최신 체크포인트 — 2026-08-05 02:54
+
+- 누적 계정 149개: 국내 약사 89개, 국내 메디컬 인접 56개, 해외 약사 4개.
+- `baropharm_official`을 바로팜 공식 약사 커뮤니티 계정으로 확인해 추가했습니다. `humanstory_official`은 일반 디지털 크리에이터·인터뷰 채널로 확인해 제외했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 134개입니다.
+## 배치 69 최신 체크포인트 — 2026-08-05 02:57
+
+- 누적 계정 150개: 국내 약사 90개, 국내 메디컬 인접 56개, 해외 약사 4개.
+- `yy_yaksa`(잉양약사 이종률)를 유·소아·어린이 영양제 상담 전문 약사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 135개입니다.
+## 배치 70 최신 체크포인트 — 2026-08-05 03:00
+
+- 누적 계정 151개: 국내 약사 91개, 국내 메디컬 인접 56개, 해외 약사 4개.
+- `jjukku_min.yaksa`(쭈꾸민 약사 석민)를 약사 자기소개와 약정보 하이라이트가 있는 국내 약사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 136개입니다.
+## 배치 71 최신 체크포인트 — 2026-08-05 03:03
+
+- 누적 계정 152개: 국내 약사 92개, 국내 메디컬 인접 56개, 해외 약사 4개.
+- `yak_guide`(별약사의 약슐랭가이드)를 서울대학교 약대 졸업 약사 계정으로 확인해 추가했습니다. 게시물 본문은 확인하지 않아 콘텐츠·포맷·주제를 추정하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 137개입니다.
+## 배치 72 최신 체크포인트 — 2026-08-05 03:06
+
+- 누적 계정 153개: 국내 약사 92개, 국내 메디컬 인접 57개, 해외 약사 4개.
+- `toad_pharm`(영양제 디자이너 두꺼비팜)을 논문 기반 건강정보·건강상담·건강기능식품 계정으로 확인해 인접 계정으로 추가했습니다. 약사 자기소개가 없어 약사 계정으로 분류하지 않았습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 138개입니다.
+## 배치 73 최신 체크포인트 — 2026-08-05 03:08
+
+- 누적 계정 154개: 국내 약사 92개, 국내 메디컬 인접 57개, 해외 약사 5개.
+- `unitysg`를 싱가포르 Unity Pharmacy 공식 계정으로 확인해 해외 약사 레퍼런스로 추가했습니다. 개인 약사가 아닌 공식 약국 계정이며 약사 추천·맞춤 상담 소개를 확인했습니다.
+- Google Sheets는 `little_yaksa` 중복 행 삭제 승인 전까지 로컬 CSV와 대기열에만 기록합니다. 현재 Sheets 대기 배치는 139개입니다.
+## 배치 74 최신 체크포인트 — 2026-08-05 03:13
+
+- 임신준비·여성건강 검색에서 기존 원장 계정만 반환되어 신규 계정은 추가하지 않았습니다.
+- 누적 계정 154개: 국내 약사 92개, 국내 메디컬 인접 57개, 해외 약사 5개. Sheets 대기 배치는 139개입니다.
+## Google Sheets 읽기 전용 사전 점검 — 2026-08-05 03:10
+
+- `01_accounts.xlsx`, `02_contents.xlsx`, `03_formats.xlsx`, `04_topics.xlsx`는 모두 Office XLSX MIME으로 확인됐습니다. native Google Sheets metadata 조회는 Office 파일 오류로 실패했습니다.
+- 기존 little_yaksa 중복 행 삭제 승인 전에는 기존 파일을 삭제·교체하지 않습니다. native Sheets 4개는 최신 CSV import 후 탭·범위·행 수·ID 일치를 다시 검증해야 합니다.
+
+## Native Google Sheets import 및 검증 — 2026-08-05 03:25
+
+- 기존 Office XLSX를 삭제·교체하지 않고 최신 CSV에서 별도 native Sheets 4개를 생성했습니다.
+- `01 계정 원장 (Native)`: [문서](https://docs.google.com/spreadsheets/d/1zRRpLiVH_cuYfvnauxfGVudqKzDcS9h9v3AzesQnpig/edit), 탭 1개, `A1:Y155`, 데이터 154행, 열 25개, 첫 핸들 `o2yaksa`, 마지막 핸들 `unitysg`.
+- `02 콘텐츠 원장 (Native)`: [문서](https://docs.google.com/spreadsheets/d/1WtxcDfECtM0hkgQl7rynNFtEh_taNcqqQz5dcHQzheE/edit), 탭 1개, `A1:AZ93`, 데이터 92행, 열 52개, 첫 ID `OYAK-DbVMg0nvMtU`, 마지막 ID `SALT-Dbasl3VTGLs`.
+- `03 포맷 카드 (Native)`: [문서](https://docs.google.com/spreadsheets/d/1n9w4iP-it4ARyFlWv6aH8UJR98gCZGcJ2WCSWontwSc/edit), 탭 1개, `A1:AD61`, 데이터 60행, 열 30개, 첫 ID `FMT-ITEM-ALTERNATIVE-001`, 마지막 ID `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- `04 주제 카드 (Native)`: [문서](https://docs.google.com/spreadsheets/d/1zgRZJ41nDErPXMJ6sOt_8e1oW_AvTCDy3E1k8PbsSyE/edit), 탭 1개, `A1:Q85`, 데이터 84행, 열 17개, 첫 ID `TOPIC-PHARMACY-ALTERNATIVE-001`, 마지막 ID `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 `application/vnd.google-apps.spreadsheet`, 탭별 `frozenRowCount: 1`을 메타데이터에서 확인했습니다. 기존 Office 파일의 중복 행은 보존했고 삭제하지 않았습니다.
+
+## 배치 75 최신 체크포인트 — 2026-08-05 03:28
+
+- `yakalofficial`을 공개 프로필에서 확인해 국내 약사 인플루언서로 로컬 원장에 append했습니다. 프로필 본문만 확인했고 콘텐츠·포맷·주제는 기록하지 않았습니다.
+- 누적 계정 155개: 국내 약사 93개, 국내 메디컬 인접 57개, 해외 약사 5개. 03:25 native Sheets import 뒤 추가된 로컬 계정 1건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 76 최신 체크포인트 — 2026-08-05 03:31
+
+- `pharmacy_nana`, `malang.yaksa`, `dang.dang_yaksa`, `mentor_pharm`을 공개 프로필에서 확인해 국내 약사 인플루언서로 로컬 원장에 append했습니다. 콘텐츠 수치·광고 판정·포맷은 추정하지 않았습니다.
+- 누적 계정 159개: 국내 약사 97개, 국내 메디컬 인접 57개, 해외 약사 5개. 03:25 native Sheets import 뒤 추가된 로컬 계정 5건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 77 최신 체크포인트 — 2026-08-05 03:34
+
+- `verdepharmacy1`, `juny_yaksa`, `yulbang_counseling`을 공개 프로필에서 확인해 국내 약사 인플루언서로 append했습니다. `sejong_9suk9suk`은 지역 맛집·카페 계정으로 제외했습니다.
+- 누적 계정 162개: 국내 약사 100개, 국내 메디컬 인접 57개, 해외 약사 5개. 03:25 native Sheets import 뒤 추가된 로컬 계정 8건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 78 최신 체크포인트 — 2026-08-05 03:37
+
+- `gmpharmacist`를 국내 약사 계정으로, `pharmacyinpalm_official`·`modu_pharm`을 인접 약국·약사 플랫폼 계정으로 append했습니다. `hyimang_wando`는 공공기관 계정으로 제외했습니다.
+- 누적 계정 165개: 국내 약사 101개, 국내 메디컬 인접 59개, 해외 약사 5개. 03:25 native Sheets import 뒤 추가된 로컬 계정 11건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 79 최신 체크포인트 — 2026-08-05 03:39
+
+- 해외 공개 프로필 4개를 해외 약사 계정으로, `readyyoungpharmacy_global`을 한국 약국 브랜드 인접 계정으로 append했습니다.
+- 누적 계정 170개: 국내 약사 101개, 국내 메디컬 인접 60개, 해외 약사 9개. 03:25 native Sheets import 뒤 추가된 로컬 계정 16건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 80 최신 체크포인트 — 2026-08-05 03:45
+
+- `k_phf.official`, `plusxp_official`, `mbb.official__`을 공개 프로필에서 확인해 국내 메디컬 인접 계정으로 append했습니다. `chinhan_yaksa`는 페이지 사용 불가로 제외했습니다.
+- 누적 계정 173개: 국내 약사 101개, 국내 메디컬 인접 63개, 해외 약사 9개. 03:25 native Sheets import 뒤 추가된 로컬 계정 19건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 81 최신 체크포인트 — 2026-08-05 03:51
+
+- `zzin__yaksa`를 인증된 약사 계정으로 공개 프로필에서 확인해 국내 약사 인플루언서로 append했습니다. `honey__list`와 `all.about.20s`는 일반 계정으로 제외했습니다.
+- 누적 계정 174개: 국내 약사 102개, 국내 메디컬 인접 63개, 해외 약사 9개. 03:25 native Sheets import 뒤 추가된 로컬 계정 20건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 82 최신 체크포인트 — 2026-08-05 03:55
+
+- `beautybynori_`를 해외 약사 인플루언서로, `dakota_rx`·`innovationcompounding`을 해외 메디컬 인접 조제약국 계정으로 공개 프로필에서 확인해 append했습니다.
+- 누적 계정 177개: 국내 약사 102개, 국내 메디컬 인접 63개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 23건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 83 최신 체크포인트 — 2026-08-05 04:02
+
+- `pharmfriends`, `idjmpharm`, `pyunhanga_official`, `nutripharma_2019`를 국내 메디컬 인접 계정으로 공개 프로필에서 확인해 append했습니다. `hyemin_park_`와 `mg_mom_j`는 비의료 계정으로 제외했습니다.
+- 누적 계정 181개: 국내 약사 102개, 국내 메디컬 인접 67개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 27건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 84 최신 체크포인트 — 2026-08-05 04:05
+
+- `shiny_jjeong`, `drugsafe_official`, `ansimshop_`을 어린이 건강·약국·의약품 안전 인접 계정으로 공개 프로필에서 확인해 append했습니다. `mo__o__cgg`는 이번 배치에서 추가하지 않았습니다.
+- 누적 계정 184개: 국내 약사 102개, 국내 메디컬 인접 70개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 30건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 85 최신 체크포인트 — 2026-08-05 04:07
+
+- E7 해외 후보 `valeism_`·`khildavherlambang`을 점검했으나 약사 계정이 아니어서 추가하지 않았습니다. 신규 0건을 기록하고 E1로 전환했습니다.
+
+## 배치 86 최신 체크포인트 — 2026-08-05 04:11
+
+- `ddib_yaksa`, `strawberry_yaksa`, `ssofit_yaksa`는 원장에 있던 계정으로 재확인해 기존 행을 갱신했고, `seoulmizhospital`만 국내 메디컬 인접 계정으로 새로 append했습니다.
+- 누적 계정 185개: 국내 약사 102개, 국내 메디컬 인접 71개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 31건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 88 최신 체크포인트 — 2026-08-05 04:31
+
+- `pharm_mison`을 국내 약사 인플루언서로 공개 프로필에서 확인해 append했습니다. `knowledgeins_kr`는 일반 지식 채널로 분류해 의료 계정에 넣지 않았습니다.
+- 누적 계정 186개: 국내 약사 103개, 국내 메디컬 인접 71개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 32건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 89 최신 체크포인트 — 2026-08-05 04:35
+
+- `doseoframan`을 호주 Melbourne 기반 약사 계정으로, `melsmedicines`를 영국 London 기반 NHS 약사·처방자 계정으로 공개 프로필에서 확인해 append했습니다.
+- 누적 계정 188개: 국내 약사 103개, 국내 메디컬 인접 71개, 해외 약사 12개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 34건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 90 최신 체크포인트 — 2026-08-05 04:38
+
+- `ohhappy_hannah`는 일반 릴스 크리에이터로 제외했고, `iam_yaksa`, `ummayaksa`, `dreamyaksa_`는 기존 핸들로 재확인했습니다. 신규 계정은 0건입니다.
+- 누적 계정 188개: 국내 약사 103개, 국내 메디컬 인접 71개, 해외 약사 12개, 해외 메디컬 인접 2개.
+
+## 배치 91 최신 체크포인트 — 2026-08-05 04:40
+
+- `efficahealth`를 해외 메디컬 인접 계정으로 공개 프로필에서 확인해 append했습니다. 폐경 관리·근거기반 케어·무료 상담 예약을 제공하는 의료·건강 계정이며 개인 약사로 세지 않았습니다.
+- 누적 계정 189개: 국내 약사 103개, 국내 메디컬 인접 71개, 해외 약사 12개, 해외 메디컬 인접 3개. 03:25 native Sheets import 뒤 추가된 로컬 계정 35건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 87 최신 체크포인트 — 2026-08-05 04:20
+
+- `yeogi_yaksa`와 `eunha__yak`은 원장에 있던 계정으로 재확인해 기존 행을 갱신했습니다. 여성건강·임신·가족건강 중심의 공개 소개와 약사 자격 신호를 확인했으며 중복 계정은 만들지 않았습니다.
+- 누적 계정 185개: 국내 약사 102개, 국내 메디컬 인접 71개, 해외 약사 10개, 해외 메디컬 인접 2개. 03:25 native Sheets import 뒤 추가된 로컬 계정 31건은 다음 비파괴 import 대기열에 기록했습니다.
+
+## 배치 92 — 식품의약품안전처 공식 계정
+
+- `mfdskorea`를 국내 메디컬 인접 계정으로 추가했습니다. 식품·의약품 안전, 영양정보, 식중독 예방, 어린이 의약정보를 다루는 식품의약품안전처 공식 인증 계정이며 개인 약사 계정으로 세지 않았습니다.
+- `dailyweekly.official`은 공개 프로필과 최근 게시물이 화장품·스킨케어 브랜드 판매 중심이라 의료 계정으로 추가하지 않았습니다.
+- 현재 누적은 계정 190개(국내 약사 103·국내 메디컬 인접 72·해외 약사 12·해외 메디컬 인접 3), native Sheets 반영 대기 로컬 계정 36개입니다. 브라우저 검증 블록은 75개입니다.
+
+## Native Google Sheets sync — 2026-08-05 04:54
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1TkvM5huMen3mSjB_1C1JqQhibMN4tg8wnOtgWEII0WM/edit): native import, `A1:Y191`, 190 data rows, first `o2yaksa`, last `mfdskorea`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/18kcZbZrv0cfox9MpF3e4RW590vk5e6y-y3MESIr2iXo/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1S_3j9_5TpSeWiD3ihtA3vA2_jSG4cLj-0vo0r_oniNk/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1a14NSCEs91UmawWiuBdx01TtVn1ip8VcXi6AmoIyH38/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 import 응답에서 `application/vnd.google-apps.spreadsheet`로 확인했고, 메타데이터에서 `ko_KR` locale을 확인했습니다. 기존 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 93 — 서울 약사 계정
+
+- `yes_yaksa`를 국내 약사 인플루언서로 추가했습니다. 공개 프로필에서 서울 소재 약사 직함과 약국화장품·영양제·마그네슘·감기약·복약량 콘텐츠를 확인했습니다.
+- `dbins_official`은 DB손해보험 공식 안전·브랜드 캠페인 계정이라 의료 계정으로 추가하지 않았습니다.
+- 현재 누적은 계정 191개(국내 약사 104·국내 메디컬 인접 72·해외 약사 12·해외 메디컬 인접 3), 04:54 Native Sheets 반영 이후 로컬 계정 1개가 추가되었습니다. 브라우저 검증 블록은 76개입니다.
+
+## 배치 94 — 호주 임상종양약사 계정
+
+- `mirandalouisechan`을 해외 약사 인플루언서로 추가했습니다. 호주 기반 Clinical Oncology Pharmacist이며 `Pretty Proven` 창업자와 `Sunseal` COO라는 공개 프로필을 확인했습니다.
+- `pretty.proven`은 약사 공동 창업 여성건강·스킨케어 브랜드라 개인 약사 수에는 포함하지 않았습니다.
+- 현재 누적은 계정 192개(국내 약사 104·국내 메디컬 인접 72·해외 약사 13·해외 메디컬 인접 3), 04:54 Native Sheets 반영 이후 로컬 계정 2개가 추가되었습니다. 브라우저 검증 블록은 77개입니다.
+
+## 배치 95 — 서울시약사회·용산 약국 계정
+
+- `spa_official2`는 서울시약사회 공식 계정으로 확인했습니다. 안전상비의약품·약사 상담·공공심야약국·건강광고 판독 콘텐츠를 다뤄 국내 메디컬 인접 계정으로 추가했습니다.
+- `medikingdom_pharmacy`는 용산 800평 규모 약국의 의약품·건강기능식품·더마화장품·펫케어와 약사 1:1 상담 계정으로 확인해 국내 메디컬 인접 계정으로 추가했습니다.
+- 현재 누적은 계정 194개(국내 약사 104·국내 메디컬 인접 74·해외 약사 13·해외 메디컬 인접 3), 04:54 Native Sheets 반영 이후 로컬 계정 4개가 추가되었습니다. 브라우저 검증 블록은 78개입니다.
+
+## 배치 96 — 공공 건강·의료정보 계정
+
+- `nhis_korea`는 국민건강보험공단 공식 공공 건강정보 계정으로 확인했습니다. 폭염·금연치료·의료비·건강보험 콘텐츠를 다뤄 국내 메디컬 인접 계정으로 추가했습니다.
+- `bodoc_official`은 의료 및 건강 카테고리에서 복약·처방·영양·생활 건강 카드뉴스를 운영하는 공식 계정으로 확인해 국내 메디컬 인접 계정으로 추가했습니다.
+- 현재 누적은 계정 196개(국내 약사 104·국내 메디컬 인접 76·해외 약사 13·해외 메디컬 인접 3), 04:54 Native Sheets 반영 이후 로컬 계정 6개가 추가되었습니다. 브라우저 검증 블록은 79개입니다.
+
+## 배치 97 — 해외 약국·폐경 전문 약사 계정
+
+- `broadwater.pharmacy`를 해외 메디컬 인접 계정으로 추가했습니다. 호주 Busselton–Dunsborough 지역 독립 약국으로, 처방전·일상 돌봄·여성건강 약사상담 콘텐츠를 확인했으며 개인 약사 계정으로 세지 않았습니다.
+- `stg_wellness`를 해외 약사 인플루언서로 추가했습니다. 캐나다의 Sandra Tadros Guirguis 계정으로, 약사·Menopause Society Certified Practitioner·Clinical Pharmacist 자격 신호와 폐경·여성건강 교육 콘텐츠를 확인했습니다.
+- 현재 누적은 계정 198개(국내 약사 104·국내 메디컬 인접 76·해외 약사 14·해외 메디컬 인접 4), 04:54 Native Sheets 반영 이후 로컬 계정 8개입니다. 브라우저 검증 블록은 80개입니다.
+
+## Native Google Sheets sync — 2026-08-05 05:16
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1WjoOzPuSwNOFsDHoC-zzuDqOxE9pbIfSJjHDHYb4KVM/edit): native import, `A1:Y199`, 198 data rows, first `o2yaksa`, last `stg_wellness`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Qi36xkvVxecLhpZMjb0MZJKq2trp6hPgLbPawYIzL6I/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1A0jKZnvNY-QdP-QAH_dfJWLw-FnSkw_BVPFNjYPLwEw/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/12So66rstb3v57LhKCFpOXoJx2uCghKJh3Zj5gA_dGwY/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 `application/vnd.google-apps.spreadsheet`, `ko_KR` locale, 단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 98 — 국내 염증·혈당 약사와 여성건강 브랜드
+
+- `hayu_pharmacist`를 국내 약사 인플루언서로 추가했습니다. 인증된 공개 프로필에서 이지영 약사의 염증·혈당 전문 소개와 혈당 프로젝트·오메가3 하이라이트를 확인했습니다. 제품 링크가 있어 콘텐츠별 광고 판정을 별도로 남길 예정입니다.
+- `jilgyungyi_official`을 국내 메디컬 인접 계정으로 추가했습니다. 여성청결제 전문 브랜드의 여성건강 정보·여성 케어 콘텐츠와 공식 판매 링크를 확인했으며 개인 약사 계정으로 세지 않았습니다.
+- 현재 누적은 계정 200개(국내 약사 105·국내 메디컬 인접 77·해외 약사 14·해외 메디컬 인접 4), 05:16 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 81개입니다.
+
+## Native Google Sheets sync — 2026-08-05 05:27
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1lHPGUXDpBxFFh9dY-tvFKt-FiQ3AZqmiVMzLHPXbXGY/edit): native import, `A1:Y201`, 200 data rows, first `o2yaksa`, last `jilgyungyi_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Uzef-MmbqbnuMIsDz06shQg6lgf4XDqoCT0wXQ2Tuws/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1HMcgAybansbDDHckp7zyrbIgctvELqC499_nuJYcJ6g/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1G2n03SO3Op4RTmLMq00flZiTULM0-MWYjv0BjRCWKHI/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 123 — 2026-08-05 08:01
+
+- 공개 Instagram 프로필에서 snuh_official, kumedicine_guro, inha_uh, prhanyang, gangdong_kyunghee를 국내 메디컬 인접 계정으로 직접 확인했습니다. 서울대학교병원·고대구로병원·인하대병원·한양대학교병원·강동경희대학교병원의 공식 소개와 건강정보·병원소식·헬스케어 운영 신호를 확인했습니다.
+- 프로필만 확인한 배치이므로 콘텐츠 행은 추정해 추가하지 않았습니다. 다섯 계정의 게시물 링크는 후속 검토 큐에 남겼습니다.
+- 배치 후 계정 원장은 251개입니다. 국내 약사 120개·국내 메디컬 인접 100개·해외 약사 19개·해외 메디컬 인접 12개입니다.
+
+## 배치 124 — 2026-08-05 08:15
+
+- 공개 Instagram 프로필에서 khmcpr, nmc_official, komef_official, cmcsvincent, wellness_gn, chosunich.official을 국내 메디컬 인접 계정으로 직접 확인했습니다. 경희의료원·국립중앙의료원·한국의료재단 검진센터·성빈센트병원·강남웰니스 검진센터·조선대학교병원의 공식 소개와 의료정보·건강검진 운영 신호를 확인했습니다.
+- 프로필만 확인한 배치이므로 콘텐츠 행은 추정해 추가하지 않았습니다. 여섯 계정의 게시물 링크는 후속 검토 큐에 남겼습니다.
+- 배치 후 계정 원장은 257개입니다. 국내 약사 120개·국내 메디컬 인접 106개·해외 약사 19개·해외 메디컬 인접 12개입니다.
+
+## 배치 125 — 2026-08-05 08:23
+
+- 공개 Instagram 프로필에서 eva.pharma, ipsforg, ashpofficial, healthcaredistrict, um_radyfhs, monadnockcommunityhospital을 해외 메디컬 인접 계정으로 직접 확인했습니다. 제약사·국제 약학교육·병원약학·지역보건·보건의료대학·지역병원 신호를 확인했습니다.
+- 프로필만 확인한 배치이므로 콘텐츠 행은 추정해 추가하지 않았습니다. 여섯 계정의 게시물 링크는 후속 검토 큐에 남겼습니다.
+- 배치 후 계정 원장은 263개입니다. 국내 약사 120개·국내 메디컬 인접 106개·해외 약사 19개·해외 메디컬 인접 18개입니다.
+
+## Native Google Sheets sync — 2026-08-05 08:25
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1sLDMxuh8CgYwGAKPRpDE7aWXhMereh7FtLiki5DQm2c/edit): native import, A1:Y264, 263 data rows, first o2yaksa, last monadnockcommunityhospital.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1amBeLu7cqZXetMvIoBJ_0GTR-dcT_4glMPgo8x12kQk/edit): native import, A1:AZ93, 92 data rows, first OYAK-DbVMg0nvMtU, last SALT-Dbasl3VTGLs.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1HSK8KRJyfCxrtjF8fr9GyJ4e8Q2kFM-pAkSMTg9EkXQ/edit): native import, A1:AD61, 60 data rows, first FMT-ITEM-ALTERNATIVE-001, last FMT-BURNOUT-RECOVERY-3STEP-001.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1ppGA3fiMUtOAFcVPqTVHp_p78kBuJad5zPRKY4nfA2U/edit): native import, A1:Q85, 84 data rows, first TOPIC-PHARMACY-ALTERNATIVE-001, last TOPIC-BURNOUT-SLEEP-RECOVERY-001.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했고, 기대 범위의 첫 행·마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 08:20
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1tV69nMMDzpYHSWrA00nf9QgA-ri32GmEKNbM8m4R3FY/edit): native import, A1:Y258, 257 data rows, first o2yaksa, last chosunich.official.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1NK5vk-YIOrWVfKln5g2HN61D2s9O3qlH2o2oH5YnEYs/edit): native import, A1:AZ93, 92 data rows, first OYAK-DbVMg0nvMtU, last SALT-Dbasl3VTGLs.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1SsEgJYnqlKnDI8qgqt4dc4udC7x_muqcAqRCryz0EAs/edit): native import, A1:AD61, 60 data rows, first FMT-ITEM-ALTERNATIVE-001, last FMT-BURNOUT-RECOVERY-3STEP-001.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1kXs4qhe8mn_aaXyVnQF0Qbga73UJkyo9lYbU-WxHYcY/edit): native import, A1:Q85, 84 data rows, first TOPIC-PHARMACY-ALTERNATIVE-001, last TOPIC-BURNOUT-SLEEP-RECOVERY-001.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했고, 기대 범위의 첫 행·마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 119 — 2026-08-05 07:33
+
+- E1 공개 Instagram에서 ok_hira, gwangju_bohun, doctorsnews2024를 직접 확인했습니다.
+- ok_hira는 건강보험심사평가원 공식 공공기관 계정으로 건강정보를 다루며 3.4만 팔로워·1,445개 게시물을 표시합니다.
+- gwangju_bohun은 보훈공단 광주보훈병원 공식 공공의료기관 계정으로 무료 1:1 건강상담을 안내하며 687명 팔로워·215개 게시물을 표시합니다.
+- doctorsnews2024는 대한의사협회가 만드는 근거중심 의학 전문 언론 계정으로 3,625명 팔로워·760개 게시물을 표시합니다.
+- 세 계정을 국내 메디컬 인접 계정으로 분류했습니다. 콘텐츠 게시물은 직접 검토하지 않았으므로 콘텐츠 행은 추가하지 않았습니다.
+- 계정 원장은 234개 행으로 증가했습니다. 국내 약사 120개·국내 인접 91개·해외 약사 18개·해외 인접 5개입니다.
+
+## 배치 120 — 2026-08-05 07:45
+
+- E1 공개 Instagram에서 accp, uwcschoolofpharmacy, pharmfluency, thedoseclub을 직접 확인했습니다.
+- ACCP는 American College of Clinical Pharmacy 공식 계정으로 임상약학 실무·연구·교육을 다룹니다.
+- UWC School of Pharmacy는 Research·Events·HealthAwareness·PGx 등 약학대학 하이라이트를 운영합니다.
+- PharmFluency는 foundation pharmacists와 pharmacy healthcare students 대상 임상약학 교육 계정입니다.
+- TheDoseClub은 Clinical Pharmacist 표기와 의약품 학습 소개를 가진 약사 크리에이터 계정입니다.
+- 네 계정을 해외 계정 원장에 추가했습니다. 콘텐츠 게시물은 직접 검토하지 않았으므로 콘텐츠 행은 추가하지 않았습니다.
+- 계정 원장은 238개 행으로 증가했습니다. 국내 약사 120개·국내 인접 91개·해외 약사 19개·해외 인접 8개입니다.
+
+## 배치 121 — 2026-08-05 07:51
+
+- E1 공개 Instagram에서 khis_insta, mohw_kr, k_health_promotion, gimhae_city를 직접 확인했습니다.
+- 한국보건의료정보원·보건복지부·한국건강증진개발원·김해시의 공식 공공기관 프로필과 건강정보·보건복지정책·지역 건강사업 신호를 확인했습니다.
+- 네 계정을 국내 메디컬 인접 계정으로 추가했습니다. 콘텐츠 게시물은 직접 검토하지 않았으므로 콘텐츠 행은 추가하지 않았습니다.
+- 계정 원장은 242개 행으로 증가했습니다. 국내 약사 120개·국내 인접 95개·해외 약사 19개·해외 인접 8개입니다.
+
+## 배치 122 — 2026-08-05 07:56
+
+- E1 공개 Instagram에서 ceimpactrx, unc_snpha, leidenmedicine, tamuhealth를 직접 확인했습니다.
+- CEImpact는 약사·약무기술자·학생 대상 Continuing Pharmacy Education을 운영합니다.
+- UNC SNPhA는 UNC Eshelman School of Pharmacy 학생단체 공식 계정입니다.
+- Leiden Medicine은 Leiden University Faculty of Medicine·LUMC 공식 계정이며 네덜란드 주소를 표시합니다.
+- Texas A&M Health는 미국 Texas 소재 보건의료교육 기관 공식 계정입니다.
+- 네 계정을 해외 메디컬 인접 계정으로 추가했습니다. 콘텐츠 게시물은 직접 검토하지 않았으므로 콘텐츠 행은 추가하지 않았습니다.
+- 계정 원장은 246개 행으로 증가했습니다. 국내 약사 120개·국내 인접 95개·해외 약사 19개·해외 인접 12개입니다.
+
+## Native Google Sheets sync — 2026-08-05 07:57
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1iu_Y6g4aAF2e8GxcydPkFU0DYrZtA4JKEzEmLH8dZHA/edit): A1:Y247, 246개 데이터 행, 첫 핸들 o2yaksa, 마지막 핸들 tamuhealth.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1CZyTwXsrd2G5vmGKe0OhbQtJEiMKcVd7gvULagtHN20/edit): A1:AZ93, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1mZHosL835JzhbQz-WjKzjLq8_Vd5UgcVPJHjGnrs8WM/edit): A1:AD61, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/18h9K-hVGVP1BJdpO7N20WG2tCbGZNakPk7nGEexGWn0/edit): A1:Q85, 84개 데이터 행.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+- raw/observations.jsonl, known_handles.txt, known_queries.txt, engine_yield.csv, logs/state.json을 07:56:01 체크포인트로 기록했습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:53
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1zf7PM_yj2Ls0USZ9q-0T1PrIVEWfhB8fhxTbAl849Vk/edit): A1:Y243, 242개 데이터 행, 첫 핸들 o2yaksa, 마지막 핸들 gimhae_city.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1U2rHAujEPvbhU3MLN5bJ8RHIuPemn7IqgUnYQwHxXZ0/edit): A1:AZ93, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1XHzkTs5MvUd-Ff3UvKD9jeXwtpTLsbJhdYo8lJtRfGM/edit): A1:AD61, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1ni5_UixnlZmZAP7kYKeqrRl4VRuHnf-Rd1TfVQRq8Jc/edit): A1:Q85, 84개 데이터 행.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+- raw/observations.jsonl, known_handles.txt, known_queries.txt, engine_yield.csv, logs/state.json을 07:51:09 체크포인트로 기록했습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:48
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1fGuev6nuJA2tmF01RAroU4_hdWbtZ6hQLU175dzJHGU/edit): A1:Y239, 238개 데이터 행, 첫 핸들 o2yaksa, 마지막 핸들 thedoseclub.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1yLlM8Rdr3iK3H1AXX1CsJQB7OshA5wHzDFjTAWqLnpc/edit): A1:AZ93, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1aV5X-8jsnLH5XaqkirPcgPZV3BBBatjkvxVcEIptqAs/edit): A1:AD61, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1F70eK-0gtCBKPzeQfB-AJGdkluB5DzAk4b5KmuoPFMI/edit): A1:Q85, 84개 데이터 행.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+- raw/observations.jsonl, known_handles.txt, known_queries.txt, engine_yield.csv, logs/state.json을 07:45:16 체크포인트로 기록했습니다.
+- raw/observations.jsonl, known_handles.txt, known_queries.txt, engine_yield.csv, logs/state.json을 같은 체크포인트로 append했습니다. 기존 XLSX와 duplicate 행은 보존했습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:39
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1Vgo92BcpqEJNRoWnKFAMBfTaZ7jmUW2ldc9Xs1gKQUo/edit): A1:Y235, 234개 데이터 행, 첫 핸들 o2yaksa, 마지막 핸들 doctorsnews2024.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Be0i6csgMCOiJz7ye-FBP-jcgt94DoGje63khiJOFRw/edit): A1:AZ93, 92개 데이터 행, 첫 ID OYAK-DbVMg0nvMtU, 마지막 ID SALT-Dbasl3VTGLs.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/17FvjpcpT4iuqqA3NBiANOlj0l59xM98tUAO4ExJXYIQ/edit): A1:AD61, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1riFtgI0UwvG2qw6QSEASgmGHkmT__7mEektPTP6FnCU/edit): A1:Q85, 84개 데이터 행.
+- 네 문서 모두 native MIME·ko_KR locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:29
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1ncO-2_9ddB0C7wrankWcS1WHO07jvyEFpGCUqB11X5s/edit): `A1:Y232`, 231개 데이터 행, 첫 핸들 `o2yaksa`, 마지막 핸들 `kpanews1968`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1zGCR7tUxwEirlMAQTyQauSdzcPM3kkmYiqQqNswDCXU/edit): `A1:AZ93`, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1wR1HTP2q-No6k7rbEWclunrXJlshTzAauAZXC0HNl0s/edit): `A1:AD61`, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1LnhqGxQpxwG2JjpRgg1bEFbbZwS8TPdB-26FHOpMgRw/edit): `A1:Q85`, 84개 데이터 행.
+- 네 문서 모두 native MIME·`ko_KR`·단일 탭입니다. 기존 Native 체크포인트와 Office XLSX는 보존했고 중복 행은 삭제하지 않았습니다.
+
+## 배치 118 — 국내 건강플랫폼·약사 미디어 계정 2개
+
+- `hubase_yakguk_official`: 휴베이스 공식 건강문화플랫폼. 약국·건강문화와 약사·건강 제품 하이라이트를 확인했습니다.
+- `kpanews1968`: 대한약사회 기관지 약사공론. 의약품·건강·약국 이야기와 공식 웹사이트 링크를 확인했습니다.
+- 2개 계정을 계정 원장·raw 관찰 로그·known ledger에 추가했습니다. 콘텐츠 행은 만들지 않았습니다.
+- 최신 Native Sheets는 계정 229개 상태입니다. 이번 2개 행은 다음 비파괴 import 대기열에 넣었습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:24
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1q8t2mMwu973WODK7eewZ2qtjZT_P68zlzuwIs62ZHSM/edit): `A1:Y230`, 229개 데이터 행, 첫 핸들 `o2yaksa`, 마지막 핸들 `pharmacyatqub`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1hsFLxZqRvoocxWJNz2sMTy5opX58FpmumM5Fxu4ye84/edit): `A1:AZ93`, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1y4qfc79RlYLhG8eYnNkD2AcKCMwwqiY4UIxeQLVzgjk/edit): `A1:AD61`, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1GfxJSgePf4gfBA8vAGdrV0DqqHLEcn_qQ97mq-MjcX0/edit): `A1:Q85`, 84개 데이터 행.
+- 네 문서 모두 native MIME·`ko_KR`·단일 탭입니다. 기존 Native 체크포인트와 Office XLSX는 보존했고 중복 행은 삭제하지 않았습니다.
+
+## 배치 117 — 해외 약사·약학 교육 계정 3개
+
+- `lawpharm`: 인증된 Pharmacist Thorrun·Health Lawyer. 건강 의사결정 콘텐츠와 영국 `.co.uk` 링크를 확인했습니다.
+- `nathan.wu`: Doctor of Pharmacy·Toronto 소개와 공부·생산성·웰니스 포지셔닝을 확인했습니다.
+- `pharmacyatqub`: Queen’s University Belfast 약학대학 공식 계정. Future Medicines 약학·바이오테크 진로 행사를 확인했습니다.
+- 3개 계정을 계정 원장·raw 관찰 로그·known ledger에 추가했습니다. 콘텐츠 행은 만들지 않았습니다.
+- 최신 Native Sheets는 계정 226개 상태입니다. 이번 3개 행은 다음 비파괴 import 대기열에 넣었습니다.
+
+## Native Google Sheets sync — 2026-08-05 07:18
+
+- 최신 CSV 4개를 새 Native Google Sheets로 import하고 메타데이터와 경계 셀을 확인했습니다.
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1wrL5bBD6P9aKe46RHWkiM5khcXYq3lkNCKAy6KhCHUM/edit): `A1:Y227`, 226개 데이터 행, 첫 핸들 `o2yaksa`, 마지막 핸들 `yakmanager_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1QrMFobK_UXEJyh-bnVfLMTHElGPIPLK3ZCU_i6lqdX8/edit): `A1:AZ93`, 92개 데이터 행.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/19nWHul8_BJ2X0euiOcJ9Es-26EGBnkw98RjYNmEExew/edit): `A1:AD61`, 60개 데이터 행.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/11eaiSK_oOESpQYInZX70LEJ2iGYod3JKoEkbmaAuDkU/edit): `A1:Q85`, 84개 데이터 행.
+- 네 문서 모두 native MIME·`ko_KR`·단일 탭입니다. 기존 Native 체크포인트와 Office XLSX는 보존했고 중복 행은 삭제하지 않았습니다.
+
+## 배치 116 — 국내 약국 인접 계정 3개
+
+- 공개 Instagram 프로필을 직접 확인해 `pharmplay_official`, `prief_official`, `yakmanager_official`을 국내 메디컬 인접 계정으로 append-only 추가했습니다.
+- 확인 근거: PharmPLAY의 캐나다 약사 플랫폼·Teach-back·Central Fill System 게시물, PRIEF의 약사 교육 플랫폼·신규약사 가이드·스터디 하이라이트, 약매니저의 계수 촬영·재고관리·마약류 점검부·의약품 주문 소개입니다.
+- 프로필만 검토했으므로 콘텐츠·포맷·주제 행은 추정하지 않았습니다. 시트 반영 대기 계정은 3개입니다.
+- 현재 CSV 누적: 계정 226개, 콘텐츠 92개, 포맷 60개, 주제 84개. 국내 약사 120개, 국내 인접 86개, 해외 약사 16개, 해외 인접 4개입니다.
+- Google Sheets는 07:02 체크포인트가 최신입니다. 이번 3개 행은 다음 비파괴 Native import에서 반영합니다. 기존 Native 체크포인트·Office XLSX·중복행 승인 이력을 보존했습니다.
+
+## 배치 105 — 탈모·피부 약사 계정
+
+- `gangnam_yaksa`를 국내 약사 인플루언서로 추가했습니다. 강남스퀘어약국 대표약사로서 임산부건강·동물약·탈모·다이어트·피부 상담을 소개하는 공개 프로필을 확인했습니다.
+- `malti_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 김근형 약사 계정으로, 인공눈물·구충제·피로회복·탈모·약물상담 콘텐츠를 확인했습니다.
+- 현재 누적은 계정 210개(국내 약사 112·국내 메디컬 인접 80·해외 약사 14·해외 메디컬 인접 4), 05:54 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 88개입니다.
+
+## 배치 106 — 피부 성분·피부장벽 약사 계정
+
+- `heung_di`를 국내 약사 인플루언서로 추가했습니다. 약사·대한약사회 KPA 수상·3040 피부 성분표와 루틴 분석을 공개 프로필에서 확인했습니다.
+- `ceci_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 18년차 약사 소개와 피부장벽 루틴·화장품 성분·약사 상담 콘텐츠를 확인했습니다.
+- 현재 누적은 계정 212개(국내 약사 114·국내 메디컬 인접 80·해외 약사 14·해외 메디컬 인접 4), 06:05 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 89개입니다.
+
+## 배치 107 — 해외 여성건강 약사 계정
+
+- `dralishareed`를 해외 약사 인플루언서로 추가했습니다. 인증된 `Pharmacist & Wellness Educator` 공개 프로필에서 40대 여성 건강 습관·심장건강·모성 웰니스·약사 관점 교육을 확인했습니다.
+- `fabulouspharmacist`는 건강 조언·도서·웰니스 사업 소개는 확인했지만 공개 프로필에서 약사 자격 신호가 직접 노출되지 않아 원장에 추가하지 않았습니다.
+- 현재 누적은 계정 213개(국내 약사 114·국내 메디컬 인접 80·해외 약사 15·해외 메디컬 인접 4), 06:12 Native Sheets 반영 이후 로컬 계정 1개입니다. 브라우저 검증 블록은 90개입니다.
+
+## 배치 108 — 피부 상담 약사·약국 계정
+
+- `youjin_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 서울대 약대·11년차 약사 프로필과 피부·여성건강·영양제·약국 약 정보 하이라이트를 확인했습니다.
+- `seokyoung.park1223`을 국내 메디컬 인접 계정으로 추가했습니다. 푸른나무약국 공식 프로필에서 약사 직접응대와 피부·다이어트·영양제·동물약 상담을 확인했습니다.
+- 현재 누적은 계정 215개(국내 약사 115·국내 메디컬 인접 81·해외 약사 15·해외 메디컬 인접 4), 06:17 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 91개입니다.
+
+## 배치 109 — 여성건강·임신준비 계정 재확인
+
+- `yak.filter`와 `pink_yak_`는 기존 원장 계정으로 재확인했습니다. 인증된 12년차 약사 프로필의 임신준비·출산·육아·아이 약·여성건강 하이라이트를 확인했지만 중복 행은 만들지 않았습니다.
+- 현재 누적은 계정 215개(국내 약사 115·국내 메디컬 인접 81·해외 약사 15·해외 메디컬 인접 4), 06:22 Native Sheets와 로컬 원장이 일치합니다. 브라우저 검증 블록은 92개입니다.
+
+## 배치 110 — 혈당·다이어트 약사 계정
+
+- `bada_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 약사 검증 건강 루틴과 10년 현장 상담 경험, 혈당·염증·다이어트·아이건강 하이라이트를 확인했습니다.
+- `healthy.yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 약사 프로필에서 혈당 실험·건강 선택 기준·다이어트 레시피·성분 리뷰 하이라이트를 확인했습니다.
+- 현재 누적은 계정 217개(국내 약사 117·국내 메디컬 인접 81·해외 약사 15·해외 메디컬 인접 4), 06:22 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 93개입니다.
+
+## 배치 111 — 다이어트·저속노화 약사 계정
+
+- `yaksa_hwanghaeyeon_`을 국내 약사 인플루언서로 추가했습니다. 공개 프로필에서 30년 경력 약사·중앙대 약학과 전공과 다이어트·대사·혈압·신장건강 콘텐츠를 확인했습니다.
+- `manyjjju_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 공개 프로필에서 39년차 약사·다이어트·저속노화·제품 부작용·과대광고 판별 소개와 약·화장품·영양제 하이라이트를 확인했습니다.
+- 현재 누적은 계정 219개(국내 약사 119·국내 메디컬 인접 81·해외 약사 15·해외 메디컬 인접 4), 06:38 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 94개입니다.
+
+## 배치 112 — 뷰티·건강관리 약사 계정
+
+- `hi_kim_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 공개 프로필에서 18년차 약사 소개와 뷰티·건강관리·피부·영양제·약물안전 상담 및 월별 하이라이트를 확인했습니다.
+- 현재 누적은 계정 220개(국내 약사 120·국내 메디컬 인접 81·해외 약사 15·해외 메디컬 인접 4), 06:45 Native Sheets 반영 이후 로컬 계정 1개입니다. 브라우저 검증 블록은 95개입니다.
+
+## 배치 113 — 해외 약사 건강교육 계정
+
+- `healthwellnesspharmacist1`을 해외 약사 인플루언서로 추가했습니다. 공개 프로필에 Pharmacist·Educator·Health Expert·Therapeutic Drug Consultant를 명시한 것을 확인했습니다.
+- 국가 정보는 공개 프로필에서 확인되지 않아 `국가 미상`으로 유지했습니다. 현재 누적은 계정 221개(국내 약사 120·국내 메디컬 인접 81·해외 약사 16·해외 메디컬 인접 4), 06:51 Native Sheets 반영 이후 로컬 계정 1개입니다. 브라우저 검증 블록은 96개입니다.
+
+## 배치 115 — 국내 약국 공식·솔루션 계정
+
+- `inbodypharm`을 국내 메디컬 인접 계정으로 추가했습니다. 인바디 공식 약국 솔루션, 상담약국, 약사 대상 사업과 약국현장·약사학회·약사님 리얼후기 하이라이트를 확인했습니다.
+- `doremi.pharmacy.official`을 국내 메디컬 인접 계정으로 추가했습니다. 인증된 공식 프로필에서 Korean Pharmacy·Medicine·Wellness·K-beauty·외국인 방문과 약사추천 게시물을 확인했습니다.
+- 현재 누적은 계정 223개(국내 약사 120·국내 메디컬 인접 83·해외 약사 16·해외 메디컬 인접 4), 06:55 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 97개입니다.
+
+## Native Google Sheets sync — 2026-08-05 07:02
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/15G3uNmb2Q2MNVNBCKMV9TjvVavztzjSGaGnYUn5bhh4/edit): native import, `A1:Y224`, 223 data rows, first `o2yaksa`, last `doremi.pharmacy.official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1enhCHzsqmBWgfH48uh5h86ALIA5KRE0UtVr9hgbdHEw/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1sJsg1QbpYss2rSoZe4XF7ir6H6LZeSaFei73lqyE2jk/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/19_5LBYqJkkVX5IY6FBAKwbFcHvJSAFlK1V-eZsKOEKY/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고, duplicate row는 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:55
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1Za9FfTXiviJ753oc3WDL8Dm4TWNwTvSYdKQ5Q_Cjww8/edit): native import, `A1:Y222`, 221 data rows, first `o2yaksa`, last `healthwellnesspharmacist1`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/11khJITud_DGB_hUP5ZzrHqRYsKrlB0HrItDL0T1ygFc/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1kwPxY53hPUbI2anJlZ61C43Wv-Rb3sxMK6Ym6TD8O-0/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1ZywEIJZyZ9iT_ak_lKiJEckrNczljTjMd8hY0spRavQ/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고, duplicate row는 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:51
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1um5vk2FgWuYG_nZdiHNvBsr27b26Y_z8unhRUgx0MT4/edit): native import, `A1:Y221`, 220 data rows, first `o2yaksa`, last `hi_kim_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/18uN_d1lwhrDMm2SrHwFEghHJMk8QRNDNMHwLVenppR8/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1NFT7Lm79M6c6sp7u86RhJ3_yjVPb9mv5xBWSwe9jVDU/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1sN-1tzgmrDPYRjFpDMZXEbM3iFwcbxaDKKJUxUnLcJY/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고, duplicate row는 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:45
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/13SnmX0N9Z7is7nWbzvEs4afFBiC6eBxPyy4SMBWfVAY/edit): native import, `A1:Y220`, 219 data rows, first `o2yaksa`, last `manyjjju_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/12gNNhgDRgA_33S42A472gquZsaCCylNMnueasDxdkXw/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1xhX6Z3Ehlxrcw90gDBZwtkUb1sNKlTemM1OLU0-Bowk/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1YCpVrQNMt0QWAVDm3vu1kEAlTFyxHQXXuUF_4nUmr7Q/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고, duplicate row는 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:38
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/13gkeZ3PMmvPtYINFck7DJorEEYkxGEPfJnSmL9kR6n0/edit): native import, `A1:Y218`, 217 data rows, first `o2yaksa`, last `healthy.yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1-BG4PstiorhEb-96g4JjoZBiGbp-_4yQ3Zrz4mtYPzU/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1HPBFi2aqgvpdN5y0I5b5xauixvSO0w8Oz_Rj0d4TA6c/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1pU9XyqZQZdEjF2A7BLARlhancHyTjKc901-fh1sOAFk/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고, duplicate row는 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:22
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/17DSZxCXgZggL3qJm08E4tu6blZ53EnEV_xgrYT3OwNo/edit): native import, `A1:Y216`, 215 data rows, first `o2yaksa`, last `youjin_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1gFmfRQS31_Y9XJCoRrYP2AG3RZY1vOg_QrccbsXfZSQ/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1jvRRBTpMvbBcU9JP9aTH0YK10gz_vl9AhEOom3L9B2k/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1aI11G4uzJo91rV9djG95vztT_CfJiwoymLzRcevbfUs/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:17
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1lENzvGVUnGvBFD2yUrEGr1uvBK64kBPtEAmLfv-hpA4/edit): native import, `A1:Y214`, 213 data rows, first `o2yaksa`, last `dralishareed`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Slsakdce92PIzmy5s9DrCUAVm9GATI5NNMaW-adFS9g/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1kVOtfPH7_wJC1mNqVGrdjfdw3itbaJMlAORWRryFkh4/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1J0qx2Z1iKEI8mlGCi-X27KpBR-84XJ_zWXoeEkpe_mU/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:12
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1hDQGiJVxvgwIkvC7I8csHdmZnVszUNnhSUvy-bKrQ8M/edit): native import, `A1:Y213`, 212 data rows, first `o2yaksa`, last `ceci_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1uI_f3PHzRO4RZ9kLBaWaTHxLDOE0K1-Lx-cpcQ5607g/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1MzYkhC9l0XyU_99Tpyn6DLkds3xXR6tIly7fa5pHyuA/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1yoyaVKtMt7dUY59ApfTSsp0Kk-xktuqq9XIjcVu-n_U/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 06:05
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1tp4X_X8J-Nc4Ua0li22XjlGIVhBikqnP2bToCaC8skY/edit): native import, `A1:Y211`, 210 data rows, first `o2yaksa`, last `malti_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1P8xldh9UBRtWBaayYjaL18GLYTPzyZoDdpMtW7RrrD4/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1jN3ERVYZKtkozASF2zkPmD4roKOTwcLF0G-6I2E4Vw8/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1yC7a92YDf1c8iVR5Dy4PqNDgd3G22EBCfSWVtXv9XVg/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 100 — 피부·다이어트 약사 계정
+
+- `ewha_yaksa`를 국내 약사 인플루언서로 추가했습니다. 약사·건강·미용 소개와 피부미용·건강상담·다이어트 콘텐츠, 수원 망포 뷰티온의원 링크를 확인했습니다.
+- `yourhsis`를 국내 약사 인플루언서로 추가했습니다. 6년차 약사가 직접 확인한다는 공개 소개와 영양제·다이어트·피부 정보 및 1:1 상담 링크를 확인했습니다.
+- 현재 누적은 계정 204개(국내 약사 109·국내 메디컬 인접 77·해외 약사 14·해외 메디컬 인접 4), 05:34 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 83개입니다.
+
+## 배치 101 — 여성건강 후보 제외 기록
+
+- `mi_in_s`는 임신·협찬 중심 일반 릴스 크리에이터 계정으로 확인해 약사 원장에 추가하지 않았습니다. 공개 프로필에서 약사 자격 신호를 확인하지 못했습니다.
+- `yeogi_yaksa`, `pink_yak_`, `eunha__yak`, `ddib_yaksa` 등 검색 결과의 여성건강 약사 계정은 기존 원장과 중복이어서 새 행을 만들지 않았습니다.
+- 현재 누적은 계정 204개(국내 약사 109·국내 메디컬 인접 77·해외 약사 14·해외 메디컬 인접 4)이며, 브라우저 검증 블록은 84개입니다.
+
+## 배치 102 — 수면·약국 상담 계정
+
+- `3paranmoon`을 국내 메디컬 인접 계정으로 추가했습니다. 용산 3층파란문약국의 일반의약품·수면·소화·진통제 안내 콘텐츠를 확인했으며 개인 약사 계정으로 세지 않았습니다.
+- `kmom_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 12년차 약사 김일하 계정으로, 온가족 영양제 선택 기준과 약국 수면템 콘텐츠를 확인했습니다.
+- `sherrylimc`는 일반 릴스·광고 크리에이터라 약사 계정으로 추가하지 않았습니다.
+- 현재 누적은 계정 206개(국내 약사 110·국내 메디컬 인접 78·해외 약사 14·해외 메디컬 인접 4), 05:39 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 85개입니다.
+
+## 배치 103 — 의료뉴스·건강검진센터 계정
+
+- `medical_newsroom`을 국내 메디컬 인접 계정으로 추가했습니다. 인증된 의료·건강 카테고리에서 건강·의학 최신 트렌드·의학뉴스·건강제품·건강상식 콘텐츠를 운영하는 미디어 계정입니다.
+- `jsr032_`를 국내 메디컬 인접 계정으로 추가했습니다. 인천 남동구 소화기내과·건강검진센터로, 내시경 준비·5대암검진·건강정보 콘텐츠를 확인했습니다.
+- 현재 누적은 계정 208개(국내 약사 110·국내 메디컬 인접 80·해외 약사 14·해외 메디컬 인접 4), 05:48 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 86개입니다.
+
+## 배치 104 — 어린이 영양·가족건강 zero-yield
+
+- 어린이 영양·가족건강 검색 결과의 약사 계정은 기존 원장과 모두 중복이어서 새 행을 만들지 않았습니다.
+- 현재 누적은 계정 208개(국내 약사 110·국내 메디컬 인접 80·해외 약사 14·해외 메디컬 인접 4)이며, 브라우저 검증 블록은 87개입니다.
+
+## Native Google Sheets sync — 2026-08-05 05:54
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/19WVv8U6dqTezCriOoMR3S9HSo3iYTx5twkGnJP9DakI/edit): native import, `A1:Y209`, 208 data rows, first `o2yaksa`, last `jsr032_`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1QSo4iRJNDEJjfiiiWpf-HlTw93VxafbN0_05oH_bTw8/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1itf9r9GWpHUltYP6pIguCliZjRslXCGG9fJczU-HozQ/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1ld4429UvO_VqidzDfYq3CERDgzsevDg1Lrqd8vm-jLs/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 05:48
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1jlmZpibIo3fpNdvT-vrOrY6nTt2-n-A5A8K-DCC06Og/edit): native import, `A1:Y207`, 206 data rows, first `o2yaksa`, last `kmom_yaksa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1LKxI1Wpjg5QkXjpjpzg93gzOCLwEfbRUGzkm5VAl5xs/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1t_wopLdbiU1yJTuQPzL9VmVvncwjk8VIpnIo3ZihGDk/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1DkGm8C-lbKSs8Vpd3-Yy8HCbVzQd2eDcBqZrB5DKfxE/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 05:39
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1zSc0h3WrnIGv1ZcEJ7GrDQLmREVLen91Dxu5zpa5iEA/edit): native import, `A1:Y205`, 204 data rows, first `o2yaksa`, last `yourhsis`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1yamjwZtKDfOMT4fasAzSgA3gzO8xiUuuFQCFWAfE7b8/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1Y5M98NJkIQi-FtTfYTZieNj_FF1UbmI7P667idf81J8/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1Fw0v2LAnXFHrGWVDY6NMTCczhBbrWn6fhcLISDsYGcA/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 99 — 혈당·대사 약사 계정
+
+- `ggultip_yaksa`를 국내 약사 인플루언서로 추가했습니다. 인증된 18년차 약사 하정봉 계정으로, 혈당·혈압·고지혈증·대사성 여성질환과 연속혈당측정기 콘텐츠를 확인했습니다. 공구·맞춤 상담 링크는 콘텐츠별 광고 판정 대상으로 남겼습니다.
+- `yaksa_mh`를 국내 약사 인플루언서로 추가했습니다. 인증된 최명훈 약사 계정으로, 당뇨약·혈당 영양제·비타민D·오메가3·수면 제품 콘텐츠와 공구 링크를 확인했습니다.
+- 현재 누적은 계정 202개(국내 약사 107·국내 메디컬 인접 77·해외 약사 14·해외 메디컬 인접 4), 05:27 Native Sheets 반영 이후 로컬 계정 2개입니다. 브라우저 검증 블록은 82개입니다.
+
+## Native Google Sheets sync — 2026-08-05 05:34
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/16_FYyK5EAP5P-EWZ8dpTWRvClyatcOOq51wgLheTVA4/edit): native import, `A1:Y203`, 202 data rows, first `o2yaksa`, last `yaksa_mh`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1eHbhNLsAtCGsJjD_AF-Vbd78qRiWdBw_JaSDmcrd-FU/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1CNM1vFBnz-hDiz6jJsw0_RVnhOqCU8ygwDzQrjeUMgM/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1HwD29S8ytw5ZEZAJIBLn9uUrPyBXiMusXIbUeNFDHw4/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 08:08
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/18F2mvsVWsnbyrCoMmPn4TqP65ke0pBSWghmSH11QqcY/edit): native import, `A1:Y252`, 251 data rows, first `o2yaksa`, last `gangdong_kyunghee`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1uPxa76gSUBuYh_VITPDpNrIm4F18aMXY-nJBst638H0/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1fvSUKbinlpIGzSVGaXf2OhXdW_iohjPw9Qb1PtIouCQ/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1y36-KrZM5tF1D1imRWQTqLPryPaLoJyVlH-xZdrAaxc/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+
+## 배치 126 — 해외 약학·의과대학 공식 계정
+
+- `ucpharmacy`, `uncpharmacy`, `uclsopsu`, `fmhs_uoa`를 해외 메디컬 인접 계정으로 추가했습니다. 약학대학 공식 계정 2개, UCL 약학대학생회 1개, University of Auckland 의과·보건의료대학 공식 계정 1개를 공개 Instagram 프로필에서 직접 확인했습니다.
+- `witusyd`는 일반 Women in Tech 학생단체, `monashmalaysia`는 일반 대학 공식 계정으로 확인되어 의료 계정 원장에 넣지 않았습니다. 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 267개(국내 약사 120·국내 메디컬 인접 106·해외 약사 19·해외 메디컬 인접 22)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 08:35
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/14C4obH-tUaXzap7w0tHSj4yL3uGkdjqllWXiMtObhZQ/edit): native import, `A1:Y268`, 267 data rows, first `o2yaksa`, last `fmhs_uoa`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/183KsGXfIZ4ebawNgGuWVSBf8eiODGAmgE-fnKDElMws/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/19TydNzREuXT4qpes7jKXtAk9l06OryPUxNUd2wzEF0s/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1PSGv9VwQ06T-nt8wdGFx1Dl9sx5YGNxTcFcH24ILwt0/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 기대 범위의 첫 행·마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint와 Office XLSX는 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 127 — 국내 대학병원 공식 계정
+
+- `cauhospital`, `kumedicine_official`, `ajoumc_`, `cnuh_official`을 국내 메디컬 인접 계정으로 추가했습니다. 중앙대학교의료원·고려대학교병원·아주대학교병원·전남대학교병원 공식 Instagram 프로필에서 병원 소개와 건강정보·병원소식 공개 신호를 직접 확인했습니다.
+- `cnuh_01`, `kuansanhospital`은 직접 확인 스냅샷을 보존하지 않아 추가하지 않았습니다. 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 271개(국내 약사 120·국내 메디컬 인접 110·해외 약사 19·해외 메디컬 인접 22)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 08:45
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/19-ETvhEDLul3s8cnKVqSn-VPi8cImZwmmn9EhG6s0lM/edit): native import, `A1:Y272`, 271 data rows, first `o2yaksa`, last `cnuh_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1hMkhm2tKYsvify2Nm2vJNturHBHdpm_kXfE8fXXcdfg/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1L0tgQhb18XlyD_gcve1vC1gBzkp2I3DyFsHtIPEQOQQ/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1Spxo3voNS480zhZzbDtJxlCo0NzJcnJFS-660jt01xM/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 기대 범위의 첫 행·마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 원본 XLSX 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+
+## 배치 128 — 국내 병원·의료원 공식 계정
+
+- `dongsan_1899`, `kyuh.ac.kr`, `humc_health`, `kangnam_humc`를 국내 메디컬 인접 계정으로 추가했습니다. 계명대학교 동산병원·건양대학교병원·한림대의료원·한림대학교강남성심병원 공식 Instagram 프로필에서 병원 소개, 건강강좌, 의료연구, 병원소식 신호를 직접 확인했습니다.
+- 게시물 콘텐츠는 추정하지 않았습니다. 프로필에 보인 게시물 신호는 계정 분류 근거로만 기록했습니다.
+- 누적 계정은 275개(국내 약사 120·국내 메디컬 인접 114·해외 약사 19·해외 메디컬 인접 22)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 08:54
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1NVylh4XBT7KhT6ausiBUix5E2LXeGjXIFCk34pZgAMg/edit): native import, `A1:Y276`, 275 data rows, first `o2yaksa`, last `kangnam_humc`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1BFsSE4LVyQZNLevNxqk8C8NYAYnNN3B6XKdkGJwHG4Q/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1r5rhIG5NJpMDC__CgeUyso91Ogopfg4KLT7AqoxYiq4/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1K8dY9TY6CKpkbf5OqY3EXJb6wVZXlPdA4q0DiN7QF98/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 기대 범위의 첫 행·마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 원본 XLSX 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+## 배치 129 — 국내 병원·공공 의료서비스 공식 계정
+
+- `sam_hospital`, `hello_health_pr`, `medicalkoreaofficial`, `anamhospital`을 국내 메디컬 인접 계정으로 추가했습니다. 효산의료재단 샘병원·국민건강보험 일산병원·Medical Korea·고려대학교 안암병원 공식 공개 프로필에서 병원·건강정보·의료서비스 홍보 신호를 직접 확인했습니다.
+- `snuh_official`, `kumedicine_guro`는 검색 결과에서 다시 확인했지만 기존 원장에 있어 중복 추가하지 않았습니다. 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 279개(국내 약사 120·국내 메디컬 인접 118·해외 약사 19·해외 메디컬 인접 22)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:07
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1Vb-GNhScpHqyHlNqmazVNY7pk8OLhy-2hfgI0_uOt4A/edit): native import, `A1:Y280`, 279 data rows, first `o2yaksa`, last `anamhospital`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1fxPEdz1TDsE43m0PNDQpVmq_K9y8geqcSHCh2hNJwzc/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1HcUYW9In06hzl9phBaRDD3vuQJMKLuRbDfz0M6F2PjI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1tyn6YMTmdFwMzaUnUs_VvGK6oacbp5eRz7ce9ox7fvg/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A277:Y280`과 각 원장의 마지막 행을 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_090520` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 130 — 국내 대학병원 공식 계정
+
+- `cnuh_01`, `kuansanhospital`, `snubh_official`을 국내 메디컬 인접 계정으로 추가했습니다. 충남대학교병원·고려대학교 안산병원·분당서울대학교병원 공식 Instagram 프로필에서 공식 소개, 병원 주소·공식 링크, 의학정보·건강정보 신호를 직접 확인했습니다.
+- 검색 결과의 `prhanyang`, `gangdong_kyunghee`는 기존 원장 중복으로 추가하지 않았습니다. 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 282개(국내 약사 120·국내 메디컬 인접 121·해외 약사 19·해외 메디컬 인접 22)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:17
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1g3KNaKXfG4sOOT28qU493vhCp0ZFX8U066zvB5Ms3As/edit): native import, `A1:Y283`, 282 data rows, first `o2yaksa`, last `snubh_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1CtX7nijDkEuht-n6Dau4Ub76sj6XMTjA_Ri19dyTuPM/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/147iXC6-ePPEBezy-FMH4INpmokJi8_TOZN-f9q3sEqg/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1QNN2aIAz9qQ7LQ1uEFo-CdLZIrdkQSOE6CER4xzed3I/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 로컬 XLSX 범위와 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_091647` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 131 — 해외 약학대학 공식 계정
+
+- `duquesnepharm`, `monashpharm`, `livunipharmacy`, `uwmadisonpharmacy`, `ucsfpharmacy`, `taylorssop`을 해외 메디컬 인접 계정으로 추가했습니다. 미국·호주·영국·말레이시아 약학대학 공식 Instagram 프로필에서 약학교육, PharmD·MPharm, 약학·의약과학 소개와 공식 링크를 직접 확인했습니다.
+- `teessideuni`는 일반 대학 공식 계정으로 확인되어 약학·의료 전용 계정 근거가 부족해 제외했습니다. 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 288개(국내 약사 120·국내 메디컬 인접 121·해외 약사 19·해외 메디컬 인접 28)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:28
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1VT45Nl03Yk0Y6lXwvM-uw3y-260JGNHaTN41l_4nR-M/edit): native import, `A1:Y289`, 288 data rows, first `o2yaksa`, last `taylorssop`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1cWJnAMZgiVhx3olHgWRCLJS1DlErs6C42YYlqLKCCQU/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1y-TQNlRF1GBDtnMv8cx6W8b6dHLsKKZ5ghsXLREBrM8/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1F9lgKeAXmMcuJ1T21-GlyWkde23znf5p-NIxpX2tV0A/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 로컬 XLSX 범위와 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_092614` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 132 — 해외 약학·보건 교육 공식 계정
+
+- `mgm_pharmacy`, `larkinuniversity`, `unm_pharmacy`, `rfupharmacy`, `masaryk_pharmacy`를 해외 메디컬 인접 계정으로 추가했습니다. 인도·미국·말레이시아·체코 약학·보건 교육기관 공식 Instagram 프로필에서 약학교육, PharmD·MPharm, Biomedical Sciences·Pharmaceutical studies 소개와 공식 링크를 직접 확인했습니다.
+- 게시물 콘텐츠는 추정하지 않았습니다.
+- 누적 계정은 293개(국내 약사 120·국내 메디컬 인접 121·해외 약사 19·해외 메디컬 인접 33)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:33
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1I91MAzn20vKsIqPCf6PJWoY8r4ZZPJAi7L2U_orKcR8/edit): native import, `A1:Y294`, 293 data rows, first `o2yaksa`, last `masaryk_pharmacy`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1gEMf7iIwaW8CFUeXjdiUEUdhUG4207u5_1rxMT9t8_Q/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1Ugf--pk4iMDmg3_gSJBu7UShkATDu1HIyVwSEAAq8GE/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1e_mNr2MBYF940Sy3tZzIDrwE4bSG6D1TYskovPGr3Rw/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 로컬 XLSX 범위와 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_093157` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 133 — 해외 약학대학 공식 계정
+
+- `cph_qu`, `_college_of_pharmacy_`, `college.of.pharmacy.aau`, `tucapharmacy`, `gawande_college_of_pharmacy`, `mbku_pharmadmissions`, `uod_college_of_pharmacy`를 해외 메디컬 인접 계정으로 추가했습니다. 카타르·이라크·요르단·미국·인도 약학대학 공식 Instagram 프로필에서 약학교육, Pharmacy 과정, 입학·보건의료 교육 신호와 공식 링크를 직접 확인했습니다.
+- 누적 계정은 300개(국내 약사 120·국내 메디컬 인접 121·해외 약사 19·해외 메디컬 인접 40)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:41
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1Uqg8-TK72cqtzpfCacBwa0Nm5aFk0EQMCBJmWWzIXGY/edit): native import, `A1:Y302`, 301 data rows, first `o2yaksa`, last `lbscp0239`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1ugMxu2nhQehFuSrDpH5pGv4QQErzzPpjG0Q9_AY-B18/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/10oqevRB3e_0hTqNFfBlQxhr1RgaTpf5KeW3dEiUgBFI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1zInLaXBjOgx0C6uJCtqjZSHBpq-wQp_V0G93z-HSUV0/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 로컬 XLSX 범위와 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_094048` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 147 — 재활의학과·재활병원 공식 계정
+
+- `seoulteamdoctor`, `rehart_official`, `cnchospital`을 국내 메디컬 인접 계정으로 추가했습니다. 공개 Instagram 프로필에서 재활의학과·정형외과 진료, 재활병원·물리치료사 콘텐츠, 뇌졸중·뇌성마비 진료 신호와 공식 링크를 직접 확인했습니다.
+- `seoulteamdoctor`는 팔로워 809명·게시물 236개, `rehart_official`은 팔로워 1,452명·게시물 513개, `cnchospital`은 팔로워 444명·게시물 294개로 기록했습니다. 확인하지 않은 게시물 수치나 콘텐츠 내용은 추정하지 않았습니다.
+- 누적 계정은 329개(국내 약사 120·국내 메디컬 인접 149·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 11:41
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1WcrajUxy0YlSAsQk-IR71vkgZZWfdnBMLzk7rshm1D0/edit): native import, `A1:Y330`, 329 data rows, first `o2yaksa`, last `cnchospital`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1TdlFlpimxXEurDUOkv1Bp3JeLh6m2LuKYIS_jnDDB5Y/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1TtNKfZDOBumbAgvdceZWnJu-_NtPkMnrNUZfYW0wb90/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1cg-_H39V8pZBbZpyNV86xAVJWTydi1Qx53CgQYPbPQs/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 11:41 파일이 남아 있지 않습니다.
+
+## 배치 146 — 병원·건강증진센터 공식 계정
+
+- `amc_seoul_health`, `wiltse_suwon`을 국내 메디컬 인접 계정으로 추가했습니다. 서울아산병원 건강증진센터와 윌스기념병원 공개 Instagram 프로필에서 공식 병원명·건강검진·응급의료·생활 건강정보·공식 링크 신호를 직접 확인했습니다.
+- `amc_seoul_health`는 팔로워 399명·게시물 87개, `wiltse_suwon`은 팔로워 83명·게시물 177개로 기록했습니다. 게시물의 공개 건강정보 신호만 확인하고 콘텐츠 원장 행은 추정하지 않았습니다.
+- 누적 계정은 326개(국내 약사 120·국내 메디컬 인접 146·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 11:15
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1DavoVI419yy_sgcCT-qF5DVa4xLhZDn4qJtqn76cNYs/edit): native import, `A1:Y327`, 326 data rows, first `o2yaksa`, last `wiltse_suwon`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/10SAp7LAbn3uHMwyDzb2R6hYC6Zl8BsuZXCyK-W8-WkQ/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1y90j47y0SgqpLGKjqJVBodVgIccXaHpadAY7WubOp3s/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1Jnys1yEgtC3jIcyGQQ3dxKNfeAQkVr5BWhlLvZx0L2g/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 11:15 파일이 남아 있지 않습니다.
+
+## 배치 145 — 건강검진센터 공식 계정
+
+- `hanshinmedipia`를 국내 메디컬 인접 계정으로 추가하고 `komef_official` 기존 계정을 재확인했습니다. 한신메디피아와 한국의료재단 IFC 종합검진센터 공개 프로필에서 건강검진·MRI·공식 예약 링크·공개 하이라이트 신호를 직접 확인했습니다.
+- `hanshinmedipia`는 팔로워 5,937명·게시물 305개를 기록했고, `komef_official`은 기존 원장을 유지했습니다. 확인하지 않은 콘텐츠 수치나 내용을 새 콘텐츠 행으로 추정하지 않았습니다.
+- 누적 계정은 324개(국내 약사 120·국내 메디컬 인접 144·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 11:06
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1i2za97LUrlgaLmEj8EgP5wwOeYuxPeftfJXQa7qpX8s/edit): native import, `A1:Y325`, 324 data rows, first `o2yaksa`, last `hanshinmedipia`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1jsIFkI3eJJXO9W7M8L-j_QD0LyzzzqmPyKa30WeLXQg/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1aq2hbeFNEGuTid7TLvU_HWVucjo2pWeXahHee7ab4GI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1JqfuxmN1tuEfWdR0NYeY7zoOr-4Rh0LgcKvJfd9fusAA/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 11:06 파일이 남아 있지 않습니다. 앞으로도 생성 직후 같은 폴더로 이동합니다.
+
+## 배치 143 — 국내 제약·헬스케어 공식 계정
+
+- `jwtalk_official`, `hanwhapharm_official`를 국내 메디컬 인접 계정으로 추가했습니다. JW 공식 Instagram과 한화제약 공식 Instagram 공개 프로필에서 헬스케어·건강정보·제약 공식 계정 신호를 직접 확인했습니다.
+- 공식 계정 문구·건강 정보·헬스피디아·건강 관련 공개 하이라이트 등 프로필에 표시된 정보만 기록했고, 게시물 수가 보이지 않아 추정하지 않았습니다.
+- 누적 계정은 323개(국내 약사 120·국내 메디컬 인접 143·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:49
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1SLNWNFFB9Dilbx2wJqmTy2e4qR8mtieFhq4kkgcoy9E/edit): native import, `A1:Y324`, 323 data rows, first `o2yaksa`, last `hanwhapharm_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1jPYvwsBJe6oKBSj0kVXJ3vfWgmnKo23IUx2FSxmrJF0/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1P_XtrnNvbMDu0SKDwz0z-iKNH7VTbFHbDlyqKihLmA8/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/13tmAEZ3qeqnZbcTQx4S2mOC7RoDozmzRta77LHQL9HI/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A321:Y324` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_104939` 백업을 보존했으며 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 137 — 국내 종합병원·병원 네트워크 공식 계정
+
+- `himchanhospital`, `urispine`, `dreamhosp`, `goodhospitals`를 국내 메디컬 인접 계정으로 추가했습니다. 힘찬병원·서울우리병원·드림종합병원·은성의료재단 좋은병원들 공식 Instagram 공개 프로필에서 공식 계정 문구와 병원·의료·건강정보 신호를 직접 확인했습니다.
+- 퇴행성 무릎 관절염·척추 관절 진료·건강증진센터·환자 중심 의료서비스 등 공개 프로필에 표시된 신호만 기록했고, 확인하지 않은 게시물 수치나 내용을 추정하지 않았습니다.
+- 누적 계정은 313개(국내 약사 120·국내 메디컬 인접 133·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:13
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1YzNAu9uR1HdmBiB2fs93Il1UVdZYy3ObURsEAc8oCVI/edit): native import, `A1:Y314`, 313 data rows, first `o2yaksa`, last `goodhospitals`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/18t-PLI6pKTSJgsn7er9oFdH1WHeG0g1gIFvCECCMoks/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/11il3V944-8cH-jTPMYyERPJDuzeu_9bNWqrb56qb22M/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/18_na5Y434l5e3-KhiUyFxIpOuxM5zlQuG3Q550mrsQU/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A311:Y314` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_101035` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 138 — 국내 치과·치과병원 공식 계정
+
+- `ud_dental`, `minish_dental.hospital`, `segyero_dental`, `baro2dc`를 국내 메디컬 인접 계정으로 추가했습니다. 유디치과·미니쉬치과병원·세계로치과병원·바로이치과 공식 Instagram 공개 프로필에서 공식 계정 문구와 치과 진료·구강건강 신호를 직접 확인했습니다.
+- 공식 웹사이트·병원 링크·진료안내·의료진·임플란트·라미네이트·치아복구 등 공개 프로필에 표시된 신호만 기록했습니다. 프로필에 게시물 수가 보이지 않은 계정의 게시물 수는 추정하지 않았습니다.
+- 누적 계정은 317개(국내 약사 120·국내 메디컬 인접 137·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:29
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1y-bKPp8lmframm3lrhGUimfB66fzssdt2Dp2yMEEPnc/edit): native import, `A1:Y318`, 317 data rows, first `o2yaksa`, last `baro2dc`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1tkmQ3yBIDvJLEr3ZpRRBbWDMVH8rZsATgcDKLP0D1gY/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1wNKakeVto1NbljO3S1LUwxQUY47RNVwAJVlfNywCkyU/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1gruwaTYIPP-pTeLEGp-k5Du3dKjw92oQYE3jl3eJkhw/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A311:Y318` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 새 계정 4행의 메모는 CSV 기준값으로 맞춘 뒤 확인했고, 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_102839` 백업을 보존했으며 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 141 — 국내 약국·지역건강 공식 계정
+
+- `yoshanchuen`, `korea_pharmacy`를 국내 메디컬 인접 계정으로 추가했습니다. 행신 코리아약국 운영 계정과 코리아약국 공식 Instagram 공개 프로필에서 약국 정체성·지역건강·건강정보 신호를 직접 확인했습니다.
+- 두 계정 모두 공개 프로필에 약사 자격 문구가 없어 국내 약사 인플루언서로 과분류하지 않았습니다. `alpaca_yaksa`, `ddib_yaksa`, `bodoc_official`, `pharmacist_bin`은 기존 원장 계정으로 확인해 중복 추가하지 않았습니다.
+- 누적 계정은 319개(국내 약사 120·국내 메디컬 인접 139·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:39
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1QpWU5vDHL-smraWQAreTSw3F0Ch14qqavfCBb2QuvAs/edit): native import, `A1:Y320`, 319 data rows, first `o2yaksa`, last `korea_pharmacy`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Iz9x_iHCJF50vnS2n2hfP2ZyItteHjqeuswi5R_akBg/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1I0n61ywAPYc8U1SCLrEI6gx5ZnJdoM69zrdUV6VCCLI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1UI1E9DjPnbFx5aJv8E6H4Y_MhVIJOL_XqcHTa7XQBo4/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A315:Y320` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_103813` 백업을 보존했으며 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 142 — 국내 의료기기·보건산업 공식 계정
+
+- `nids_korea`, `hello_khidi`를 국내 메디컬 인접 계정으로 추가했습니다. 한국의료기기안전정보원과 한국보건산업진흥원 공식 Instagram 공개 프로필에서 의료기기 안전·환자안전·바이오헬스·공공건강 신호를 직접 확인했습니다.
+- 공식 홈페이지·Linktree·NIDS NEWS·NIDS PICK·보건산업 소개 문구 등 공개 프로필에 표시된 정보만 기록했고, 계정의 게시물 수는 보이지 않아 추정하지 않았습니다.
+- 누적 계정은 321개(국내 약사 120·국내 메디컬 인접 141·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:43
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1DzZD67Ptcz8A9s_z_B0vwbhaOqg48Mi73m7BteDpJ0c/edit): native import, `A1:Y322`, 321 data rows, first `o2yaksa`, last `hello_khidi`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1W1leeUiRnFlGHp4Or0q3lCYAYOEGDskEbS9uF99WvFQ/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1lHktkWMU0XaKbfwfTnkqZK_ZBAM8pDy13b7kVkoZkCM/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1IHuqOUDAb1SMPxgn52MkA_Z-pv5_s2QOlNsc3UUECv8/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A319:Y322` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_104357` 백업을 보존했으며 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 135 — 국내 지방정부 공공건강 계정
+
+- `usbukgu`, `yesan_gun`, `donghae.city`, `haeundae_official`을 국내 메디컬 인접 계정으로 추가했습니다. 울산북구·예산군·동해시·해운대구 공식 Instagram 공개 프로필에서 공식 계정 문구와 지방정부·공공건강 정보 신호를 직접 확인했습니다.
+- 게시물 콘텐츠는 검색 결과와 공개 프로필에서 확인된 건강정보 신호만 기록했고, 확인하지 않은 게시물 수치나 내용을 추정하지 않았습니다.
+- 누적 계정은 305개(국내 약사 120·국내 메디컬 인접 125·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:56
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1B6LPxDjLQm-40Dybht3xSg2PVWXTyue865G4XOm28iA/edit): native import, `A1:Y306`, 305 data rows, first `o2yaksa`, last `haeundae_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1zupkYjbmhZG6dsv0E9mK112NNH4jG4vphKLQW-Sc6mE/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/195pfOdjHRCDR6WYZl0pCqoUOZb6gcqFFKqKFL86tlpI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1SEuXi8qGPNR5zp38bYCHU6ubZxvSlF2fzOunZurDbbw/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A303:Y306` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_095400` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 136 — 국내 대학병원·의료원 공식 계정
+
+- `wkuh_org`, `ulsan_uuh`, `eumc_in`, `csuh_official`을 국내 메디컬 인접 계정으로 추가했습니다. 원광대학교병원·울산대학교병원·이화여자대학교 의료원·조선대학교병원 공식 Instagram 공개 프로필에서 공식 계정 문구와 병원·건강정보 신호를 직접 확인했습니다.
+- 뇌졸중 예방법·잠복 결핵·건강한 변화·가족 여행 건강수칙 등 공개 프로필에 표시된 신호만 기록했고, 확인하지 않은 게시물 수치나 내용을 추정하지 않았습니다.
+- 누적 계정은 309개(국내 약사 120·국내 메디컬 인접 129·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 10:05
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1FBFVmrcg4v5WOIapeXZ8p5mOIc2UqHYI_fVBsL6Iu6A/edit): native import, `A1:Y310`, 309 data rows, first `o2yaksa`, last `csuh_official`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/12u_19Xwlhi1kCyV3p_pBYHRoA2WdhPbfpTJ3EyFdLW8/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1IUTM-0vTcOIc9ajHJzNV2LtjUqryF0tvZS9DEjYbDbU/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1vvNP7JcjJoM4X0NZbbqsAgUCjwkG51nt3s6MA0aNJBY/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 계정 `A307:Y310` 및 각 원장의 마지막 범위를 읽어 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_100357` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+
+## 배치 134 — 해외 약학부 공식 계정
+
+- `lbscp0239`를 해외 메디컬 인접 계정으로 추가했습니다. 인도 약학부 공식 Instagram 프로필에서 Pharmacy Department 소개, 공식 웹사이트 링크, 입학 하이라이트를 직접 확인했습니다.
+- 누적 계정은 301개(국내 약사 120·국내 메디컬 인접 121·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 09:41
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1Uqg8-TK72cqtzpfCacBwa0Nm5aFk0EQMCBJmWWzIXGY/edit): native import, `A1:Y302`, 301 data rows, first `o2yaksa`, last `lbscp0239`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1ugMxu2nhQehFuSrDpH5pGv4QQErzzPpjG0Q9_AY-B18/edit): native import, `A1:AZ93`, 92 data rows, first `OYAK-DbVMg0nvMtU`, last `SALT-Dbasl3VTGLs`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/10oqevRB3e_0hTqNFfBlQxhr1RgaTpf5KeW3dEiUgBFI/edit): native import, `A1:AD61`, 60 data rows, first `FMT-ITEM-ALTERNATIVE-001`, last `FMT-BURNOUT-RECOVERY-3STEP-001`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1zInLaXBjOgx0C6uJCtqjZSHBpq-wQp_V0G93z-HSUV0/edit): native import, `A1:Q85`, 84 data rows, first `TOPIC-PHARMACY-ALTERNATIVE-001`, last `TOPIC-BURNOUT-SLEEP-RECOVERY-001`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭으로 확인했고, 로컬 XLSX 범위와 최신 CSV 경계를 검증했습니다. 기존 native checkpoint·Office XLSX와 `etc\\xlsx_backup_20260805_094048` 백업을 보존했고 duplicate 행은 삭제하지 않았습니다.
+## 배치 148 — 운동치료·스포츠재활 병원 계정
+
+- `seoulacehospital`, `yonseiwoori_hospital`, `madisesang`을 국내 메디컬 인접 계정으로 추가했습니다. 공개 Instagram 프로필에서 인증의료기관·첨단재생의료, 척추·관절·내과·건강검진, 신체 부위별 정형외과 진료, 운동치료·스포츠재활·건강정보 신호와 공식 링크를 직접 확인했습니다.
+- `seoulacehospital`는 팔로워 563명·게시물 1,062개, `yonseiwoori_hospital`은 팔로워 1,174명·게시물 543개, `madisesang`은 팔로워 731명·게시물 335개로 기록했습니다. 확인하지 않은 게시물 수치나 콘텐츠 내용은 추정하지 않았습니다.
+- 누적 계정은 332개(국내 약사 120·국내 메디컬 인접 152·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 11:48
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1LQIjfQXL3qJtxM3ALN2amrumEiw8C7_qLAcflgMxjy0/edit): native import, `A1:Y333`, 332 data rows, tail `A331:Y333`, last `madisesang`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1Gkg5IKyAZO0jSl5FqLswVxYixt7mJdw-otU0GJrim9k/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/13oO-1WQpgQGA4tR-sx9QkvEnziwiVrRPwEst1G_LvB0/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1BrOFGZnckDayt3EjamW1LKAHjE6hRH_KObx_iynKOhE/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 11:48 파일이 남아 있지 않습니다. 기존 XLSX와 `etc\\xlsx_backup_20260805_114818` 백업은 보존했습니다.
+
+ ## 배치 147 — 재활의학과·재활병원 공식 계정
+## 배치 149 — 체형교정·운동치료 병원 계정
+
+- `ysbonlove`를 국내 메디컬 인접 계정으로 추가했습니다. 공개 Instagram 프로필에서 연세본사랑병원의 관절·척추·내과·신경과·검진 진료 안내, 공식 홈페이지, 자세·보행 분석과 도수치료·운동치료·물리치료·스포츠재활 공개 릴스를 직접 확인했습니다.
+- `ysbonlove`는 팔로워 273명·게시물 339개로 기록했습니다. 검색 결과의 `veteranhospital`은 기존 원장 계정으로 확인되어 중복 추가하지 않았습니다.
+- 누적 계정은 333개(국내 약사 120·국내 메디컬 인접 153·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 12:02
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1UJpTBa6aWEPwUuWeYiheTff9rbhbATu6piVtg3pfhyE/edit): native import, `A1:Y334`, 333 data rows, tail `A334:Y334`, last `ysbonlove`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1UEcGMN1m1LLgwMhfzH0yVnvP1q5HEdD3ciTIQJRPg6Y/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/11okQj4PbpMq8eN49IvZn7bifihu7NeMns5T72yHc_PM/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1HwwoJV1NhFqGmtmaPxaZQkg1FQIys3oxfxgfnfBV8dU/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 12:02 파일이 남아 있지 않습니다. 기존 XLSX와 `etc\\xlsx_backup_20260805_120032` 백업은 보존했습니다.
+
+ ## 배치 148 — 운동치료·스포츠재활 병원 계정
+## 배치 150 — 관절전문·정형외과 병원 계정
+
+- `nowhospital`, `jsjshospital`을 국내 메디컬 인접 계정으로 추가했습니다. 공개 Instagram 프로필에서 관절전문병원·의료기관 인증·스포츠 메디컬, 관절·척추·내과검진·수족부·물리치료센터와 건강정보 게시물 신호를 직접 확인했습니다.
+- `nowhospital`은 팔로워 2,682명·게시물 926개, `jsjshospital`은 팔로워 1,034명·게시물 383개로 기록했습니다.
+- 누적 계정은 335개(국내 약사 120·국내 메디컬 인접 155·해외 약사 19·해외 메디컬 인접 41)입니다. 콘텐츠 92개, 포맷 60개, 주제 84개, 콘텐츠 행 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 12:09
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1ldWuHGcQ8xsDKpTiRAWsc3H8Zu9p8cFmYeEFT1W0SHg/edit): native import, `A1:Y336`, 335 data rows, tail `A335:Y336`, last `jsjshospital`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1KAIC7rMppFmW9f-fN6ImMFh78-dhrzdwiZCdDB6Ya48/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1AGjUWsnISBDpFw7H2Trn3gVCudPksbIC61Z1nq0pWHo/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1MPuRckDZS8g_t_tyUdlXI53yxqQuN5ZlSNN6yyAd-80/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 문서 모두 native MIME·`ko_KR` locale·단일 탭·최신 CSV 경계를 확인했습니다. 생성된 네 파일을 [지정 Google Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트에는 12:09 파일이 남아 있지 않습니다. 기존 XLSX와 `etc\\xlsx_backup_20260805_120724` 백업은 보존했습니다.
+
+ ## 배치 149 — 체형교정·운동치료 병원 계정
+
+## 배치 151 — 내과·건강검진 건강정보 계정
+
+- 공개 Instagram 프로필 `wellness_gn`과 `thebareun_clinic`을 확인했습니다. `wellness_gn`은 기존 계정이라 중복 제외했고, `thebareun_clinic` 1개를 신규 반영했습니다.
+- `thebareun_clinic`은 더바른내과 공식 프로필로, 양산 덕계 소재·소화기내시경 세부 전문의 4인·공식 홈페이지·식중독·폭염·당뇨 위험신호·물 섭취·암검진 공개 게시물 신호를 확인했습니다.
+- 누적 계정 336개: 국내 약사 120개, 국내 메디컬 인접 156개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, 포맷 60개, 주제 84개. 콘텐츠 광고 공란 0개.
+- `raw/observations.jsonl`, `known_handles.txt`, `known_queries.txt`, `engine_yield.csv`에 확인 결과를 append-only로 기록했습니다.
+
+## Native Google Sheets sync — 2026-08-05 12:24
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1g0G6S9-403l1EDUx_KUmIKji5S24_z5D00VGaizpa88/edit): native import, `A1:Y337`, 336 data rows, tail `A337:Y337`, last `thebareun_clinic`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1wU4eIe0ZAfXk0PtmKdFXOlAuscuwLNZ5n5EOGzKOIlo/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1Eh2Zo1g2czNL_2-xjSmE_IHiHMSbafBgW57dxXRKDGw/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1JcXemHiutbhqQx3Fld8fPaQjLHS8vvTqW1GR1OB0ais/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 파일 모두 native MIME, `ko_KR`, 단일 탭으로 확인했습니다. 네 파일을 [지정 Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트 `0AFNwDUI2-6lWUk9PVA`에서 12:24 제목 검색 결과는 0건입니다.
+- 원본 XLSX 백업: `etc\xlsx_backup_20260805_121748`. 기존 native checkpoint와 중복 행은 삭제하지 않았습니다.
+
+## 배치 152 — 산부인과·여성병원 건강정보 계정
+
+- `mizmedi_hospital`, `bombit_medical`, `shesmedi_hospital` 3개 공개 프로필을 직접 확인하고 신규 국내 메디컬 인접 계정으로 반영했습니다.
+- `mizmedi_hospital`은 미즈메디병원 공식 계정으로, 보건복지부지정 산부인과 전문병원·강서구 종합병원·12개 진료과·60인의 전문의·질환정보 및 강좌 하이라이트를 확인했습니다.
+- `bombit_medical`은 봄빛병원 공식 계정으로, 안양 평촌 위치·1996년 개원·임신 중 흡연·부종·식사량·패스트푸드 등 공개 건강정보 게시물을 확인했습니다.
+- `shesmedi_hospital`은 쉬즈메디병원 공식 계정으로, 수원 산부인과·소아청소년과·내과 복강경센터·유방갑상선센터·분만실 공개 게시물을 확인했습니다.
+- 누적 계정 339개: 국내 약사 120개, 국내 메디컬 인접 159개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, 포맷 60개, 주제 84개. 콘텐츠 광고 공란 0개.
+
+## Native Google Sheets sync — 2026-08-05 12:35
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1SkO63p2GK-rZeRYksrv6N_fvKI-VW4HAkybtI-fawio/edit): native import, `A1:Y340`, 339 data rows, tail `A338:Y340`, last `shesmedi_hospital`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1dLOcUrFKQ_jSXVBv7FGOEdGD0LAV_t5tTFXmmlDmpo8/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1plqz6q7vLbNiJovuGXeJI7ueXFsWQ09zoqF-imxH4yQ/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/1vYOGyCZ2BYyvt64IB0hSX3odDKIFANAadIohqGGcld0/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭으로 확인했습니다. 네 파일을 [지정 Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트 `0AFNwDUI2-6lWUk9PVA`에서 12:35 제목 검색 결과는 0건입니다.
+- 원본 XLSX 백업: `etc\xlsx_backup_20260805_123325`. 기존 native checkpoint와 중복 행은 삭제하지 않았습니다.
+
+## 배치 153 — 이비인후과·종합병원 건강정보 계정
+
+- `urimedi1`, `korea2nt_official`, `leehwanho_ent` 3개 공개 프로필을 직접 확인하고 신규 국내 메디컬 인접 계정으로 반영했습니다.
+- `urimedi1`은 부천우리병원 공식 계정으로, 내과·척추관절·뇌신경센터·6대암검진·24시간 응급실·건강정보 하이라이트·우리건강레터를 확인했습니다.
+- `korea2nt_official`은 대구 코리아이비인후과 공식 계정으로, 코·목·귀·수면 진료와 수술 중점 안내 및 공식 홈페이지를 확인했습니다.
+- `leehwanho_ent`는 이환호이비인후과 공식 계정으로, 부산 소재 이비인후과 전문의·어지럼증·이명·난청·귀·균형 진료와 공개 건강정보 게시물을 확인했습니다.
+- 누적 계정 342개: 국내 약사 120개, 국내 메디컬 인접 162개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, 포맷 60개, 주제 84개. 콘텐츠 광고 공란 0개.
+
+## Native Google Sheets sync — 2026-08-05 12:49
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1mW1HcmhtQUTz9DYw93K0kNwepzIGWsJGEYJc5MVrNTg/edit): native import, `A1:Y343`, 342 data rows, tail `A341:Y343`, last `leehwanho_ent`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1jVM8bZWCwStQkGyFy0qL-8RNXYHKU_HPon0WFJUXCuI/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1Q-V6ZlS5tDw90u22jBymcX6UBSlFYTgVJts1jMeSL7U/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/17zhWzOtxEL2421oURtiXF756LEse9ih-6OZUGB3M-Ls/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭으로 확인했습니다. 네 파일을 [지정 Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트 `0AFNwDUI2-6lWUk9PVA`에서 12:49 제목 검색 결과는 0건입니다.
+- 원본 XLSX 백업: `etc\xlsx_backup_20260805_124326`. 기존 native checkpoint와 중복 행은 삭제하지 않았습니다.
+
+## 배치 154 — 피부과·대학병원 피부건강 계정
+
+- `akdskin_kr`, `foretskin_official`, `pnuh_hongbo` 3개 공개 프로필을 직접 확인하고 신규 국내 메디컬 인접 계정으로 반영했습니다.
+- `akdskin_kr`는 대한피부과의사회 공식 계정으로, 피부과전문의 안내·피부과 선택·시술·자외선차단·저자극 스킨케어 팩트체크 콘텐츠를 확인했습니다.
+- `foretskin_official`은 포레피부과 공식 계정으로, 피부과전문의 맞춤 진료·기미·잡티·피부노화·자외선 차단·피부관리 공개 영상을 확인했습니다.
+- `pnuh_hongbo`는 부산대학교병원 공식 홍보 계정으로, 지역암센터·호흡기전문질환센터·CAR-T 세포치료·환자 건강정보와 병원 웹진 게시물을 확인했습니다.
+- 누적 계정 345개: 국내 약사 120개, 국내 메디컬 인접 165개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, 포맷 60개, 주제 84개. 콘텐츠 광고 공란 0개.
+
+## Native Google Sheets sync — 2026-08-05 12:59
+
+- [01 계정 원장](https://docs.google.com/spreadsheets/d/1O_KxUZVZTN331RgYoNhJRCijHULLvBrWMgPI9Zvol4s/edit): native import, `A1:Y346`, 345 data rows, tail `A344:Y346`, last `pnuh_hongbo`.
+- [02 콘텐츠 원장](https://docs.google.com/spreadsheets/d/1RkbMqSsBCv81ymQsV8JD1D67HeTVKPqbxgRa_cPPeTk/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 포맷 카드](https://docs.google.com/spreadsheets/d/1bnm5WjFa8YsfejsXUPp9TiJnQeqUB8ynbUbvJDcOQZU/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 주제 카드](https://docs.google.com/spreadsheets/d/17k4td_1surOFg0fx3Rv4-vvyeN8Bse2utuG7cfHWy5g/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭으로 확인했습니다. 네 파일을 [지정 Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했고, Drive 루트 `0AFNwDUI2-6lWUk9PVA`에서 12:59 제목 검색 결과는 0건입니다.
+- 원본 XLSX 백업: `etc\xlsx_backup_20260805_125700`. 기존 native checkpoint와 중복 행은 삭제하지 않았습니다.
+## 배치 155 — 내과·건강검진·건강정보 공개 계정
+
+- `mokdong_samsung_top_im`, `yongsanint`, `bestson_suwon` 3개 공개 프로필을 인앱 브라우저에서 직접 확인하고 국내 메디컬 인접 계정으로 append-only 반영했습니다. 게시물 본문을 확인하지 않은 계정의 콘텐츠 행은 만들지 않았습니다.
+- `mokdong_samsung_top_im`: 목동삼성탑내과의원, 팔로워 219명, 게시물 241개. 5대암 검진 지정병원, 내과 전문의, 내시경 세부전문의 프로필 정보를 확인했습니다.
+- `yongsanint`: 용산성모내과의원, 팔로워 3,328명, 게시물 359개. 내시경, 당뇨병, 혈관건강, 건강상식 하이라이트를 확인했습니다.
+- `bestson_suwon`: 베스트손내과_수원매교, 팔로워 43명, 게시물 20개. 건강검진, 간초음파, 수술 전 검사 관련 공개 게시물 신호를 확인했습니다.
+- 누적 계정 348개: 국내 약사 120개, 국내 메디컬 인접 168개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, A·B 채택 64개, 포맷 60개, 주제 84개, 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 13:06
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1uAROUpX7JORaViSFP561ivtbCdl47USm-yqJq4lYcIc/edit): native import, `A1:Y349`, 348 data rows, tail `A347:Z349`, last `bestson_suwon`.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1c0_39Y_DeleeYkgrpcx1QrId-BOKvGFZqv5YlYNqbAM/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1kqTHVLwABCFbq9ACf_Rwh3NGxdfLDOCwPwL39uAYFH8/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/1L0qK9NwnWcYvEHzC4drb-clu8hSJKAGzIdD7nKHLrQk/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 4개 파일을 모두 native MIME, `ko_KR`, 단일 탭으로 확인하고 지정 Drive 폴더로 이동했습니다. 같은 체크포인트 제목의 Drive 루트 검색 결과는 0개였습니다. XLSX 원본은 `etc\xlsx_backup_20260805_130605`에 보존했습니다.
+## 배치 156 — 건강기능식품·건강정보 공개 계정
+
+- `ckdhc__official`, `pillgram_official`, `knowledgeins_kr` 3개 공개 프로필을 인앱 브라우저에서 직접 확인하고 국내 메디컬 인접 계정으로 append-only 반영했습니다. 게시물 본문을 별도 검토하지 않아 콘텐츠 원장은 추가하지 않았습니다.
+- `ckdhc__official`: 종근당건강 공식 인스타그램, 팔로워 3.8만명, 게시물 339개. 건강기능식품 공식 프로필, 건강몰, 무릎통증·비타민C·장건강 정보 신호를 확인했습니다.
+- `pillgram_official`: 맞춤영양제 필그램 PILLGRAM, 팔로워 1,364명, 게시물 217개. 건강검진 기반 맞춤 영양제 추천, 산업부 장관상, 특허 7종, Review·News 하이라이트를 확인했습니다.
+- `knowledgeins_kr`: 지식에디트, 팔로워 16.4만명, 게시물 1,131개. 역류성 식도염·만성 염증·심장병 수술 관련 건강 주제 신호를 확인했으며 약사 계정으로는 분류하지 않았습니다.
+- 누적 계정 351개: 국내 약사 120개, 국내 메디컬 인접 171개, 해외 약사 19개, 해외 메디컬 인접 41개. 콘텐츠 92개, A·B 채택 64개, 포맷 60개, 주제 84개, 광고 판정 공란 0개입니다.
+
+## Native Google Sheets sync — 2026-08-05 13:21
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1D5KejPsravpc_BNVb33D8te8ZZNA_ieEhIAHApJdwYc/edit): native import, `A1:Y352`, 351 data rows, tail `A350:Z352`, last `knowledgeins_kr`.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1N2SgeNR1hnVCluUBDCjZoKPlQ40UpdnsSm9lxt0oNX0/edit): native import, `A1:AZ93`, 92 data rows, tail `A92:AZ93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1ErO5d6KHzVdjsSkHfyPzvpLsb-3cwCit38yS3Olh_CA/edit): native import, `A1:AD61`, 60 data rows, tail `A60:AD61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/12TPddcYuD8O-ssIp6IxyU9iponV3hZOwB_CAtMHbqIs/edit): native import, `A1:Q85`, 84 data rows, tail `A84:Q85`.
+- 4개 파일을 native MIME, `ko_KR`, 단일 탭으로 확인하고 지정 Drive 폴더로 이동했습니다. 같은 체크포인트 제목의 Drive 루트 검색 결과는 0개였습니다. XLSX 원본은 `etc\\xlsx_backup_20260805_132113`에 보존했습니다.
+## 배치 157 — 중복 검색 결과 전환
+
+- `site:instagram.com/ 약사 인스타그램 약국 건강상담 일반의약품`과 `site:instagram.com/ 약사 약국 인스타그램 여성건강 약사상담`을 확인했습니다.
+- 노출된 20개 계정이 모두 기존 원장 또는 `known_handles.txt`와 일치해 신규 계정은 0개였습니다. 중복 행과 추정 계정은 추가하지 않았습니다.
+- CSV 변경이 없어 13:21 네이티브 Sheets 체크포인트를 유지했습니다. 다음 배치에서는 새 약국·약사 검색어로 전환합니다.
+
+## 배치 158 — 지역 검색 저수율 확인
+
+- `site:instagram.com/ 약사 약국 건강정보 서울` 검색 결과에서 기존 계정 7개와 신규 후보 3개를 확인했습니다.
+- `realtime.seoul`, `dobomapo`는 지역 매거진이고 `togetheryeonsu`는 지자체 계정이어서 의료 전문 계정으로 확정하지 않고 거절 이력을 남겼습니다.
+- 신규 계정 0개이며 CSV 변경이 없어 13:21 네이티브 Sheets 체크포인트를 유지합니다. 다음 배치에서는 다른 검색 엔진·소스를 사용합니다.
+
+## 배치 159 — 네이버 검색 소스 전환 확인
+
+- 네이버 검색 2건에서 `onnuripharmacy`, `alpaca_yaksa`, `yakstory119`, `gureumpharm`을 확인했습니다.
+- 4개 계정이 모두 기존 원장 또는 `known_handles.txt`와 일치해 신규 계정은 0개였습니다. 중복 행은 추가하지 않았습니다.
+- CSV 변경이 없어 13:21 네이티브 Sheets 체크포인트를 유지합니다. 네이버 검색 소스를 이어서 확인하고, 연속 저수율이면 다른 소스로 전환합니다.
+
+## 배치 160 — 팔로우 그래프 계정 채굴
+
+- `onnuripharmacy` 팔로잉 목록과 `realpharm5` 팔로잉 목록에서 후보 12개를 직접 확인했습니다.
+- `36.5_pharm`, `realpharm5`, `imagine_yaksa`, `our_med._room`, `donga_onnuri`, `blessing.pharmacy`, `cellmed.official`, `bpa_antidrug`, `owm.pharm.official`, `knjbio.academy` 10개를 원장에 추가했습니다.
+- `sonamu682`, `artzone_cm`은 의료 전문 정체성이 없어 거절 이력을 남겼습니다. 게시물 본문은 별도 검토하지 않아 콘텐츠 원장은 추가하지 않았습니다.
+- 계정 CSV가 361행으로 늘어 네이티브 Sheets를 최신 CSV로 다시 가져올 예정입니다.
+
+## Native Google Sheets sync — 2026-08-05 14:08
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1RmpL8evJWTVRqWUdRkw1vNDPIfur2G2U4kqnRVct2K0/edit): native import, `A1:Y362`, 361 data rows, bounded `A1:B2`·`A359:R359`; `cellmed.official` 재방문 행은 `허수판정=중복`으로 정정했습니다.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1oTMeimn9b8C7TCys8VCiUDgZTGjnhvtSqf8aGlaVID4/edit): native import, `A1:AZ93`, 92 data rows, bounded `A1:B2`·`A90:B93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1lXZ-Xbsj0OE6n3nZkUdStCr9dj9xWWZONXHwlyAU068/edit): native import, `A1:AD61`, 60 data rows, bounded `A1:B2`·`A58:B61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/1cIsjhOffiaTgnEfDC8VNSkAoPShzKIsZ9bnJNogJ0nQ/edit): native import, `A1:Q85`, 84 data rows, bounded `A1:B2`·`A81:B85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭·고정 헤더 행으로 확인하고 [지정 Drive 폴더](https://drive.google.com/drive/folders/1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k)로 이동했습니다. Drive 루트 `0AFNwDUI2-6lWUk9PVA`의 Google Sheets 검색 결과는 0건입니다.
+- 현재 CSV는 계정 361행, 콘텐츠 92행, 포맷 60행, 주제 84행이며 콘텐츠 광고 판정 공란은 0개입니다. 행 삭제 없이 중복 상태를 보정했고, 기존 native checkpoint·legacy XLSX·little_yaksa 중복 승인 대기 이력은 보존했습니다.
+
+## 배치 161 — 인접 직군 검색 계정 채굴
+
+- `영양사 건강정보` 검색 결과에서 연결된 `dr.wongu` 공개 프로필을 직접 확인했습니다.
+- `dr.wongu`는 연세대 세브란스 교수·피부과전문의·14년차 피부과의사·그대고운피부과 대표원장으로 소개되어 신규 국내 메디컬 인접 계정으로 채택했습니다.
+- 피부노화 원인·자외선차단·K-beauty 공개 게시물 신호는 확인했지만 콘텐츠 원문 행은 별도 검토 없이 추가하지 않았습니다.
+- 브라우저 공유 임대 연장 실패로 후보 확장은 다음 배치에서 새 임대를 받아 이어갑니다.
+
+## Native Google Sheets sync — 2026-08-05 14:20
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1VAZV-o6bJXHdJGBWOc8AmHv9hrYnXhub0y2C5qoHnYE/edit): native import, `A1:Y363`, 362 data rows, bounded `A1:B2`·`A360:R363`; tail `dr.wongu` 확인.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1c2IbeHdXkbdhcvkdHmdL6viT1jkUV_KVUcASTnGSNUE/edit): native import, `A1:AZ93`, 92 data rows, bounded `A1:B2`·`A90:B93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1pxRs5a9txDO57k8DagMc3f5OHVcjkkvX9-qVLSo1uHU/edit): native import, `A1:AD61`, 60 data rows, bounded `A1:B2`·`A58:B61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/1L0A_Sh8JtCR2L2kw_5ck7gUArGSKaD_-emEgl5Emkho/edit): native import, `A1:Q85`, 84 data rows, bounded `A1:B2`·`A81:B85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭·고정 헤더 행으로 확인하고 지정 Drive 폴더로 이동했습니다. Drive 루트 `0AFNwDUI2-6lWUk9PVA`의 Google Sheets 검색 결과는 0건입니다. 공통 빌더에서 날짜 열을 텍스트로 보존하도록 보정했습니다.
+
+## 배치 162 — 약사 키워드 계정 채굴
+
+- `약사` Instagram 검색 결과에서 `oyakstory`, `yuni__yaksa`, `good.yaksa`, `fit_yaksa`, `sue_yaksa` 5개 프로필 결과를 확인했습니다.
+- `oyakstory`, `good.yaksa`는 기존 원장·known과 중복이었고, `yuni__yaksa`, `fit_yaksa`, `sue_yaksa` 3개를 직접 확인해 신규 국내 약사 인플루언서로 채택했습니다.
+- 콘텐츠 원문을 별도 검토하지 않은 계정의 콘텐츠 행은 추가하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 14:35
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1b55z9ZFm0_DUDEIeDFkNMVGVX0VoiOFJVqL9dHQAbu0/edit): native import, `A1:Y366`, 365 data rows, bounded `A1:B2`·`A362:R366`; `yuni__yaksa`·`fit_yaksa`·`sue_yaksa` tail 확인.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1JGESVEW7Ae2c6Hm17hI4Mf4QoQQcE0Z0OZG78z2arSo/edit): native import, `A1:AZ93`, 92 data rows, bounded `A1:B2`·`A90:B93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1GCE8nx9jKiRmLcpMLaBxy0WzhHe14S9-NsGDasfgxck/edit): native import, `A1:AD61`, 60 data rows, bounded `A1:B2`·`A58:B61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/19cmm3C7RkWD5Y5djpAYYqxe4pWKrS6fwHvyW-RePUi0/edit): native import, `A1:Q85`, 84 data rows, bounded `A1:B2`·`A81:B85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭·고정 헤더 행으로 확인하고 지정 Drive 폴더로 이동했습니다. Drive 루트 `0AFNwDUI2-6lWUk9PVA`의 Google Sheets 검색 결과는 0건입니다. 공통 빌더에서 날짜 열을 텍스트로 보존했습니다.
+
+## 배치 163 — 팔로잉 그래프 계정 채굴
+
+- `onnuripharmacy` 팔로잉 목록 첫 화면에서 후보 10개를 확인했습니다.
+- `medi2388_`는 기존 48행과 중복으로 확인해 재방문 행을 `허수판정=중복`으로 보정했고, `sspharm_apgujeong`·`dongdong_pharm` 2개를 신규 계정으로 채택했습니다.
+- 신규 계정 2개는 공개 프로필만 직접 확인했으므로 콘텐츠 원문 행은 추가하지 않았습니다.
+
+## Native Google Sheets sync — 2026-08-05 14:46
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/15QX8n4Nt3V8OzVEo8gm_Vojz0muYNO7rTdfzCWwXlHc/edit): native import, `A1:Y369`, 368 data rows, bounded `A1:B2`·`A365:R369`; `medi2388_` 중복 상태와 `sspharm_apgujeong`·`dongdong_pharm` tail 확인.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1-WTWRN75vnxVk-x_Wjxj9qU5KOl05HRCjB4J1EYu1lM/edit): native import, `A1:AZ93`, 92 data rows, bounded `A1:B2`·`A90:B93`.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1uCB_xq4GMt1CMG7lys6_FjHysnQ4kfyjH4JuFJfAl0w/edit): native import, `A1:AD61`, 60 data rows, bounded `A1:B2`·`A58:B61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/10YGCDc8l6h3Ez8VFUJtl3ObmCIkZZ8ONg6aMmmizthM/edit): native import, `A1:Q85`, 84 data rows, bounded `A1:B2`·`A81:B85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭·고정 헤더 행으로 확인하고 지정 Drive 폴더로 이동했습니다. Drive 루트 `0AFNwDUI2-6lWUk9PVA`의 Google Sheets 검색 결과는 0건입니다.
+
+## 엔진 표기 정정 — 2026-08-05 14:58
+
+`GOAL.md` 엔진 정의와 대조해 팔로잉 그래프 배치를 E6에서 E2로, 국내 `약국 ASMR` 키워드 배치를 E7에서 E1로 정정했습니다.
+기존 원시 관찰·수율 기록은 삭제하지 않고 correction 레코드로 남겼으며, 신규 CSV 행의 발굴경로와 콘텐츠 발견엔진을 canonical engine으로 보정했습니다.
+
+## 배치 164 — 약국 ASMR 콘텐츠 원문 채굴
+
+- `약국 ASMR` 검색 결과에서 `timepharm`의 `DZwymy0xZ1F` 릴스 원문을 직접 확인했습니다.
+- 약국 PTP 포장기·알약 분쇄기·처방전 출력 기계의 소리와 작동 문제를 설명하는 콘텐츠 1행을 채택했습니다.
+- 제품명·광고 표기가 없어 광고 판정은 `아님`으로 기록했고, 조회수·길이는 미확인으로 남겼습니다.
+
+## Native Google Sheets sync — 2026-08-05 14:55
+
+- [01 account ledger](https://docs.google.com/spreadsheets/d/1Gw3cM95Q8L5azPzJdmBBv9RLSu_Invhe1t3hI5e71Nk/edit): native import, `A1:Y369`, 368 data rows, bounded `A1:B2`·`A365:R369`; `medi2388_` 중복 상태와 `sspharm_apgujeong`·`dongdong_pharm` tail 확인.
+- [02 content ledger](https://docs.google.com/spreadsheets/d/1ffXEyi39MKh0BPo8-aQoQpupRu-4GImiMLZ6jizoJnU/edit): native import, `A1:AZ94`, 93 data rows, bounded `A1:B2`·`A91:B94`; `TIME-DZwymy0xZ1F` tail 확인.
+- [03 format cards](https://docs.google.com/spreadsheets/d/1rh9Oi2L5pFR6j8D0KwlW_9DRUnW9bbtoSmJgeLuioa8/edit): native import, `A1:AD61`, 60 data rows, bounded `A1:B2`·`A58:B61`.
+- [04 topic cards](https://docs.google.com/spreadsheets/d/1N72XWQIDZCee2QPPj-kQPPDWJpbBdeLnMOEngushZFA/edit): native import, `A1:Q85`, 84 data rows, bounded `A1:B2`·`A81:B85`.
+- 네 파일 모두 native MIME·`ko_KR`·단일 탭·고정 헤더 행으로 확인하고 지정 Drive 폴더로 이동했습니다. Drive 루트 `0AFNwDUI2-6lWUk9PVA`의 Google Sheets 검색 결과는 0건입니다.
+ 
+## 최신 체크포인트 — 2026-08-05 16:10
+
+- 현재 canonical CSV: 계정 368행, 콘텐츠 92행(릴스 72·캐러셀 20), 포맷 60행, 주제 84행.
+- 콘텐츠 92행 모두 광고판정을 보유합니다. A·B 등급 콘텐츠는 64행이며, 배정 가능 계정 수는 김주성 86행·오약 77행·선영 89행으로 각 15행 기준을 넘습니다.
+- 1차 지표 백필: 게시일 90/92, 경과일 90/92, 좋아요 77/92, 댓글 77/92, 길이초(릴스) 70/72, 지표수집일시 92/92, 썸네일파일 90/92.
+- 2차 계정 그리드: 25개 계정에서 공개 릴스 카드 279건을 확인했습니다. 현재 콘텐츠 조회수는 릴스 60/72이며, 캐러셀 조회수는 0/20입니다. 계정중앙조회수 92/92, 배수 60/92, 댓글좋아요비 77/92를 채웠습니다.
+- 좋아요율·계정평소좋아요율·참여율비는 1차 좋아요·댓글 시각과 2차 그리드 조회수 시각이 다르므로 추정하지 않고 빈칸으로 유지했습니다. 상세 사유와 부분 계정·빈 조회수 shortcode는 report/metrics_backfill_20260805.md에 기록했습니다.
+- 직접 접근 실패 행: DbcN6jJwjJO, DbFt3HARR7_. 두 행의 사람메모에 실패 사유를 기록했습니다.
+
+### 최신 Google Sheets
+
+- [01 account ledger (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1uNMu18HCn5AcQKTMgkQjwhzA15amJOM4JREqCveZK40/edit): native MIME, A1:Y369, 368 data rows.
+- [02 content ledger (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1nPt3f3fSVepUmQ3OKKq-2RKOSpBfeoGIfjopSV1EjuE/edit): native MIME, A1:BB93, 92 data rows; metric columns O1:W8 re-read and verified.
+- [03 format cards (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1RG4peY21zfAfkFq_ehER29j83chdlanLBPnKjljvDSQ/edit): native MIME, A1:AD61, 60 data rows.
+- [04 topic cards (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1fEoWBz2p0y3bhlogMhB6OxniV-ySGhE16YotEDS80AY/edit): native MIME, A1:Q85, 84 data rows.
+- 네 파일은 모두 지정 Drive 폴더 1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k로 이동했고, 각 파일의 단일 탭·ko_KR·고정 헤더·bounded range를 확인했습니다.
+
+### 재개 지점
+
+- canonical 상태: logs/state.json의 20260805-METRICS-2, 상태 verified.
+- 원자료: raw/metrics/observations.jsonl, raw/metrics/account_recent12.jsonl.
+- 다음 작업: 동일 지표수집일시 기준을 충족하는 좋아요율 계열의 추가 재수집 여부를 판단하고, 이후 E3/E8 조사 큐와 168시간 목표를 계속 진행합니다.
+## 상태 재개점 — 2026-08-05 16:15
+
+- logs/state.json 현재 블록: 20260805-E8-PREP, 상태 queued, 다음 엔진 E8.
+- E8 대기 원장: logs/queues/e8_queue.jsonl, A등급 계정 6개. eligible_after는 2026-08-12 이후입니다.
+## 화면 증거 재검증 — 2026-08-05 16:18
+
+- 인앱 브라우저에서 최신 02 content ledger (Metrics 2026-08-05)를 직접 열었습니다.
+- 화면 DOM에 저장 상태 문서 상태: 드라이브에 저장됨과 단일 탭 02 콘텐츠 원장이 표시됐습니다.
+- 같은 문서의 O1:W8을 재읽어 지표 헤더와 실제 값이 표시되는 것을 확인했습니다. CDP 이미지 캡처는 timeout이어서 성공으로 주장하지 않고 DOM snapshot·bounded range·로컬 preview를 근거로 남겼습니다.
+## 지표 재수집 큐 — 2026-08-05 16:20
+
+- 동일 지표수집일시 기준을 지키기 위해 25개 계정 최근 릴스 279개를 조회수·좋아요·댓글 동시 재수집 대상으로 등록했습니다.
+- 현재 콘텐츠 원장과 연결되는 큐 항목은 60개입니다. 큐 파일은 logs/queues/rate_recollect.jsonl이고, 2026-08-12 06:33Z 이후 계정별 재방문이 가능합니다.
+- 재수집 완료 전에는 좋아요율·계정평소좋아요율·참여율비를 계산하지 않습니다.
+## Goal 지속 체크 — 2026-08-05 16:23
+
+- 시작 시각 2026-08-04 18:53:53 기준 경과 약 21.5시간, 168시간까지 약 146.5시간 남았습니다.
+- state.json에 goal_progress와 rate 재수집 eligible_after를 기록했습니다. 계정 쿨다운을 지키며 E8·동일배치 지표 재수집을 대기합니다.
+## 자동 완료 감사기 — 2026-08-05 16:25
+
+- etc/goal_audit/verify_goal.mjs를 실행해 목표 조건을 현재 파일에서 다시 계산했습니다.
+- 결과: 실패 0건, 진행 중 1건(168시간 지속). 수량·광고판정·중복 ID·필수 파일·Sheets 상태·화면 증거는 모두 통과했습니다.
+- 결과 파일: report/completion_audit_current.json, report/completion_audit_current.md.
+
+## 재현 가능한 감사·Sheets 재검증 — 2026-08-05 16:35
+
+- `etc/goal_audit/verify_goal.mjs`를 canonical 폴더에 보강하고 실행했습니다. 현재 결과는 실패 0건, 진행 중 1건(168시간 지속), 경과 21.68시간입니다.
+- 현재 파일 수량은 계정 368행·콘텐츠 92행·포맷 60행·주제 84행이며, 콘텐츠 광고 판정은 92/92입니다. 국내 약사 128명·국내 메디컬 인접 180명·해외 60명, 이식 후보 포맷 46건을 다시 확인했습니다.
+- `public/data/thumbs`의 JPG 90개가 `contents.csv`의 썸네일파일 90개와 1:1로 일치하고, 누락·고아 파일은 없습니다.
+- 최신 Sheets 4개를 Drive 메타데이터로 재검증했습니다. 네 파일 모두 native Sheets MIME이며 지정 폴더 `1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k`에 있습니다. 각 문서의 `A1:B3`에서 헤더와 실제 데이터 행을 읽었습니다.
+  - [01 account ledger (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1uNMu18HCn5AcQKTMgkQjwhzA15amJOM4JREqCveZK40/edit)
+  - [02 content ledger (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1nPt3f3fSVepUmQ3OKKq-2RKOSpBfeoGIfjopSV1EjuE/edit)
+  - [03 format cards (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1RG4peY21zfAfkFq_ehER29j83chdlanLBPnKjljvDSQ/edit)
+  - [04 topic cards (Metrics 2026-08-05)](https://docs.google.com/spreadsheets/d/1fEoWBz2p0y3bhlogMhB6OxniV-ySGhE16YotEDS80AY/edit)
+- 이번 감사와 Sheets 재검증은 CSV를 수정하지 않았습니다. 동일시점 지표 재수집 큐 279건과 E8 대기 계정 6개를 유지합니다.
+
+## 1·2차 지표 전용 감사 — 2026-08-05 16:39
+
+- 전용 감사 결과는 실패 0건입니다. 진행 중인 항목은 동일 `지표수집일시` 기준 좋아요율 계열 재수집 1건입니다.
+- 컬럼별 채움률: 조회수 60/92(릴스 기준 60/72, 캐러셀 0/20), 좋아요 77/92, 댓글 77/92, 게시일 90/92, 경과일 90/92, 길이초 70/72, 지표수집일시 92/92, 썸네일파일 90/92.
+- 최근 12개 수집은 25개 계정·279개 공개 릴스 카드입니다. 7개 계정은 공개 비고정 릴스가 12개 미만이라 `partial`로 기록했습니다. 해당 계정은 `on.yaksa` 11개, `hisutamine` 8개, `bbubbu_yaksa` 9개, `myo_yaksa` 9개, `slowpharmacy` 10개, `byak_yaksa` 7개, `salt.yaksa` 9개입니다.
+- `public/data/thumbs`는 기록 90개·실제 JPG 90개·누락 0개입니다. 직접 접근 실패는 DbcN6jJwjJO·DbFt3HARR7_ 두 건이며 사람메모에 사유가 있습니다.
+- 상세 결과: `report/metrics_backfill_audit_current.json`, `report/metrics_backfill_audit_current.md`.
+
+## 루트 Google Sheets 포인터 정리 — 2026-08-05 16:42
+
+- 사용자 요청대로 outer 루트에 있던 `.gsheet` 포인터 파일 272개를 `etc/gsheet_root_archive_20260805`로 이동했습니다. 이동은 삭제가 아니며 원래 파일명 그대로 보관했습니다.
+- 검증 결과 outer 루트 잔여 `.gsheet`는 0개, 보관 폴더는 272개입니다.
+- 현재 사용 중인 native Google Sheets 4개는 Drive 지정 폴더에 그대로 유지합니다. 이후 로컬 산출물은 루트가 아니라 canonical `etc` 아래에 둡니다.
+
+## 루트 범위 정정 — 2026-08-05 16:44
+
+- 위 정리에서 말한 루트는 `G:\내 드라이브` 최상위로 확정했습니다. 최상위 잔여 `.gsheet`는 0개입니다.
+- 지정 프로젝트 폴더 `G:\내 드라이브\여형준님\30 인플루언서+콘텐츠 조사\국내 메디컬 콘텐츠 레퍼런스 조사`에는 현재 native Sheets 4개의 포인터만 남겼습니다.
+- 4개 파일의 Drive 부모는 `1UZ4drkQVtcGfSYaB5NetcJr6vhyjp__k`로 복구 확인했습니다. archive에는 과거 포인터 268개가 보관되어 있습니다.
+
+## Sheets 포인터 재발 방지 규칙 — 2026-08-05 16:50
+
+- `AGENTS.md`에 동기화 폴더의 `.gsheet`를 로컬 이동하지 않고 Drive `addParents`·`removeParents`로만 이동한다는 규칙을 추가했습니다.
+- 감사 결과 `G:\내 드라이브` 최상위 잔여 0개, 지정 프로젝트 폴더 현재 Sheets 4개이며 CSV·Sheets 산출물은 변경하지 않았습니다.
+
+## 원장·JSONL 무결성 점검 — 2026-08-05 16:51
+
+- `raw/observations.jsonl` 378행, `raw/metrics/observations.jsonl` 103행, `account_recent12.jsonl` 25행, 배수 재수집 큐 279행을 모두 JSON으로 읽었고 무효 행은 0건입니다.
+- known shortcode 95행·unique 95, known format 56행·unique 56, known query 300행·unique 300입니다.
+- known handle은 1,756행·unique 1,748이며 기존 중복 8건은 append-only 원장 보존 원칙에 따라 삭제하지 않았습니다.
+
+## 정성 컬럼 보존 감사 — 2026-08-05 16:46
+
+- `etc/metrics_backfill/contents_pre_2nd_metrics.csv`를 기준으로 현재 콘텐츠 92행의 정성 컬럼 7개를 ID 기준 대조했습니다.
+- 대상: 훅문구·구조·편집장치·카테고리·한줄요약·왜터졌나·우리버전제안.
+- 변경 행·변경 셀은 0건입니다. 지표 백필이 정성 컬럼을 건드리지 않았음을 자동 감사에 포함했습니다.
+
+## 전체 bounded range Sheets 대조 — 2026-08-05 16:48
+
+- 최신 native Sheets 4개의 전체 범위를 다시 읽고 CSV와 행 수·열 수·헤더·첫 ID·마지막 ID를 대조했습니다.
+- 계정: `A1:Y369`, 368행·25열, `o2yaksa` → `dongdong_pharm` 일치.
+- 콘텐츠: `A1:BB93`, 92행·54열, `OYAK-DbVMg0nvMtU` → `SALT-Dbasl3VTGLs` 일치.
+- 포맷: `A1:AD61`, 60행·30열, `FMT-ITEM-ALTERNATIVE-001` → `FMT-BURNOUT-RECOVERY-3STEP-001` 일치.
+- 주제: `A1:Q85`, 84행·17열, `TOPIC-PHARMACY-ALTERNATIVE-001` → `TOPIC-BURNOUT-SLEEP-RECOVERY-001` 일치.
+## 재개 대기 체크포인트 — 2026-08-05 16:58 KST
+
+- 목표 감사는 실패 0건이며, 168시간 지속 조건만 진행 중입니다. 경과 22.07시간, 잔여 145.93시간입니다.
+- 다음 E8 재방문 계정은 `stg_wellness`, `medical_newsroom`, `jsr032_`, `malti_yaksa`, `yuni__yaksa`, `fit_yaksa` 6개입니다.
+- 동일 수집시각 기준 지표 재수집 큐는 279건이며, 2026-08-12 이후 재개합니다. 대기 중에는 인스타그램을 반복 조회하지 않습니다.
+- 현재 파일·JSONL·Google Sheets 4개·Drive 폴더 배치 상태를 재검증했습니다. CSV는 재작성하지 않았습니다.
+
+## Google Sheets 화면 증거 재확인 — 2026-08-05 17:05 KST
+
+- 임시 브라우저 탭에서 `02 content ledger (Metrics 2026-08-05)` native Sheet를 실제로 열어 화면을 확인했습니다.
+- 화면에 `02 콘텐츠 원장` 탭과 콘텐츠 행·헤더·발견일시·계정핸들·계정명·팔로워·게시일 열이 표시됐고, 문서 상태는 `드라이브에 저장됨`으로 확인됐습니다.
+- 확인 URL: `https://docs.google.com/spreadsheets/d/1nPt3f3fSVepUmQ3OKKq-2RKOSpBfeoGIfjopSV1EjuE/edit#gid=0&range=O1:W8`
+- 확인 후 임시 탭을 닫고 브라우저 임대를 해제했습니다. 기존 Instagram 탭은 건드리지 않았습니다.
+
+## 요구사항 매트릭스 — 2026-08-05 17:12 KST
+
+- 지속 시간: 진행 중 — 22.30/168시간. 이 조건이 남아 있어 목표를 완료 처리하지 않습니다.
+- 필수 파일·known 원장·JSONL: 통과 — 누락 파일 없음, JSONL 파싱 오류 없음.
+- 계정 원장: 통과 — 368행; 국내 약사 128명·국내 인접 계정 180명·해외 60명.
+- 콘텐츠·배정: 통과 — 92행, 광고 판정 92/92, A·B 64건, 김주성 86건·오약 77건·선영 89건 배정.
+- 포맷·주제: 통과 — 포맷 60개·이식 후보 46개·주제 84개.
+- Sheets: 통과 — 최신 native Sheets 4개, 전체 bounded range와 CSV ID·행 수 대조 완료; 콘텐츠 Sheet 화면 증거 기록 완료.
+- 지표 2차 수집: 진행 중 — 최근 12개 게시물 279/300건, 동일 수집시각 기준 좋아요율 계열은 재수집 대기.
+- 다음 작업: 2026-08-12 이후 E8 계정 6개와 지표 재수집 큐 279건을 읽기 전용·사람 속도로 처리합니다.
+
+## 재개 감사 — 2026-08-05 17:24 KST
+
+- 현재 native Google Sheets 4개를 다시 읽었습니다. 계정 `A1:Y369`, 콘텐츠 `A1:BB93`, 포맷 `A1:AD61`, 주제 `A1:Q85`의 행·열·첫 ID·마지막 ID가 최신 CSV와 일치합니다.
+- `state.json`에 남아 있던 과거 `little_yaksa` 중복행 경고는 현재 문서가 아닌 이전 포인터 상태였습니다. 현재 활성 차단은 없으므로 `unresolved_blockers`를 비웠습니다.
+- 목표 감사와 지표 감사 모두 실패 0건입니다. 남은 항목은 168시간 지속과 동일 수집시각 기준 지표 재수집입니다.
+
+## 지표 산출물 재확인 — 2026-08-05 17:20 KST
+
+- `public/data/contents.csv`는 92행·고유 ID 92개이며 `data/contents.csv`와 SHA-256이 일치합니다. 행 추가·삭제는 없습니다.
+- 채움률은 조회수 60/92(릴스 60/72, 캐러셀 0/20), 좋아요 77/92, 댓글 77/92, 게시일 90/92, 경과일 90/92, 길이초 70/72, 지표수집일시 92/92, 썸네일파일 90/92입니다.
+- 직접 접근 실패 2건은 `DbcN6jJwjJO`, `DbFt3HARR7_`이며 숫자를 추정하지 않고 빈칸과 사람메모 사유를 유지합니다.
+- 2차 계산은 최근 12개 카드 279/300건까지 확보했습니다. 좋아요율 계열은 동일 `지표수집일시` 기준 재수집 전까지 빈칸으로 둡니다.
+- 현재 인앱 브라우저는 라이브 조사 중이 아닙니다. 계정 쿨다운과 동일시점 재수집 대기 때문에 Instagram 탭을 반복 조회하지 않고, 2026-08-12 이후 대기열을 재개합니다.
+
+## 대기열·화면 증거 재점검 — 2026-08-05 17:27 KST
+
+- 배수 재수집 큐는 279행·고유 `queue_id` 279개·고유 shortcode 279개로 중복이 없습니다. 이 중 현재 콘텐츠 원장과 연결된 60건에는 `current_content_id`가 있습니다. 최근 12개 카드 원문은 25계정·279카드이며, 미달 21카드는 `on.yaksa`·`hisutamine`·`bbubbu_yaksa`·`myo_yaksa`·`slowpharmacy`·`byak_yaksa`·`salt.yaksa`의 공개 릴스 부족분입니다.
+- 임시 콘텐츠 Sheet 탭에서 화면 캡처를 재시도했지만 같은 CDP 캡처 시간 초과가 재현되어 즉시 중단했습니다. 임시 탭과 브라우저 임대는 정리했고, 기존 성공 화면 증거와 connector 전체 범위 검증은 유지합니다.
+- 이 화면 캡처 문제는 Instagram 접근 차단이나 데이터 손실이 아니며, `state.json`에 재시도 시각과 결과를 기록했습니다.
+
+## 최신 오프라인 감사 — 2026-08-05 17:28 KST
+
+- 지표 감사의 모든 구조 검사는 통과했습니다. `public/data/contents.csv` 복사본, 92행, 릴스 72건, 캐러셀 20건, 캐러셀 조회수 빈칸 20건, 지표수집일시 92건, 썸네일 기록·실물 JPG 각 90건이 일치합니다.
+- 좋아요율·계정평소좋아요율·참여율비는 동일 관측시각 재수집 전 빈칸을 유지합니다. 현재 상태에서 수치를 추정해 채우지 않았습니다.
+- E8 6개 계정과 279건 지표 재수집 큐의 계정별 재개 시각을 확인했습니다. 가장 빠른 재개 시각은 2026-08-12 15:33 KST입니다.
+
+## 계정 원장 지표 보강·Sheet 반영 — 2026-08-05 17:36 KST
+
+- `data/accounts.csv` 368행의 행·순서·사람검토·사람메모는 유지했습니다. 최근 12개 중앙 조회수 25건, 최고 조회수 25건, 상위 배수 24건, 마지막 정면 채굴 시각 9건, 재방문 예정일 368건을 직접 관측 원문과 7일 쿨다운 규칙으로 채웠습니다.
+- 7개 부분 계정은 공개 릴스가 12개 미만이므로 실제 확인 수만 사용했습니다. 최근 게시물 좋아요를 읽지 않은 `평소좋아요율`은 채우지 않았습니다.
+- 현재 `01 account ledger (Metrics 2026-08-05)` Sheet의 H:J·Q·S·U 범위를 CSV와 대조했습니다. H:J·Q·S·U 비교 불일치가 모두 0건입니다.
+- 원본 백업과 상세 내역: `etc/metrics_backfill/accounts_pre_ledger_enrichment_20260805.csv`, `report/account_ledger_metrics_enrichment_20260805.md`.
+
+## 요구사항 수치 재감사 — 2026-08-05 17:50 KST
+
+- 직접 CSV 대조 결과: 계정 368행, 국내 약사 128명, 국내 메디컬 인접 계정 180명, 해외 계정 60명입니다.
+- A·B 콘텐츠는 64건이며 배정 가능 수는 김주성 63건·오약 63건·선영 64건입니다. 광고 판정 공란은 0건입니다.
+- 포맷 카드는 60개(상태 `후보` 60개), 주제 카드는 84개입니다.
+- 목표 감사 실패는 0건입니다. 남은 목표 조건은 168시간 지속과 2026-08-12 이후 동일 수집시각 기준 지표 재수집입니다.
+
+## 공식 Instagram embed 대체 수집 — 2026-08-05 18:27 KST
+
+- 인앱 브라우저 대기 대신 공식 공개 `/{reel|p}/<shortcode>/embed/` HTML을 읽는 E9 경로를 추가했습니다. 로그인 정보와 추정값은 사용하지 않았습니다.
+- 311개 고유 게시물(현재 92행 + 최근 12개 카드)을 같은 E9 배치에서 시도했고 290건 성공했습니다. 공식 embed에서 막힌 현재 행 20건은 공개 보조 페이지로 재시도해 13건을 추가 복구했습니다.
+- 현재 `contents.csv`는 92행을 유지합니다. 최신 채움률은 조회수 54/92(릴스 54/72, 캐러셀 0/20), 좋아요 88/92, 댓글 88/92, 게시일 88/92, 경과일 88/92, 길이초 64/72, 지표수집일시 92/92, 썸네일파일 90/92입니다.
+- 공개하지 않은 값은 빈칸으로 유지했습니다. 남은 실패 목록과 사유는 `report/metrics_embed_E9-IG-EMBED-20260805091140.md`, `report/metrics_imginn_E9-IMG-INN-20260805092330.md`, `logs/state.json`에 기록합니다.
+- 최근 12개 카드 279건은 최신 E9 계정 배치로 갱신했고, 현재 CSV와 콘텐츠 Sheet `A1:BB93`을 다시 대조해 행·열·셀 불일치 0건을 확인했습니다.
+- `public/data/contents.csv`와 `data/contents.csv`는 같은 바이트이며, 현재 native 콘텐츠 Sheet는 `1nPt3f3fSVepUmQ3OKKq-2RKOSpBfeoGIfjopSV1EjuE`입니다.
+
+## 최신 Sheet 화면 증거 — 2026-08-05 18:35 KST
+
+- 공식 embed 재수집 후 콘텐츠 Sheet `O1:W8`을 인앱 브라우저에서 다시 열었습니다.
+- 화면에 `02 content ledger (Metrics 2026-08-05)`, `02 콘텐츠 원장`, `문서 상태: 드라이브에 저장됨`, 지표 헤더와 현재 값이 표시됐습니다.
+- 화면 캡처: `assets/sheet_content_metrics_20260805.png`.
+
+## 공개 endpoint 재수집 및 Sheet 전체 일치 검증 — 2026-08-05 18:49 KST
+
+- 인앱 브라우저 탭을 변경하지 않고 공식 Instagram 공개 embed `/{reel|p}/<shortcode>/embed/`로 311개 고유 게시물을 재수집했습니다. 290건은 공개 메타를 반환했고, 21건은 공개 재생수 또는 메타데이터가 노출되지 않았습니다.
+- 공개 Imginn 페이지 20건도 보완 확인해 14건에서 공개 좋아요·댓글·게시일·썸네일을 복구했습니다. 추정값은 넣지 않았습니다.
+- 최신 채움률: 조회수 54/92(릴스 54/72, 캐러셀 0/20), 좋아요 88/92, 댓글 88/92, 게시일 88/92, 경과일 88/92, 길이초 64/72, 지표수집일시 92/92, 썸네일파일 90/92.
+- 25개 계정의 최근 공개 릴스 279건을 같은 공식 embed 배치에서 조회수·좋아요·댓글로 갱신했습니다. 계정중앙조회수 61/92, 배수 54/92, 좋아요율 54/92, 계정평소좋아요율 61/92, 참여율비 54/92, 댓글좋아요비 69/92입니다.
+- 네이티브 콘텐츠 Sheet `1nPt3f3fSVepUmQ3OKKq-2RKOSpBfeoGIfjopSV1EjuE`의 `A1:BB93` 전체 93행·54열을 최신 CSV와 비교했고 불일치 0건입니다. `data/contents.csv`와 `public/data/contents.csv`도 동일하게 유지했습니다.
+
+## 추가 공개 검색 및 정성 컬럼 불변 검증 — 2026-08-05 18:57 KST
+
+- `C7RB_JTvmgE`, `Da_sX41Ppuc`, `DbcN6jJwjJO`, `DbFt3HARR7_`를 exact shortcode 공개 검색으로 한 번 더 확인했지만 지표 페이지를 찾지 못했습니다. 네 행은 계속 빈칸과 실패 사유를 유지했습니다.
+- 최신 E9 백업 `contents_pre_E9-IG-EMBED-20260805094055.csv`와 현재 CSV를 ID 기준으로 비교했습니다. 행 수는 92→92이고 정성 컬럼 변경은 0건입니다.
+
+## 전체 완료 조건 세부 감사 — 2026-08-05 19:01 KST
+
+- 필수 파일 10종은 모두 존재합니다. 국내 약사 계정 128개, 국내 메디컬 인접 계정 180개, 해외 계정 60개, 전체 계정 368개입니다.
+- A/B 콘텐츠 64건이며 배정 가능 수는 김주성 63건, 오약 63건, 선영 64건입니다. 포맷 60개 중 이식 가능성 상 46개, 주제 84개, 광고 판정 92/92입니다.
+- 캐러셀 20행의 조회수는 모두 빈칸이고, 콘텐츠 ID 중복은 없습니다. 세 JSONL 원장은 모두 JSON 오류 0건입니다.
+- 세부 임계치 14/14 통과 결과를 `report/full_threshold_audit_current.json`과 `.md`에 저장했습니다. 남은 목표 조건은 168시간 지속뿐입니다.
+
+## 네이티브 Sheet 4개 전체 범위 재검증 — 2026-08-05 19:08 KST
+
+- 현재 CSV와 네이티브 Google Sheets 전체 범위를 다시 읽어 행 해시를 비교했습니다. 계정 `A1:Y369`, 콘텐츠 `A1:BB93`, 포맷 `A1:AD61`, 주제 `A1:Q85` 모두 행 수·열 수가 일치하고 불일치 0건입니다.
+- 포맷·주제 Sheet의 날짜 셀에 있던 CSV 불일치 선행 아포스트로피만 현재 CSV 값으로 수정했습니다. 다른 정성 컬럼은 수정하지 않았습니다.
+
+## 최신 2차 지표 계산·동일 배치 검증 — 2026-08-05 20:05 KST
+
+- `data/contents.csv`와 `public/data/contents.csv`는 92행·고유 ID 92개이며 SHA-256이 일치합니다. 행 추가·삭제는 없습니다.
+- 최근 12개 원자료는 25개 계정·279개 공개 릴스 카드입니다. 계정 의존 지표는 동일 배치가 확인된 릴스 54/72건에만 남겼고, 나머지 18건은 빈칸으로 유지했습니다.
+- 2차 계산 검증은 54건 대상·위반 0건·대기 18건으로 PASS입니다. 동일 배치 검증도 위반 0건으로 PASS입니다.
+- E10 콘텐츠 배치와 E9 계정 배치가 섞인 11행의 계정중앙조회수·배수·계정평소좋아요율·참여율비를 비웠습니다. 좋아요율·댓글좋아요비처럼 콘텐츠 자체에서 계산 가능한 값은 유지했습니다.
+- 콘텐츠 Sheet `R2:W93`을 갱신한 뒤 전체 `A1:BB93`을 CSV와 다시 비교해 행 해시 불일치 0건을 확인했습니다. 정성 컬럼 변경도 0건입니다.
+- 2026-08-12 15:33 KST 이후 같은 계정 배치로 18개 대기 릴스를 재수집합니다. 그 전까지 인스타그램 탭을 반복 조회하지 않고 오프라인 검증을 계속합니다.
+
+## 산출물 무결성·다음 오프라인 블록 — 2026-08-05 20:16 KST
+
+- `report/goal_artifact_audit_current.json` 기준 CSV·JSONL·필수 파일 감사는 PASS입니다.
+- 콘텐츠 92행의 기준 ID·shortcode 집합을 보존했고, `data/contents.csv`와 `public/data/contents.csv`는 바이트 단위로 일치합니다.
+- 썸네일 기록 90개와 실제 `public/data/thumbs/*.jpg` 90개가 일치하며 누락·미기록 파일은 없습니다.
+- `logs/engine_yield.csv` 170행을 모두 재집계했습니다. 다음 엔진은 E8이고 대기 계정은 6개입니다.
+- 동일 시각 비율 재수집 큐는 279건이며 2026-08-12 15:33 KST 이후 current contents와 recent-12를 한 배치로 다시 읽습니다.
+
+## E8 쿨다운 큐 검증 — 2026-08-05 20:21 KST
+
+- E8 대기 계정 6개 모두 기존 공개 프로필 관찰 근거·계정 원장 행·재방문 예정일을 확인했습니다.
+- 검토 필요 0건입니다. 쿨다운 전 중복 방문은 하지 않고, 예정 시각 이후 공개 프로필과 6개월~3년 전 게시물을 재방문합니다.
+
+## 네이티브 Sheets 전체 범위 재검증 — 2026-08-05 20:26 KST
+
+- 네이티브 Sheets 4개 전체 범위를 현재 CSV와 다시 비교했습니다.
+- 계정 `A1:Y369`, 콘텐츠 `A1:BB93`, 포맷 `A1:AD61`, 주제 `A1:Q85` 모두 행 해시 불일치 0건입니다.
+
+## 다음 운영 기준 — 콘텐츠 채굴 전환 — 2026-08-05 20:45 KST
+
+- `GOAL.md` §9를 새 목표로 교체했습니다. 계정 발굴은 중단하고 기존 368개 계정의 콘텐츠를 채굴합니다.
+- 미채굴 큐 343개를 국내 약사 103개(팔로워 1만 이상 65개 우선) → 국내 메디컬 인접 180개 → 해외 60개 순서로 처리합니다.
+- 계정마다 최근 릴스 12개를 모두 확인합니다. 게이트 미달 콘텐츠도 `raw/observations.jsonl`에 남기고, 계정 원장의 최근12개중앙조회수·최고조회수·평소좋아요율을 관측값으로 갱신합니다.
+- 현재 92행 정리는 완료했습니다. 게이트 9/45/38(통과/미달/판정불가), 좋아요 0 placeholder 13건 삭제, 배정 규칙 재판정을 기록했습니다.
+- 목표는 A·B 150건 이상, 콘텐츠 채굴 계정 200개 이상, 계정 최근12개중앙조회수 200/368 이상입니다. 계정당 채택은 평균 1건 이하로 관리합니다.
+- 콘텐츠 Sheet는 `A1:BD93`으로 확장했고 현재 CSV와 전체 행 해시 불일치 0건입니다. JESSI 썸네일 2건은 확인 실패로 빈칸을 유지합니다.
+
+## 1순위 채굴 시작 — 2026-08-05 20:58 KST
+
+- `good.yaksa`는 공개 조회수 9개만 로드되어 부분 관측으로 남겼습니다. 최근 릴스 12개가 아니므로 중앙값·최고조회수·평소좋아요율은 갱신하지 않았습니다.
+- `wikiyaksa`는 공개 릴스 링크 0개로 실패 처리했습니다. 실패 사유를 `raw/observations.jsonl`과 우선순위 큐에 기록했습니다.
+- `supermom_yaksa`, `dobi_yaksa`, `dreamyaksa_`도 공개 릴스 링크 0개로 실패 기록했습니다.
+- 큐 상태는 재시작 가능하게 보존했습니다. 부분 계정은 12개 완주 때 재방문하고, 릴스 0개 계정은 1회 재확인 후 반복 실패 시 제외합니다.
+
+## 콘텐츠 채굴 진행 업데이트 — 2026-08-05 21:39 KST
+
+- 1순위 국내 약사 큐에서 `ceci_yaksa`, `juny_yaksa`, `bro_yaksa`, `beige_yaksa`, `shine_yaksa`를 추가 관측했습니다.
+- `ceci_yaksa`, `beige_yaksa`, `shine_yaksa`는 최근 릴스 12개 링크를 확인했고, `juny_yaksa`는 2개, `bro_yaksa`는 11개만 노출되어 부분 상태로 남겼습니다.
+- 첫 릴스에서 실제로 읽은 공개 지표만 기록했습니다: `ceci_yaksa` 댓글 40, `beige_yaksa` 좋아요 39·댓글 2, `shine_yaksa` 좋아요 182·댓글 14. 조회수 미노출 값은 빈칸입니다.
+- 큐는 완료 6, 부분 7, 실패 6, 대기 324입니다. 콘텐츠 92행·계정 368행·게이트 판정은 변경하지 않았고, 검증은 PASS입니다.
+- `yakdangdang`에서 최근 릴스 12개를 추가 확인했습니다. 첫 릴스의 좋아요 181, 댓글 22를 기록했고 조회수는 공개되지 않아 빈칸으로 유지했습니다.
+- 최신 큐 상태는 완료 7, 부분 7, 실패 6, 대기 323입니다. 1순위 국내 약사 103개 큐에서 계정 발굴 없이 기존 계정 콘텐츠만 확인합니다.
+- `bbuuu_yaksa`에서 최근 릴스 12개를 추가 확인했습니다. 첫 릴스의 좋아요 107, 댓글 13을 기록했고 조회수는 공개되지 않아 빈칸으로 유지했습니다.
+- 최신 큐 상태는 완료 8, 부분 7, 실패 6, 대기 322입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 21:51 KST
+
+- `gureumpharm`은 계정 핸들이 일치하는 릴스 12개를 확인했고, 협업 계정 링크는 귀속 혼동을 피하려고 제외했습니다. 첫 릴스의 좋아요 153·댓글 423을 기록했습니다.
+- `liz_yaksa`는 4개, `kkumyak`은 2개만 노출되어 부분 상태로 남겼습니다. `jasin_yaksa`는 12개를 확인했지만 육아성 콘텐츠는 채택하지 않습니다.
+- 최신 큐 상태는 완료 10, 부분 9, 실패 6, 대기 318입니다. 콘텐츠 CSV 92행과 계정 CSV 368행은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 21:54 KST
+
+- `strawberry_yaksa`에서 최근 릴스 12개 링크를 확인했습니다. 직접 읽지 않은 조회수·좋아요·댓글은 추정하지 않고 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 11, 부분 9, 실패 6, 대기 317입니다. 콘텐츠 CSV 92행·계정 CSV 368행과 기존 정성 컬럼은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 21:56 KST
+
+- `jy_yaksa`에서 최근 릴스 12개 링크를 확인했습니다. 게시물 지표를 명확히 분리해 읽을 수 없는 값은 추정하지 않고 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 12, 부분 9, 실패 6, 대기 316입니다. 콘텐츠 CSV 92행·계정 CSV 368행과 기존 정성 컬럼은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 21:57 KST
+
+- `spring_pharmy`에서 최근 릴스 12개 링크를 확인했습니다. 직접 읽지 않은 조회수·좋아요·댓글은 추정하지 않고 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 13, 부분 9, 실패 6, 대기 315입니다. 콘텐츠 CSV 92행·계정 CSV 368행과 기존 정성 컬럼은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 21:59 KST
+
+- `kmom_yaksa`에서 최근 릴스 12개 링크를 확인했습니다. 직접 읽지 않은 조회수·좋아요·댓글은 추정하지 않고 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 14, 부분 9, 실패 6, 대기 314입니다. 콘텐츠 CSV 92행·계정 CSV 368행과 기존 정성 컬럼은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:00 KST
+
+- `pink_yak_`에서 최근 릴스 12개 링크를 확인했습니다. 직접 읽지 않은 조회수·좋아요·댓글은 추정하지 않고 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 15, 부분 9, 실패 6, 대기 313입니다. 콘텐츠 CSV 92행·계정 CSV 368행과 기존 정성 컬럼은 변경하지 않았고 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:03 KST
+
+- `woori_yaksa`에서 릴스 10개만 노출되어 부분 상태로 남겼습니다. 미노출 2개와 직접 읽지 않은 공개 지표는 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 15, 부분 10, 실패 6, 대기 312입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:06 KST
+
+- `alpaca_yaksa`에서 공개 릴스 링크 7개만 노출되어 부분 상태로 남겼습니다. 나머지 5개와 직접 읽지 않은 공개 지표는 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 15, 부분 11, 실패 6, 대기 311입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:09 KST
+
+- `ggultip_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 직접 읽은 화면의 숫자를 지표 항목별로 분리할 수 없어 조회수·좋아요·댓글은 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 16, 부분 11, 실패 6, 대기 310입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:10 KST
+
+- `__kang.yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 129·댓글 22를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 17, 부분 11, 실패 6, 대기 309입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:12 KST
+
+- `dongne__yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 5·댓글 0을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 18, 부분 11, 실패 6, 대기 308입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:14 KST
+
+- `yewon.bak`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 9,300·댓글 약 4,800을 기록했습니다. 캡션의 과거 조회수는 현재 지표로 사용하지 않았습니다.
+- 최신 큐 상태는 완료 19, 부분 11, 실패 6, 대기 307입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:15 KST
+
+- `hayu_pharmacist`에서 공개 릴스 10개만 노출되어 부분 상태로 남겼습니다. 좋아요 숨김과 댓글 지표 불명확으로 첫 릴스 지표는 빈칸으로 기록했고, 미노출 2개도 추정하지 않았습니다.
+- 최신 큐 상태는 완료 19, 부분 12, 실패 6, 대기 306입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:17 KST
+
+- `yaksa_nam`에서 릴스 11개만 노출되어 부분 상태로 남겼습니다. 첫 릴스의 공개 좋아요 약 2,400·댓글 약 7,000을 기록했고 조회수와 미노출 1개는 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 19, 부분 13, 실패 6, 대기 305입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:19 KST
+
+- `yak_father`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 344·댓글 약 2,300을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 20, 부분 13, 실패 6, 대기 304입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:21 KST
+
+- `jay_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 12,000·댓글 442를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 21, 부분 13, 실패 6, 대기 303입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:23 KST
+
+- `yaksa_mh`에서 프로필과 `/reels/` 경로를 재확인했지만 공개 릴스 링크가 0개이고 게시물 링크만 노출되어 실패 기록했습니다. 릴스와 지표는 추정하지 않았습니다.
+- 최신 큐 상태는 완료 21, 부분 13, 실패 7, 대기 302입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:24 KST
+
+- `cho_yak`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 11·댓글 4를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 22, 부분 13, 실패 7, 대기 301입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:26 KST
+
+- `jenny_yaksa`에서 협업 계정 릴스를 제외한 본인 최근 릴스 12개를 확인했습니다. 첫 릴스의 공개 좋아요 46·댓글 4를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 23, 부분 13, 실패 7, 대기 300입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:27 KST
+
+- `ana_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 19·댓글 15를 기록했고 Facebook 댓글 수 12는 사용하지 않았습니다. 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 24, 부분 13, 실패 7, 대기 299입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:30 KST
+
+- `fit_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 21,000·댓글 503을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 25, 부분 13, 실패 7, 대기 298입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:34 KST
+
+- `yak.filter`에서 프로필 URL이 `instagram.com/#`로 리디렉션되고 로그인 화면만 노출되어 실패 기록했습니다. 공개 릴스와 지표는 추정하지 않았습니다.
+- 최신 큐 상태는 완료 25, 부분 13, 실패 8, 대기 297입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:37 KST
+
+- `pill_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 643·댓글 94를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 26, 부분 13, 실패 8, 대기 296입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:39 KST
+
+- `youjin_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 26·댓글 37을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 27, 부분 13, 실패 8, 대기 295입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:41 KST
+
+- `zzin__yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 971·댓글 764를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 28, 부분 13, 실패 8, 대기 294입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:43 KST
+
+- `ssok_yaksa`에서 릴스 10개만 노출되어 부분 상태로 남겼습니다. 첫 릴스의 공개 좋아요 95·댓글 20을 기록했고 미노출 2개와 조회수는 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 28, 부분 14, 실패 8, 대기 293입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:45 KST
+
+- `hi_kim_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 36·댓글 53을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 29, 부분 14, 실패 8, 대기 292입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:46 KST
+
+- `dani_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 9,800·댓글 575를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 30, 부분 14, 실패 8, 대기 291입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:48 KST
+
+- `woojoobe.yak`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 32·댓글 2를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 31, 부분 14, 실패 8, 대기 290입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:50 KST
+
+- `jaedol_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 83·댓글 82를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 32, 부분 14, 실패 8, 대기 289입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:52 KST
+
+- `malti_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 9,500·댓글 173을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 33, 부분 14, 실패 8, 대기 288입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:54 KST
+
+- `time_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 35·댓글 7을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 34, 부분 14, 실패 8, 대기 287입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:56 KST
+
+- `hongsee_yaksa`에서 릴스 11개만 노출되어 부분 상태로 남겼습니다. 첫 릴스의 공개 좋아요 131·댓글 26을 기록하고 미노출 1개와 조회수는 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 34, 부분 15, 실패 8, 대기 286입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 22:59 KST
+
+- `bada_yaksa`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 5·댓글 0을 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 35, 부분 15, 실패 8, 대기 285입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:07 KST
+
+- `onda_pharmacist`에서 최근 릴스 12개 링크를 모두 확인했습니다. 첫 릴스의 공개 좋아요 약 2,000·댓글 194를 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- `ggogi_yaksa`에서 협업 계정을 제외한 본인 릴스 12개를 확인했습니다. 공개 좋아요·댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 37, 부분 15, 실패 8, 대기 283입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:12 KST
+
+- `yaksasum`에서 최근 본인 릴스 12개를 확인했습니다. 공개 좋아요 11개와 댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 38, 부분 15, 실패 8, 대기 282입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:14 KST
+
+- `ggnn_yaksa`에서 최근 본인 릴스 12개를 확인했습니다. 공개 좋아요 11개와 댓글이 명확히 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 39, 부분 15, 실패 8, 대기 281입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:18 KST
+
+- `healthy.yaksa`에서 최근 본인 릴스 12개를 확인했습니다. 공개 좋아요·댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다. `1.6만`은 좋아요 수로 확인했습니다.
+- 최신 큐 상태는 완료 40, 부분 15, 실패 8, 대기 280입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:23 KST
+
+- `dang.dang_yaksa`에서 최근 본인 릴스 12개를 확인했습니다. 공개 좋아요 10개와 댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 41, 부분 15, 실패 8, 대기 279입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 채굴 추가 진행 — 2026-08-05 23:25 KST
+
+- `mentor_pharm`에서 최근 본인 릴스 12개를 확인했습니다. 공개 좋아요 5개와 댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 최신 큐 상태는 완료 42, 부분 15, 실패 8, 대기 278입니다. 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 상위 65명 재시도 — 2026-08-05 23:27 KST
+
+- `good.yaksa`에서 부분 관측 9개를 재방문해 최근 릴스 12개를 확보했습니다. 공개 좋아요·댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 상위 65명 상태는 완료 43, 부분 14, 실패 8입니다. 전체 큐는 완료 43, 부분 14, 실패 8, 대기 278이며 체크포인트와 전환 검증은 PASS입니다.
+
+## 1순위 상위 65명 재시도 — 2026-08-05 23:29 KST
+
+- `wikiyaksa`에서 기존 실패 계정을 재방문해 최근 릴스 12개를 확보했습니다. 공개 좋아요·댓글이 표시된 값만 기록했고 조회수는 공개되지 않아 빈칸으로 기록했습니다.
+- 상위 65명 상태는 완료 44, 부분 13, 실패 8입니다. 전체 큐는 완료 44, 부분 13, 실패 8, 대기 278이며 체크포인트와 전환 검증은 PASS입니다.
+## 후보 검토 재개 — 2026-08-06 14:46 KST
+
+- ok_hira/DauIcFYFxFa를 로그인 Instagram 탭에서 읽었습니다. 조회수 72.2만, 좋아요 74, 댓글 1, 게시일 2026-07-13을 확인했습니다.
+- ok_hira의 기존 DauIm_OHOqc와 같은 영화 예고편·쿠키 시리즈이므로 중복 콘텐츠로 추가하지 않고 후보 큐에서 excluded_format_only로 기록했습니다.
+- raw 관측 원문은 1,550줄이 됐고, 후보 검토 큐의 pending은 75건입니다. 다음 작업은 남은 후보를 같은 읽기 전용 기준으로 확인하는 것입니다.
+- dr.hair_lee/DWDAkYwEpjj도 직접 확인했습니다. 조회수 88.3만, 좋아요 3.4천, 댓글 75, 게시일 2026-03-19입니다.
+- 제품군·두피 상태 선택 구조는 확인했지만 내용 레퍼런스 90일 창 밖입니다. 국내 약사 사용 계정 역추적 전까지 canonical 행에 추가하지 않고 reviewed_needs_manual로 남겼습니다.
+- 후보 검토 큐는 adopted 195, excluded_format_only 105, reviewed_needs_manual 24, pending 74입니다.
+- ok_hira/DauHkflicZa도 직접 확인했습니다. 조회수 70.4만, 좋아요 62, 댓글 1, 게시일 2026-07-13입니다. DauIcFYFxFa·DauIm_OHOqc와 같은 시리즈이므로 excluded_format_only로 기록했습니다.
+- 후보 검토 큐는 adopted 195, excluded_format_only 106, reviewed_needs_manual 24, pending 73입니다.
+
+## 후보 검토 재개 — 2026-08-06 14:57 KST
+
+- `lilly_yaksa/DbNTJ35vXXa`를 로그인 Instagram 탭에서 읽었습니다. 조회수 49.7만, 화면 표시 좋아요 1.7천, 댓글 37, 게시일 2026-07-25를 확인했습니다. `lilly_yaksa`와 `lilly_yaksa_rx` 공동 게시물이며, 피부 고민별 BAD→GOOD→GREAT 3단계 비교와 특정 제품 추천·저장 CTA가 있었습니다.
+- 현재 게시물에는 `#광고`·`#협찬` 표기나 구매 CTA가 없었습니다. 그러나 게시물 더 보기 영역에 공동구매·가격·프로필 링크 판매 게시물이 반복 노출되어 현재 게시물의 광고 여부를 확정하지 않고 광고판정 불명·reviewed_needs_manual로 남겼습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,553줄이 됐고, 후보 검토 큐는 adopted 195, excluded_format_only 106, reviewed_needs_manual 25, pending 72입니다.
+## 후보 검토 재개 — 2026-08-06 15:02 KST
+
+- `dr.wongu/Day14YnhYIa`를 로그인 Instagram 탭에서 읽었습니다. 조회수 36만은 후보 큐 값으로 기록했고, 공개 DOM에서 좋아요 307, 댓글 37, 게시일 2026-07-15를 확인했습니다.
+- 차이 찾기 질문으로 선크림 1회 듬뿍 도포와 2회 분할 도포를 비교하고 SPF 방어력·누락 부위·2~3분 실행 간격을 설명하는 피부·뷰티 레퍼런스입니다. 현재 캡션에는 `#광고`·`#협찬` 표기나 제품 판매·예약 CTA가 없고 팔로우·공유 CTA만 있어 `광고아님`으로 기록했습니다.
+- 후보 큐의 배수 게이트는 6.43/6으로 통과했습니다. 게이트 통과·광고 청정·재사용 가능한 비교 실험 형식·선영 배정을 근거로 canonical 콘텐츠 원장에 A등급으로 추가했습니다.
+- raw 관측 원문은 1,554줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 106, reviewed_needs_manual 25, pending 71입니다.
+## 후보 검토 재개 — 2026-08-06 15:09 KST
+
+- `kumedicine_official/DbAJH36AYT9`를 로그인 Instagram 탭에서 읽었습니다. 조회수 30.4만은 후보 큐 값으로 기록했고, 공개 DOM에서 좋아요 971, 댓글 34, 게시일 2026-07-20을 확인했습니다.
+- 고려대병원 시설팀 26년 차 직원을 병원의 숨은 영웅으로 소개하고 직무 장면·감사 메시지·FULL 영상 링크로 마무리한 병원 조직 스토리입니다. 현재 게시물에는 `#광고`·`#협찬` 표기나 제품 판매·예약 CTA가 없었습니다.
+- 의료정보 전달이나 환자 행동 안내가 아니고 기존 `CNUHOFFICIAL/C5zcV4xS1-Z` 및 `NMCOFFICIAL/Dbc4dpIRU65`의 병원 직원·환자경험 사연형과 구조가 겹쳐 `excluded_format_only`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,555줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 107, reviewed_needs_manual 25, pending 70입니다.
+## 후보 검토 재개 — 2026-08-06 15:12 KST
+
+- `dr_park_skin/DanJm9ds_i6`를 로그인 Instagram 탭에서 읽었습니다. 조회수 17.3만은 후보 큐 값으로 기록했고, 공개 DOM에서 좋아요 684, 댓글 31, 리포스트 39, 게시일 2026-07-10을 확인했습니다.
+- 공개 캡션은 `다이소 비추템 2탄입니다!` 수준이었고 제품별 본문은 직접 노출되지 않았습니다. 댓글에는 PDRN 크림·에센스 등 제품 사용 경험과 추가 질문이 있었지만 현재 게시물의 광고 여부와 전체 제품 목록을 확정하지 않았습니다.
+- 같은 계정의 기존 `DRPARKSKIN-DaaFl_UuE4R`가 다이소 뷰티템 비추천 리뷰 형식을 이미 대표하므로 `excluded_format_only`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,556줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 108, reviewed_needs_manual 25, pending 69입니다.
+## 후보 검토 재개 — 2026-08-06 15:15 KST
+
+- `gunginam_tv/DL9w0F4yp_u`를 로그인 Instagram 탭에서 읽었습니다. 조회수 15.6만은 후보 큐 값으로 기록했고, 공개 DOM에서 좋아요 564, 댓글 26, 리포스트 8, 게시일 2025-07-11을 확인했습니다.
+- 호박즙·호박 영양제의 붓기 효능을 소비자 기만 경고형 훅으로 설명하고 유튜브로 유도하는 게시물입니다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없었지만, 게시물 더 보기 영역에 자체 영양제 판매·상담·가격·출시 안내가 반복 노출됐습니다.
+- 게시일이 90일 창 밖이고 계정의 판매 운영이 반복되어 광고판정 불명·`reviewed_needs_manual`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,557줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 108, reviewed_needs_manual 26, pending 68입니다.
+## 후보 검토 재개 — 2026-08-06 15:17 KST
+
+- `yongsanint/DGEoFTvSplD`를 로그인 Instagram 탭에서 읽었습니다. 조회수 14.9만은 후보 큐 값으로 기록했고, 공개 DOM에서 좋아요 676, 댓글 7, 게시일 2025-02-15를 확인했습니다.
+- 복부초음파의 검사 범위·비용·한계를 다루는 건강검진 정보형 게시물입니다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없었지만, 댓글에는 어느 병원인지와 방문 시 직접 검사 가능한지 묻는 문의가 있었고 계정의 게시물 더 보기 영역에 건강검진·내시경·내원 안내가 반복 노출됐습니다.
+- 게시일이 90일 창 밖이고 병원 검진 서비스 맥락이 있어 광고판정 불명·`reviewed_needs_manual`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,558줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 108, reviewed_needs_manual 27, pending 67입니다.
+## 후보 검토 재개 — 2026-08-06 15:19 KST
+
+- `readyyoungpharmacy_global/Dbk-1joIfoo`를 로그인 Instagram 탭에서 읽었습니다. 조회수 13.8만은 후보 큐 값으로 기록했고, 화면 표시 좋아요 7.3천, 댓글 43, 리포스트 70, 게시일 2026-08-04를 확인했습니다.
+- `kellykorea_official`과 공동 게시하고 명동 레디영약국 위치·무료 다국어 피부 분석·현재 프로모션·방문 저장 CTA를 직접 홍보한 약국 커머스 콘텐츠입니다.
+- 제품·서비스 홍보가 명확한 광고·협업형이고 의료 정보가 아니므로 `excluded_format_only`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,559줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 109, reviewed_needs_manual 27, pending 66입니다.
+## 후보 검토 재개 — 2026-08-06 15:23 KST
+
+- `snubh_official/DZtz4FnB4rr`를 로그인 Instagram 탭에서 읽었습니다. 조회수 13.3만은 후보 큐 값으로 기록했고, 화면 표시 좋아요 1천, 댓글 16, 리포스트 26, 게시일 2026-06-18을 확인했습니다.
+- 외래 진료가 끝난 뒤 내분비대사내과 교수의 업무·공부·병원 이동 장면을 보여주는 병원 조직 스토리입니다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없었습니다.
+- 의료정보 전달이나 환자 행동 안내가 아니고 기존 `SNUBHOFFICIA-DahbjFxvGNp`, `CNUHOFFICIAL-C5zcV4xS1-Z`, `NMCOFFICIAL-Dbc4dpIRU65`의 병원 직원·현장 사례 형식과 중복되어 `excluded_format_only`로 기록했습니다. canonical 콘텐츠 행은 추가하지 않았습니다.
+- raw 관측 원문은 1,560줄이 됐고, 후보 검토 큐는 adopted 196, excluded_format_only 110, reviewed_needs_manual 27, pending 65입니다.
+## 후보 검토 재개 — 2026-08-06 15:29 KST
+
+- `dr_park_skin/DaSj1oetPvj`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 13.2만·계정 중앙값 1.5만·배수 8.80·팔로워 1.8만으로 게이트를 통과했고, 공개 DOM에서 좋아요 415·댓글 8·리포스트 80·게시일 2026-07-02를 확인했다.
+- 캡션은 “교대 근무 하느라 밤낮 바뀌어서 힘든 분들 이거 따라해보세요~”였다. 현재 게시물에 광고·협찬 표기·제품명·판매·예약 CTA가 없었고, 기존 `DRPARKSKIN-DaaFl_UuE4R` 다이소 뷰티 제품 리뷰와 주제가 중복되지 않아 신규 콘텐츠로 채택했다.
+- 세부 루틴 단계는 영상 본문이 DOM에 노출되지 않아 원장에 추정해 쓰지 않았다. `data/contents.csv`에 `DRPARKSKIN-DaSj1oetPvj` A등급 행을 추가했다.
+- raw 관찰은 1,561줄이며 후보 큐 상태는 adopted 197·excluded_format_only 110·reviewed_needs_manual 27·pending 64다.
+## 후보 검토 재개 — 2026-08-06 15:35 KST
+
+- `jilgyungyi_official/DROyIJ2E3ZT`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 12.4만·계정 중앙값 957·배수 129.57·팔로워 8,798로 게이트를 통과했고, 공개 DOM에서 좋아요 160·댓글 6·리포스트 15·게시일 2025-11-19를 확인했다.
+- 게시물은 질경이 공식 브랜드 계정의 `윌순 상담소` 산부인과 Q&A 시리즈다. 캡션에 브랜드 계정 팔로우·댓글·DM CTA가 있고 게시물 더 보기 영역에 여성청결제·질세정기·이벤트 프로모션이 반복 노출됐다.
+- 게시일이 90일 범위를 벗어나고 브랜드 프로모션 맥락이 명확해 `excluded_format_only`로 기록했다. 질문→산부인과 전문의 답변 구조는 형식 참고로만 남겼고 `data/contents.csv`에는 추가하지 않았다.
+- raw 관찰은 1,562줄이며 후보 큐 상태는 adopted 197·excluded_format_only 111·reviewed_needs_manual 27·pending 63이다.
+## 후보 검토 재개 — 2026-08-06 15:39 KST
+
+- `loveplan__-DbjxyHOM_LF`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 12.3만·계정 중앙값 170.5·배수 721.41·팔로워 5,215로 게이트를 통과했고, 공개 DOM에서 댓글 없음·리포스트 1·게시일 2026-08-03을 확인했다. 좋아요 수는 숫자로 노출되지 않아 빈칸으로 유지했다.
+- 캡션은 “비밀은 지켜줄게! 혼자 고민하지 말고 들어와”로 시작했고, 피임·임신 고민을 이름·나이를 묻지 않는 익명 상담과 보건복지부 지원 무료 상담으로 연결했다. 전화·카톡·온라인 상담 채널과 산부인과 전문의 24시간 운영을 함께 안내했다.
+- 제품 판매·광고 CTA가 없는 공공건강 캠페인이며 기존 원장에 같은 계정 콘텐츠가 없어 `LOVEPLAN-DbjxyHOM_LF` A등급 행을 `data/contents.csv`에 추가했다.
+- raw 관찰은 1,563줄이며 후보 큐 상태는 adopted 198·excluded_format_only 111·reviewed_needs_manual 27·pending 62다.
+## 후보 검토 재개 — 2026-08-06 15:43 KST
+
+- `yakin_magazine/DU-gj7tEk8V`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 11.9만·계정 중앙값 534·배수 222.85·팔로워 1,430으로 게이트를 통과했고, 공개 DOM에서 좋아요 4,800·댓글 12·리포스트 503·게시일 2026-02-20을 확인했다.
+- 게시물은 카디비 인용과 새벽의 외로움·자기계발 메시지를 전달하고 Jay Shetty Podcast YouTube 링크를 안내했다. 제품 판매·광고 표기는 없었다.
+- 게시일이 90일 범위를 벗어나고 의료·건강 정보가 아닌 라이프스타일 콘텐츠라 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,564줄이며 후보 큐 상태는 adopted 198·excluded_format_only 112·reviewed_needs_manual 27·pending 61이다.
+## 후보 검토 재개 — 2026-08-06 15:48 KST
+
+- `seoulacehospital/DXVgbgkk-Lj`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 11.5만·계정 중앙값 942·배수 122.08·팔로워 563으로 게이트를 통과했고, 공개 DOM에서 좋아요 379·댓글 23·리포스트 14·게시일 2026-04-20을 확인했다.
+- 게시물은 “스마트 병동? 그게 어떤 건가요?”라는 질문으로 시작해 병동간호사 Q&A와 서울에이스병원의 스마트 병동·환자 케어 시스템을 소개한다. 현재 게시물에 광고·협찬 표기는 없었지만 관련 게시물에 진료 일정·의료기관 인증·환자 치료 후기 등 병원 홍보가 반복 노출됐다.
+- 게시일이 90일 범위를 벗어나고 병원 서비스 홍보 맥락이 있어 `reviewed_needs_manual`로 보류했다. 기존 병원 안전정보와 완전 중복으로 단정하지 않아 canonical 행은 추가하지 않았다.
+- raw 관찰은 1,565줄이며 후보 큐 상태는 adopted 198·excluded_format_only 112·reviewed_needs_manual 28·pending 60이다.
+## 후보 검토 재개 — 2026-08-06 15:52 KST
+
+- `nhis_korea/Da2P5puT6qC`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 10.4만·계정 중앙값 9,011.5·배수 11.54·팔로워 4.9만으로 게이트를 통과했고, 공개 DOM에서 좋아요 834·댓글 41·리포스트 17·게시일 2026-07-16을 확인했다.
+- 국민건강보험공단 인증 계정이 상황극 질문으로 국가건강검진을 소개하고, 자궁경부암·유방암·위암·대장암·간암·폐암의 대상·주기를 캡션에 제시했다. 공단 누리집 확인 CTA만 있고 제품 판매·광고 CTA는 없었다.
+- 기존 NHIS의 간식 선택 공공건강 콘텐츠와 주제가 겹치지 않아 `NHISKOREA-Da2P5puT6qC` A등급 행을 `data/contents.csv`에 추가했다.
+- raw 관찰은 1,566줄이며 후보 큐 상태는 adopted 199·excluded_format_only 112·reviewed_needs_manual 28·pending 59이다.
+## 후보 검토 재개 — 2026-08-06 15:55 KST
+
+- `loveplan__-DbjxZB9sh0T`는 이미 확인한 `DbjxyHOM_LF`의 게시물 더 보기 영역에 노출된 동일 계정 후보로 읽기 전용 관련 게시물 DOM에서 확인했다. 큐 기준 조회수 10.2만·계정 중앙값 170.5·배수 598.24·팔로워 5,215로 게이트를 통과했다.
+- 캡션은 임신 고민으로 혼자 검색하는 사람에게 산부인과 전문의·심리상담사·사회복지 전문가의 무료·익명 상담과 온라인·카카오톡·전화 채널을 안내하는 내용이었다.
+- 기존 `LOVEPLAN-DbjxyHOM_LF`와 동일한 공공상담 캠페인 형식이라 `excluded_format_only`로 기록하고 canonical 콘텐츠 행은 추가하지 않았다. 별도 후보 URL을 조작하지 않았다는 점을 raw 관찰에 남겼다.
+- raw 관찰은 1,567줄이며 후보 큐 상태는 adopted 199·excluded_format_only 113·reviewed_needs_manual 28·pending 58이다.
+## 후보 검토 재개 — 2026-08-06 15:57 KST
+
+- `snubh_official/DYBJamVppZv`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 9.8만·계정 중앙값 1.15만·배수 8.52·팔로워 5,074로 게이트를 통과했고, 공개 DOM에서 좋아요 786·댓글 8·리포스트 19·게시일 2026-05-07을 확인했다.
+- 게시물은 응급 수술에 들어가는 심장혈관흉부외과 이재항 교수를 보여주는 의료진 현장 스토리이며 제품·예약 CTA가 없었다.
+- 게시일이 90일 범위를 하루 넘겼고 기존 `snubh_official` 병원 직원·의료진 일상·현장 사례 형식과 중복되어 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,568줄이며 후보 큐 상태는 adopted 199·excluded_format_only 114·reviewed_needs_manual 28·pending 57이다.
+## 후보 검토 재개 — 2026-08-06 16:04 KST
+
+- `modu_pharm/C_Ku_PcBGBR`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 8.3만·계정 중앙값 3,956·배수 20.98·팔로워 6,092로 게이트를 통과했고, 공개 DOM에서 좋아요 346·댓글 15·게시일 2024-08-27을 확인했다. 리포스트 수는 숫자로 노출되지 않아 기록하지 않았다.
+- 캡션은 `[약국x병원]에서 많이 듣는 말!`로 시작해 병원약사가 약국·병원에서 반복해 듣는 문장을 TOP3로 묻고 댓글 참여를 유도했다. 영상 본문 세부 장면은 DOM에 노출되지 않아 추정하지 않았다.
+- 게시일이 90일 범위를 벗어났고 관련 게시물에 2026 개국세미나 모집, 모두의약국 적용 제품, 병원약사 복약지도 교육과 플랫폼 안내가 반복 노출됐다. 현재 게시물 자체에는 광고·협찬 표기와 판매·예약 CTA가 없었지만 광고·활용 적합성이 불명확해 `reviewed_needs_manual`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,569줄이며 후보 큐 상태는 adopted 199·excluded_format_only 114·reviewed_needs_manual 29·pending 56이다.
+## 후보 검토 재개 — 2026-08-06 16:11 KST
+
+- `zeroderma_official/DamSFYCTZog`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 6.2만·계정 중앙값 4,161·배수 14.90·팔로워 1,825로 게이트를 통과했고, 공개 DOM에서 좋아요 193·댓글 258·리포스트 20·게시일 2026-07-10을 확인했다.
+- 캡션은 여배우가 좋아하는 시술 TOP3를 제시하고 댓글에 `시술`을 남기면 다운타임이 적은 시술을 DM으로 보내겠다고 안내했다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없었다.
+- 게시물 더 보기 영역에 8월 시술 이벤트, 의료진 소개, 진료 일정, 예약 문의, 시술 프로그램 홍보가 반복 노출됐다. 의료정보 참고보다 병원 서비스 리드 생성 형식이어서 `excluded_format_only`로 기록했다. 기존 `ZERODERMAOFF-Dah1oV9T3fH`도 댓글 키워드→전문의 매칭표→DM 유도 형식이라 중복 맥락을 확인했고 canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,570줄이며 후보 큐 상태는 adopted 199·excluded_format_only 115·reviewed_needs_manual 29·pending 55이다.
+## 후보 검토 재개 — 2026-08-06 16:17 KST
+
+- `readyyoungpharmacy_global/Dba03AYx_j6`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 5.9만·계정 중앙값 5,956.5·배수 9.91·팔로워 6,934로 게이트를 통과했고, 공개 DOM에서 좋아요 `1.7천`·댓글 65·리포스트 18·게시일 `6일 전`을 확인했다. 게시일은 2026-07-31로 기록했다.
+- `esmi_mina`와 `readyyoungpharmacy_global`의 공동 게시물이며, 아랍어 캡션으로 레디영약국 방문과 구매 제품을 소개하고 K-beauty·약국 해시태그를 사용했다.
+- 약국 방문·제품 홍보 목적이 명확한 커머스 협업 형식이어서 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,571줄이며 후보 큐 상태는 adopted 199·excluded_format_only 116·reviewed_needs_manual 29·pending 54이다.
+## 후보 검토 재개 — 2026-08-06 16:19 KST
+
+- `zeroderma_official/DZ6uYQFzT6b`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 5.5만·계정 중앙값 4,161·배수 13.22·팔로워 1,825로 게이트를 통과했고, 공개 DOM에서 좋아요 305·댓글 0·리포스트 32·게시일 2026-06-23을 확인했다.
+- 캡션은 `피부과 전문의 추천 약국템 TOP4`로 시작하고 처방이 필요한 제품은 전문의 상담 후 사용하라고 안내했다. 현재 게시물에는 `#광고`·`#협찬` 표기와 판매·예약 CTA가 없었다.
+- 기존 `ZERODERMAOFF-Dah1oV9T3fH`의 피부 타입별 제품 선택·전문의 매칭표 형식과 같은 계정에서 중복되어 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,572줄이며 후보 큐 상태는 adopted 199·excluded_format_only 117·reviewed_needs_manual 29·pending 53이다.
+## 후보 검토 재개 — 2026-08-06 16:22 KST
+
+- `zeroderma_official/DbS0-ckTaV_`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 5.1만·계정 중앙값 4,161·배수 12.26·팔로워 1,825로 게이트를 통과했고, 공개 DOM에서 좋아요 113·댓글 202·리포스트 35·게시일 2026-07-27을 확인했다.
+- 캡션은 결혼식 전 시술을 무작정 받으면 안 된다고 안내하고, 웨딩촬영 D-30·예식 D-60·D-30·D-7 시점별 붓기·멍·트러블 위험과 신랑·신부별 계획 필요성을 제시했다. 저장·태그 CTA가 있었고 현재 게시물에는 `#광고`·`#협찬` 표기와 예약 CTA가 없었다.
+- 주제는 기존 제품 선택 콘텐츠와 다르지만 같은 계정 관련 게시물에 시술 이벤트·진료 일정·예약 안내가 반복되어 광고·활용 적합성 불명으로 `reviewed_needs_manual`에 남겼다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,573줄이며 후보 큐 상태는 adopted 199·excluded_format_only 117·reviewed_needs_manual 30·pending 52이다.
+## 후보 검토 재개 — 2026-08-06 16:27 KST
+
+- `jwtalk_official/DBvrXknyHww`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 4.6만·계정 중앙값 738.5·배수 62.29·팔로워 6,777로 게이트를 통과했고, 공개 DOM에서 좋아요 59·댓글 3·리포스트 수 미노출·게시일 2024-10-30을 확인했다.
+- 캡션은 `오늘 힘들었으니까 야식 먹게 해주세요`로 시작해 야식 룰렛을 돌린 뒤 `그냥 자자`로 끝나는 비의료 라이프스타일 콘텐츠다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매 CTA가 없었다.
+- 게시일이 90일 범위를 크게 벗어나고 의료정보 참고 형식이 아니어서 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,574줄이며 후보 큐 상태는 adopted 199·excluded_format_only 118·reviewed_needs_manual 30·pending 51이다.
+## 후보 검토 재개 — 2026-08-06 16:32 KST
+
+- `mizmedi_hospital/DUke9gKknsk`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 4.2만·계정 중앙값 1,143.5·배수 36.73·팔로워 953으로 게이트를 통과했고, 공개 DOM에서 좋아요 115·댓글 1·리포스트 5·게시일 2026-02-10을 확인했다.
+- 캡션은 미즈메디병원 산부인과 의사가 수술실에 들어가는 이유를 소개하고 미즈메디병원 유튜브 채널과 프로필 하단 홈페이지 링크로 유도했다.
+- 게시일이 90일 범위를 벗어나고 병원 스토리·외부 채널 유도 형식이어서 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,575줄이며 후보 큐 상태는 adopted 199·excluded_format_only 119·reviewed_needs_manual 30·pending 50이다.
+## 후보 검토 재개 — 2026-08-06 16:34 KST
+
+- `seoulacehospital/DU9diFLgN7s`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 4.2만·계정 중앙값 942·배수 44.59·팔로워 563으로 게이트를 통과했고, 공개 DOM에서 좋아요 190·댓글 4·리포스트 2·게시일 2026-02-20을 확인했다.
+- 캡션은 회전근개 수술 후 재파열 위험을 설명하고 콜라겐 임플란트 `리제네텐` 치료와 서울에이스병원 전화번호 `1577-7558`을 함께 안내했다.
+- 특정 치료와 병원 상담을 홍보하는 서비스·제품 형식이며 게시일도 90일 범위를 벗어나 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,576줄이며 후보 큐 상태는 adopted 199·excluded_format_only 120·reviewed_needs_manual 30·pending 49이다.
+## 후보 검토 재개 — 2026-08-06 16:38 KST
+
+- `jwtalk_official/DB-80Leyrhk`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 3.6만·계정 중앙값 738.5·배수 48.75·팔로워 6,777로 게이트를 통과했고, 공개 DOM에서 좋아요 48·댓글 3·리포스트 수 미노출·게시일 2024-11-05를 확인했다.
+- 유방암 조기 발견과 유방 조직검사 중요성을 소개하지만 외부 `궁금하닥` 채널로 이동을 유도하는 제약회사 공식 계정 콘텐츠다. 현재 게시물에는 제품·판매 CTA가 없었다.
+- 게시일이 90일 범위를 크게 벗어나 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,577줄이며 후보 큐 상태는 adopted 199·excluded_format_only 121·reviewed_needs_manual 30·pending 48이다.
+## 후보 검토 재개 — 2026-08-06 16:44 KST
+
+- `akdskin_kr/C8eMxdzx5l9`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 3.3만·계정 중앙값 1,925.5·배수 17.14·팔로워 1만으로 게이트를 통과했고, 공개 DOM에서 좋아요 675·댓글 7·리포스트 7·게시일 2024-06-21을 확인했다.
+- 캡션은 `10초 안에 믿을 수 있는 피부과를 찾는 방법!`이며 피부과 전문의·피부과의사 인터뷰·피부과 관련 해시태그를 사용했다. 현재 게시물에는 `#광고`·`#협찬` 표기와 특정 병원·상품 CTA가 없었다.
+- 같은 계정의 기존 `AKDSKINKR-C8wQ2jMR2Nc`도 피부과 전문의 확인과 병원 방문 전 기준을 안내하는 동일 계정의 유사 형식이다. 게시물은 2024년으로 오래됐고 중복 형식이므로 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,578줄이며 후보 큐 상태는 adopted 199·excluded_format_only 122·reviewed_needs_manual 30·pending 47이다.
+## 후보 검토 재개 — 2026-08-06 16:49 KST
+
+- `medicalkoreaofficial/DbC0Xb_ho5e`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 46.6만·계정 중앙값 97,500·배수 4.78·팔로워 3.5만이며, 공개 DOM에서 좋아요 `4.7천`·댓글 75·리포스트 10·게시일 `7월 21일`을 확인했다. 게시일은 2026-07-21로 기록했다.
+- 캡션은 `Oh, my head hurts...`로 시작해 음식이 두통을 유발할 수 있는지 묻고, `MediSnack` 건강툰 영상으로 확인하도록 안내한다. 음식 캐릭터 애니메이션과 영어 자막을 사용했으며, 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 기존 배수 게이트는 `미달`이지만 개정 A급 기준인 국내 조회수 10만 이상을 충족해 `A`로 채택했다. 정확한 좋아요 정수가 공개되지 않아 canonical 행의 좋아요·좋아요율·댓글좋아요비는 빈칸으로 유지했다.
+- canonical 콘텐츠 행 `MEDICALKOREA-DbC0Xb_ho5e`를 추가했다. raw 관찰은 1,579줄이며 후보 큐 상태는 adopted 200·excluded_format_only 122·reviewed_needs_manual 30·pending 46이다.
+## 후보 검토 재개 — 2026-08-06 16:55 KST
+
+- `humc_health/DThtM1WgnNU`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 4.2만·계정 중앙값 39,000·배수 1.08·팔로워 2.1만이며, 공개 DOM에서 좋아요 15·댓글 0·리포스트 1·게시일 `1월 15일`을 확인했다. 게시일은 2026-01-15로 기록했다.
+- 캡션은 주변 사람의 행동을 질문으로 시작해 나르시시스트 판별법을 안내하고, 한림대의료원 정신건강의학과 관련 해시태그를 사용했다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·예약 CTA가 없었다.
+- 게시일이 90일 범위를 벗어나고 조회수 4.2만·배수 1.08로 A급 기준을 충족하지 않는다. 기존 `정신건강·생활습관` 자가점검·목록형 레퍼런스와 형식이 겹쳐 `excluded_format_only`로 기록했으며 canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,580줄이며 후보 큐 상태는 adopted 200·excluded_format_only 123·reviewed_needs_manual 30·pending 45이다.
+## 후보 검토 재개 — 2026-08-06 16:57 KST
+
+- `hello_khidi/DazOAESJo4X`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 755·계정 중앙값 583·배수 1.30·팔로워 1.4만이며, 공개 DOM에서 좋아요 13·댓글 0·게시일 `7월 15일`을 확인했다. 게시일은 2026-07-15로 기록했다.
+- 캡션은 한국보건산업진흥원 신입사원들의 자기소개와 직장생활 토크를 소개하고 풀버전 시청을 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매 CTA가 없었다.
+- 의료·건강정보가 아닌 직장생활 소개이고 조회수 755·배수 1.30으로 A급 기준을 충족하지 않아 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,581줄이며 후보 큐 상태는 adopted 200·excluded_format_only 124·reviewed_needs_manual 30·pending 44이다.
+## 후보 검토 재개 — 2026-08-06 16:59 KST
+
+- `inha_uh/DZ6-zUBCNn6`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 8,842·계정 중앙값 6,857·배수 1.29·팔로워 1만이며, 공개 DOM에서 좋아요 63·댓글 1·리포스트 4·게시일 `6월 23일`을 확인했다. 게시일은 2026-06-23으로 기록했다.
+- 캡션은 인하대병원 30주년 기념 행사에서 가수 솔지의 축하 공연을 소개하고 감상을 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·예약 CTA가 없었다.
+- 의료·건강정보가 아닌 병원 기념 공연 게시물이고 조회수 8,842·배수 1.29로 A급 기준을 충족하지 않아 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,582줄이며 후보 큐 상태는 adopted 200·excluded_format_only 125·reviewed_needs_manual 30·pending 43이다.
+## 후보 검토 재개 — 2026-08-06 17:01 KST
+
+- `cellmed.official/DaJtdlYCJ87`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 45.5만·계정 중앙값 131,000·배수 3.47·팔로워 9,824이며, 공개 DOM에서 좋아요 908·댓글 20·리포스트 1·게시일 `6월 29일`을 확인했다. 게시일은 2026-06-29로 기록했다.
+- 캡션은 런약사와 함께 여름철 러닝 방법 3가지를 소개한다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없지만 `cellmed.official`과 `run.pharmacist` 공동 게시물이고, 댓글에 제품·약국 구매·홈쇼핑·광고모델·필수템 반응이 반복됐다.
+- 조회수는 A급 절대 조회수 조건을 충족하지만 제품·약국 구매 신호와 브랜드 협업이 강해 `광고·협업`으로 판단했다. `excluded_format_only`로 기록했으며 canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,583줄이며 후보 큐 상태는 adopted 200·excluded_format_only 126·reviewed_needs_manual 30·pending 42이다.
+## 후보 검토 재개 — 2026-08-06 17:05 KST
+
+- `hello_health_pr/DYn1nWVBTSL`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 1,208·계정 중앙값 490·배수 2.47·팔로워 7,657이며, 공개 DOM에서 좋아요 16·댓글 0·게시일 `5월 22일`을 확인했다. 게시일은 2026-05-22로 기록했다.
+- 캡션은 국민건강보험 일산병원의 소아응급·권역응급·심뇌혈관 센터 역할을 기관 메시지로 소개한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·예약 CTA가 없었다.
+- 의료정보보다 기관 브랜딩에 가깝고 조회수 1,208·배수 2.47로 A급 기준을 충족하지 않아 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,584줄이며 후보 큐 상태는 adopted 200·excluded_format_only 127·reviewed_needs_manual 30·pending 41이다.
+## 후보 검토 재개 — 2026-08-06 17:08 KST
+
+- `baropharm_official/DVqfXzaEtXz`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 8.8만·계정 중앙값 30,000·배수 2.93·팔로워 6,752이며, 공개 DOM에서 좋아요 98·댓글 2·게시일 `3월 9일`을 확인했다. 게시일은 2026-03-09로 기록했다.
+- 캡션은 약사 전용 `팜올 에듀플러스` 일반약 상담 강의와 430페이지 PDF 교재를 소개하고 프로필 링크의 강의·교재 미리보기로 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없지만 유료 강의 판매 CTA가 명확하다.
+- `광고·공구`로 판단해 `excluded_format_only`로 기록했으며 canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,585줄이며 후보 큐 상태는 adopted 200·excluded_format_only 128·reviewed_needs_manual 30·pending 40이다.
+## 후보 검토 재개 — 2026-08-06 17:10 KST
+
+- `icmcseoul/C8Ilf6RRl_c`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 1,851·계정 중앙값 1,160·배수 1.60·팔로워 6,312이며, 공개 DOM에서 좋아요 43·댓글 0·게시일 2024-06-13을 확인했다.
+- 캡션은 루푸스의 정의·원인·자가관리 필요성을 설명하고 서울성모병원 프로필 링크로 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없었다.
+- 게시일이 90일 범위를 크게 벗어나고 조회수 1,851·배수 1.60으로 A급 기준을 충족하지 않으며 기존 병원 건강정보·프로필 유도 형식과 겹쳐 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,586줄이며 후보 큐 상태는 adopted 200·excluded_format_only 129·reviewed_needs_manual 30·pending 39이다.
+## 후보 검토 재개 — 2026-08-06 17:15 KST
+
+- `kumedicine_guro/DaM31A_JEWe`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 3,825·계정 중앙값 1,076.5·배수 3.55·팔로워 6,073이며, 공개 DOM에서 좋아요 46·댓글 3·리포스트 수 미노출·게시일 `6월 30일`을 확인했다. 게시일은 2026-06-30으로 기록했다.
+- 캡션은 고대구로병원의 점심시간 작은 음악회와 정서적 쉼을 소개한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 의료·건강정보보다 기관 문화·브랜딩에 가깝고 조회수 3,825·배수 3.55로 A급 기준을 충족하지 않아 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,587줄이며 후보 큐 상태는 adopted 200·excluded_format_only 130·reviewed_needs_manual 30·pending 38이다.
+## 후보 검토 재개 — 2026-08-06 17:19 KST
+
+- `ulsan_uuh/DCh-qC4SmEC`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 3,565·계정 중앙값 2,625.5·배수 1.36·팔로워 5,881이며, 공개 DOM에서 좋아요 72·댓글 0·리포스트 수 미노출·게시일 `2024년 11월 19일`을 확인했다.
+- 캡션은 이른둥이의 날을 맞아 신생아중환자실 치료 환아 보호자를 초대하고 교수 건강강좌와 선물을 제공한 행사를 소개한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 게시일이 90일 범위를 크게 벗어나고 병원 행사·환자 지원 브랜딩 중심이며 조회수 3,565·배수 1.36으로 A급 기준을 충족하지 않아 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,588줄이며 후보 큐 상태는 adopted 200·excluded_format_only 131·reviewed_needs_manual 30·pending 37이다.
+## 후보 검토 재개 — 2026-08-06 17:22 KST
+
+- `bodoc_official/DY4dbNcv_rA`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 741·계정 중앙값 495.5·배수 1.50·팔로워 5,065이며, 공개 DOM에서 좋아요 1·댓글 0·리포스트 수 미노출·게시일 `5월 28일`을 확인했다. 게시일은 2026-05-28로 기록했다.
+- 캡션은 식약처·USDA FoodKeeper·EFSA 출처를 사용해 식품별 보관 위치·온도와 식중독 위험을 설명하고, 흔한 오해와 보관 3원칙을 제시한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 조회수 741·배수 1.50으로 게이트는 미달이지만 출처·수치·오해 교정·실천 규칙·저장 CTA가 결합된 신규 구조라 `F`급 예외로 채택했다. `FMT-FOOD-STORAGE-3RULE-001`과 `TOPIC-FOOD-STORAGE-001`을 추가하고, 약 보관·검진 전 준비·여름철 식품 안전으로 각색안을 기록했다.
+- canonical 콘텐츠 행을 추가했다. raw 관찰은 1,589줄이며 후보 큐 상태는 adopted 201·excluded_format_only 131·reviewed_needs_manual 30·pending 36이다.
+## 후보 검토 재개 — 2026-08-06 17:27 KST
+
+- `mariababy_official/DbZ2NFuBlEn`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 14,000·계정 중앙값 8,243·배수 1.70·팔로워 5,056이며, 공개 DOM에서 좋아요 70·댓글 1·리포스트 1을 확인했다. 현재 DOM에는 게시일이 `1주`로 표시됐고, 기존 프로필 HTML 관측 기록의 2026-07-29를 사용했다.
+- 캡션은 2년 난임 경험 고백 뒤 야식·간식·걷기·휴대폰·감정 표현 습관 5가지를 제시하고 댓글 참여를 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 90일 범위 안이지만 조회수 14,000·배수 1.70으로 A급 기준을 충족하지 않고 개인 고백·생활 루틴·댓글 참여 구조가 기존 국내 형식과 겹쳐 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,590줄이며 후보 큐 상태는 adopted 201·excluded_format_only 132·reviewed_needs_manual 30·pending 35이다.
+## 후보 검토 재개 — 2026-08-06 17:29 KST
+
+- `prief_official/DUVNinQgSy-`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 9,113·계정 중앙값 5,299.5·배수 1.72·팔로워 4,635이며, 공개 DOM에서 좋아요 36·댓글 1·리포스트 1·게시일 `2월 4일`을 확인했다. 게시일은 2026-02-04로 기록했다.
+- 캡션은 피나스테리드 복약지도 포인트를 제시한 뒤 프리프 ETC 강의와 60여 개 질환 학술정보를 홍보하고 팔로우를 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기가 없지만 유료 교육 플랫폼 강의 일부와 강의 확인 CTA가 명시돼 있다.
+- `광고·공구`로 판단했다. 게시일이 90일 범위를 벗어나고 조회수 9,113·배수 1.72로 A급 기준도 충족하지 않아 `excluded_format_only`로 기록했으며 canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,591줄이며 후보 큐 상태는 adopted 201·excluded_format_only 133·reviewed_needs_manual 30·pending 34이다.
+## 후보 검토 재개 — 2026-08-06 17:32 KST
+
+- `csuh_official/DZZNzhJq4nu`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 2,430·계정 중앙값 1,358.5·배수 1.79·팔로워 4,382이며, 공개 DOM에서 좋아요 54·댓글 1·리포스트 1·게시일 `6월 10일`을 확인했다. 게시일은 2026-06-10으로 기록했다.
+- 캡션은 아이의 사시가 시력 발달과 입체시에 영향을 줄 수 있고 치료 골든타임이 중요하다고 설명한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 조회수 2,430·배수 1.79로 A급 기준을 충족하지 않고 일반적인 병원 질환 설명·기관 안심 메시지 형식과 겹쳐 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,592줄이며 후보 큐 상태는 adopted 201·excluded_format_only 134·reviewed_needs_manual 30·pending 33이다.
+## 후보 검토 재개 — 2026-08-06 17:35 KST
+
+- `gangdong_kyunghee/DakBZ5msr2v`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 1,514·계정 중앙값 525·배수 2.88·팔로워 3,199이며, 공개 DOM에서 좋아요·댓글 수치는 노출되지 않았고 리포스트 1·게시일 `7월 9일`을 확인했다. 게시일은 2026-07-09로 기록했다.
+- 캡션은 `PET-CT는 더 좋은 CT 검사다? 아닙니다!`라는 오해 반박형 질문과 두 검사 비교 설명을 제시한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 조회수 1,514·배수 2.88로 A급 기준을 충족하지 않으며, 공개 DOM에 실제 비교 기준과 편집 구조가 노출되지 않아 F급 신규 포맷 여부를 판정할 수 없어 `reviewed_needs_manual`로 보류했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,593줄이며 후보 큐 상태는 adopted 201·excluded_format_only 134·reviewed_needs_manual 31·pending 32이다.
+## 후보 검토 재개 — 2026-08-06 17:37 KST
+
+- `kuansanhospital/DbC5AdxCCd2`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 2,720·계정 중앙값 1,447.5·배수 1.88·팔로워 2,990이며, 공개 DOM에서 좋아요 21·댓글 2·게시일 `7월 21일`을 확인했다. 리포스트 수는 노출되지 않았고 게시일은 2026-07-21로 기록했다.
+- 캡션은 `커피로 물을 대체해도 괜찮을까요?`라는 생활 질문에서 출발해 온열질환·폭염 팁을 가정의학과 교수와 설명하고 YouTube 링크로 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 조회수 2,720·배수 1.88로 A급 기준을 충족하지 않고 병원 교수 설명·외부 채널 유도 형식과 겹쳐 `excluded_format_only`로 기록했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,594줄이며 후보 큐 상태는 adopted 201·excluded_format_only 135·reviewed_needs_manual 31·pending 31이다.
+## 후보 검토 재개 — 2026-08-06 17:41 KST
+
+- `connectcare_official/DZeEUiKIbyX`를 읽기 전용 Instagram DOM으로 확인했다. 큐 기준 조회수 280·계정 중앙값 255·배수 1.10·팔로워 2,933이며, 공개 DOM에서 좋아요 4·댓글 0·게시일 `6월 12일`을 확인했다. 리포스트 수는 노출되지 않았고 게시일은 2026-06-12로 기록했다.
+- 캡션은 산수유 잎과 흑색종 관련 동물실험·STAT3 기전을 설명하고 치료제 개발 근거라고 표현한 뒤 의약정보 팔로우를 유도한다. 현재 게시물에는 `#광고`·`#협찬` 표기와 제품·판매·예약 CTA가 없었다.
+- 조회수 280·배수 1.10으로 A급 기준을 충족하지 않으며, 전임상 결과가 사람의 치료 효과로 오해되지 않는지와 F급 이식 가능성을 확인해야 해 `reviewed_needs_manual`로 보류했다. canonical 콘텐츠 행은 추가하지 않았다.
+- raw 관찰은 1,595줄이며 후보 큐 상태는 adopted 201·excluded_format_only 135·reviewed_needs_manual 32·pending 30이다.
+- `shiny_jjeong/DbarvnhznuA`를 읽기 전용 Instagram DOM으로 확인했다. 2026-07-31 게시물이며 조회수 1,638·배수 4.43·팔로워 2,889, 댓글 2를 확인했고 좋아요 수는 숫자로 노출되지 않았다.
+- 개봉 후 시럽·조제약·연고의 사용기간, 변질 시 폐기, 폐의약품 수거함 배출을 설명하는 복약안전 콘텐츠다. A급 기준에는 미달하며 제품별 허가사항·보관기간의 일반화 여부와 신규 F급 형식을 사람 검토로 보류했다. 광고·협찬 표기와 제품·판매·예약 CTA가 없어 `광고아님`으로 기록했다. canonical 콘텐츠 원장에는 추가하지 않았다.
+- raw 관찰 1,596건. 후보 큐는 adopted 201건, excluded_format_only 135건, reviewed_needs_manual 33건, pending 29건이다. canonical CSV는 콘텐츠 293행, 포맷 61행, 주제 85행을 유지했다.
+- `cnuh_official/C5zcQiMSjO-`를 읽기 전용 Instagram DOM으로 확인했다. 게시일은 2024-04-16, 공개 표시상 120주 전이며 조회수 2,475·배수 1.40·팔로워 2,680·좋아요 24·댓글 0을 확인했다.
+- 전남대학교병원 직원의 친절 사례를 소개하는 기관 브랜딩 영상으로 의료 건강정보 레퍼런스가 아니고 최근 1~3개월 조건도 충족하지 않아 `excluded_format_only`로 제외했다. 광고·협찬 표기와 제품·판매·예약 CTA는 없어 `광고아님`으로 기록했다. canonical 콘텐츠 원장에는 추가하지 않았다.
+- raw 관찰 1,597건. 후보 큐는 adopted 201건, excluded_format_only 136건, reviewed_needs_manual 33건, pending 28건이다. canonical CSV는 콘텐츠 293행, 포맷 61행, 주제 85행을 유지했다.
+- `goodhospitals/Dbj_g-dgXVj`를 읽기 전용 Instagram DOM으로 확인했다. 게시일은 2026-08-03, 조회수 8,785·배수 4.20·팔로워 2,531·좋아요 145·댓글 6·리포스트 1·공유 1을 확인했다.
+- 좋은병원들 릴스 공모전 출품작으로 병원 기획홍보팀 직원의 부캐와 업무를 소개하는 기관 브랜딩 영상이다. 의료 건강정보 형식이 아니고 A급 기준도 충족하지 않아 `excluded_format_only`로 제외했다. 광고·협찬 표기와 제품·판매·예약 CTA는 없어 `광고아님`으로 기록했다. canonical 콘텐츠 원장에는 추가하지 않았다.
+- raw 관찰 1,598건. 후보 큐는 adopted 201건, excluded_format_only 137건, reviewed_needs_manual 33건, pending 27건이다. canonical CSV는 콘텐츠 293행, 포맷 61행, 주제 85행을 유지했다.
+- `khis_insta/DRizxLtjk6v`를 읽기 전용 Instagram DOM으로 확인했다. 게시일은 2025-11-27, 36주 전이며 조회수 585·배수 1.34·팔로워 2,515·좋아요 21·댓글 0을 확인했다.
+- 한국보건의료정보원의 나의건강기록 앱을 소개하고 다운로드를 유도하는 브이로그로, `#홍보` 표기와 앱 이용 CTA가 있다. 최근 1~3개월 조건과 의료 건강정보 레퍼런스 형식에 미달해 `excluded_format_only`로 제외하고 `광고·협찬`으로 기록했다. canonical 콘텐츠 원장에는 추가하지 않았다.
+- raw 관찰 1,599건. 후보 큐는 adopted 201건, excluded_format_only 138건, reviewed_needs_manual 33건, pending 26건이다. canonical CSV는 콘텐츠 293행, 포맷 61행, 주제 85행을 유지했다.
+- 18:02 KST 오프라인 감사에서 콘텐츠 CSV 293행·56열, 포맷 61행·30열, 주제 85행·17열, 계정 368행·25열을 확인했다. 콘텐츠 ID 중복 0건, 계정 핸들 중복은 기존 `cellmed.official`·`medi2388_` 2건, 광고판정 공백 0건, raw JSONL 오류 0건이다.
+- `nmc_official/DbIPOjHsUIn`의 읽기 전용 Instagram 확인은 공유 브라우저 lease가 다른 작업에 점유되어 두 차례 보류됐다. 후보는 pending으로 유지하고 lease 해제 후 재개한다.
+- 18:03 KST 세 번째 shared browser lease 재시도도 실패했다. `nmc_official/DbIPOjHsUIn`은 Instagram 확인 전 pending으로 유지하며, lease 해제 후 재개한다.
+- 18:05 KST 새 continuation에서도 shared browser lease가 점유되어 `nmc_official/DbIPOjHsUIn` 확인을 보류했다. 기존 raw에는 조회수만 있어 캡션·형식·광고판정을 추정하지 않았다.
+- 18:06 KST 재개 시도도 shared browser lease 점유로 실패했다. `nmc_official/DbIPOjHsUIn`은 직접 확인 전 pending으로 유지한다.
+- 18:08 KST 재개 시도도 shared browser lease 점유로 실패했다. `nmc_official/DbIPOjHsUIn`은 Instagram 직접 확인 전 pending으로 유지한다.
+- 18:10 KST `nmc_official/DbIPOjHsUIn`을 읽기 전용 Instagram DOM으로 확인했다. 게시일은 2026-07-23, 조회수 1,507·배수 1.84·팔로워 2,426·좋아요 27·댓글 0을 확인했다. 내원객 감사 사연과 간호사 소개를 담은 국립중앙의료원 기관 브랜딩 릴스로 의료 건강정보 형식이 아니어서 `excluded_format_only`로 제외했다. 광고·협찬 표기와 제품·판매·예약 CTA가 없어 `광고아님`으로 기록했으며 canonical 콘텐츠 원장에는 추가하지 않았다.
+- raw 관찰 1,600건. 후보 큐는 adopted 201건, excluded_format_only 139건, reviewed_needs_manual 33건, pending 25건이다. canonical CSV는 콘텐츠 293행, 포맷 61행, 주제 85행을 유지했다.
+- 18:10 KST shared browser lease가 해소되어 후보 검토를 재개했다. 남은 pending 25건을 직접 확인한다.
+- 18:15 KST `kpanews1968/Dbo9vxyozv6` 확인을 재개하려 했으나 shared browser lease가 `Gmail 광고 메일 필터 정리` 작업에 점유되어 접근하지 못했다. 후보는 pending으로 유지하며, raw·canonical 데이터에는 추정값을 추가하지 않았다. lease 해제 후 같은 후보부터 재개한다.
+- 18:17 KST 새 continuation에서 같은 후보 확인을 재시도했으나 shared browser lease가 `clinic-radar research loop` 작업에 점유되어 다시 보류했다. 후보·raw·canonical 데이터는 변경하지 않았다.
+- 18:19 KST 세 번째 연속 continuation에서도 shared browser lease가 `comm-radar 7일 정보 수집 루프` 작업에 점유되어 `kpanews1968/Dbo9vxyozv6` 확인을 보류했다. 동일 blocker가 세 번 연속 지속되어 goal blocker audit 기준을 충족했으며, 후보·raw·canonical 데이터는 변경하지 않았다.
+
+## 최신 지속 작업 체크포인트 — 2026-08-06
+
+- 2026-08-06T20:46:56+09:00 기준 canonical 원장은 계정 366건, 콘텐츠 314건, 포맷 61건, 주제 85건이며 raw 관찰은 1620줄이다.
+- QUEUE.csv는 341행이다. 완료 122건, 보류 219건이며 현재 재방문 예정일 도달 계정은 0건이다. 가장 이른 재방문 예정일은 .
+- 2026-08-06 오프라인 감사에서 KNJBIO 콘텐츠의 포맷소진도 공란을 미측정으로 정리했다. raw 원문과 금지 경로는 수정하지 않았다.
+- 현재 Instagram 계정 제한·차단이나 로그인 해제는 기록되지 않았다. lease 점유와 큐 소진은 중단 또는 blocked 사유로 기록하지 않고 다음 예정일에 재개한다.
+
+## 주간 인수인계 정정 — 2026-08-06
+
+- 20:46 KST 체크포인트의 가장 이른 재방문 예정일 표시가 비어 있어 accounts.csv를 다시 계산했다. 정확한 값은 2026-08-11T20:15:50+09:00이다.
+- 2026-08-06T21:06:44+09:00 기준 원장은 계정 366건·콘텐츠 314건이며, raw는 append-only로 유지 중이다. known_items.txt 비주석 760줄과 known_shortcodes.txt 322건을 유지한다.
+- QUEUE.csv는 341행이며 완료 122건·보류 219건이다. 현재 재방문 도달 계정은 0건이다.
+- 완료 조건 감사에서 계정 핸들 중복은 0/0이고 기존 293건 핵심 필드 공란과 용도 오타는 0건이다. Instagram 제한·차단·로그인 해제는 기록되지 않았다.
+
+## 주간 인수인계 정정 — 후보 보류 판정 append 2026-08-06T21:26:20+09:00
+
+- 부분 후보 7건의 처리 결정을 raw append-only 원장에 명시했다. 기존 원문과 data CSV는 보존했다.
+- 7건 모두 최근12·조회수 또는 확정 광고·서비스 적합성 근거가 부족해 canonical 콘텐츠로 추가하지 않았다.
+- 다음 재방문 기준일은 2026-08-11이며, 그 전에는 동일 계정의 지표를 추정하지 않는다.
+
+## 주간 인수인계 정정 — 계정 지표 공란 감사 2026-08-06T21:28:49+09:00
+
+- 계정 지표 공란은 직접 근거 부족 상태를 보고했으며, 추정값을 쓰지 않았습니다. 최근30 직접 근거 1건과 콘텐츠 source group 21개는 현재 원장과 일치합니다.
+
+## 주간 인수인계 정정 — 포맷 국내 약사 사용 수 보정 2026-08-06T21:36:14+09:00
+
+- 포맷 카드 1건의 연결 계정 유형을 확인해 국내 약사 사용 0계정·0영상과 `무주공산`을 반영했습니다.
+
+## 주간 인수인계 정정 — 콘텐츠 공란 근거 보정 2026-08-06T21:39:17+09:00
+
+- KNJBIO usage 1건을 `형식`으로 보정했고, myyaksa 12건은 raw 근거 부족으로 추정하지 않았습니다.
+
+
+## 주간 인수인계 정정 — myyaksa 미확인 필드 메모 2026-08-06T21:47:46+09:00
+
+- myyaksa 12개 콘텐츠 행에 카테고리·용도 공란 사유를 `사람메모`로 기록했다.
+- 값 추정과 raw 수정은 하지 않았고, due 재방문 후 근거를 확인해 보완한다.
+
+
+## 주간 인수인계 정정 — 후보 보류 판정 2차 append 2026-08-06T21:54:06+09:00
+
+- 후보 보류 판정 raw resolution은 누적 10건이며 미해결 후보는 0건이다. raw 원문은 수정하지 않았고 data CSV는 추가하지 않았다.
+
+
+## 주간 인수인계 정정 — 후보 보류 판정 사유 2026-08-06T21:57:41+09:00
+
+- dr.hair_lee 보류 사유를 계정 원장 재대조 결과에 맞게 정정했다. 계정 행은 존재하고 계정 지표 2개가 공란이며, 신규 포맷 카드 매핑도 남아 있다.
+
+
+## 주간 인수인계 정정 — 포맷ID URL 연결 2026-08-06T22:03:03+09:00
+
+- 콘텐츠 11행의 포맷ID를 formats.csv 대표영상 URL 근거로 보정했다. data CSV 11행만 수정했고 raw는 변경하지 않았다.
+
+
+## 주간 인수인계 정정 — 포맷 사용 수 일치 2026-08-06T22:06:30+09:00
+
+- 포맷 카드 8건을 canonical 콘텐츠 연결 수와 맞췄다. raw는 변경하지 않았고 formats.csv만 수정했다.
+
+
+## 주간 인수인계 정정 — 포맷 대표배수중앙값 2026-08-06T22:10:06+09:00
+
+- 포맷 카드 31건의 대표배수중앙값을 canonical 콘텐츠의 대표 URL 배수 중앙값으로 보정했다. 불완전한 30건은 추정하지 않았다.
+
+
+## 주간 인수인계 정정 — 주제 최고배수 2026-08-06T22:13:28+09:00
+
+- 주제 카드 45건의 최고배수를 대표 URL 콘텐츠의 canonical 배수로 보정했다. 불완전한 카드는 추정하지 않았다.
+
+
+## 주간 인수인계 — 주제 사용 횟수·소진도 감사 2026-08-06T22:20:00+09:00
+
+- 주제 85건의 사용 횟수 분포는 1건 84개·2건 1개이며, 소진도는 미조사 23개·미측정 62개다.
+- 대표영상 URL exact match 47건, 미매칭 38건, 중복 매칭 0건이다.
+- 주제 소진도 변경 규칙이 없어 값을 추정하지 않았다. 국내사용횟수 2건 카드와 미매칭 38건은 재방문 확인 대상으로 남겼다.
+
+
+## 주간 인수인계 — 주제 최근사용일 보정 2026-08-06T22:30:00+09:00
+
+- 대표 URL와 콘텐츠 게시일이 1:1로 확인된 주제 카드 3건의 최근사용일을 보정했다.
+- 보정일: `Dbf1mJkzW5M` 2026-08-01, `Dbdb7Lyz3K-` 2026-07-31, `Dbasl3VTGLs` 2026-07-30.
+- URL 중복 매칭은 0건이며 raw는 변경하지 않았다. 원본 백업은 `etc/backups/pre_topic_recent_usage_date_fix_20260806_223000`이다.
+
+
+## 주간 인수인계 — 포맷 국내 사용일 보정 2026-08-06T22:40:00+09:00
+
+- 국내 약사 사용 영상 1건과 대표 URL·게시일이 1:1로 확인된 포맷 카드 3건의 국내최초사용일·국내최근사용일을 보정했다.
+- 보정일: `Dbf1mJkzW5M` 2026-08-01, `Dbdb7Lyz3K-` 2026-07-31, `Dbasl3VTGLs` 2026-07-30.
+- URL 중복 매칭은 0건이며 raw는 변경하지 않았다. 원본 백업은 `etc/backups/pre_format_usage_date_fix_20260806_224000`이다.
+
+
+## 주간 인수인계 — 콘텐츠 canonical URL·팔로워 보정 2026-08-06T22:50:00+09:00
+
+- `KNJBIO-DEyYbS3z1X7`의 raw candidate URL·raw profile 팔로워·accounts.csv 근거로 영상URL과 팔로워 1,008명을 보정했다.
+- 좋아요·댓글·계정중앙조회수·계정평소좋아요율은 미확인 상태를 유지했다. raw는 변경하지 않았다.
+- 원본 백업은 `etc/backups/pre_knjbio_content_source_fix_20260806_225000`이다.
+
+
+## 주간 인수인계 — 파생 공란 근거 감사 2026-08-06T23:10:00+09:00
+
+- 콘텐츠 게시일 공란 17건·계정 게시물 수 공란 11건은 raw 근거가 없어 유지했다.
+- 콘텐츠 중앙조회수 공란과 현재 계정 중앙값이 동시에 있는 193건은 기존 값과 54건 불일치해 일괄 보정하지 않았다.
+- raw·data CSV는 변경하지 않았고, 다음 계정 재방문은 2026-08-11T20:15:50+09:00이다.
+
+
+## 주간 인수인계 — 콘텐츠 계정평소좋아요율 동기화 2026-08-06T23:30:00+09:00
+
+- accounts.csv의 숫자형 유일 평소좋아요율을 근거로 contents.csv 21행의 계정평소좋아요율을 보정했다.
+- 충돌은 0건이며 다른 참여 지표와 raw는 변경하지 않았다. 원본 백업은 `etc/backups/pre_content_account_like_rate_fix_20260806_233000`이다.
+
+
+## 주간 인수인계 — 좋아요 0 검증 2026-08-06T23:45:00+09:00
+
+- 목표 원문이 지정한 좋아요 0 콘텐츠 3건을 raw 공개 HTML 관측과 대조했다.
+- 세 건 모두 실제 0으로 확인해 원장 값을 유지했고, raw·data CSV는 변경하지 않았다.
+
+
+## 주간 인수인계 — 썸네일 누락 사유 보완 2026-08-06T23:55:00+09:00
+
+- 썸네일파일 공란 28건 중 사유가 없던 두 행(`DY4dbNcv_rA`, `Dbo9vxyozv6`)에 누락 사유를 기록했다.
+- 두 파일 모두 canonical `public/data/thumbs`에 없으며, 브라우저 재수집·이미지 다운로드는 수행하지 않았다.
+- raw는 변경하지 않았다. 원본 백업은 `etc/backups/pre_thumbnail_missing_memo_fix_20260806_235500`이다.
+
+
+## 주간 인수인계 — 용도 허용값 정규화·중복 감사 2026-08-06T23:59:00+09:00
+
+- contents.csv `용도(내용·형식·둘다)` 비허용값 5건을 허용값으로 정규화했다. `콘텐츠·형식`→`내용·형식` 1건과 나머지 4건의 `내용` 변환이다.
+- 계정 핸들·콘텐츠 ID·shortcode·포맷 ID·주제 ID 중복은 모두 0건이다.
+- raw는 변경하지 않았고, 원본 백업은 `etc/backups/pre_usage_value_normalization_20260806_235900`이다.
+
+
+## 주간 인수인계 — 릴스 없음 큐 정리 2026-08-06T23:59:00+09:00
+
+- QUEUE.csv `릴스 없음` 보류 209건을 완료 처리했다. 행은 삭제하지 않았고, 상태는 완료 331·보류 10이다.
+- 209개 계정의 재방문 주기를 마지막 정면 채굴일시 기준 30일로 조정하고 사람메모에 근거를 남겼다.
+- raw는 변경하지 않았다. QUEUE.csv 백업은 `C:\dev\pharm-social-intelligence\work\etc\backups\pre_no_reels_queue_cleanup_20260806_235900`, accounts.csv 백업은 `etc/backups/pre_no_reels_account_revisit_20260806_235900`이다.
+
+
+## 주간 인수인계 — dr.hair_lee 후보 재감사 2026-08-06T23:59:00+09:00
+
+- `DWDAkYwEpjj` raw 후보의 조회수·좋아요·댓글·게시일·포맷 지문은 확인했다.
+- 계정 지표 2개가 공란이고 신규 포맷 카드 매핑이 미완료라 canonical 콘텐츠 추가를 보류했다.
+- raw·data CSV는 변경하지 않았다.
+
+
+## 주간 인수인계 — 포맷 소진도 정합성 보정 2026-08-06T23:59:00+09:00
+
+- formats.csv의 국내 약사 사용 계정 수 기준으로 소진도 불일치 8건을 정리했다.
+- 결과 분포는 `무주공산` 52·`여유 있음` 6·`소진` 3이며, raw는 변경하지 않았다.
+- 원본 백업은 `etc/backups/pre_format_exhaustion_sync_20260806_235950`이다.
+
+
+## 주간 인수인계 — 콘텐츠 포맷 소진도 미측정 감사 2026-08-06T23:59:00+09:00
+
+- 콘텐츠 `포맷소진도=미측정` 21건은 모두 포맷ID가 공란이라 formats.csv와 exact 연결되지 않았다.
+- 미측정 값을 추정하지 않았고 raw·data CSV는 변경하지 않았다.
+
+
+## 주간 인수인계 — 일일보고 텍스트 정리 2026-08-06T23:59:00+09:00
+
+- 일일보고의 NUL 문자 2개와 포맷 소진도 분포 오기를 정정했다.
+- 보고서만 수정했으며 원본 백업은 `etc/backups/pre_daily_report_nul_cleanup_20260806_235959`이다.
+
+
+## 주간 인수인계 — 형식 전용 F급 보정 2026-08-06T23:59:00+09:00
+
+- 형식 전용 콘텐츠 18건을 국내 사용 계정 1개 지문·각색안·비명시광고 조건으로 F급에 올렸다.
+- 등급 분포는 S 15·A 43·F 18·미달 163·판정불가(지표없음) 75다.
+- raw는 변경하지 않았고, 원본 백업은 `etc/backups/pre_format_only_f_grade_fix_20260806_235959`이다.
+
+
+## 주간 인수인계 — 유료도달의심 판정 감사 2026-08-06T23:59:00+09:00
+
+- `예` 15건은 좋아요율/계정평소좋아요율 1/3 미만 규칙과 모두 일치했다.
+- 근거 공란은 0건이고, 수치만으로 유료 여부를 확정할 수 없는 `불명` 12건은 유지했다.
+- raw·data CSV는 변경하지 않았다.
+
+
+## 주간 인수인계 — 계정 지표 공란의 원자료 근거 감사 2026-08-06T23:38:00+09:00
+
+- accounts.csv 366건의 지표 공란을 raw 1,631줄과 대조했다. raw JSONL은 1,631줄 모두 유효했다.
+- 게시물수 공란 11건은 계정별 게시물 수 exact raw 근거가 0건이었다. 최근30일게시수 직접 근거는 1건이며 이미 반영되어 있다.
+- 신규 exact 근거가 없는 최근30일게시수 217·최근12개중앙조회수 128·최고조회수 128·배수상위3개 341·평소좋아요율 327·최근20개중광고수 300건은 추정·평균·보간하지 않았다.
+- raw·data CSV는 변경하지 않았다. 브라우저 lease 점유로 캡처는 보류했다. 백업은 `etc/backups/pre_account_metric_source_audit_20260806_233800`이다.
+
+
+## 주간 인수인계 — 카테고리 §5 정규화 2026-08-06T23:48:00+09:00
+
+- contents.csv 비공란 카테고리 302건을 §5의 8개 범주로 재분류했고 268건을 수정했다.
+- myyaksa 12건은 exact 원자료가 없어 카테고리 공란을 유지했다.
+- 결과 분포는 `약국·의료현장` 68·`영양제·성분` 48·`다이어트` 16·`생활습관` 44·`약물안전·복약` 44·`피부·뷰티` 39·`증상` 29·`육아` 14·공란 12다.
+- raw는 변경하지 않았고 백업은 `etc/backups/pre_category_normalization_20260806_234800`이다.
+
+
+## 주간 인수인계 — 중간 프레임 캡처 배치 감사 2026-08-06T23:47:10+09:00
+
+- S·A·F 대상 76건은 로그인 탭 DOM 공란과 `Page.captureScreenshot` CDP 시간 초과로 캡처파일 0건이다.
+- 76건의 캡처파일 공란과 사람메모 재시도 사유를 유지했다. 사이트용 경로에는 쓰지 않았다.
+
+
+## 주간 인수인계 — 중간 프레임 캡처 재시도 2026-08-07T00:02:43+09:00
+
+- `EJ-DVGgD6wk1Y8` 릴스의 DOM·본문은 확인했지만 스크린샷 처리 중 대상 탭이 닫혀 캡처파일을 만들지 못했다.
+- raw에 캡처 시도 1줄을 append했고 콘텐츠 사람메모에 탭 닫힘 사유를 기록했다. 원본 프레임과 사이트용 파일은 생성하지 않았다.
+- lease 파일은 수정하지 않았으며 백업은 `etc/backups/pre_capture_retry_20260807_000243`이다.
+
+
+### 2026-08-07 캡처 재시도 2
+- ALPACAYAKSA-C_acRdkpjat DOM·본문·수치·게시일 확인 후 Page.captureScreenshot 대상 탭 종료로 프레임 미저장.
+- raw 1줄 append·contents 사람메모 1행 갱신·캡처파일 공란 유지.
+- lease 파일 무수정; 백업 pre_capture_retry_20260807_001200.
+
+### Native Google Sheets 정합성 감사 — 2026-08-07T00:20:50.3587064+09:00
+- native Sheets 4개를 읽기 전용으로 확인했다. accounts 368행·contents 287행·formats 60행·topics 84행이며 canonical CSV는 각각 366·314·61·85 데이터 행이다.
+- 콘텐츠 Sheet에는 canonical CSV의 등급근거·유료도달의심·유료도달근거 열이 없다. 기존 행 덮어쓰기와 행 삭제는 승인 전 보류했다.
+- 상세 감사는 state의 latest_offline_gsheet_consistency_audit와 `etc/backups/pre_gsheet_consistency_audit_20260807_002000`에 기록했다.
+
+### 중간 프레임 캡처 재시도 3 — 2026-08-07T00:25:43.6315955+09:00
+- HAYUPHARMACI-DanMzctNKQ2 DOM·본문·표시 지표·게시일 확인 후 fullPage:false 스크린샷도 대상 탭 종료로 프레임 미저장.
+- raw 1줄 append·contents 사람메모 1행 갱신·캡처파일 공란 유지.
+- lease 정상 해제; 백업 etc/backups/pre_capture_retry_20260807_002500.
+### known_items 원장 정합성 감사 — 2026-08-07T00:32:26+09:00
+- logs/known_items.txt 760 비주석 줄을 대조했다. QUEUE.csv 341개 핸들 전부 기록됨; canonical contents.csv 314개 콘텐츠 ID와 314개 shortcode 전부 기록됨.
+- 큐 상태 갱신 이력으로 이벤트 줄은 446개이며, 콘텐츠 ID·shortcode 중복/잔여/누락은 0건이다. raw·QUEUE·known_items는 무수정이다.
+- 백업: backups/pre_known_items_consistency_audit_20260807_003100.
+### 콘텐츠 채굴 우선순위 큐 정합성 감사 — 2026-08-07T00:36:24+09:00
+- 콘텐츠 채굴 큐 343건은 완료 271·부분 71·실패 1건이며 대기 상태 0건이다. 실패 계정은 pharmway 1건이다.
+- 고유 핸들 341개, queue_id 중복 0건이다. medi2388_와 cellmed.official은 각각 중복 레코드 2개가 남아 있어 source evidence로 보존하고 동일 계정 재처리는 반복하지 않는다.
+- 큐 343개 핸들은 모두 accounts.csv에 존재하며 큐 원문·raw·data CSV는 무수정이다. 백업: backups/pre_content_mining_queue_audit_20260807_003600.
+### 중간 프레임 캡처 재시도 4 — 2026-08-07T00:41:14+09:00
+- OYAK-DbVMg0nvMtU DOM·본문·표시 지표·게시일 확인 후 fullPage:false 스크린샷도 대상 탭 종료로 프레임 미저장.
+- raw 1줄 append·contents 사람메모 1행 갱신·캡처파일 공란 유지. lease 해제는 소유권 불일치로 거부됐다.
+- 백업: backups/pre_capture_retry_20260807_004000.
+### 중간 프레임 캡처 재시도 5 — 2026-08-07T00:47:55+09:00
+- EUNHA-C7RB_JTvmgE DOM·본문·표시 지표·게시일 확인 후 fullPage:false 스크린샷이 CDP timeout으로 프레임 미저장.
+- raw 1줄 append·contents 사람메모 1행 갱신·캡처파일 공란 유지. lease 해제는 소유권 불일치로 거부됐다.
+- 백업: backups/pre_capture_retry_20260807_004700.
+### 광고판정 source 감사 — 2026-08-07T00:50:49+09:00
+- 광고판정 불명 85건·판정불가 21건을 raw 동일 shortcode 관측과 대조했다. 단일하고 확정적인 raw 광고판정으로 바꿀 후보는 0건이었다.
+- 추정 갱신 없이 기존 값을 유지했다. raw·contents.csv 무수정. 백업: backups/pre_ad_judgment_source_audit_20260807_005100.
+### 계정 핸들 중복 감사·보조 큐 정리 — 2026-08-07T00:57:22+09:00
+- canonical accounts.csv 핸들 중복 0/0. medi2388_=E1·E6, cellmed.official=E1·E2 발굴경로 병합 상태를 확인했다.
+- 보조 콘텐츠 채굴 큐는 343→341행으로 줄였고 핸들 중복 2쌍을 제거했다. raw 해소 원문 2줄 append, accounts.csv·QUEUE.csv 무수정. 백업: backups/pre_account_handle_duplicate_cleanup_20260807_005500.
+### 중간 프레임 캡처 재시도 6 — 2026-08-07T01:04:23+09:00
+- YAK-DWDzUvgD_2C DOM·본문·표시 지표·게시일 확인 후 fullPage:false 스크린샷이 CDP timeout으로 프레임 미저장.
+- raw 1줄 append·contents 사람메모 1행 갱신·캡처파일 공란 유지. lease 해제는 소유권 불일치로 거부됐다.
+- 백업: backups/pre_capture_retry_20260807_010200.
+### kpanews1968 보류 해소 — 2026-08-07T01:13:48+09:00
+- 릴스 12개 조회수 확인: 최근12 중앙 721.5·최고 1,531.
+- KPANEWS-Dbo9vxyozv6 조회수 1,531·배수 2.12·등급 미달 반영. QUEUE 보류→완료.
+- raw 1줄 append·계정/콘텐츠 원장 갱신. 백업: backups/pre_kpanews1968_revisit_20260807_011206.
+### knjbio.official 보류 재확인 — 2026-08-07T01:19:19+09:00
+- 릴스 11개만 노출되어 12번째 릴스·최근12 중앙값 미확인. 팔로워 1,007·게시물 245 반영.
+- 대표 DEyYbS3z1X7 광고·판매 판정 유지. QUEUE 보류 유지·재시도 1회 기록.
+- raw 1줄 append. 백업: backups/pre_knjbio_revisit_20260807_011751.
+### 브라우저 lease unavailable 오프라인 전환 — 2026-08-07T01:22:10+09:00
+- lemonpharmacy38 재시도는 다른 작업의 lease 점유로 보류. blocked 기록 없음.
+- 큐 완료 332·보류 9 확인, data CSV·raw 무변경. 백업: backups/pre_lease_fallback_20260807_012116.
+### canonical public 콘텐츠 미러 동기화 — 2026-08-07T01:27:09+09:00
+- public/data/contents.csv 287행을 원장 314행과 exact 동기화. data CSV·raw·QUEUE와 C:\dev 금지 경로는 무변경.
+- 92행 정성 기준선은 보존. 백업: backups/pre_public_contents_sync_20260807_012600.
+### 완료 감사 상태 재확인 — 2026-08-07T01:28:32+09:00
+- public 콘텐츠 미러는 원장과 exact 일치. 92행 historical qualitative baseline과 현재 314행·의도된 category normalization 차이는 보존·기록.
+- data CSV·raw·QUEUE·C:\dev 금지 경로 무변경. Goal IN_PROGRESS. 백업: backups/pre_goal_audit_status_20260807_012744.
+### innerdew.official 보류 재확인 — 2026-08-07T01:31:50+09:00
+- 릴스 5개만 노출되어 최근12·12번째 릴스 미확인. 대표 DZpAtZZz52W 조회수 3.3만·게시일 2026-06-16.
+- 팔로워 280·게시물 8 반영. QUEUE 보류 유지·재시도 1회 기록. 백업: backups/pre_innerdew_revisit_20260807_013037.
+### pharmacyinpalm_official 보류 재확인 — 2026-08-07T01:35:37+09:00
+- 프로필 릴스 탭 미노출·알려진 Ce2MIsmvzVC 1건만 확인. 조회수 98·좋아요 28·댓글 0·게시일 2022-06-16.
+- 팔로워 188·게시물 10 반영. 3년 범위 밖·최근12 미확인으로 QUEUE 보류 유지. 백업: backups/pre_pharmacyinpalm_revisit_20260807_013425.
+### 2026-08-07 E3 재방문 메모 · leehwanho_ent
+공개 프로필 게시물 링크 8개는 확인했지만 reels 탭·조회수·최근12 전체가 미노출되어 등급·게이트를 새로 확정하지 않고 보류를 유지했다.
+
+### 2026-08-07 E3 재방문 메모 · bpa_antidrug
+공개 프로필 게시물 링크 6개는 확인했지만 reels 탭·조회수·최근12 전체가 미노출되어 등급·게이트를 새로 확정하지 않고 보류를 유지했다.
+
+### 2026-08-07 E3 재방문 메모 · korea2nt_official
+공개 프로필의 게시물 1개는 확인했지만 reels 탭·조회수·최근12 전체가 미노출되어 등급·게이트를 새로 확정하지 않고 보류를 유지했다.
+
+### 2026-08-07 오프라인 체크포인트
+최신 원장 무결성 감사 통과. 보류 9개는 재방문 예정일 전이라 유지하며, 예정일까지 보고서·무결성 점검을 이어간다.
+
+### 2026-08-07 오프라인 후보 반영 · dr.hair_lee
+raw 근거가 충분한 S급 후보 1건을 콘텐츠 원장에 추가했다. 계정 지표와 신규 포맷 카드 매핑은 추정하지 않고 별도 보류로 기록했다.
+
+### 2026-08-07 · raw 후보 resolution 감사
+미원장 후보 46건을 확인한 결과 모두 명시적 제외 또는 보류 resolution이 있었다. 새 콘텐츠 행은 추가하지 않았고 data CSV·raw·queue를 보존했다. 다음 배치는 2026-08-12 이후 보류 계정 재방문을 우선한다.
+수치 정정: candidate_content_review 전체 60건 중 canonical 미원장 44건이며, 42건은 raw canonical_action, 2건은 별도 resolution으로 처리 사유가 있다.
+
+### 2026-08-07 · 관측 포맷 지문 카드 연결
+raw format_fingerprint가 있는 6개 콘텐츠에 신규 포맷 카드와 포맷ID를 연결했다. 약사 사용 수·소진도·E10 역추적은 보류하고, 지문이 없는 공란 58건은 추측하지 않았다.
+
+### 2026-08-07 · 콘텐츠 직접 구조 10건 포맷 매핑
+S/A급 국내 약사 콘텐츠 9건과 국내 메디컬 인접 콘텐츠 1건의 직접 기록 훅·구조·편집장치를 신규 포맷 카드로 연결했다. 약사 사용 수는 현재 계정 1건만 반영했으며 E10 역추적은 남겨두었다.
+
+### 2026-08-07 · 국내 메디컬 인접 포맷 매핑
+인접 계정 10건의 직접 기록 구조를 신규 포맷 카드로 연결했다. 약사 사용 수·소진도·E10 역추적은 미측정으로 남겼다.
+
+### 2026-08-07 · S/A 콘텐츠 직접 구조 추가 매핑
+약사 5건과 인접 계정 5건의 직접 기록 구조를 신규 포맷 카드로 연결했다. 약사 사용 수는 현재 계정 1건만 반영했으며 E10 역추적은 남겨두었다.
+
+- 2026-08-07 02:56 오프라인 직접 구조 포맷 매핑: S/A급 9건을 formats.csv 신규 카드 9건과 contents.csv에 연결. 국내 약사 1건은 현재 사용 1계정·소진도 여유 있음만 기록하고, 메디컬 인접 8건은 약사 사용 수 미측정으로 유지. MYYAKSA-DbnUYqJJWN0은 훅·구조·편집장치 공란이라 매핑하지 않음. raw resolution 9건 추가(1693행). E10·캡처는 후속 대상.
+
+
+- 2026-08-07 03:02 오프라인 F급 형식 매핑: 직접 훅·구조·편집장치가 있는 F급 형식 전용 10건을 formats.csv 신규 카드 10건과 contents.csv에 연결. 기존 국내 약사 사용 수·포맷소진도는 원장값을 보존하고 E10·중간 프레임은 후속 대상으로 유지. raw resolution 10건 추가(1703행).
+
+
+- 2026-08-07 03:07 오프라인 F급 직접 구조 최종 매핑: 남은 F급 형식 전용 8건을 formats.csv 신규 카드 8건과 contents.csv에 연결. 기존 국내 약사 사용 수·포맷소진도도 보존하고 E10·중간 프레임은 후속 대상으로 유지. raw resolution 8건 추가(1711행).
+
+## 2026-08-07T03:20:31+09:00 — 현재 감사 갱신
+
+- 오프라인 canonical 감사 완료: 계정 366행, 콘텐츠 315행, 포맷 124행, 주제 85행, raw 1711줄.
+- 4개 CSV BOM·콘텐츠 ID·shortcode·포맷ID·계정 핸들 중복·raw JSONL 파싱·금지 경로 변경을 점검했습니다. 모두 통과했습니다.
+- S/A/F 77행 중 포맷ID 공란은 1건입니다. 남은 ID는 MYYAKSA-DbnUYqJJWN0이며 직접 구조가 확인될 때까지 추측하지 않습니다.
+- QUEUE.csv는 341행이며 완료 332건, 보류 9건입니다. 보류 계정은 2026-08-11/12 이후 브라우저 재방문이 필요합니다.
+- completion_audit_current.json/md는 현재 원장 기준으로 갱신했고, 이전 감사 파일은 pre_completion_audit_refresh_20260807_0318에 보존했습니다.
+
+## 2026-08-07T03:31:28+09:00 — MYYAKSA 직접 상세 확인
+
+- myyaksa/DbnUYqJJWN0의 게시일 2026-08-04, 영상 길이 33.2초, 캡션 본문을 직접 확인했습니다.
+- 다이어트 영양제의 근거·효과 크기·위험 비교 내용으로 다이어트·영양제·성분 카테고리와 진입각도를 보완했습니다.
+- 첫 3초 자막·훅·구조·편집장치는 확인하지 않아 포맷ID와 직접 구조 필드는 추측하지 않았습니다.
+- raw 1줄, contents.csv 1행, accounts.csv 1행을 같은 체크포인트에서 갱신했습니다.
+## 2026-08-07T03:34:17+09:00 — 현재 감사 갱신
+
+- 현재 원장: 계정 366행, 콘텐츠 315행, 포맷 124행, 주제 85행, raw 1712줄.
+- 큐: 완료 332건, 보류 9건.
+- MYYAKSA 직접 상세 확인 후 게시일·캡션·길이·카테고리를 보완했습니다. 훅·구조·편집장치·포맷ID는 확인 전까지 공란으로 유지합니다.
+- CSV BOM·중복 원장·raw JSONL·금지 경로를 다시 점검했으며, Goal은 IN_PROGRESS입니다.
+
+## 2026-08-07T03:45:34+09:00 — OYAK 캡처 재시도
+
+- oyakstory/DbVMg0nvMtU의 visible DOM·본문·게시일·표시 지표를 확인했습니다.
+- Page.captureScreenshot CDP timeout으로 프레임 파일을 만들지 못해 캡처파일은 빈칸으로 유지했습니다.
+- raw capture_attempt 1줄과 콘텐츠 사람메모를 갱신했습니다. 이 실패는 blocker로 기록하지 않았습니다.
+
+## 2026-08-07T03:50:19+09:00 — 오프라인 미완료 필드 감사
+
+- S/A/F 77행의 캡처파일 공란 77건은 모두 사람메모에 실패·보류 사유가 있습니다.
+- 사용된 포맷 카드의 각색안 공란은 0건입니다.
+- 계정 지표와 myyaksa 미달 콘텐츠의 카테고리는 직접 근거가 없어 추정하지 않고 빈칸을 유지했습니다.
+- raw 1713줄과 큐 완료 332·보류 9 상태를 확인했습니다.## 2026-08-07T04:06:02+09:00 — JESSI 캡처 재시도
+
+- 대상: jessi_yaksa / DbngSZoAnr_ (A급, 약물안전·복약)
+- 직접 확인: 릴스 DOM·본문·게시 시점 2일·영상 길이 33.806801초·좋아요 583·댓글 5·리포스트 76
+- 결과: Page.captureScreenshot CDP timeout. 프레임 파일 0개, 캡처파일 공란 유지. 같은 캡처 경로를 반복하지 않고 다음 캡처 가능한 방식으로 전환한다.
+- 원장 보정: 직접 확인한 좋아요·댓글과 지표수집일시 반영. 유료도달의심은 추가 신호 부족으로 불명 유지.
+- 백업: pre_jessi_capture_retry_20260807_040602
+## 2026-08-07T04:12:02+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DadZZr3pTY6 (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-16·영상 길이 30.230928초·좋아요 149·댓글 4·리포스트 10
+- 분류: 영양제·성분. 다이소 영양제를 성분·원료사·순도·함량·복용 목적 기준으로 사요·안사요 판정하는 내용 레퍼런스.
+- 보류: 첫 3초 자막·훅·구조·편집장치·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_content_detail_20260807_041202
+## 2026-08-07T04:16:16+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / Daa11H2pFtK (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-08·영상 길이 22.707663초·좋아요 405·댓글 6·리포스트 37
+- 분류: 영양제·성분. 다이소 영양제를 함량·형태·흡수율·복용 목적 기준으로 사요·안사요·고민 판정하는 내용 레퍼런스.
+- 보류: 첫 3초 자막·훅·구조·편집장치·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_daa11_detail_20260807_041616
+## 2026-08-07T04:20:07+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DZj7Sr-JPqH (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-06-18·영상 길이 16.322176초·좋아요 145·댓글 5·리포스트 18
+- 분류: 영양제·성분. 성분별 복용 시점과 흡수·위장 자극 근거를 정리하는 내용 레퍼런스.
+- 보류: 첫 3초 자막·훅·구조·편집장치·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dzj7_detail_20260807_042007
+## 2026-08-07T04:24:30+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DZuNQcUpwWm (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-06-19·영상 길이 22.452244초·좋아요 160·댓글 112·리포스트 12
+- 분류: 증상·영양제·성분. 여성 탈모를 철분·페리틴·단백질·비타민D 등 근거 순서로 점검하는 내용 레퍼런스.
+- 광고: 캡션에 탈모 영양제 정리본 링크는 있으나 광고 표기는 없어 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dzun_detail_20260807_042430
+## 2026-08-07T04:28:40+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DaJD6G2Tkij (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-06-29·영상 길이 17.901133초·좋아요 238·댓글 4·리포스트 22
+- 분류: 약물안전·복약·증상. 소화불량·가스·속쓰림 증상별로 소화제 성분과 제품을 선택하는 내용 레퍼런스.
+- 보류: 첫 3초 자막·훅·구조·편집장치·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dajd6_detail_20260807_042840
+
+## 2026-08-07T04:37:10+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DbSuPTDpTjh (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-29·영상 길이 19.642629초·좋아요 66·댓글 2·리포스트 7
+- 분류: 약물안전·복약·증상. 숙취 증상과 성분·적응증·전해질 근거로 약국 숙취해소제와 경구수액을 순위화하는 내용 레퍼런스.
+- 광고: paid partnership 표기를 확인하지 못해 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dbsu_detail_20260807_0432
+
+## 2026-08-07T04:45:46+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DUrxaC_kiZR (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-06-27·영상 길이 14.90721초·좋아요 68·댓글 31·리포스트 1
+- 분류: 증상. 약사 본인의 성인 아토피 발병·증상 경과를 공유하고 후속 정보를 예고하는 개인 경험형 콘텐츠.
+- 광고: 제품·서비스 추천 및 paid partnership 표기를 확인하지 못해 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_durxa_detail_20260807_0445
+
+## 2026-08-07T04:49:50+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DbdHi2NJznK (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-31·영상 길이 20.710747초·좋아요 96·댓글 7·리포스트 11
+- 분류: 약물안전·복약·증상. 약국 외용제 성분을 여드름·홍조·색소침착·비듬·모낭염 등 피부 증상별로 매칭하는 내용.
+- 광고: 제품별 설명과 DM 유도 문구는 있으나 paid partnership 표기를 확인하지 못해 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dbdhi_detail_20260807_0450
+
+## 2026-08-07T04:53:16+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DbELR3fJUE9 (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-22·영상 길이 19.31755초·좋아요 42·댓글 4·리포스트 1
+- 분류: 약물안전·복약·증상. 하이드로퀴논의 색소침착 효과와 야간 사용·자외선 차단·휴약·부작용·국소 도포 원칙을 설명하는 내용.
+- 광고: 제품 협찬과 paid partnership 표기를 확인하지 못해 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dbelr_detail_20260807_0454
+
+## 2026-08-07T04:56:50+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / DbiOk0NJZHJ (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-08-02·영상 길이 33.249522초·좋아요 68·댓글 12·리포스트 2
+- 분류: 약물안전·복약. 3박4일 여행을 기준으로 소화제·영양제·경구수액·진통제·알러지약 등 상황별 상비약을 준비하는 내용.
+- 광고: 여행용 약·영양제 목록과 제품군을 설명하지만 paid partnership 표기를 확인하지 못해 광고·유료도달은 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dbiok_detail_20260807_0458
+
+## 2026-08-07T05:00:45+09:00 — MYYAKSA 직접 콘텐츠 상세 보정
+
+- 대상: myyaksa / Dbc76M9JRm2 (미달, 기존 metric-only 행)
+- 직접 확인: 게시일 2026-07-31·영상 길이 28.489432초·좋아요 54·댓글 42·리포스트 2
+- 분류: 피부·뷰티. 선크림·비타민C·레티노이드 피부 관리 팁과 아렌시아 레틴알샷 증정 댓글 이벤트를 결합한 콘텐츠.
+- 광고: 페이지 상단 협찬 광고 표기와 레틴알샷 증정 이벤트를 확인해 광고점수 3·광고판정 광고·협찬으로 기록. 유료도달의심은 별도 근거 부족으로 불명 유지.
+- 보류: 첫 3초 자막·훅·구조·편집장치·포맷ID·캡처파일은 직접 확인하지 않아 공란 유지.
+- 백업: pre_myyaksa_dbc76_detail_20260807_0500
+
+## 2026-08-07T05:04:01+09:00 — MYYAKSA 길이대 보완
+
+- 대상: myyaksa / DbnUYqJJWN0 (A급, 포맷ID 공란 유지)
+- 기존 direct-detail raw에 기록된 영상 길이 33.203083초를 재사용해 길이대 30-45초를 보완했습니다.
+- 훅·첫 3초 자막·구조·편집장치·포맷ID·캡처파일은 직접 근거가 없어 공란을 유지했습니다.
+- 백업: pre_myyaksa_dbnuy_length_band_20260807_0506
+
+## 2026-08-07T05:05:59+09:00 — 감사 범위 보정
+
+- formats.csv 측정 공란의 길이대 63건과 contents.csv 콘텐츠 길이대 보완값을 분리해 기록했습니다.
+- 원장·raw·큐 데이터는 변경하지 않았습니다.
+- 백업:
+## 2026-08-07T05:12:59+09:00 — MYYAKSA A급 캡처 재시도
+
+- 대상: myyaksa / DbnUYqJJWN0 (A급, 포맷ID 공란 유지)
+- Instagram 릴스 페이지를 읽기 전용으로 열고 캡처를 시도했습니다. Page.captureScreenshot가 CDP timeout으로 실패해 프레임 파일 0개를 저장했고 캡처파일 공란을 유지했습니다.
+- 이번 시도에서는 추가 본문 필드를 수집하지 않았습니다. 훅·첫 3초 자막·구조·편집장치·포맷ID는 직접 근거가 확보될 때만 보완합니다.
+- lease Release ownership mismatch는 운영상 점유 문제로 기록했으며 blocked 또는 중단 사유로 기록하지 않았습니다.
+- 백업: pre_myyaksa_dbnuy_capture_report_20260807_0513
+## 2026-08-07T05:19:05+09:00 — 포맷 길이대 직접근거 보완
+
+- 대상: FMT-DIET-INGREDIENT-QUESTION-001
+- 대표영상 URL와 canonical 콘텐츠 EJ-DVGgD6wk1Y8가 일치하고 기존 raw 영상 길이 29.907초가 확인되어 길이대를 20-30초로 기록했습니다.
+- 훅·구조·편집장치·사용 수·소진도는 변경하지 않았습니다. raw 1줄과 state checkpoint를 추가했습니다.
+- 백업: pre_format_length_band_report_20260807_0520
+## 2026-08-07T05:23:03+09:00 — 포맷 배정적합인물 직접근거 보완
+
+- 포맷 6건의 각색안에 직접 명시된 담당 인물을 배정적합인물에 기록했습니다.
+- 콘텐츠 배정값과 다른 2건은 콘텐츠 원장 값을 보존하고 raw에 차이를 남겼습니다.
+- raw 6줄·formats.csv 6행·state checkpoint를 추가했습니다.
+- 백업: pre_format_assignment_report_20260807_0524
+## 2026-08-07T05:27:57+09:00 — 콘텐츠 공란 감사 수치 정정
+
+- 현재 contents.csv를 다시 읽어 감사 JSON의 오래된 content_blank_fields 수치를 실제 값으로 정정했습니다.
+- 카테고리·소주제·진입각도·등급·등급근거·유료도달 필드는 현재 공란 0건입니다.
+- data CSV·raw·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_content_blank_audit_reconcile_20260807_0528
+## 2026-08-07T05:29:47+09:00 — 증상·성분키워드 공란 사유 기록
+
+- SSPHARM-DYepFwZkmUo는 약국 외부 간판 교체·운영시간 공지 콘텐츠라 증상·성분키워드는 해당 없음으로 공란을 유지했습니다.
+- 사람메모와 raw에 근거를 기록했고, 값은 추정하지 않았습니다.
+- 백업: pre_sspharm_symptom_blank_reason_report_20260807_0530
+## 2026-08-07T05:34:04+09:00 — 오프라인 공란 후보 감사
+
+- 계정 최근30일 게시수·최근12 중앙조회수·최고조회수, 콘텐츠 게시일·길이초, 포맷 대표 URL exact match를 raw와 대조했습니다.
+- 안전한 직접값 후보는 0건이어서 추정 입력을 하지 않았습니다. data CSV·raw·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_offline_gap_candidate_audit_20260807_0534
+## 2026-08-07T05:45:00+09:00 — 신규 약사 계정·콘텐츠 발견
+
+- yu._.yak 프로필과 DIzmDd_Ttws 대표 캐러셀을 직접 확인해 신규 계정·콘텐츠로 기록했습니다.
+- 계정 최근12 중앙값 6,521회·최고 286,000회를 기록했습니다. 대표 콘텐츠 조회수는 미노출이어서 판정불가(지표없음)으로 유지했습니다.
+- accounts.csv·contents.csv·QUEUE.csv 각 1행, raw 4줄, known ledger·engine_yield를 갱신했습니다.
+- 백업: pre_yuyak_discovery_20260807_0542
+
+## 2026-08-07T05:49:30+09:00 — 감사 계정 수 정정
+
+- `completion_audit_current.json`의 계정 수 계산 오류를 368행에서 canonical `accounts.csv` 실제 367행으로 정정했습니다.
+- `completion_audit_current.md`의 현재 수량도 계정 367행·콘텐츠 316행·raw 1739줄·큐 완료 333건으로 맞췄습니다.
+- data CSV·raw·QUEUE.csv는 변경하지 않았습니다.
+
+## 2026-08-07T06:00:38+09:00 — 오프라인 공란 후보 감사
+
+- yu._.yak 계정 지표와 YUYAK-DIzmDd_Ttws 콘텐츠의 공란을 기존 raw와 대조했지만 안전한 직접값 후보는 0건이었습니다.
+- data CSV·QUEUE.csv는 변경하지 않았고 raw 감사 1줄·state checkpoint·known ledger·engine_yield를 추가했습니다.
+- 브라우저 lease 소유권 불일치로 새 검색은 다음 짧은 lease에서 재시도합니다.
+- 백업: pre_yuyak_offline_candidate_audit_20260807_0556
+
+## 2026-08-07T06:01:53+09:00 — 감사 raw 수량 계산 정정
+
+- 오프라인 audit 스크립트의 raw 줄 수 계산 오류로 기록된 1줄을 실제 raw 1740줄·JSONL 오류 0건으로 정정했습니다.
+- raw 원문·data CSV·QUEUE.csv는 변경하지 않았고 state·감사 파일만 갱신했습니다.
+- 백업: pre_yuyak_raw_count_repair_20260807_0601
+
+## 2026-08-07T06:04:48+09:00 — 약사 인스타툰 검색 결과
+
+- 검색 결과 5건을 대조했습니다. yu._.yak은 기존 원장과 일치했고 나머지 4개 계정은 검색 결과상 일반 인스타툰·수영툰으로 신규 의료 계정 채택 0건입니다.
+- raw 1줄·known query·known item·engine_yield·state checkpoint를 추가했으며 data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_yaksa_instatoon_search_20260807_0603
+
+## 2026-08-07T06:07:03+09:00 — 약국 인스타툰 검색 결과
+
+- 검색 결과 5건이 직전 검색과 동일했습니다. yu._.yak은 기존 원장과 일치했고 나머지 4개 계정은 일반 인스타툰·수영툰으로 신규 의료 계정 채택 0건입니다.
+- raw 1줄·known query·known item·engine_yield·state checkpoint를 추가했으며 data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_pharmacy_instatoon_search_20260807_0606
+
+## 2026-08-07T06:13:12+09:00 — 약사툰 신규 프로필 5개 확인
+
+- tony71004·jjing_yaksa·anyaksa3·molti_yaksatoon·cheoeum_yaksa__toon의 공개 프로필을 직접 확인해 accounts.csv에 5행을 추가했습니다.
+- QUEUE.csv에는 5건을 보류로 추가했습니다. 프로필 지표는 기록했으며 recent12·reels 조회수는 다음 read-only 배치에서 확인합니다.
+- raw 1줄·known ledger·engine_yield·state checkpoint를 추가했고 contents.csv는 변경하지 않았습니다.
+- 백업: pre_yaksa_toon_profiles_20260807_0608
+
+## 2026-08-07T06:15:20+09:00 — raw JSONL 정정
+
+- 약사툰 프로필 기록 중 Codex가 만든 malformed suffix를 pre-write backup과 대조해 제거하고, 원래 raw 1742줄은 보존한 채 valid 관측 11줄을 다시 기록했습니다.
+- 최종 raw는 1753줄·JSONL 오류 0건입니다. data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_yaksa_toon_raw_jsonl_repair_20260807_0614
+
+## 2026-08-07T06:20:18+09:00 — tony71004 재확인 기록 마무리
+
+- raw·known item·engine_yield 중복 append 없이 state·감사·보고서만 마무리했습니다.
+- accounts.csv·QUEUE.csv 행 수와 순서를 pre-write backup과 대조했고, recent12 미완료로 보류를 유지했습니다.
+- 백업: pre_tony_reels_recheck_completion_20260807_0619
+
+## 2026-08-07T06:23:15+09:00 — jjing_yaksa reels 재확인
+
+- 공개 reels 3개만 노출됐고 조회수 1180·1969·845를 확인했습니다.
+- recent12 전체가 아니므로 계정 중앙값·최고조회수·등급은 공란으로 유지하고 accounts.csv 메모와 QUEUE 344번 보류 사유만 갱신했습니다.
+- raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 백업: pre_jjing_reels_recheck_20260807_0622
+
+## 2026-08-07T06:26:04+09:00 — anyaksa3 프로필 재확인
+
+- 게시물·태그됨 탭만 노출되고 reels 탭은 노출되지 않아 recent12·조회수는 확인하지 못했습니다.
+- 추정값을 쓰지 않고 accounts.csv 메모와 QUEUE 345번 보류 사유만 갱신했습니다.
+- raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 백업: pre_anyaksa3_profile_recheck_20260807_0625
+
+## 2026-08-07T06:29:26+09:00 — molti_yaksatoon 프로필 재확인
+
+- 게시물·태그됨 탭만 노출되고 reels 탭이 없어 recent12·조회수는 확인하지 못했습니다.
+- 추정값을 쓰지 않고 accounts.csv 메모와 QUEUE 346번 보류 사유만 갱신했습니다.
+- raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 백업: pre_molti_profile_recheck_20260807_0628
+
+## 2026-08-07T06:33:27+09:00 — cheoeum_yaksa__toon lease 시도
+
+- bounded Acquire가 lease를 반환하지 않아 브라우저 작업을 수행하지 못했습니다.
+- 운영상 lease contention으로 기록했으며 Instagram 제한·로그인 해제나 blocked 사유로 처리하지 않았습니다.
+- accounts.csv·contents.csv·QUEUE.csv는 변경하지 않고 raw 1줄·state checkpoint만 추가했습니다.
+- 백업: pre_cheoeum_lease_attempt_20260807_0630
+
+## 2026-08-07T06:35:37+09:00 — cheoeum_yaksa__toon lease 재시도
+
+- 두 번째 bounded Acquire도 shared lease 점유로 확보되지 않아 브라우저 작업을 수행하지 않았습니다.
+- 이를 blocked나 Instagram 제한으로 처리하지 않았습니다. accounts.csv·contents.csv·QUEUE.csv는 변경하지 않고 raw 1줄·state checkpoint만 추가했습니다.
+- 백업: pre_cheoeum_lease_retry_20260807_0635
+
+## 2026-08-07T06:37:26+09:00 — 신규 약사툰 공란 audit
+
+- 신규 5개 계정의 계정 지표 공란을 기존 raw와 대조했지만 안전한 직접값 후보는 0건이었습니다.
+- 추정값을 쓰지 않고 accounts.csv·contents.csv·QUEUE.csv는 유지했습니다.
+- raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 백업: pre_yaksa_toon_gap_audit_20260807_0636
+
+## 2026-08-07T06:43:16+09:00 — cheoeum_yaksa__toon 프로필·reels 경로 재확인
+
+- /reels/ 요청이 프로필 게시물 화면으로 리디렉션됐고 게시물·태그됨 탭만 노출됐습니다.
+- 게시물 1개·팔로워 0명·팔로우 0명과 소아과 아래 약국 근무 약사의 일상툰 소개를 확인했습니다.
+- recent12 조회수·중앙값·최고값·등급은 직접 근거가 없어 공란으로 유지했습니다. accounts.csv 메모와 QUEUE 347번 보류 사유만 갱신했습니다.
+- raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 백업: pre_cheoeum_profile_recheck_20260807_0640
+## 2026-08-07T06:47:37+09:00 — shared browser lease 재시도
+
+- bounded Acquire가 다른 task의 점유를 반환해 브라우저를 사용하지 못했습니다.
+- Instagram 제한·로그인 해제·goal blocker로 기록하지 않았습니다.
+- 원장 CSV·QUEUE.csv는 변경하지 않고 raw 1줄·state checkpoint·engine_yield를 추가했습니다.
+- 즉시 오프라인 공란·무결성 감사를 진행하고 다음 짧은 lease에서 재시도합니다.
+- 백업: pre_lease_attempt_20260807_0647
+## 2026-08-07T06:50:00+09:00 — MYYAKSA 용도 공란 보완
+
+- 기존 raw direct-detail 근거에서 A등급 내용 레퍼런스임을 확인해 MYYAKSA-DbnUYqJJWN0의 용도(내용·형식·둘다)를 내용으로 기록했습니다.
+- 포맷ID·훅·구조·편집장치·캡처는 직접 근거가 없어 공란을 유지했습니다.
+- contents.csv 1행·raw 1줄·state·감사·진행 보고서를 갱신했습니다.
+- 백업: pre_myyaksa_usage_resolution_20260807_0649
+
+## 2026-08-07T06:53:23+09:00 — lease 재시도 및 오프라인 공란 감사
+
+- shared browser lease 재시도가 다른 task 점유로 실패해 브라우저 작업을 수행하지 못했습니다. 운영상 점유로 기록하고 goal blocker로 처리하지 않았습니다.
+- 계정 지표 공란의 raw 직접값 후보는 0건, 용도 공란은 0건, 포맷ID 공란은 1건, 썸네일 파일 공란은 30건으로 확인했습니다.
+- data CSV·QUEUE.csv는 변경하지 않고 raw 2줄·state·감사·engine_yield·보고서를 갱신했습니다.
+- 백업: pre_lease_retry_gap_audit_20260807_0653
+
+
+## 2026-08-07T06:56:09+09:00 — 감사 수치 정정
+
+- contents.csv 전체 포맷ID 공란 169건과 S/A/F 등급 행의 포맷ID 공란 1건을 분리해 기록했습니다.
+- raw 원문은 수정하지 않고 정정 관측 1줄·state·감사·engine_yield·보고서를 추가했습니다.
+- data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 백업: pre_gap_audit_correction_20260807_0655
+
+
+## 2026-08-07T07:00:09+09:00 — tony71004 중복 수집 방지 확인
+
+- 공개 릴스 6개와 조회수 5579·1535·1840·1540·1519·1건 미노출이 기존 관측과 동일했습니다.
+- 새 근거가 없어 accounts.csv·contents.csv·QUEUE.csv는 반복 갱신하지 않았습니다.
+- raw 1줄·state·감사·engine_yield·보고서를 갱신하고 다음 계정 또는 신규 검색어로 이동합니다.
+- 백업: pre_tony_repeat_guard_20260807_0659
+
+
+## 2026-08-07T07:03:58+09:00 — 의료 각도 신규 검색
+
+- 약물안전 약사·약사 복약·약사 건강을 Instagram에서 검색했지만 세 검색어 모두 결과 없음이었습니다.
+- 신규 계정·콘텐츠는 추가하지 않았고 raw 3줄·known query·state·감사·보고서를 갱신했습니다.
+- 검색 탭은 다음 lease에서 정리합니다.
+- 백업: pre_medical_angle_searches_20260807_0704
+
+
+## 2026-08-07T07:15:01+09:00 — 약사추천 검색·jasin_yaksa 캐러셀 채택
+
+- 약사추천 검색 결과에서 기존 jasin_yaksa의 2025-06-30 여행 상비약 캐러셀 DLhXpBnhH5Q를 직접 확인했습니다.
+- 3개월 내용 범위 밖이라 F급 형식 전용으로 contents.csv 1행과 FMT-TRAVEL-MED-KIT-CHECKLIST-001 포맷 카드 1행을 추가했습니다.
+- 조회수는 캐러셀에서 미노출, 좋아요는 2.9천 표시라 정확값을 추정하지 않았고 광고판정은 불명으로 기록했습니다.
+- raw 3줄·known shortcode/query/item·state·감사·보고서를 갱신했습니다.
+- 백업: pre_jasin_travel_carousel_20260807_0707
+
+- `여행 상비약 약사` 검색은 shared browser lease 점유로 실행하지 못했으며, 이를 Instagram 제한으로 기록하지 않고 재시도 대상으로 남겼습니다.
+- 기존 여행 상비약 콘텐츠 3건을 대조했습니다. `medimantv`는 `FMT-SITUATION-TOP5-001`의 인접 사례, `myyaksa`는 구조·편집 미확인, `jasin_yaksa`는 `FMT-TRAVEL-MED-KIT-CHECKLIST-001`의 현재 직접 대표 사례입니다. 추가 CSV 행은 만들지 않았습니다.
+- 최신 raw 1,775줄·큐 347행(완료 333·보류 14)·차단/승인 필요 사항 없음. 다음 작업은 lease 확보 후 여행 상비약 검색 재시도와 보류 계정 순차 처리입니다.
+
+- raw `candidate_content_review` 44건의 누락 shortcode를 `known_shortcodes.txt`·`known_items.txt`에 보완했습니다. 신규 콘텐츠 채택이나 CSV 변경은 없으며, 최신 raw는 1,776줄입니다.
+
+- raw 전체 shortcode 436건과 처리 대장을 대조해 누락 105건을 `known_shortcodes.txt`·`known_items.txt`에 보완했습니다. 최신 raw는 1,777줄이며 데이터 CSV·QUEUE.csv는 변경하지 않았습니다.
+
+- `DLhXpBnhH5Q`의 explicit shortcode ledger 줄을 추가해 raw shortcode 436건의 `known_items.txt` 대조 누락을 0건으로 정리했습니다. 최신 raw는 1,778줄입니다.
+
+- 이번 배치에서 lease 재시도는 실행되지 않았습니다. 직접 content_detail 13건·profile 관측 156건을 대조했지만 안전한 원장 보완은 0건이며, Instagram 제한·로그인 해제·승인 필요 사항은 확인되지 않았습니다. 최신 raw는 1,780줄입니다.
+
+- `iam_yaksa`의 `DLmvta9yvub`를 여행 상비약 검색에서 직접 확인해 F급 형식 전용 콘텐츠를 추가했습니다. `FMT-TRAVEL-MED-KIT-CHECKLIST-001`은 2계정·2영상·여유 있음으로 보정했고 최신 콘텐츠 원장은 318행, raw는 1,783줄입니다.
+
+- `해외여행 상비약 약사`는 검색 결과가 없었습니다. `DMpbeviPOK0`은 비의료 큐레이션으로 제외했고 `DbhGfCAAZCf`는 지표·구조 부족과 상업성 신호로 보류했습니다. 신규 CSV 행은 없고 최신 raw는 1,787줄입니다.
+
+- 07:55 오프라인 감사: shared browser lease 점유로 브라우저 작업은 실행하지 못했습니다. 보류 큐 14건과 포맷ID 공란 169건을 대조했으나 직접 근거가 없어 갱신하지 않았습니다. 최신 raw는 1,790줄이며 data CSV·QUEUE.csv 변경은 없습니다.
+
+- 08:01 lease 재시도도 다른 조사 작업 점유로 확보되지 않았습니다. Instagram 제한·로그인 해제로 기록하지 않았고, 최신 raw는 1,791줄입니다.
+
+- 08:08 `약사 복용법`·`약국 복약상담`은 결과 없음, `약사 피부템`은 21건이었습니다. `DGNnqryT9k0` 캡션 후보는 직접 게시물 검토 전 heartbeat 소유권 불일치로 보류했습니다. 최신 raw는 1,795줄이고 CSV·QUEUE.csv 변경은 없습니다.
+
+- 08:13 `DGNnqryT9k0` 직접 검토 lease도 점유 상태였습니다. 검색 캡션만으로는 원장 필드를 채우지 않고 보류했으며, 최신 raw는 1,797줄입니다.
+- 08:21 `shine_yaksa/DGNnqryT9k0` 직접 게시물을 read-only로 확인했습니다. 게시일은 2025-02-18, 좋아요 9,286·댓글 172·리포스트 225였고 조회수와 세부 캐러셀 구조는 확인되지 않았습니다. 오래된 게시물이며 기존 포맷과 exact match가 아니어서 콘텐츠·포맷 CSV는 변경하지 않고 보류 해소·직접 관측·포맷 미매핑 raw 3줄을 추가했습니다. 최신 raw는 1,800줄입니다.
+- 08:34 `약국 피부관리` 검색은 21건이었고 `myo_yaksa/C-nIQ3GvjOu`를 직접 확인했습니다. 2024-08-13 캐러셀·좋아요 34K·댓글 51K 라벨·리포스트 121·조회수 미노출이며, 모공→3가지 선택지→댓글 키워드·카톡 CTA 구조였습니다. 오래된 게시물·exact format 불확정으로 CSV는 변경하지 않았습니다. 최신 raw는 1,807줄, known shortcode 34건·item ledger 51건을 보완했습니다.
+- 08:46 남은 `약국 피부관리` 후보 `C7tTwVSqJrj`·`C-9XbeHsivI`를 직접 확인했습니다. `szam_stoudio`·`good_honeytip` 모두 개인 블로그형 비의료 큐레이션 계정으로 약사·의료 전문 근거가 없어 제외했습니다. 최신 raw는 1,812줄이며 CSV·QUEUE.csv 변경은 없습니다.
+- 08:55 `약사 여드름` 검색은 21건이었고 `dasik.yaksa/DPQAPMiCQGk`를 직접 확인했습니다. 화면 게시일은 2025-10-01로 3개월 내용 범위 밖이어서 F급 형식 전용으로 콘텐츠 원장에 추가했으며, 캐러셀·순위 훅·가이드라인/RCT 근거를 보존했습니다. 좋아요 4,048·댓글 136·리포스트 337, 조회수 미노출입니다. 내부 슬라이드 구조와 exact format은 미확인이라 포맷ID는 공란이며 최신 raw는 1,816줄입니다.
+- 09:09 raw 중첩 검색 결과와 known_items.txt를 재대조해 누락 7건을 append-only 보완했습니다. known_shortcodes.txt·CSV·QUEUE.csv는 변경하지 않았고 최신 raw는 1,817줄입니다.
+- 09:22 `약사 감기약` 검색은 21건이었고 `iam_yaksa/Cz8N2n_uQKG`를 직접 확인했습니다. 2023-11-22 게시물이라 3개월 내용 범위 밖이어서 F급 형식 전용으로 콘텐츠 원장에 추가했으며, 캐러셀·증상별 일반의약품 조합·주의사항을 보존했습니다. 좋아요 1,801·댓글 113·리포스트 5, 조회수 미노출입니다. 내부 슬라이드 구조와 exact format은 미확인이라 포맷ID는 공란이며 최신 raw는 1,822줄입니다.
+- 09:22 raw 중첩 검색 결과와 known ledgers를 재대조해 누락 16건씩 append-only 보완했습니다. known_shortcodes.txt·CSV·QUEUE.csv는 변경하지 않았습니다.
+- 09:40 `약사 알레르기약` 검색은 21건이었고 `eunha__yak/DPLwu5MkgxN`과 `sunny_yaksa/C6tBAUwOZlK`를 직접 확인했습니다. 게시일은 각각 2025-09-29와 2024-05-08로 3개월 내용 범위 밖이어서 F급 형식 전용으로 콘텐츠 원장에 추가했고, `sunny_yaksa` 계정 1행도 추가했습니다. DPL은 좋아요 344·댓글 7·리포스트 30, C6t는 좋아요 286·댓글 38·리포스트 4이며 모두 조회수 미노출입니다. 포맷ID와 내부 슬라이드 구조는 미확인이라 공란으로 유지했고 최신 raw는 1,829줄입니다.
+- 09:40 raw 중첩 검색 결과와 known ledgers를 재대조해 누락 12건씩 append-only 보완했습니다. known_shortcodes.txt·CSV·QUEUE.csv는 변경하지 않았습니다.
+- 10:01 `약사 탈모약` 검색은 21건이었고 `pharmy.official/C84MvUOuSsc`를 직접 확인했습니다. 게시일은 2024-07-01로 3개월 내용 범위 밖이어서 신규 국내 메디컬 인접 계정과 F급 형식 전용 콘텐츠로 추가했습니다. 캐러셀·처방 없는 탈모약 추천 제목·판시딜·마이녹실·미녹시딜·목시딜 해시태그를 보존했지만 반응 지표와 내부 슬라이드 구조는 미노출입니다. 최신 raw는 1,834줄입니다.
+- 10:01 raw 중첩 검색 결과와 known ledgers를 재대조해 누락 16건씩 append-only 보완했습니다. known_shortcodes.txt·CSV·QUEUE.csv는 변경하지 않았습니다.
+- 10:10 raw 중첩 검색 결과 133개를 재대조해 `C84MvUOuSsc` 1건의 known shortcode/item 누락을 append-only 보완했습니다. 콘텐츠·계정 CSV와 `QUEUE.csv`는 변경하지 않았고 최신 raw는 1,835줄입니다.
+- 10:25 checkpoint `20260807-E1-PHARMACY-BLOAT-01`: `약사 붓기` 검색은 새 in-app browser 탭이 Instagram 로그인 화면으로 리디렉션되어 실행하지 않았습니다. 로그인 정보·저장 프로필 선택 없이 탭을 닫고 오프라인 작업으로 전환했으며, raw 2줄을 추가했습니다. data CSV·`QUEUE.csv`는 변경하지 않았고 로그인된 탭이 제공되면 재시도합니다. 최신 raw는 1,837줄입니다.
+- 10:31 checkpoint `20260807-E0-OFFLINE-LOGIN-FALLBACK-AUDIT-01`: 로그인 fallback 직후 canonical CSV·`QUEUE.csv`·known ledgers를 대조했지만 직접 근거 없이 채울 안전한 값은 0건이었습니다. 중복 계정 핸들·용도 오타·등급·유료도달 공란은 없었고, raw 1줄을 추가했습니다. CSV·`QUEUE.csv`는 변경하지 않았으며 최신 raw는 1,838줄입니다.
+- 10:36 checkpoint `20260807-E1-PHARMACY-BLOAT-RETRY-01`: `약사 붓기` 재시도에서도 Instagram 로그인 화면으로 리디렉션되어 검색하지 않았습니다. 로그인 정보·저장 프로필 선택 없이 탭을 닫고 lease를 정상 반납했으며 raw 2줄을 추가했습니다. data CSV·`QUEUE.csv`는 변경하지 않았고 최신 raw는 1,840줄입니다.
+- 10:39 checkpoint `20260807-E0-QUEUE-REELS-NONE-RESOLVE-01`: raw 직접 프로필 관측에서 릴스 탭이 미노출된 7개 계정을 릴스 없음으로 완료 처리하고 재방문 30일을 기록했습니다. QUEUE.csv는 340 완료·7 보류가 되었고 data CSV는 변경하지 않았으며 raw 1줄을 추가했습니다. 최신 raw는 1,841줄입니다.
+## 2026-08-07T10:49:21+09:00 E0 F 게이트 일관성 보정
+
+- `EUNHAYAK-DPLwu5MkgxN`, `SUNNY-C6tBAUwOZlK`, `PHARMY-C84MvUOuSsc` 3건에서 같은 행의 `게이트근거=통과`와 직접 확인 기록을 확인했습니다. 비어 있던 `게이트판정`만 `통과`로 보정했습니다.
+- `contents.csv` 3행을 수정했고, 수정 전 파일을 `etc/backups/pre_gate_consistency_fix_20260807_105000/contents.csv`에 보관했습니다. raw에는 보정 원문 1건을 append-only로 기록했습니다.
+- S/A 등급 59건의 `우리버전제안` 공란은 직접 확인 근거가 없어 채우지 않았습니다. QUEUE.csv, known ledgers, 금지 경로는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-F-GATE-CONSISTENCY-01`
+## 2026-08-07T10:49:21+09:00 E0 known_items 원장 보완
+
+- raw의 기존 `content_id` 9개와 `known_items.txt`를 대조해 누락된 콘텐츠 원장 9줄을 append-only로 보완했습니다.
+- 대상 shortcode: `DGNnqryT9k0`, `C-nIQ3GvjOu`, `C84MvUOuSsc`, `C6tBAUwOZlK`, `C-9XbeHsivI`, `Cz8N2n_uQKG`, `C7tTwVSqJrj`, `DPQAPMiCQGk`, `DPLwu5MkgxN`.
+- 새 Instagram 수집과 data CSV 수정은 없었습니다. known shortcode 중복과 raw JSON 유효성은 재검증 대상에 포함했습니다.
+- checkpoint: `20260807-E0-KNOWN-ITEM-FIX-GATE-01`
+## 2026-08-07T10:49:21+09:00 E0 raw ID 철자 원장 보완
+
+- raw에 실제로 존재하는 `SZAMSTOUDIO-C7tTwVSqJrj`를 `known_items.txt`에 철자 그대로 append했습니다. canonical 콘텐츠 ID `SZAMSTUDIO-C7tTwVSqJrj`는 별도 값으로 보존했습니다.
+- raw는 수정하지 않았고 data CSV도 수정하지 않았습니다.
+- checkpoint: `20260807-E0-KNOWN-ITEM-FIX-GATE-02`
+## 2026-08-07T11:14:01+09:00 E1 Instagram 로그인 재확인
+
+- Instagram 홈이 로그인 화면으로 표시되어 신규 수집을 수행하지 않았습니다. 저장된 프로필을 선택하거나 인증 정보를 입력하지 않았습니다.
+- 확인 탭은 닫았습니다. lease 해제는 `ownership_mismatch`로 확인되지 않았고, 이 결과를 raw·state·engine_yield·blockers.md에 기록했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. 다음 재시작은 사용자가 in-app Instagram에 로그인한 뒤 진행합니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-01`
+## 2026-08-07T11:19:35+09:00 E1 Instagram 로그인 재확인 2차
+
+- Instagram 홈이 다시 로그인 화면으로 표시되어 신규 수집을 수행하지 않았습니다. 저장된 프로필 선택과 인증 정보 입력은 하지 않았습니다.
+- 확인 탭을 닫고 shared browser lease를 정상 해제했습니다. data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-02`
+## 2026-08-07T11:22:05+09:00 E0 보류 큐 오프라인 감사
+
+- 보류 7건의 기존 raw·계정 메모·QUEUE.csv 사유를 대조했습니다.
+- `spa_official2`는 프로필 HTTP 410과 최근 릴스 shortcode 미노출 상태이고, 나머지 6건은 릴스 12개 미만 또는 기존 lease 중단으로 recent12 지표를 완성할 근거가 없습니다.
+- 안전하게 채울 값은 0건입니다. 최근12 지표를 추정하지 않고 7건의 보류 상태를 유지했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. checkpoint: `20260807-E0-OFFLINE-PENDING-QUEUE-AUDIT-01`
+## 2026-08-07T11:22:05+09:00 E0 raw JSONL 자체 오류 보정
+
+- 방금 추가한 login 재확인 raw 한 줄에 patch 기호가 데이터로 들어간 자체 오류를 발견했습니다.
+- 수정 전 raw를 `etc/backups/pre_raw_artifact_fix_20260807_112205/observations.jsonl`에 백업한 뒤 해당 자체 생성 줄만 정상 JSON으로 보정했습니다. 원래 관측 원문은 수정하지 않았습니다.
+- raw JSONL 재검증을 통과했고 data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-OFFLINE-RAW-ARTIFACT-FIX-01`
+## 2026-08-07T11:29:30+09:00 E1 Instagram 로그인 재확인 3차
+
+- Instagram 홈이 여전히 로그인 화면으로 표시되어 신규 수집을 수행하지 않았습니다. 저장된 프로필 선택과 인증 정보 입력은 하지 않았습니다.
+- 확인 탭을 닫고 shared browser lease를 정상 해제했습니다. data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-03`
+## 2026-08-07T11:29:30+09:00 E0 raw JSONL 자체 오류 2차 보정
+
+- login 재확인 3차 기록에서 자체 생성 raw 첫 줄에 patch 기호가 다시 데이터로 들어간 오류를 발견했습니다.
+- 수정 전 raw를 `etc/backups/pre_raw_artifact_fix_20260807_112930/observations.jsonl`에 백업한 뒤 해당 자체 생성 줄만 정상 JSON으로 보정했습니다.
+- raw JSONL 재검증을 통과했고 data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-OFFLINE-RAW-ARTIFACT-FIX-02`
+## 2026-08-07T11:34:27+09:00 E1 Instagram 로그인 재확인 4차
+
+- Instagram 홈이 여전히 로그인 화면으로 표시되어 신규 수집을 수행하지 않았습니다. 저장된 프로필 선택과 인증 정보 입력은 하지 않았습니다.
+- 확인 탭을 닫고 shared browser lease를 정상 해제했습니다. data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-04`
+## 2026-08-07T11:42:43+09:00 E0 콘텐츠 필수 필드 보완
+
+- 기존 canonical category·angle·hook·structure·person memo만 사용해 MYYAKSA·EUNHAYAK·SUNNY·PHARMY의 각색 훅 3개씩을 보완했습니다.
+- DASI·IAM은 exact format ID와 교차계정 포화도를 직접 확정할 근거가 없어 포맷소진도를 `미측정`으로 기록했습니다.
+- 새 Instagram 수집 없이 contents.csv 6행만 수정했습니다. 원본 백업: `etc/backups/pre_content_hook_exhaustion_fix_20260807_114500/contents.csv`
+- raw/observations.jsonl에 resolution 1건을 append하고 state.json·engine_yield.csv에 checkpoint를 기록했습니다.
+- 다음 재개 조건은 Instagram 로그인 후 pending queue 7개를 직접 검토하는 것입니다.
+## 2026-08-07T11:50:53+09:00 E1 Instagram 로그인 재확인 5차
+
+- Instagram 홈이 여전히 로그인 화면을 표시해 신규 수집을 수행하지 않았습니다.
+- 저장 프로필 선택과 인증 정보 입력은 하지 않았고, 확인 탭을 닫은 뒤 shared browser lease를 정상 해제했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. 보류 큐 7건은 기존 근거 부족 상태로 유지합니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-05`
+## 2026-08-07T11:56:23+09:00 E0 전체 필수 필드 감사
+
+- S 16건·A 43건·F 25건의 등급근거·카테고리·진입각도·광고·게이트·포맷소진도·각색안·유료도달 필수값을 재검사했고 공란은 0건이었습니다.
+- 계정 원장의 팔로워 공란 2건과 계정 등급 공란 23건은 현재 직접 근거가 없어 추정하지 않았습니다.
+- 새 Instagram 수집과 data CSV·QUEUE.csv 수정은 없었습니다. raw·state·engine_yield에 `no_safe_fill` checkpoint를 기록했습니다.
+- checkpoint: `20260807-E0-REQUIRED-FIELD-AUDIT-02`
+## 2026-08-07T12:00:21+09:00 E1 Instagram 로그인 재확인 6차
+
+- Instagram 홈은 초기 로드 후 로그인 화면을 표시해 신규 수집을 수행하지 않았습니다.
+- 저장 프로필 선택과 인증 정보 입력은 하지 않았고, 확인 탭을 닫은 뒤 shared browser lease를 정상 해제했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. 보류 큐 7건은 기존 근거 부족 상태로 유지합니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-06`
+## 2026-08-07T12:02:48+09:00 E0 state 요약 일관성 보정
+
+- state의 오래된 `latest_completion_audit`, `latest_content_detail`, `next_action`을 현재 필수 필드 감사와 보류 큐 7건 기준으로 정렬했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았고, raw·engine_yield에 보정 checkpoint를 기록했습니다.
+- checkpoint: `20260807-E0-STATE-CONSISTENCY-FIX-01`
+## 2026-08-07T12:05:55+09:00 E0 known ledger reconciliation
+
+- canonical accounts.csv·formats.csv·contents.csv·raw를 known ledger와 대조했습니다.
+- 누락된 `known_handles.txt` 2건(`sunny_yaksa`, `pharmy.official`)과 `known_formats.txt` 6건을 append-only로 보완했습니다.
+- known shortcode와 known item 누락은 0건이었고, 새 Instagram 수집·data CSV·QUEUE.csv 수정은 없었습니다.
+- checkpoint: `20260807-E0-KNOWN-LEDGER-RECONCILE-03`
+## 2026-08-07T12:10:17+09:00 E1 Instagram 로그인 재확인 7차
+
+- Instagram 홈이 로드 후 로그인 화면을 표시해 신규 수집을 수행하지 않았습니다.
+- 저장 프로필 선택과 인증 정보 입력은 하지 않았고, 확인 탭을 닫은 뒤 shared browser lease를 정상 해제했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. 보류 큐 7건은 기존 근거 부족 상태로 유지합니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-07`
+## 2026-08-07T12:12:27+09:00 E0 foreign-key 원장 감사
+
+- contents.csv의 계정 핸들 215개와 포맷 ID 124개, QUEUE.csv의 핸들 347개를 대응 원장과 대조했습니다.
+- 고아 계정·포맷·큐 참조는 0건이어서 data CSV와 QUEUE.csv를 수정하지 않았습니다.
+- checkpoint: `20260807-E0-FOREIGN-KEY-AUDIT-01`
+## 2026-08-07T12:14:18+09:00 E0 raw known ledger reconciliation
+
+- raw 관측의 검색어 5건과 계정 핸들 3건을 known_queries.txt·known_handles.txt에 원문 그대로 append했습니다.
+- raw의 `릴스`·`캐러셀`은 형식 라벨이므로 known_formats.txt에는 추가하지 않았습니다. known_items 누락은 0건이었습니다.
+- 새 Instagram 수집·data CSV·QUEUE.csv 수정은 없었습니다.
+- checkpoint: `20260807-E0-KNOWN-RAW-RECONCILE-04`
+## 2026-08-07T12:16:44+09:00 E0 checkpoint consistency audit
+
+- 현재 batch ID가 raw·engine_yield·대상 보고서 3개·PROGRESS.md에 모두 존재하고 state와 일치하는지 확인했습니다.
+- 불일치와 안전한 보완 대상은 0건이며 data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-CHECKPOINT-CONSISTENCY-01`
+## 2026-08-07T12:19:15+09:00 E1 Instagram 로그인 재확인 8차
+
+- Instagram 홈이 로드 후 로그인 화면을 표시해 신규 수집을 수행하지 않았습니다.
+- 저장 프로필 선택과 인증 정보 입력은 하지 않았고, 확인 탭을 닫은 뒤 shared browser lease를 정상 해제했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. 보류 큐 7건은 기존 근거 부족 상태로 유지합니다.
+- checkpoint: `20260807-E1-LOGIN-RECHECK-08`
+
+## 2026-08-07T12:35:09+09:00 E0 known ledger raw 보정
+
+- raw에서 확인된 미등록 handle 4개와 검색어 6개를 known_handles.txt와 known_queries.txt에 추가했습니다.
+- data CSV와 QUEUE.csv는 수정하지 않았습니다. raw·state·engine_yield·report checkpoint를 갱신했습니다.
+- checkpoint: `20260807-E0-KNOWN-RAW-RECONCILE-05`
+
+## 2026-08-07T12:41:50+09:00 E0 category normalization
+
+- contents.csv의 비표준 카테고리 2건을 raw 원문과 허용 카테고리 목록에 맞춰 `약물안전·복약·증상`으로 정규화했습니다.
+- 대상: `EUNHAYAK-DPLwu5MkgxN`, `SUNNY-C6tBAUwOZlK`. 원본 백업: `etc/backups/pre_category_normalization_20260807_124000/contents.csv`
+- raw/state/engine_yield/report checkpoint를 갱신했고 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-CATEGORY-NORMALIZE-01`
+
+## 2026-08-07T12:45:49+09:00 E0 contents CSV 구조 보정
+
+- contents.csv의 여분 `content_scope` 값 3건을 기존 `제외사유` 열로 옮겨 헤더 59열과 행 59열을 맞췄습니다.
+- 대상: `EUNHAYAK-DPLwu5MkgxN`, `SUNNY-C6tBAUwOZlK`, `PHARMY-C84MvUOuSsc`. 값은 삭제하지 않았고 원본 백업: `etc/backups/pre_contents_schema_repair_20260807_124500/contents.csv`
+- raw/state/engine_yield/report checkpoint를 갱신했고 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-CONTENTS-SCHEMA-REPAIR-01`
+
+## 2026-08-07T12:26:33+09:00 E0 engine_yield CSV 구조 보정
+
+- engine_yield.csv의 실제 열 분리 29행을 notes 마지막 필드 인용으로 보정했습니다.
+- 유효한 quoted rows와 빈 줄 2개는 보존했습니다. 원본 백업: `etc/backups/pre_engine_yield_csv_repair_20260807_122300/engine_yield.csv`
+- raw/state/engine_yield/report checkpoint를 갱신했습니다. data CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-ENGINE-YIELD-CSV-REPAIR-01`
+
+
+## 2026-08-07T12:58:44+09:00 E0 thumbnail missing memo audit
+
+- blank thumbnail 37건 중 기존 감사 메모 7건을 제외한 30건에 canonical public/data/thumbs/<shortcode>.jpg 미존재와 로그인 상태로 재수집 보류 사유를 사람메모에 추가했습니다.
+- 물리 파일은 0건이었고 이미지 다운로드·QUEUE.csv 수정은 하지 않았습니다. 원본 백업: `etc/backups/pre_thumbnail_memo_audit_20260807_125500/contents.csv`
+- raw/state/engine_yield/report checkpoint를 갱신했습니다.
+- checkpoint: `20260807-E0-THUMBNAIL-MEMO-AUDIT-01`
+
+
+## 2026-08-07T13:10:43+09:00 E0 account metric gap audit
+
+- accounts.csv 374건의 팔로워·게시물수·최근30일게시수·최근12 중앙조회수·최고조회수·상위3배수·평소좋아요율·최근20개 광고수 공란을 raw 직접 관측 167건·144개 handle과 exact 대조했습니다.
+- 공란 계정 지표에 쓸 단일 nonblank raw 값은 0건이어서 추정 입력하지 않았습니다. 콘텐츠 S/A/F 핵심 필수값 공란은 0건입니다.
+- data CSV·QUEUE.csv는 수정하지 않았고 raw/state/engine_yield/report checkpoint를 갱신했습니다.
+- checkpoint: `20260807-E0-ACCOUNT-METRIC-GAP-AUDIT-01`
+
+
+## 2026-08-07T13:18:00+09:00 E0 format edit-device resolution
+
+- `FMT-SHIFTWORK-SLEEP-ROUTINE-001`의 편집장치 공란을 raw format fingerprint와 연결 콘텐츠 메모에서 영상 편집 방식이 노출되지 않았다는 근거로 `영상 편집 방식 미확인`으로 기록했습니다.
+- 기존 포맷 카드에 쓰인 동일한 비단정 상태 문구를 재사용했으며 편집 방식을 추정하지 않았습니다. 원본 백업: `etc/backups/pre_format_edit_device_20260807_132000/formats.csv`
+- 수정 중 임시 오기입을 checkpoint 전에 바로 교정했고, 교정 사실을 raw에 남겼습니다. QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-FORMAT-EDIT-DEVICE-RESOLUTION-01`
+
+## 2026-08-07T13:26:26+09:00 E0 format assignment gap audit
+
+- `FMT-TRAVEL-MED-KIT-CHECKLIST-001`의 `배정적합인물` 공란을 연결 콘텐츠 `JASIN-DLhXpBnhH5Q`, `IAM-DLmvta9yvub`와 raw 직접 매핑 기록으로 대조했습니다.
+- 포맷 각색안은 재사용 주제만 제시하고 담당자를 지정하지 않으며, 연결 콘텐츠의 배정 필드와 raw 직접 배정 근거도 공란입니다. 사람 또는 `공용`을 추정 입력하지 않았습니다.
+- data CSV·QUEUE.csv는 수정하지 않았고 raw/state/engine_yield/report checkpoint를 갱신했습니다.
+- checkpoint: `20260807-E0-FORMAT-ASSIGNMENT-GAP-AUDIT-01`
+
+## 2026-08-07T13:37:04+09:00 E1 pending queue profile recheck
+
+- 로그인된 Instagram 읽기 전용 세션에서 보류 큐 7개 계정을 재확인했습니다. `spa_official2`는 프로필 접근 불가였고, 나머지 6개는 공개 프로필 지표를 확인했습니다.
+- 팔로워·게시물 수처럼 직접 노출된 값만 원장에 반영했습니다. `lemonpharmacy38` 팔로워를 501에서 507로 보정했고, 7개 계정의 정면 확인 시각과 사람메모를 갱신했습니다.
+- 최근12 중앙값·최고조회수·평소좋아요율은 릴스 탭 미노출 또는 로딩 불완전으로 근거가 없어 공란을 유지했습니다. QUEUE.csv 7행은 재확인 시각·시도횟수·보류 사유를 갱신하고 보류 상태를 유지했습니다.
+- raw 7줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했습니다. `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-PENDING-QUEUE-PROFILE-RECHECK-01`
+
+## 2026-08-07T13:54:22+09:00 E1 frame capture
+
+- A급 `OYAK-DbVMg0nvMtU` (`DbVMg0nvMtU`)의 로그인 Instagram 영상 플레이어에서 0:15/0:38 화면을 읽기 전용으로 캡처했습니다.
+- 영상 영역을 잘라 JPG로 저장하고 `contents.csv`의 캡처파일·사람메모를 갱신했습니다. 나머지 3개 프레임은 후속 배치 대상으로 남겼습니다.
+- raw/state/engine_yield/report checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-FRAME-CAPTURE-OYAK-01`
+
+## 2026-08-07T14:06:12+09:00 E1 frame capture follow-up
+
+- A급 `OYAK-DbVMg0nvMtU` (`DbVMg0nvMtU`)의 로그인 Instagram 영상 플레이어에서 0:26/0:38, 0:31/0:38, 0:36/0:38 화면을 읽기 전용으로 확인했습니다.
+- 영상 영역만 잘라 `DbVMg0nvMtU_2.jpg`~`DbVMg0nvMtU_4.jpg`로 저장하고 `contents.csv`의 캡처파일 목록과 사람메모를 갱신했습니다. 기존 프레임 1개와 합쳐 총 4개입니다.
+- raw 3줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-FRAME-CAPTURE-OYAK-02`
+
+## 2026-08-07T14:13:34+09:00 E1 timepharm frame capture attempt
+
+- S급 `TIMEPHARM-DZwymy0xZ1F` (`DZwymy0xZ1F`)의 로그인 Instagram 릴스 DOM·본문과 0:19 영상 플레이어를 읽기 전용으로 확인했습니다.
+- 영상 영역 캡처가 CDP timeout으로 실패해 프레임 파일은 저장하지 않았습니다. `contents.csv` 캡처파일은 공란으로 유지하고 사람메모에 실패 사유를 기록했습니다.
+- raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-FRAME-CAPTURE-TIMEPHARM-01`
+
+## 2026-08-07T14:17:32+09:00 E1 dr.wongu frame capture attempt
+
+- S급 `DRWONGU-DPvbhndkuIU` (`DPvbhndkuIU`)의 로그인 Instagram 릴스 DOM·본문과 0:32 영상 플레이어를 읽기 전용으로 확인했습니다.
+- 영상 영역 캡처가 CDP timeout으로 실패했고 Chrome의 직접 video element 캡처 API도 지원되지 않았습니다. 프레임 파일은 저장하지 않았고 `contents.csv` 캡처파일은 공란과 실패 사유를 유지했습니다.
+- raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E1-FRAME-CAPTURE-DRWONGU-01`
+
+## 2026-08-07T14:20:42+09:00 E0 offline video duration resolution
+
+- raw에 남은 로그인 영상 플레이어 직접 duration_seconds를 대조해 `TIMEPHARM-DZwymy0xZ1F`의 `길이초`를 19초, `DRWONGU-DPvbhndkuIU`의 `길이초`를 33초로 기록했습니다.
+- 두 값은 직접 읽은 재생시간을 가장 가까운 정수 초로 반올림한 값이며, 조회수·좋아요·댓글 등 다른 지표는 보정하지 않았습니다.
+- raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-OFFLINE-VIDEO-DURATION-RESOLUTION-01`
+
+## 2026-08-07T14:25:55+09:00 E0 offline video duration blank audit
+
+- raw의 직접 `duration_seconds` 20건과 16개 shortcode를 현재 `contents.csv`의 `길이초` 공란과 대조했습니다.
+- 단일 값으로 안전하게 기록할 수 있는 공란 후보는 0건이어서 data CSV는 변경하지 않았고, 지표·콘텐츠 주장은 추정하지 않았습니다.
+- raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-OFFLINE-VIDEO-DURATION-AUDIT-01`
+
+## 2026-08-07T14:33:21+09:00 E3 ddib_yaksa direct reel detail
+
+- 로그인된 Instagram에서 S급 `DDIBYAKSA-DSjLo3qEj_-` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 27.885713과 표시값 0:27을 확인해 `contents.csv`의 `길이초`를 28초로 기록했습니다.
+- 기존 조회수·좋아요·댓글과 원장 게시일은 덮어쓰지 않았고, 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-DDIBYAKSA-DIRECT-DETAIL-01`
+
+## 2026-08-07T14:38:38+09:00 E3 nhis_korea direct reel detail
+
+- 로그인된 Instagram에서 S급 `NHISKOREA-DaUxfQPThqy` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 29.333333333333332와 표시값 0:29를 확인해 `contents.csv`의 `길이초`를 29초로 기록했습니다.
+- 기존 조회수·좋아요·댓글과 게시일은 덮어쓰지 않았고, 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-NHISKOREA-DIRECT-DETAIL-01`
+
+## 2026-08-07T14:43:54+09:00 E3 alpaca_yaksa direct reel detail
+
+- 로그인된 Instagram에서 S급 `ALPACAYAKSA-C_acRdkpjat` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 30.4와 표시값 0:30을 확인해 `contents.csv`의 `길이초`를 30초로 기록했습니다.
+- 기존 조회수·좋아요·댓글은 덮어쓰지 않았고, DOM 게시일 2024-09-02와 원장 게시일 2024-08-29가 달라 게시일도 유지했습니다. 캡처파일은 저장하지 않았으며 raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했습니다. QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-ALPACAYAKSA-DIRECT-DETAIL-01`
+
+## 2026-08-07T14:50:10+09:00 E3 hayu_pharmacist direct reel detail
+
+- 로그인된 Instagram에서 S급 `HAYUPHARMACI-DanMzctNKQ2` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 46.6과 표시값 0:46을 확인해 `contents.csv`의 `길이초`를 47초로 기록했습니다.
+- 기존 조회수·좋아요·댓글·게시일은 덮어쓰지 않았고, 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-HAYUPHARMACI-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:01:12+09:00 E3 yourhsis direct reel detail
+
+- 로그인된 Instagram에서 S급 `YOURHSIS-DaeBdcehd4H` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 14.534239와 표시값 0:14를 확인해 `contents.csv`의 `길이초`를 15초로 기록했습니다.
+- DOM 게시일 2026-07-07과 원장 게시일 2026-07-05가 달라 게시일을 유지했고, 표시 댓글 379와 원장 댓글 378이 달라 기존 지표도 유지했습니다. 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-YOURHSIS-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:07:05+09:00 E3 yak_guide direct reel detail
+
+- 로그인된 Instagram에서 S급 `YAKGUIDE-DZFEzk5vLQt` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 8.033333과 표시값 0:08을 확인해 `contents.csv`의 `길이초`를 8초로 기록했습니다.
+- DOM 게시일 2026-06-02는 원장 게시일과 일치했고, 표시 좋아요·댓글은 원장 지표와 달라 기존 지표를 유지했습니다. 광고 판정 불명과 캡처파일 공란도 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-YAKGUIDE-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:10:58+09:00 E3 yaksa_nam direct reel detail
+
+- 로그인된 Instagram에서 A급 `YAKSANAM-DDZpK-WTpce` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 8.475283과 표시값 0:08을 확인해 `contents.csv`의 `길이초`를 8초로 기록했습니다.
+- DOM 게시일 2024-12-10은 원장 게시일과 일치했고, 표시 댓글은 원장 지표와 달라 기존 지표를 유지했습니다. 광고 판정 불명과 캡처파일 공란도 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-YAKSANAM-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:14:49+09:00 E3 manyjjju_yaksa direct reel detail
+
+- 로그인된 Instagram에서 A급 `MANYJJJUYAKS-DbU7fWtzX1P` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 27.978593과 표시값 0:27을 확인해 `contents.csv`의 `길이초`를 28초로 기록했습니다.
+- DOM 게시일 2026-07-28과 원장 게시일 2026-07-27이 달라 게시일을 유지했고, 기존 조회수·좋아요·댓글과 광고 판정은 유지했습니다. 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-MANYJJJUYAKS-DIRECT-DETAIL-01`
+
+## 2026-08-07T16:49:36+09:00 E0 append-only audit: MANYJJJUYAKS batch collision
+
+- `20260807-E3-MANYJJJUYAKS-DIRECT-DETAIL-01`은 raw 1,896행·engine 288행에서 `MANYJJJUYAKS-DbU7fWtzX1P`에 먼저 사용됐고, 현재 콘텐츠 `MANYJJJUYAKS-DbAEalhT_pA`는 raw 1,920행·engine 312행에 기록됐습니다.
+- 배치 ID는 충돌했지만 콘텐츠 ID는 각각 1건이라 실제 콘텐츠 중복은 아닙니다. `contents.csv` 대상 ID도 1건입니다.
+- 재시도 과정에서 네 보고서의 해당 checkpoint가 2회 남았습니다. append-only 규칙에 따라 raw·engine·보고서 행을 삭제하지 않고 충돌과 중복 checkpoint를 감사 기록으로 보존했습니다.
+- checkpoint: `20260807-E0-APPEND-ONLY-BATCH-COLLISION-AUDIT-03`
++
+## 2026-08-07T16:49:36+09:00 E0 audit correction: MANYJJJUYAKS reference types
+
+- 현재 `MANYJJJUYAKS-DbAEalhT_pA`의 `content_detail`은 raw 1건·engine 1행입니다.
+- raw의 추가 `content_id` 참조는 1,680행의 기존 `format_mapping_resolution`이고, engine의 추가 행은 1,896행의 다른 shortcode `MANYJJJUYAKS-DbU7fWtzX1P`에 같은 block ID를 재사용한 행입니다. 원장 ID는 1건입니다.
+- 앞선 감사 문구를 정정했으며 append-only 행과 보고서 checkpoint 2회를 그대로 보존했습니다.
+- checkpoint: `20260807-E0-APPEND-ONLY-BATCH-COLLISION-AUDIT-04`
++
+## 2026-08-07T16:59:09+09:00 E3 chosunich.official direct reel detail
+
+- 로그인된 Instagram에서 A급 `CHOSUNICHOFF-DbE1oRhhmwh` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 227.784897과 표시값 3:47을 확인해 `contents.csv`의 `길이초`를 228초로 기록했습니다.
+- 원장·OG 게시일 2026-07-21과 DOM 게시일 2026-07-22가 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요 44·댓글 4와 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-CHOSUNICHOFF-DIRECT-DETAIL-01`
++
+## 2026-08-07T17:02:18+09:00 E3 zeroderma_official direct reel detail
+
+- 로그인된 Instagram에서 A급 `ZERODERMAOFF-Dah1oV9T3fH` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 67.2와 표시값 1:07을 확인해 `contents.csv`의 `길이초`를 67초로 기록했습니다.
+- DOM·OG·원장 게시일 2026-07-08이 일치했습니다. 기존 좋아요 1,077·댓글 449와 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-ZERODERMAOFF-DIRECT-DETAIL-01`
++
+## 2026-08-07T17:05:17+09:00 E3 gunginam_tv direct reel detail
+
+- 로그인된 Instagram에서 A급 `GUNGINAMTV-Da7fqEtPInL` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 47.5와 표시값 0:47을 확인해 `contents.csv`의 `길이초`를 48초로 기록했습니다.
+- DOM·OG·원장 게시일 2026-07-18이 일치했습니다. 기존 좋아요 1,406·댓글 132와 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-GUNGINAMTV-DIRECT-DETAIL-01`
+
+
+
+
+
+
+## 2026-08-07T15:20:27+09:00 E3 yaksa_hwanghaeyeon direct reel detail
+
+- 로그인된 Instagram에서 A급 `YAKSAHWANGHA-DZ7ILajPZlE` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 59.1과 표시값 0:59를 확인해 `contents.csv`의 `길이초`를 59초로 기록했습니다.
+- DOM 게시일 2026-06-23은 원장 게시일과 일치했고, 기존 조회수·좋아요·댓글과 광고 판정은 유지했습니다. 캡처파일은 저장하지 않았습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-YAKSAHWANGHA-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:24:08+09:00 E3 eunha__yak direct reel detail
+
+- 로그인된 Instagram에서 A급 `EUNHA-C7RB_JTvmgE` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 27.281994와 표시값 0:27을 확인해 `contents.csv`의 `길이초`를 27초로 기록했습니다.
+- DOM 게시일 2024-05-22는 원장 게시일과 일치했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처 실패와 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-EUNHA-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:33:18+09:00 E3 little_yaksa direct reel detail
+
+- 로그인된 Instagram에서 A급 `LITTLE-DbaNtSpS8Jj` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 19.34077과 표시값 0:19을 확인해 `contents.csv`의 `길이초`를 19초로 기록했습니다.
+- OG 게시일 2026-07-30은 원장 게시일과 일치했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처 실패와 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-LITTLE-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:39:07+09:00 E0 append-only duplicate audit
+
+- `EUNHA-C7RB_JTvmgE`의 동일 `batch_id`·`observed_at`·`content_id`가 raw와 engine_yield에 각각 2개 남아 있는 상태를 확인했습니다.
+- raw·engine_yield가 append-only이므로 기존 행을 삭제·수정하지 않고 중복 보존과 재수집 금지를 감사 raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint로 기록했습니다. QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-APPEND-ONLY-DUPLICATE-AUDIT-01`
+
+## 2026-08-07T15:42:08+09:00 E0 append-only duplicate audit 02
+
+- 전체 raw `kind=batch_id`와 `engine_yield block_id`를 그룹화해 중복을 재확인했습니다. raw 중복 배치 4개와 engine_yield 중복 블록 3개가 남아 있습니다.
+- append-only 규칙에 따라 기존 행을 삭제·수정하지 않았고, 해당 배치를 재수집하지 않는 감사 raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 추가했습니다. QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E0-APPEND-ONLY-DUPLICATE-AUDIT-02`
+
+## 2026-08-07T15:46:20+09:00 E3 good.yaksa direct reel detail
+
+- 로그인된 Instagram에서 S급 `GOODYAKSA-Da4HZvypQy5` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 23.079182와 표시값 0:23을 확인해 `contents.csv`의 `길이초`를 23초로 기록했습니다.
+- DOM 게시일 2026-07-17과 OG meta 게시일 2026-07-16이 원장 게시일 2026-07-16과 달라 원장 게시일을 유지했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-GOODYAKSA-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:49:53+09:00 E3 dr.hair_lee direct reel detail
+
+- 로그인된 Instagram에서 S급 `DRHAIRLEE-DS9wMOFkqJu` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 22.662675와 표시값 0:22을 확인해 `contents.csv`의 `길이초`를 23초로 기록했습니다.
+- DOM 게시일 2026-01-01은 원장 게시일과 일치했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-DRHAIRLEE-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:52:57+09:00 E3 ok_hira direct reel detail
+
+- 로그인된 Instagram에서 S급 `OKHIRA-DauHwloj9rT` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 137.2706039372706과 표시값 2:17을 확인해 `contents.csv`의 `길이초`를 137초로 기록했습니다.
+- DOM 게시일 2026-07-13과 OG meta 게시일 2026-07-12가 원장 게시일 2026-07-12와 달라 원장 게시일을 유지했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-OKHIRA-DIRECT-DETAIL-01`
+
+## 2026-08-07T15:56:40+09:00 E3 lilly_yaksa direct reel detail
+
+- 로그인된 Instagram에서 A급 `LILLYYAKSA-DPuPGidE7Xm` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 81.152312와 표시값 1:21을 확인해 `contents.csv`의 `길이초`를 81초로 기록했습니다.
+- DOM 게시일 2025-10-13과 OG meta 게시일 2025-10-12가 원장 게시일 2025-10-12와 달라 원장 게시일을 유지했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-LILLYYAKSA-DIRECT-DETAIL-01`
+
+## 2026-08-07T16:00:39+09:00 E3 ssofit_yaksa direct reel detail
+
+- 로그인된 Instagram에서 A급 `SSOFITYAKSA-DbTGvDbSlxQ` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 42.86666666666667과 표시값 0:42를 확인해 `contents.csv`의 `길이초`를 43초로 기록했습니다.
+- DOM 게시일 2026-07-27은 원장 게시일과 일치했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-SSOFITYAKSA-DIRECT-DETAIL-01`
+
+## 2026-08-07T16:03:59+09:00 E3 kumedicine_official direct reel detail
+
+- 로그인된 Instagram에서 S급 `KUMEDICINEOF-DazAdTZgzNO` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 53.34501167834501과 표시값 0:53을 확인해 `contents.csv`의 `길이초`를 53초로 기록했습니다.
+- DOM 게시일 2026-07-15와 OG meta 게시일 2026-07-14가 원장 게시일 2026-07-14와 달라 원장 게시일을 유지했고, 표시 좋아요·댓글·리포스트와 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-KUMEDICINEOF-DIRECT-DETAIL-01`
+
+## 2026-08-07T16:08:00+09:00 E3 medicalkoreaofficial direct reel detail
+
+- 로그인된 Instagram에서 S급 `MEDICALKOREA-DZ9ecXpR7Qg` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 37.1과 표시값 0:37을 확인해 `contents.csv`의 `길이초`를 37초로 기록했습니다.
+- DOM 게시일 2026-06-24는 원장 게시일과 일치했고, 표시 좋아요·댓글·리포스트와 Facebook 댓글 보조값 및 기존 원장 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-MEDICALKOREA-DIRECT-DETAIL-01`
+
+## 2026-08-07T16:12:08+09:00 E3 medicalkoreaofficial second direct reel detail
+
+- 로그인된 Instagram에서 A급 `MEDICALKOREA-DbC0Xb_ho5e` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 37.353375와 표시값 0:37을 확인해 `contents.csv`의 `길이초`를 37초로 기록했습니다.
+- DOM 게시일 2026-07-21은 원장 게시일과 일치했고 OG meta 게시일 2026-07-20은 달라 원장 게시일을 유지했습니다. 기존 좋아요 공란·댓글·조회수와 표시 지표·OG 좋아요는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-MEDICALKOREA2-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:23:35+09:00 E3 dr.hair_lee direct reel detail
+
+- 로그인된 Instagram에서 S급 `DRHAIRLEE-DWDAkYwEpjj` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 22.778775와 표시값 0:22를 확인해 `contents.csv`의 `길이초`를 22초로 기록했습니다.
+- DOM 게시일 2026-03-19는 원장 게시일과 일치했고 OG meta 게시일 2026-03-18은 달라 원장 게시일을 유지했습니다. 기존 좋아요·댓글·조회수와 표시 지표·OG 좋아요는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-DRHAIRLEE2-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:28:17+09:00 E3 yongsanint direct reel detail
+
+- 로그인된 Instagram에서 S급 `YONGSANINT-DHpEQFYS7Fc` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 15.672063과 표시값 0:15를 확인해 `contents.csv`의 `길이초`를 16초로 기록했습니다.
+- 원장·OG 게시일 2025-03-25와 DOM 게시일 2025-03-26이 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요·댓글 공란과 본문 하단의 33·102 표시는 의미를 확정하지 않고 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-YONGSANINT-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:31:44+09:00 E3 cellmed.official direct reel detail
+
+- 로그인된 Instagram에서 S급 `CELLMEDOFFIC-DS3eVcGEqzy` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 62.76666666666667과 표시값 1:02를 확인해 `contents.csv`의 `길이초`를 63초로 기록했습니다.
+- 원장·OG 게시일 2025-12-29와 DOM 게시일 2025-12-30이 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요 32·댓글 2와 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-CELLMEDOFFIC-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:36:09+09:00 E3 loveplan__ direct reel detail
+
+- 로그인된 Instagram에서 A급 `LOVEPLAN-DMRObWYSkwf` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 33.203129와 표시값 0:33을 확인해 `contents.csv`의 `길이초`를 33초로 기록했습니다.
+- 원장·OG 게시일 2025-07-18과 DOM 게시일 2025-07-19가 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요·댓글 공란과 본문 표시값 2·Facebook 댓글 표시 1은 의미를 확정하지 않고 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-LOVEPLAN-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:38:41+09:00 E3 dr.wongu direct reel detail
+
+- 로그인된 Instagram에서 A급 `DRWONGU-Day14YnhYIa` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 11.845178과 표시값 0:11을 확인해 `contents.csv`의 `길이초`를 12초로 기록했습니다.
+- DOM 게시일 2026-07-15는 원장 게시일과 일치했고 OG meta 게시일 2026-07-14는 달랐습니다. 기존 좋아요 307·댓글 37과 표시 지표·Facebook 댓글·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-DRWONGU-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:41:08+09:00 E3 mohw_kr direct reel detail
+
+- 로그인된 Instagram에서 A급 `MOHWKR-Da15rqMkuqO` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 121.75508842175508과 표시값 2:01을 확인해 `contents.csv`의 `길이초`를 122초로 기록했습니다.
+- 원장·OG 게시일 2026-07-15와 DOM 게시일 2026-07-16이 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요 47·댓글 3과 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-MOHWKR-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:43:34+09:00 E3 run.pharmacist direct reel detail
+
+- 로그인된 Instagram에서 A급 `RUNPHARMACIS-DWn4bnzkyWO` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 24.961451과 표시값 0:24를 확인해 `contents.csv`의 `길이초`를 25초로 기록했습니다.
+- DOM·OG·원장 게시일 2026-04-02가 일치했습니다. 기존 좋아요 2,112·댓글 97과 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-RUNPHARMACIS-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:46:50+09:00 E3 snubh_official direct reel detail
+
+- 로그인된 Instagram에서 A급 `SNUBHOFFICIA-DahbjFxvGNp` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 115.241375와 표시값 1:55를 확인해 `contents.csv`의 `길이초`를 115초로 기록했습니다.
+- 원장·OG 게시일 2026-07-07과 DOM 게시일 2026-07-08이 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요 5,143·댓글 83과 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-SNUBHOFFICIA-DIRECT-DETAIL-01`
++
+## 2026-08-07T16:49:36+09:00 E3 manyjjju_yaksa direct reel detail
+
+- 로그인된 Instagram에서 A급 `MANYJJJUYAKS-DbAEalhT_pA` 릴스의 DOM·본문·영상 플레이어를 읽었습니다.
+- 영상 player의 직접 `duration_seconds` 13.512561과 표시값 0:13을 확인해 `contents.csv`의 `길이초`를 14초로 기록했습니다.
+- 원장·OG 게시일 2026-07-19와 DOM 게시일 2026-07-20이 하루 달라 원장 게시일을 유지했습니다. 기존 좋아요 475·댓글 26과 표시 지표·OG 지표는 덮어쓰지 않았습니다. 기존 캡처파일 공란을 유지했습니다. raw 1줄, state·engine_yield·보고서·PROGRESS checkpoint를 갱신했으며 QUEUE.csv와 금지 경로 `C:\dev\pharm-social-intelligence\public\data\`는 수정하지 않았습니다.
+- checkpoint: `20260807-E3-MANYJJJUYAKS-DIRECT-DETAIL-01`
+
+## 2026-08-08T00:19:26+09:00 E0 최신 주간 인수인계 상태
+
+- canonical 원장: accounts.csv 374행, contents.csv 323행, formats.csv 125행, topics.csv 85행, raw 2,119줄에서 이번 상태 기록 1줄을 추가합니다.
+- QUEUE.csv: 347행 중 완료 340·보류 7이며, 보류 핸들은 `spa_official2`, `knjbio.official`, `lemonpharmacy38`, `innerdew.official`, `pharmacyinpalm_official`, `tony71004`, `jjing_yaksa`입니다.
+- Instagram read-only 재확인 12차에서 로그인 링크가 표시됐고, 계정 선택·로그인·계정 행동은 하지 않았습니다. 탭과 shared browser lease를 정리했습니다.
+- 최근 오프라인 감사는 큐 핸들 정규화, 유료도달 필드, 주제 카드 완전성 점검이며 모두 안전한 보정 후보 0건입니다. 로그인 없이 가능한 §13 오프라인 감사를 계속합니다.
+- checkpoint: `20260808-E0-WEEKLY-REPORT-STATUS-REFRESH-01`
+
+## 2026-08-08T00:32:57+09:00 E0 graded format blank recheck
+
+- S/A/F 등급 콘텐츠 84건 중 포맷ID 공란 6건을 기존 raw와 재대조했습니다.
+- `MYYAKSA-DbnUYqJJWN0`, `DASI-DPQAPMiCQGk`, `IAM-Cz8N2n_uQKG`, `EUNHAYAK-DPLwu5MkgxN`, `SUNNY-C6tBAUwOZlK`, `PHARMY-C84MvUOuSsc` 모두 정확한 포맷 지문 근거가 없어 공란을 유지했습니다.
+- data CSV·QUEUE.csv는 수정하지 않았고 raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-GRADED-FORMAT-BLANK-RECHECK-01`
+
+## 2026-08-08T00:38:07+09:00 E0 category raw crosscheck
+
+- contents.csv 323건의 카테고리가 허용된 12개 조합에 속하고, 기존 raw의 직접 콘텐츠 카테고리 18건과 원장을 대조한 결과 불일치는 0건입니다.
+- 카테고리를 추정 변경하지 않았고 data CSV·QUEUE.csv는 수정하지 않았습니다. raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-CATEGORY-RAW-CROSSCHECK-01`
+
+## 2026-08-08T00:41:40+09:00 E1 Instagram 로그인 재확인 13차
+
+- `knjbio.official` 공개 프로필에서 팔로워 1,007명·팔로우 418명·게시물 링크 12개·릴스 탭을 확인했지만 로그인 링크가 표시됐습니다.
+- 로그인·계정 선택·추가 탐색은 하지 않았고 탭과 shared browser lease를 정리했습니다. data CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E1-BROWSER-LOGIN-RECHECK-13`
+
+## 2026-08-08T00:45:18+09:00 E0 content raw gap reconcile
+
+- 기존 raw 2,123줄과 contents.csv 323건의 게시일·길이·포맷ID·훅·구조·편집장치 공란을 전수 대조했습니다.
+- 단일 직접값 후보는 0건이어서 추정·보간하지 않았습니다. data CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-CONTENT-RAW-GAP-RECONCILE-01`
+
+## 2026-08-08T00:48:05+09:00 E0 grade evidence consistency
+
+- contents.csv 323건의 등급값과 등급근거를 검증했습니다. 허용값 위반 0건, 등급근거 공란 0건, S/A/F 84건의 수치 규칙 불일치 0건입니다.
+- 등급을 변경하지 않았고 data CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-GRADE-EVIDENCE-CONSISTENCY-01`
+
+## 2026-08-08T00:53:27+09:00 E0 cross-table reference integrity
+
+- accounts.csv 374행·contents.csv 323행·formats.csv 125행의 계정·포맷 참조 누락은 0건입니다.
+- formats.csv 대표영상URL 1개는 contents.csv에서 찾지 못했고, 국내약사 사용량 불일치 46건은 집계 기준이 불명확해 자동 수정하지 않았습니다.
+- data CSV·QUEUE.csv와 금지 경로는 수정하지 않았고 raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-CROSS-TABLE-REFERENCE-INTEGRITY-01`
+
+## 2026-08-08T01:00:56+09:00 E1 spa_official2 read-only 재확인
+
+- `spa_official2` 공개 프로필은 이용할 수 없었고 링크 오류·삭제 가능성 안내가 표시됐습니다.
+- 로그인·계정 선택·추가 탐색 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-SPA-OFFICIAL2-RECHECK-01`
+
+## 2026-08-08T01:05:20+09:00 E1 innerdew.official read-only 재확인
+
+- `innerdew.official` 공개 프로필에서 팔로워 280명·팔로우 0명·게시물 링크 8개를 확인했지만 로그인 대화상자가 표시됐습니다.
+- 로그인·계정 선택·콘텐츠 상세 진입 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-INNERDEW-OFFICIAL-RECHECK-01`
+
+## 2026-08-08T01:10:04+09:00 E0 known ledger coverage audit
+
+- accounts.csv 374행·contents.csv 323행·QUEUE.csv 347행의 식별자를 known ledger와 대조했고 계정 핸들·큐 핸들·콘텐츠 shortcode·콘텐츠 ID 누락은 모두 0건입니다.
+- ledger와 data CSV·QUEUE.csv를 수정하지 않았고 금지 경로도 변경하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-KNOWN-LEDGER-COVERAGE-AUDIT-01`
+
+## 2026-08-08T01:13:46+09:00 E0 format usage semantics audit
+
+- formats.csv 125행의 국내 약사 사용량을 `국내 약사 인플루언서` 계정으로 필터링해 재계산했습니다. 불일치 후보 31건 중 비공란 충돌은 `FMT-NUTRITION-RANKING-001` 1건입니다.
+- 해당 포맷의 대표영상URL은 contents.csv에 없어 1건을 0으로 바꾸지 않았고 공란 후보도 자동 입력하지 않았습니다.
+- data CSV·QUEUE.csv와 금지 경로는 수정하지 않았고 raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-FORMAT-USAGE-SEMANTICS-AUDIT-01`
+
+## 2026-08-08T01:16:44+09:00 E1 lemonpharmacy38 read-only 재확인
+
+- `lemonpharmacy38` 공개 프로필에서 팔로워 506명·팔로우 604명·게시물 링크 4개와 외부 네이버 플레이스 링크를 확인했지만 로그인 대화상자가 표시됐습니다.
+- 로그인·계정 선택·콘텐츠 상세 진입 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-LEMONPHARMACY38-RECHECK-01`
+
+## 2026-08-08T01:19:41+09:00 E1 pharmacyinpalm_official read-only 재확인
+
+- `pharmacyinpalm_official` 공개 프로필에서 팔로워 188명·팔로우 486명·게시물 링크 10개와 외부 drxsolution.co.kr 링크를 확인했지만 로그인 대화상자가 표시됐습니다.
+- 로그인·계정 선택·콘텐츠 상세 진입 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-PHARMACYINPALM-OFFICIAL-RECHECK-01`
+
+## 2026-08-08T01:24:23+09:00 E1 tony71004 read-only 재확인
+
+- `tony71004` 공개 프로필에서 팔로워 5,001명·팔로우 3,480명·게시물 링크 12개를 확인했지만 로그인 대화상자가 표시됐습니다.
+- 로그인·계정 선택·콘텐츠 상세 진입 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-TONY71004-RECHECK-01`
+
+## 2026-08-08T01:28:56+09:00 E1 jjing_yaksa read-only 재확인
+
+- `jjing_yaksa` 공개 프로필에서 팔로워 1,119명·팔로우 376명·게시물 링크 12개·하이라이트 9개를 확인했지만 로그인 대화상자가 표시됐습니다.
+- 로그인·계정 선택·콘텐츠 상세 진입 없이 보류 처리했으며 data CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신하고 탭과 shared browser lease를 정리했습니다.
+- checkpoint: `20260808-E1-JJING-YAKSA-RECHECK-01`
+
+## 2026-08-08T01:35:20+09:00 E0 계정 프로필 지표 갱신
+
+- 최신 read-only 공개 프로필 근거에 맞춰 `lemonpharmacy38` 팔로워를 507→506, `tony71004` 팔로워를 5002→5001로 갱신했습니다.
+- 게시물 수는 프로필에 노출된 일부 링크 수를 전체 게시물 수로 오인하지 않아 유지했고, QUEUE.csv와 금지 경로도 유지했습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했으며 사전 백업을 보존했습니다.
+- checkpoint: `20260808-E0-ACCOUNT-PROFILE-METRIC-REFRESH-01`
+
+## 2026-08-08T01:40:09+09:00 E0 knjbio.official 계정 지표 갱신
+
+- `knjbio.official` 공개 프로필에서 팔로워 1,006명·팔로우 418명·게시물 링크 12개·하이라이트 10개를 확인했습니다.
+- 팔로워를 1,007→1,006으로 갱신했고, 게시물 수 245는 일부 링크 수를 전체 수로 오인하지 않아 유지했습니다.
+- 로그인 대화상자로 콘텐츠 상세는 보류했으며 raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-ACCOUNT-PROFILE-METRIC-REFRESH-02`
+
+## 2026-08-08T01:47:26+09:00 E0 썸네일 파일 존재성 정정
+
+- `MEDICALKOREA-DbC0Xb_ho5e`의 기록된 썸네일 파일이 원장에 없어 `썸네일파일`을 공란으로 정정하고 누락 사유를 남겼습니다.
+- 썸네일 공란 38건 모두 누락 사유가 있으며, 비공란 썸네일 파일 누락은 0건입니다. QUEUE.csv와 금지 경로는 유지했습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했고 사전 백업을 보존했습니다.
+- checkpoint: `20260808-E0-THUMBNAIL-FILE-EXISTENCE-REPAIR-01`
+
+## 2026-08-08T01:51:10+09:00 E1 innerdew.official read-only 재확인
+
+- `innerdew.official` 공개 프로필에서 팔로워 280명·팔로우 0명·게시물 링크 8개·Threads 링크를 확인했지만 로그인 대화상자가 유지됐습니다.
+- 기존 수치와 일치해 계정 수치는 변경하지 않고 최신 확인 시각·동일 지표·보류 사유만 메모에 기록했습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했고 사전 백업을 보존했습니다.
+- checkpoint: `20260808-E1-INNERDEW-OFFICIAL-RECHECK-02`
+
+## 2026-08-08T01:54:43+09:00 E0 F급 completeness 감사
+
+- F급 25건에서 등급근거·각색안·포맷소진도 공란은 0건, 포맷ID·편집장치 직접 근거 부족은 5건이었습니다.
+- 다섯 행 모두 미매핑 사유가 있어 포맷을 추정하지 않았고 CSV·QUEUE.csv와 금지 경로는 유지했습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-F-GRADE-COMPLETENESS-AUDIT-02`
+
+## 2026-08-08T02:00:09+09:00 E0 계정 프로필 공란 대조
+
+- 계정 374행에서 팔로워 공란 2건과 게시물 수 공란 13건을 raw와 대조했습니다.
+- 계정 전체 수치를 확정할 직접 근거가 없어 안전한 입력 후보 0건으로 유지했고, CSV·QUEUE.csv와 금지 경로는 수정하지 않았습니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E0-ACCOUNT-PROFILE-BLANK-RECONCILE-02`
+
+## 2026-08-08T02:03:37+09:00 E1 spa_official2 read-only 재확인
+
+- `spa_official2`에서 프로필 unavailable 화면을 다시 확인해 해당 계정만 hold로 유지했습니다.
+- 로그인·계정 행동·CSV·QUEUE.csv는 수정하지 않았고 전체 작업은 계속합니다.
+- raw·state·engine_yield·completion JSON·일일보고·PROGRESS를 갱신했습니다.
+- checkpoint: `20260808-E1-SPA-OFFICIAL2-RECHECK-02`
+## 2026-08-08T02:08:31+09:00 E0 게시일 공란 재감사
+
+- 게시일 공란 4건을 raw 직접 관찰과 대조했지만 정확한 단일 날짜를 확정할 수 없어 모두 유지했습니다.
+- JESSI 2건은 접근 불가, TUCAPHARMACY는 redirect와 DOM/OG 충돌, KPANEWS는 relative/OG 충돌입니다.
+- `contents.csv`·`QUEUE.csv` 수정 없음. raw 1줄과 상태·보고서 갱신.
+- checkpoint: `20260808-E0-POSTED-DATE-BLANK-RECONCILE-02`
+## 2026-08-08T02:14:42+09:00 E1 Instagram 로그인 상태 재확인
+
+- Instagram 공개 화면은 로그인 안내와 저장 프로필 7개만 표시했습니다. 자격 증명과 저장 프로필을 사용하지 않았습니다.
+- 탭 종료 완료. CSV·`QUEUE.csv` 수정 없음. lease release는 `ownership_mismatch`로 기록.
+- checkpoint: `20260808-E1-BROWSER-LOGIN-RECHECK-15`
+## 2026-08-08T02:19:21+09:00 E0 경과일 일관성 보정
+
+- 정확한 게시일과 발견일시가 있는 경과일 공란 4건을 `발견일시 날짜 - 게시일 + 1`로 계산해 보정했습니다.
+- 보정값: GAWANDECOLLE 525, MYYAKSA 3, JASIN 404, IAM 402. 게시일 공란 2건은 유지.
+- `contents.csv` 4행 수정, `QUEUE.csv` 수정 없음. 백업은 `etc/backups/pre_batchBX_elapsed_days_consistency_fix_20260808_0220/contents.csv`.
+- checkpoint: `20260808-E0-ELAPSED-DAYS-CONSISTENCY-FIX-01`
+## 2026-08-08T02:23:36+09:00 E0 contents.csv 행 구분자 복구
+
+- CSV 재작성 형식 오류를 백업본으로 복구하고 경과일 4건만 다시 적용했습니다.
+- 323행·59열·UTF-8 BOM·표준 CRLF 확인. 큐 변경 없음.
+- checkpoint: `20260808-E0-CONTENTS-CSV-LINE-ENDINGS-REPAIR-01`
+## 2026-08-08T02:27:10+09:00 E0 단일 공란 4건 재감사
+
+- 형식·증상/성분·포맷소진도·광고점수 각 1건을 raw 사유와 대조했습니다. 안전한 보완값 0건.
+- CSV와 큐 변경 없음. 다음 오프라인 감사로 이동.
+- checkpoint: `20260808-E0-REMAINING-SINGLE-BLANK-AUDIT-01`
+## 2026-08-08T02:30:40+09:00 E0 누락 파일 메모 범위 감사
+
+- 썸네일 공란 38건은 모두 사유 메모가 있습니다. 캡처 공란은 322건이며 103건만 캡처 관련 메모가 있습니다.
+- 사유가 단일하지 않은 캡처 공란 219건은 추정 문구를 쓰지 않았습니다. CSV·큐 변경 없음.
+- checkpoint: `20260808-E0-FILE-MEMO-COVERAGE-AUDIT-01`
+## 2026-08-08T02:34:20+09:00 E0 계정·포맷 소수 공란 감사
+
+- 여행 상비약 포맷의 배정적합인물 공란과 계정 소수 공란을 대조했습니다. 직접 근거 부족으로 유지.
+- CSV·큐 변경 없음.
+- checkpoint: `20260808-E0-ACCOUNT-FORMAT-SINGLE-BLANK-AUDIT-01`
+## 2026-08-08T02:38:51+09:00 E0 계정·포맷 교차표 공란 감사
+
+- 계정 공란을 채우는 방향으로 동일 핸들 콘텐츠의 계정중앙조회수·계정평소좋아요율과 raw 직접값을 대조했습니다. 안전한 보완 후보는 0건입니다.
+- 여행 상비약 포맷의 배정적합인물은 연결 콘텐츠 2건과 raw에 담당자 지정이 없어 공란을 유지했습니다.
+- 금지 경로는 읽기만 확인했고 이번 배치의 쓰기는 0건입니다. CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-ACCOUNT-FORMAT-CROSS-TABLE-AUDIT-01`
+## 2026-08-08T02:44:08+09:00 E0 포맷 재사용일 감사
+
+- formats.csv 125개 카드의 재사용가능일이 모두 공란이며, 직접 날짜나 산정 규칙이 없어 날짜를 추정하지 않았습니다.
+- formats.csv·QUEUE.csv는 수정하지 않았고 raw·state·completion·수율 로그를 갱신했습니다.
+- checkpoint: `20260808-E0-FORMAT-REUSE-DATE-AUDIT-01`
+## 2026-08-08T02:47:47+09:00 E1 Instagram 로그인 상태 재확인 16차
+
+- lease를 확보해 Instagram을 새 탭에서 읽었지만 DOM 스냅샷이 비어 공개·로그인 상태를 판정하지 못했습니다.
+- 자격 증명 입력·프로필 선택·계정 행동은 없었고 탭을 닫은 뒤 lease를 정상 해제했습니다. CSV·QUEUE.csv는 수정하지 않았습니다.
+- 현재 canonical 원장은 accounts 374·contents 323·formats 125·topics 85행, raw 2,153줄, 큐는 완료 340·보류 7건입니다.
+- 계정 제한·차단·로그인 정보 사용 등 전체 작업 중단 조건은 발생하지 않았습니다.
+- checkpoint: `20260808-E1-BROWSER-LOGIN-RECHECK-16`
+## 2026-08-08T02:52:06+09:00 E1 Instagram 로그인 상태 재확인 17차
+
+- 공개 Instagram 화면에 로그인 안내와 저장 프로필 7개가 표시됐습니다. 자격 증명·저장 프로필을 사용하지 않았고 보류 큐의 recent12·릴스 지표는 확인하지 않았습니다.
+- 탭 86을 닫고 lease를 정상 해제했습니다. CSV·QUEUE.csv는 수정하지 않았습니다.
+- 로그인 세션이 필요한 7개 보류 큐는 오프라인 보류로 유지하고, 현재 canonical 원장은 accounts 374·contents 323·formats 125·topics 85행입니다.
+- checkpoint: `20260808-E1-BROWSER-LOGIN-RECHECK-17`
+## 2026-08-08T02:54:53+09:00 E0 현재 산출물 정합성 감사
+
+- canonical CSV는 accounts 374·contents 323·formats 125·topics 85행, raw는 2,154줄(JSONL 오류 0), 큐는 완료 340·보류 7건입니다.
+- 일일보고·주간 인수인계·PROGRESS는 최신 checkpoint를 포함합니다. `known_items.txt` 중복은 0건입니다.
+- `known_shortcodes.txt`의 기존 중복 `DKzjqPkPmpK` 1건은 append-only 규칙에 따라 삭제하지 않고 기록만 유지했습니다.
+- CSV·QUEUE.csv·금지 경로는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-CURRENT-ARTIFACT-ALIGNMENT-AUDIT-01`
+## 2026-08-08T02:56:47+09:00 E0 캡처 실패 메모 재대조
+
+- 캡처파일 공란 322건을 raw exact capture_attempt와 대조했습니다. 직접 실패 기록 9건은 모두 기존 사람메모에 사유가 있습니다.
+- 추가 근거가 없는 공란 313건에는 일괄 문구를 쓰지 않았고 contents.csv·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-CAPTURE-FAILURE-MEMO-RECONCILE-01`
+## 2026-08-08T02:58:46+09:00 E0 계정 지표 정규화 교차표 재감사
+
+- 핸들 strip·lower 정규화 후 계정 공란과 동일 계정 콘텐츠 지표를 대조했지만 계정 지표 보완 후보는 0건입니다.
+- mfdskorea·drugsafe_official raw 프로필은 계정 유형만 확인하며 담당자 배정값은 직접 제시하지 않아 추정하지 않았습니다.
+- accounts.csv·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: `20260808-E0-ACCOUNT-METRIC-NORMALIZED-RECONCILE-01`
+## 2026-08-08T03:05:14+09:00 E0 포맷 사용량 인접 계정 교차 감사
+- formats.csv 사용량 공란 30건 모두 명시 포맷ID와 콘텐츠 1건씩 연결되었습니다.
+- 연결 계정 30건 모두 국내 메디컬 인접 계정으로 분류되어 국내 약사 사용 계정수·영상수를 확정할 후보는 0건입니다.
+- formats.csv와 QUEUE.csv는 수정하지 않았고 raw·state·completion·PROGRESS를 갱신했습니다.
+- checkpoint: 20260808-E0-FORMAT-USAGE-ADJACENT-CROSSCHECK-01
+## 2026-08-08T03:10:48+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 87에서도 Instagram 로그인 화면과 저장 프로필 7개가 보였습니다.
+- 인증정보 입력·저장 프로필 선택·계정 조작 없이 탭을 닫고 lease를 해제했습니다.
+- recent12·릴스 지표는 수집하지 못해 보류 계정을 유지했고 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-18
+## 2026-08-08T03:13:22+09:00 E0 완료 포인터 정합성 감사
+- completion_audit_current.json 최상위 체크포인트와 state.json 내부 완료 포인터를 최신 Instagram 로그인 상태 재확인 배치와 맞췄습니다.
+- 원장 수량은 accounts 374·contents 323·formats 125·topics 85, raw 2,160줄, QUEUE.csv 347행(완료 340·보류 7)입니다.
+- CSV와 QUEUE.csv는 수정하지 않았고 완료 상태는 IN_PROGRESS로 유지했습니다.
+- checkpoint: 20260808-E0-COMPLETION-CHECKPOINT-ALIGNMENT-01
+## 2026-08-08T03:16:16+09:00 E0 산출물 무결성 감사
+- 네 CSV의 행 수·열 수·BOM과 계정·콘텐츠·포맷·주제 ID 중복을 확인했습니다. 중복 ID는 0건입니다.
+- 콘텐츠 계정 참조 누락, 광고 판정 공란, 유료도달 의심 공란, raw JSON 오류는 모두 0건입니다.
+- known_items 중복은 0건이며 known_shortcodes의 기존 중복 1건은 append-only 규칙에 따라 유지했습니다. 금지 경로의 마지막 쓰기 시각도 변하지 않았습니다.
+- checkpoint: 20260808-E0-ARTIFACT-INTEGRITY-AUDIT-01
+## 2026-08-08T03:18:29+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 88에서도 Instagram 로그인 화면과 저장 프로필 7개가 보였습니다.
+- 인증정보 입력·저장 프로필 선택·계정 조작 없이 탭을 닫고 lease를 해제했습니다.
+- recent12·릴스 지표는 수집하지 못해 보류 계정을 유지했고 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-19
+## 2026-08-08T03:20:02+09:00 E0 blocker 로그 갱신
+- 최신 Instagram 로그인 화면 상태를 blockers.md에 기록했습니다.
+- 계정 제한·차단·CAPTCHA는 확인되지 않았고 인증정보·계정 행동도 없었습니다.
+- 보류 큐 7건은 로그인된 read-only 배치에서 재개하며 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-BLOCKER-LOG-REFRESH-01
+## 2026-08-08T03:22:27+09:00 E0 재방문 일정 감사
+- 현재 시각 기준 재방문 예정일 도래 계정은 0건이며 가장 이른 예정일은 oneul_pharmacy의 2026-08-11입니다.
+- 보류 큐 7건 중 도래 계정도 0건입니다.
+- 재방문 일정 공란 6건은 계산 규칙이 없어 날짜를 추정하지 않았고 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-REVISIT-SCHEDULE-AUDIT-01
+## 2026-08-08T03:25:07+09:00 E0 큐 보류 사유 정합성 보정
+- completion open item의 과거 후보 문구를 제거하고 QUEUE.csv의 실제 보류 7개 계정과 최신 로그인 필요 상태를 반영했습니다.
+- 큐 행과 CSV는 수정하지 않았고, 다음 로그인된 read-only 배치에서 recent12·reels 지표를 확인합니다.
+- checkpoint: 20260808-E0-QUEUE-HOLD-REASON-ALIGNMENT-01
+## 2026-08-08T03:27:57+09:00 E0 open item 사유 갱신
+- format usage 공란 30건의 최신 교차 감사 근거를 open item 사유에 반영했습니다.
+- 연결 콘텐츠는 각 1건이지만 연결 계정 30건이 모두 국내 메디컬 인접 계정이어서 국내 약사 사용 수는 추정하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OPEN-ITEM-REASON-REFRESH-01
+## 2026-08-08T03:30:33+09:00 E0 open item 근거 커버리지 감사
+- completion open item 7건 모두 일치하는 raw 관측 또는 콘텐츠 근거를 확인했습니다.
+- 사유 변경·안전한 보완값은 없었고 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OPEN-ITEM-EVIDENCE-COVERAGE-AUDIT-01
+## 2026-08-08T03:32:54+09:00 E0 완료 검증기 안전성 감사
+- verify_goal.mjs는 내부 JSON BOM 파싱에서 실패했고 소스에 보고서 쓰기 호출 2개가 있어 실행을 중단했습니다.
+- canonical 산출물은 변경되지 않았으며 기존 임계값 14/14와 현재 무결성·open item 7/7을 수동 확인했습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-COMPLETION-VERIFIER-SAFETY-AUDIT-01
+## 2026-08-08T03:35:47+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 89에서도 Instagram 로그인 화면과 저장 프로필 7개가 보였습니다.
+- 인증정보 입력·저장 프로필 선택·계정 조작 없이 탭을 닫고 lease를 해제했습니다.
+- recent12·릴스 지표는 수집하지 못해 보류 계정을 유지했고 CSV·QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-20
+-
+## 2026-08-08T03:37:45+09:00 E0 재시작 체크포인트 연결성 감사
+- raw 마지막 배치·state·completion·engine_yield가 동일한 최신 브라우저 재확인 배치를 가리킵니다.
+- 일일·주간 보고, PROGRESS, blockers, QUEUE.csv도 같은 상태를 반영합니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-CHECKPOINT-SPINE-AUDIT-01
+-
+## 2026-08-08T03:46:23+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 90에서 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 recent12·reels 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-21
+-
+## 2026-08-08T03:50:11+09:00 E0 새 근거 없음 오프라인 감사
+- 마지막 로그인 재확인 이후 새 계정·콘텐츠·지표·포맷·프로필·유료도달 근거는 0건이었습니다.
+- 완료 미해결 항목 7건과 보류 큐 7건은 추정 없이 유지했습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-NO-NEW-EVIDENCE-AUDIT-01
+-
+## 2026-08-08T03:53:02+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 91에서도 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-22
+-
+## 2026-08-08T03:58:13+09:00 E0 완료 검증기 안전성 수리 및 실행
+- `verify_goal.mjs`가 UTF-8 BOM을 안전하게 읽고 canonical completion/state를 덮어쓰지 않도록 수정했습니다.
+- 자동 감사는 `IN_PROGRESS`, 실패 항목 0건, `168시간 지속`만 진행 중으로 보고했습니다.
+- 자동 감사 결과는 `etc/goal_audit/output/`에 저장했고 CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-COMPLETION-VERIFIER-REPAIR-01
+-
+## 2026-08-08T04:00:58+09:00 E0 수치 지속 게이트 정합성 수리
+- verifier의 오래된 `168시간 지속` 수치 게이트를 제거하고 canonical completion 상태를 진행 기준으로 사용하도록 수정했습니다.
+- 자동 감사는 실패 0건이며 보조 사본·부분 정성 기준·canonical completion 상태만 검토 중으로 남겼습니다.
+- canonical state/report, CSV와 QUEUE.csv는 verifier 실행 중 수정되지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-COMPLETION-VERIFIER-NUMERIC-GATE-REPAIR-01
+-
+## 2026-08-08T04:03:51+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 92에서도 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-23
+-
+## 2026-08-08T04:06:21+09:00 E0 verifier 범위 정리
+- 목표에 없는 public 사본 일치와 부분 정성 기준 차이를 verifier 판정 게이트에서 제거하고 evidence로만 남겼습니다.
+- 자동 감사는 실패 0건이며 canonical completion 상태만 진행 중으로 보고합니다.
+- canonical state/report, CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-COMPLETION-VERIFIER-SCOPE-REFINEMENT-01
+-
+## 2026-08-08T04:08:33+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 93에서도 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-24
+-
+## 2026-08-08T04:10:59+09:00 E0 known_items 원장 검증기 연결
+- `logs/known_items.txt`를 verifier 필수 파일과 중복 검사에 포함했습니다.
+- known_items 비공란 1,100줄, 중복 0건이며 verifier 실패는 0건입니다.
+- canonical state/report, CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-COMPLETION-VERIFIER-KNOWN-ITEMS-COVERAGE-01
+-
+## 2026-08-08T04:13:14+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 94에서도 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-25
+-
+## 2026-08-08T04:15:32+09:00 E0 completion open item 검증기 연결
+- verifier가 canonical completion의 미해결 항목 7건과 항목 유형을 직접 보고하도록 보강했습니다.
+- 미해결 항목은 실패가 아니라 `IN_PROGRESS` evidence로 표시하고, 자동 감사 실패는 0건입니다.
+- canonical state/report, CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E0-OFFLINE-COMPLETION-VERIFIER-OPEN-ITEM-COVERAGE-01
+-
+## 2026-08-08T04:18:29+09:00 E1 Instagram 로그인 상태 재확인
+- 새 read-only 탭 95에서도 Instagram 로그인 화면과 저장 프로필 7개를 확인했습니다.
+- 인증정보 입력·저장 프로필 선택·계정 행동 없이 탭을 닫고 shared browser lease를 해제했습니다.
+- 로그인된 read-only 배치가 없어 보류 큐 7건의 지표는 수집하지 않았습니다.
+- CSV와 QUEUE.csv는 수정하지 않았습니다.
+- checkpoint: 20260808-E1-BROWSER-LOGIN-RECHECK-26
+-
+## 2026-08-08T04:21:08+09:00 E0 목표 blocked 감사
+- Instagram 로그인 필요 상태가 연속 7회 확인됐고, 인증정보 입력·프로필 선택·계정 행동은 모두 0건입니다.
+- 미해결 항목 7건과 보류 큐 7건은 로그인된 read-only 또는 canonical metrics/capture가 필요합니다.
+- 추가 안전 오프라인 보충 후보가 없어 goal 상태를 `blocked`로 기록했습니다.
+- checkpoint: 20260808-E0-OFFLINE-GOAL-BLOCKED-AUDIT-01
+
+## 2026-08-08T09:59:15+09:00 로그인 세션 재개
+- 로그인된 Instagram 인 앱 브라우저에서 7개 보류 계정과 3개 콘텐츠 상세를 읽기 전용으로 재확인했습니다.
+- 프로필 지표와 일부 좋아요·댓글·리포스트를 raw에 기록하고 QUEUE.csv 보류 7건의 근거를 갱신했습니다.
+- 최근12 집계, 비노출 조회수, MYYAKSA 첫 3초·편집·캡처, 기타 정확한 공란은 남아 있어 완료로 표시하지 않았습니다.
+- 다음 배치: 7개 보류 계정의 최근12 원문·조회수 화면이 실제로 노출되는지 짧게 재확인하고, 노출되지 않으면 보류 사유를 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-RESUME-READONLY-01
+
+## 2026-08-08T10:34:37+09:00 릴스 탭 조회수 재확인
+- 네 계정에서 보이는 릴스 조회수 24건을 raw에 기록했습니다. 최근12 전체는 어느 계정에서도 노출되지 않았습니다.
+- lemonpharmacy38 콘텐츠 1건의 최신 지표를 원장에 반영하고, knjbio·lemonpharmacy·innerdew·jjing 보류 사유를 갱신했습니다.
+- 남은 작업은 7개 보류 계정의 완전한 최근12 근거, MYYAKSA 첫 3초·편집·캡처, YUYAK 조회수, 공란 필드입니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-REELS-02-APPLY
+
+## 2026-08-08T10:46:08+09:00 광고점수 공란 해소
+- 로그인된 read-only Instagram에서 `jasin_yaksa/DLhXpBnhH5Q` 게시물과 프로필 링크를 확인했습니다.
+- 게시물 광고 표기는 없었지만 프로필 링크에 제품 오픈·공구와 상담문의가 노출되어 광고점수 `2`·광고판정 `불명`으로 반영했습니다.
+- completion open item은 6건입니다. 큐 보류 7건과 hidden recent12 지표는 추정하지 않고 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PAID-REACH-03
+
+## 2026-08-08T10:56:55+09:00 계정 프로필 공란 해소
+- 로그인된 read-only Instagram에서 `sunny_yaksa`와 `pharmy.official` 프로필을 확인했습니다.
+- `sunny_yaksa`는 팔로워 7.7만·게시물 134개, `pharmy.official`은 팔로워 909명·게시물 90개로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-04
+
+## 2026-08-08T11:04:21+09:00 계정 게시물 수 공란 해소
+- 로그인된 read-only Instagram에서 `anamhospital`과 `ud_dental` 프로필을 확인했습니다.
+- `anamhospital`은 게시물 136개, `ud_dental`은 게시물 1,830개로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-05
+
+## 2026-08-08T11:08:56+09:00 계정 프로필 공란 추가 해소
+- 로그인된 read-only Instagram에서 `minish_dental.hospital`과 `segyero_dental` 프로필을 확인했습니다.
+- `minish_dental.hospital`은 게시물 453개, `segyero_dental`은 게시물 1,235개·팔로워 1,561명으로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-06
+
+## 2026-08-08T11:15:44+09:00 계정 프로필 공란 추가 해소
+- 로그인된 read-only Instagram에서 `baro2dc`와 `yoshanchuen` 프로필을 확인했습니다.
+- `baro2dc`는 게시물 137개·팔로워 676명, `yoshanchuen`은 게시물 3,337개·팔로워 3,021명으로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-07
+
+## 2026-08-08T11:22:58+09:00 계정 프로필 공란 추가 해소
+- 로그인된 read-only Instagram에서 `korea_pharmacy`와 `nids_korea` 프로필을 확인했습니다.
+- `korea_pharmacy`는 게시물 261개·팔로워 1,004명, `nids_korea`는 게시물 160개·팔로워 1,526명으로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-08
+
+## 2026-08-08T11:28:16+09:00 계정 프로필 공란 추가 해소
+- 로그인된 read-only Instagram에서 `hello_khidi`와 `jwtalk_official` 프로필을 확인했습니다.
+- `hello_khidi`는 게시물 941개·팔로워 1.4만, `jwtalk_official`은 게시물 189개·팔로워 6,775명으로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-09
+
+## 2026-08-08T11:32:05+09:00 계정 프로필 공란 추가 해소
+- 로그인된 read-only Instagram에서 `hanwhapharm_official` 프로필을 확인했습니다.
+- `hanwhapharm_official`은 게시물 149개·팔로워 398명으로 원장에 반영했습니다.
+- 최근12 지표와 등급 공란은 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-PROFILE-BLANKS-10
+
+## 2026-08-08T11:36:21+09:00 보류 큐 프로필 재확인
+- 로그인된 read-only Instagram에서 `spa_official2`와 `pharmacyinpalm_official` 프로필을 재확인했습니다.
+- `spa_official2`는 프로필을 사용할 수 없었고 `pharmacyinpalm_official`은 기존 수치와 릴스 탭 미노출을 재확인해 큐와 원장을 갱신하지 않았습니다.
+- 최근12 지표와 보류 큐 7건은 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-PROFILE-11
+
+## 2026-08-08T11:39:32+09:00 보류 큐 프로필 재확인
+- 로그인된 read-only Instagram에서 `tony71004`와 `jjing_yaksa` 프로필을 재확인했습니다.
+- 두 계정의 프로필 수치가 기존 큐 근거와 같아 큐와 원장을 갱신하지 않았습니다.
+- 최근12 지표와 보류 큐 7건은 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-PROFILE-12
+
+## 2026-08-08T11:43:18+09:00 MYYAKSA 콘텐츠 상세 재확인
+- 로그인된 read-only Instagram에서 `MYYAKSA-DbnUYqJJWN0` 직접 게시물의 제목·캡션과 댓글 UI를 확인했습니다.
+- 영상 요소가 접근 가능하지 않아 첫 3초·훅·구조·편집장치·포맷ID·캡처는 화면 근거가 없어 유지합니다.
+- checkpoint: 20260808-E1-LOGIN-MYYAKSA-CONTENT-RECHECK-13
+
+## 2026-08-08T11:47:45+09:00 YUYAK 콘텐츠 상세 재확인
+- 로그인된 read-only Instagram에서 `YUYAK-DIzmDd_Ttws` 직접 게시물의 제목·캡션·슬라이드 대체텍스트와 댓글 UI를 확인했습니다.
+- 조회수는 노출되지 않았고 최근12 밖의 게시물이라 배수와 등급은 계산하지 않았습니다.
+- checkpoint: 20260808-E1-LOGIN-YUYAK-CONTENT-RECHECK-14
+
+## 2026-08-08T12:08:18+09:00 E0 오프라인 MYYAKSA 포맷 매핑
+- MYYAKSA-DbnUYqJJWN0의 직접 확인 구조와 기존 FMT-BUY-DONTBUY-001 사요 안 사요 비교형 카드를 대조했습니다.
+- 포맷ID를 FMT-BUY-DONTBUY-001로 기록하고, 비추천 3개→추천 3개·33.2초 변형 근거를 콘텐츠 사람메모와 raw에 남겼습니다.
+- 포맷 사용 계수는 국내 약사 계정 1→2, 영상 1→2, 최근 사용일 2026-08-04, 소진도 여유 있음으로 갱신했습니다.
+- completion open item은 5건, 보류 큐는 7건입니다. 숨은 지표는 추정하지 않습니다.
+- checkpoint: 20260808-E0-OFFLINE-MYYAKSA-FORMAT-MAP-16
+## 2026-08-08T12:13:09+09:00 E1 knjbio 릴스 추가 로드 재확인
+- 로그인된 read-only Instagram의 knjbio.official/reels에서 기존 조회수 11개를 확인하고 한 차례 전체 스크롤했습니다.
+- 스크롤 뒤에도 11개만 노출됐고 새 릴스 링크는 없었습니다. recent12 중앙값·최고조회수·평소좋아요율은 계산하지 않았습니다.
+- QUEUE.csv와 원장은 변경하지 않았고, knjbio 보류 상태를 유지합니다.
+- completion open item은 5건이며 보류 큐는 7건입니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-REELS-RECHECK-17
+## 2026-08-08T12:17:41+09:00 E1 lemon·innerdew 릴스 재확인
+- 로그인된 read-only Instagram에서 lemonpharmacy38/reels를 확인해 현재 6개 조회수 18·127·121·144·124·153을 기록했습니다.
+- innerdew.official/reels는 기존 5개 조회수와 같았습니다.
+- lemonpharmacy38 큐 보류 사유·시도횟수·처리일시만 갱신했고, 두 계정 모두 recent12 전체가 없어 중앙값·최고조회수·평소좋아요율은 계산하지 않았습니다.
+- completion open item은 5건, 보류 큐는 7건입니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-REELS-RECHECK-18
+## 2026-08-08T12:21:01+09:00 E1 직접 릴스 경로 재확인
+- pharmacyinpalm_official/reels에서 릴스 1개·조회수 98을 확인했습니다.
+- 	ony71004/reels에서 릴스 6개를 확인했고, 조회수 5개는 5579·1535·1840·1540·1519, 1개는 조회수가 노출되지 않았습니다.
+- jjing_yaksa/reels는 기존 3개 조회수와 같았습니다.
+- pharmacy와 tony의 큐 보류 사유·시도횟수·처리일시를 갱신했으며, recent12 전체는 여전히 확인하지 않았습니다.
+- completion open item은 5건, 보류 큐는 7건입니다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-DIRECT-REELS-RECHECK-19
+## 2026-08-08T12:28:29+09:00 spa_official2 큐 재확인
+- direct /reels/ 경로가 페이지를 사용할 수 없음 화면을 반환했다.
+- 계정 동작 없이 QUEUE.csv 시도횟수만 4로 갱신했고, 보류 상태와 recent12 미확인을 유지했다.
+- 다음 작업은 남은 completion open items 5건과 queue hold 7건의 직접 근거 확인이다.
+- checkpoint: 20260808-E1-LOGIN-QUEUE-SPA-RECHECK-20
+
+## 2026-08-08T12:34:59+09:00 YUYAK 조회수 재확인
+- direct post에서 본문·좋아요·댓글·리포스트·게시일을 다시 확인했지만 조회수는 미노출이었다.
+- 최근12 밖의 콘텐츠이므로 배수와 등급을 추정하지 않고 원장·큐 변경 없이 보류했다.
+- checkpoint: 20260808-E1-LOGIN-YUYAK-CONTENT-RECHECK-21
+
+## 2026-08-08T12:42:27+09:00 tony71004 미노출 조회수 재확인
+- direct reel에서 릴스 링크·좋아요·댓글·게시일을 확인했지만 조회수는 노출되지 않았다.
+- recent12 전체가 없어 큐 보류를 유지하고, 시도횟수 6과 직접 근거를 기록했다.
+- checkpoint: 20260808-E1-LOGIN-TONY-UNEXPOSED-RECHECK-22
+
+## 
+20260808-E1-LOGIN-CHARMACIST-RECENT12-23
+ (
+2026-08-08T12:55:14+09:00
+)
+- 로그인 read-only Instagram에서 charmacist_official 릴스 17개를 확인했고 최신 12개 조회수를 확보했습니다.
+- accounts.csv에 최근12개중앙조회수 154와 최고조회수 56000을 반영했습니다.
+- raw observations.jsonl은 
+2207
+줄이 되며, 최근30일게시수·평소좋아요율·최근20개 광고수는 미확인으로 남겼습니다.
+- completion open item 5개와 queue 보류 7개는 유지합니다.
+
+
+## 
+20260808-E1-LOGIN-SWMEDICAL-RECHECK-24
+ (
+2026-08-08T13:03:29+09:00
+)
+- 로그인 read-only Instagram에서 swmedical_official 릴스 11개의 조회수를 재확인했습니다.
+- 스크롤 후에도 12번째 릴스가 노출되지 않아 최근12 중앙값·최고조회수는 계산하지 않았습니다.
+- accounts.csv에는 직접 확인 시각·재방문일·미완료 사유를 기록했고, 수치 공란은 추정하지 않았습니다.
+- raw observations.jsonl은 
+2208
+줄이 되며, completion open item 5개와 queue 보류 7개는 유지합니다.
+
+
+## 
+20260808-E1-LOGIN-GOODYAKSA-RECENT12-25
+ (
+2026-08-08T13:10:43+09:00
+)
+- 로그인 read-only Instagram에서 good.yaksa 릴스 21개를 확인했고 최신 12개 조회수를 확보했습니다.
+- accounts.csv에 최근12개중앙조회수 306500과 최고조회수 1131000을 반영했습니다.
+- 최근30일게시수·평소좋아요율·최근20개중광고수는 직접 근거가 없어 공란을 유지했습니다.
+- raw observations.jsonl은 2209줄이 되며, completion open item 5개와 queue 보류 7개는 유지합니다.
+
+
+## 20260808-E1-LOGIN-WIKIYAKSA-RECENT12-26
+
+(2026-08-08T13:18:37+09:00)
+- Logged-in read-only Instagram wikiyaksa/reels/ exposed 21 reels and view counts.
+- Updated accounts.csv with latest12 median 27,500 and max 602,000.
+- DbqI_XAPcib used the initial DOM value of 11000 views; recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 21 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+## 20260808-E1-LOGIN-YUNIYAKSA-RECENT12-27
+
+(2026-08-08T13:32:02+09:00)
+- Logged-in read-only Instagram yuni__yaksa/reels/ exposed 12 reels and view counts.
+- Updated accounts.csv with latest12 median 92,500 and max 1,007,000.
+- DbskRVBTHkb used the initial DOM value of 283,000 views; recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-SUPERMOMYAKSA-RECENT12-28
+
+(2026-08-08T13:37:43+09:00)
+- Logged-in read-only Instagram supermom_yaksa/reels/ exposed 12 reel tiles and view counts; the first 3 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 40,500 and max 1,216,000.
+- Remaining recent30 post count, usual-like rate, and recent20 ad count stay unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-TERYAKSA-RECENT12-29
+
+(2026-08-08T13:42:20+09:00)
+- Logged-in read-only Instagram teri_yaksa/reels/ exposed 12 reels and view counts.
+- Updated accounts.csv with latest12 median 60,500 and max 593,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-DOBIYAKSA-RECENT12-30
+
+(2026-08-08T13:45:40+09:00)
+- Logged-in read-only Instagram dobi_yaksa/reels/ exposed 12 reel tiles and view counts; the first 3 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 29,500 and max 737,000.
+- Remaining recent30 post count, usual-like rate, and recent20 ad count stay unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-DREAMYAKSA-RECENT12-31
+
+(2026-08-08T13:48:35+09:00)
+- Logged-in read-only Instagram dreamyaksa_/reels/ exposed 12 reel tiles and view counts; the first 3 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 131,500 and max 860,000.
+- Remaining recent30 post count, usual-like rate, and recent20 ad count stay unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-LEEPHARMACY-RECENT12-32
+
+(2026-08-08T13:52:04+09:00)
+- Logged-in read-only Instagram lee_pharmacy_/reels/ exposed 12 reels and view counts.
+- Updated accounts.csv with latest12 median 51,000 and max 341,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-SIMPLEYAKSA-RECENT12-33
+
+(2026-08-08T13:55:30+09:00)
+- Logged-in read-only Instagram simple.yaksa/reels/ exposed 12 reel tiles and view counts; the first tile was visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 92,000 and max 1,930,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-YAKSECRET-RECENT12-34
+
+(2026-08-08T13:59:37+09:00)
+- Logged-in read-only Instagram yak_secret/reels/ exposed 12 reel tiles and view counts; the first 3 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 24,500 and max 3,019,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-YAKSAMOM-RECENT12-35
+
+(2026-08-08T14:03:49+09:00)
+- Logged-in read-only Instagram yaksamom/reels/ exposed 12 reel tiles and view counts; the first 2 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 9,040 and max 1,386,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-CECIYAKSA-RECENT12-36
+
+(2026-08-08T14:12:34+09:00)
+- Logged-in read-only Instagram ceci_yaksa/reels/ exposed 12 reel tiles and view counts; the first 3 were visibly pinned.
+- Updated accounts.csv with DOM-order latest12 median 31,500 and max 184,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-BEIGEYAKSA-RECENT12-37
+
+(2026-08-08T14:15:39+09:00)
+- Logged-in read-only Instagram beige_yaksa/reels/ exposed 12 reel tiles and view counts; no pinned tile indicator was exposed.
+- Updated accounts.csv with DOM-order latest12 median 24,000 and max 582,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-YAKDANGDANG-RECENT12-38
+
+(2026-08-08T14:18:59+09:00)
+- Logged-in read-only Instagram yakdangdang/reels/ exposed 12 reel tiles and view counts; no pinned tile indicator was exposed.
+- Updated accounts.csv with DOM-order latest12 median 46,000 and max 111,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-GUREUMPHARM-RECENT12-39
+
+(2026-08-08T14:22:26+09:00)
+- Logged-in read-only Instagram gureumpharm/reels/ exposed 12 reel tiles and view counts; no pinned tile indicator was exposed.
+- Updated accounts.csv with DOM-order latest12 median 32,000 and max 185,000.
+- Recent30 post count, usual-like rate, and recent20 ad count remain unresolved.
+- Added 1 raw observation, 12 known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-BBUUUYAKSA-LEASE-UNAVAILABLE-40
+
+(2026-08-08T14:26:43+09:00)
+- Shared in-app browser lease was unavailable after 120 seconds, so no browser API call or account action occurred.
+- Recorded the offline fallback and preserved bbuuu_yaksa as pending; no account CSV metric was inferred or changed.
+- Added 1 raw lease-attempt observation and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-BBUUUYAKSA-LEASE-UNAVAILABLE-41
+
+(2026-08-08T14:28:50+09:00)
+- Shared in-app browser lease remained unavailable during the retry, so no browser API call or account action occurred.
+- Kept bbuuu_yaksa pending; no account CSV metric was inferred or changed.
+- Added 1 raw lease-attempt observation and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-BBUUUYAKSA-RECENT12-PARTIAL-42
+
+(2026-08-08T14:30:25+09:00)
+- Logged-in read-only Instagram bbuuu_yaksa/reels/ exposed 9 reel tiles; the first 2 were visibly pinned.
+- Recent12 remained incomplete, so accounts.csv was not changed and missing metrics were not inferred.
+- Added 1 raw observation, 9 new known_items entries, and 1 engine_yield row. Completion open items remain 5 and queue holds remain 7.
+
+
+## 20260808-E1-LOGIN-BBUUUYAKSA-RECENT12-RETRY-PARTIAL-43
+
+(2026-08-08T14:33:46+09:00)
+- 로그인 읽기 전용 재시도에서 bbuuu_yaksa/reels/는 이전과 같은 9개 릴만 노출했다.
+- 최근12가 완성되지 않아 accounts.csv는 변경하지 않았고, 기존 릴을 known_items에 다시 추가하지 않았다.
+- raw 관측 1줄과 engine_yield 1줄을 추가했다. 다음 미완료 콘텐츠 채굴 후보로 이동한다.
+
+
+## 20260808-E1-LOGIN-JUNY-YAKSA-RECENT12-44
+
+(2026-08-08T14:40:55+09:00)
+- 로그인 읽기 전용 Instagram에서 juny_yaksa의 릴 12개를 확인했다. 조회수 중앙값은 50,000회, 최고 조회수는 1,021,000회다.
+- 첫 두 타일은 고정 릴로 표시됐다. accounts.csv와 public/data/accounts.csv의 계정 지표를 갱신했다.
+- 최근30 게시수·평소 좋아요율·최근20 광고수는 직접 근거가 없어 공란을 유지했다. raw 관측 1줄과 engine_yield 1줄을 추가하고 known_items 신규 12건을 기록했다.
+
+
+## 20260808-E1-LOGIN-BRO-YAKSA-RECENT12-45
+
+(2026-08-08T14:44:28+09:00)
+- 로그인 읽기 전용 Instagram에서 bro_yaksa의 릴 12개를 확인했다. 조회수 중앙값은 12,500회, 최고 조회수는 3,230,000회다.
+- 첫 타일은 고정 릴로 표시됐다. accounts.csv와 public/data/accounts.csv의 계정 지표를 갱신했다.
+- 최근30 게시수·평소 좋아요율·최근20 광고수는 직접 근거가 없어 공란을 유지했다. raw 관측 1줄과 engine_yield 1줄을 추가하고 known_items 신규 12건을 기록했다.
+
+
+## 20260808-E1-LOGIN-SHINE-YAKSA-RECENT12-46
+
+(2026-08-08T14:46:12+09:00)
+- 로그인 읽기 전용 Instagram에서 shine_yaksa의 릴 12개를 확인했다. 조회수 중앙값은 40,000회, 최고 조회수는 386,000회다.
+- 첫 두 타일은 고정 릴로 표시됐다. accounts.csv와 public/data/accounts.csv의 계정 지표를 갱신했다.
+- 최근30 게시수·평소 좋아요율·최근20 광고수는 직접 근거가 없어 공란을 유지했다. raw 관측 1줄과 engine_yield 1줄을 추가하고 known_items 신규 12건을 기록했다.
+
+
+## 20260808-E1-LOGIN-LIZYAKSA-LEASE-UNAVAILABLE-47
+
+(2026-08-08T14:49:47+09:00)
+- liz_yaksa 확인을 위해 공유 in-app browser lease를 120초 기다렸지만 확보하지 못했다. 브라우저 API는 호출하지 않았다.
+- 계정·콘텐츠 CSV와 known_items는 변경하지 않았고, raw lease 시도 1줄과 engine_yield 1줄만 추가했다. lease가 가능할 때 read-only 재시도한다.
+
+
+## 20260808-E1-LOGIN-LIZ-YAKSA-RECENT12-48
+
+(2026-08-08T14:51:29+09:00)
+- 로그인 읽기 전용 Instagram에서 liz_yaksa의 릴 12개를 확인했다. 조회수 중앙값은 12,500회, 최고 조회수는 446,000회다.
+- 첫 타일은 고정 릴로 표시됐다. accounts.csv와 public/data/accounts.csv의 계정 지표를 갱신했다.
+- 최근30 게시수·평소 좋아요율·최근20 광고수는 직접 근거가 없어 공란을 유지했다. raw 관측 1줄과 engine_yield 1줄을 추가하고 known_items 신규 12건을 기록했다.
+
+
+## 20260808-E1-LOGIN-JASIN-YAKSA-RECENT12-49
+
+(2026-08-08T14:53:28+09:00)
+- 로그인 읽기 전용 Instagram에서 jasin_yaksa의 릴 12개를 확인했다. 조회수 중앙값은 15,500회, 최고 조회수는 278,000회다.
+- 첫 세 타일은 고정 릴로 표시됐다. accounts.csv와 public/data/accounts.csv의 계정 지표를 갱신했다.
+- 최근30 게시수·평소 좋아요율·최근20 광고수는 직접 근거가 없어 공란을 유지했다. raw 관측 1줄과 engine_yield 1줄을 추가하고 known_items 신규 12건을 기록했다.
+
+
+## 20260808-E1-LOGIN-STRAWBERRY-YAKSA-LEASE-UNAVAILABLE-50
+
+(2026-08-08T14:56:06+09:00)
+- strawberry_yaksa 확인을 위해 공유 in-app browser lease를 30초 기다렸지만 확보하지 못했다. 브라우저 API는 호출하지 않았다.
+- 계정·콘텐츠 CSV와 known_items는 변경하지 않았고, raw lease 시도 1줄과 engine_yield 1줄만 추가했다. lease가 가능할 때 read-only 재시도한다.
+
+
+## 20260808-E1-LOGIN-KNJBIO-RECENT12-PARTIAL-51
+
+(2026-08-08T14:57:59+09:00)
+- 로그인 읽기 전용 재확인에서 knjbio.official 릴 11개와 기존 동일 조회수를 확인했다. 12번째 릴이 없어 recent12 계정 지표는 계산하지 않았다.
+- QUEUE.csv의 시도 횟수와 보류 근거만 갱신했다. raw 관측 1줄과 engine_yield 1줄을 추가했고 계정·콘텐츠 CSV는 변경하지 않았다.
+
+
+## 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-52
+
+(2026-08-08T15:00:01+09:00)
+- 로그인 읽기 전용 재확인에서 lemonpharmacy38 릴 6개와 조회수 82·127·121·144·124·153를 확인했다. 추가 릴이 없어 recent12 계정 지표는 계산하지 않았다.
+- QUEUE.csv의 시도 횟수와 보류 근거만 갱신했다. raw 관측 1줄과 engine_yield 1줄을 추가했고 계정·콘텐츠 CSV는 변경하지 않았다.
+
+
+## 20260808-E1-LOGIN-INNERDEW-RECENT12-PARTIAL-53
+
+(2026-08-08T15:01:31+09:00)
+- 로그인 읽기 전용 재확인에서 innerdew.official 릴 5개와 조회수 217·33000·294·316·23000를 확인했다. 추가 릴이 없어 recent12 계정 지표는 계산하지 않았다.
+- QUEUE.csv의 시도 횟수와 보류 근거만 갱신했다. raw 관측 1줄과 engine_yield 1줄을 추가했고 계정·콘텐츠 CSV는 변경하지 않았다.
+
+
+## 20260808-E1-LOGIN-PHARMACYINPALM-RECENT12-PARTIAL-54
+
+(2026-08-08T15:03:06+09:00)
+- 로그인 읽기 전용 재확인에서 pharmacyinpalm_official 릴 1개와 조회수 98을 확인했다. 추가 릴이 없어 recent12 계정 지표는 계산하지 않았다.
+- QUEUE.csv의 시도 횟수와 보류 근거만 갱신했다. raw 관측 1줄과 engine_yield 1줄을 추가했고 계정·콘텐츠 CSV는 변경하지 않았다.
+
+
+## 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-55
+
+(2026-08-08T15:04:47+09:00)
+- 로그인 읽기 전용 재확인에서 tony71004 릴 6개 링크와 조회수 5개를 확인했다. 마지막 BmSKSVmhuH4 조회수와 추가 릴이 없어 recent12 계정 지표는 계산하지 않았다.
+- QUEUE.csv의 시도 횟수와 보류 근거만 갱신했다. raw 관측 1줄과 engine_yield 1줄을 추가했고 계정·콘텐츠 CSV는 변경하지 않았다.
+
+
+- 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-56 (2026-08-08T15:08:15+09:00): jjing_yaksa 로그인 read-only 재확인. 릴스 3개와 조회수 1180·1969·845 확인, recent12 미완료. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-57 (2026-08-08T15:13:06+09:00): spa_official2 shared browser lease unavailable. 브라우저 미접근, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-58 (2026-08-08T15:15:00+09:00): spa_official2 shared browser lease 재시도 실패. 브라우저 미접근, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-59 (2026-08-08T15:17:43+09:00): spa_official2 shared browser lease 재시도 실패. 브라우저 미접근, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-60 (2026-08-08T15:20:06+09:00): spa_official2 /reels/ unavailable. 릴스 미노출, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-61 (2026-08-08T15:21:15+09:00): knjbio.official 릴스 11개 확인, 12번째 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-62 (2026-08-08T15:22:40+09:00): lemonpharmacy38 릴스 6개 확인, 추가 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-63 (2026-08-08T15:24:00+09:00): innerdew.official 릴스 5개 확인, 추가 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-64 (2026-08-08T15:25:15+09:00): pharmacyinpalm_official 릴스 1개 확인, 추가 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-65 (2026-08-08T15:26:48+09:00): tony71004 릴스 링크 6개, 조회수 5개 확인. recent12 미완료, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-66 (2026-08-08T15:28:02+09:00): jjing_yaksa 릴스 3개 확인, 추가 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-67 (2026-08-08T15:30:49+09:00): spa_official2 /reels/ unavailable 재확인. 릴스 미노출, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-68 (2026-08-08T15:32:27+09:00): lemonpharmacy38 새 릴스 미노출, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-69 (2026-08-08T15:34:32+09:00): knjbio.official shared browser lease unavailable. 브라우저 미접근, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-70 (2026-08-08T15:35:26+09:00): knjbio.official 릴스 11개 재확인, 12번째 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-71 (2026-08-08T15:37:19+09:00): innerdew.official 릴스 5개 재확인, 새 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-72 (2026-08-08T15:39:12+09:00): pharmacyinpalm_official 릴스 1개 재확인, 새 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-73 (2026-08-08T15:40:37+09:00): tony71004 릴스 링크 6개, 조회수 5개 재확인. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-74 (2026-08-08T15:42:40+09:00): jjing_yaksa 릴스 3개 재확인, 새 릴스 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-75 (2026-08-08T15:44:08+09:00): knjbio.official 릴스 11개 재확인, 12번째 미노출. 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-76 (2026-08-08T15:46:02+09:00): spa_official2 /reels/ unavailable 재확인. 릴스 미노출, 큐 보류만 갱신.
+
+
+- 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-77 (2026-08-08T15:47:43+09:00): lemonpharmacy38 로그인 read-only 재확인. 릴스 6개와 조회수 86·127·121·144·124·153 확인; 새 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 9·보류 갱신.
+
+
+- 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-78 (2026-08-08T15:52:08+09:00): innerdew.official 로그인 read-only 재확인. 릴스 5개와 조회수 217·3.3만·294·316·2.3만 확인; 새 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 9·보류 갱신.
+
+
+- 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-79 (2026-08-08T15:54:12+09:00): pharmacyinpalm_official 로그인 read-only 재확인. 게시물 10개·팔로워 188명·팔로잉 486명, 릴스 1개와 조회수 98 확인; 새 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 9·보류 갱신.
+
+
+- 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-80 (2026-08-08T15:55:43+09:00): tony71004 로그인 read-only 재확인. 게시물 144개·팔로워 5001명·팔로잉 3480명, 릴스 링크 6개 확인; 조회수 5개만 5579·1535·1840·1540·1519로 노출되고 1개는 미노출. 새 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 10·보류 갱신.
+
+
+- 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-81 (2026-08-08T15:57:17+09:00): jjing_yaksa 로그인 read-only 재확인. 게시물 43개·팔로워 1119명·팔로잉 376명, 릴스 3개와 조회수 1180·1969·845 확인; 새 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 9·보류 갱신.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-82 (2026-08-08T15:58:49+09:00): knjbio.official 로그인 read-only 재확인. 릴스 11개와 조회수 1622·272·199·196·137·453·337·250·250·289·333 확인; 12번째 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 11·보류 갱신.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-83 (2026-08-08T16:01:28+09:00): spa_official2 로그인 read-only 재확인에서 /reels/ unavailable 화면 재확인. 릴스·계정 지표는 추정하지 않았고 data CSV 미수정, QUEUE.csv 시도횟수 11·보류 갱신.
+
+
+- 20260808-E1-LOGIN-YU-YAK-UNRESOLVED-CONTENT-84 (2026-08-08T16:03:49+09:00): yu._.yak DIzmDd_Ttws 원문 재확인. 프로필 게시물 178개·팔로워 1.3만·팔로잉 1114명, 게시물 2025-04-24·좋아요 1.6천·댓글 124·리포스트 5 확인. 조회수 미노출로 배수·등급·썸네일은 갱신하지 않았고 data CSV 미수정.
+
+
+- 20260808-OFFLINE-COMPLETION-AUDIT-OPEN-ITEMS-85 (2026-08-08T16:06:27+09:00): 최신 큐·raw 관측과 completion open item 5종을 재대조. 보류 큐 7건(spa_official2(11회), knjbio.official(11회), lemonpharmacy38(9회), innerdew.official(9회), pharmacyinpalm_official(9회), tony71004(10회), jjing_yaksa(9회)), 계정 지표·포맷 사용 수·계정 등급의 안전한 보완 후보 0건. data CSV와 금지 경로 미수정.
+
+
+- 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-86 (2026-08-08T16:10:33+09:00): tony71004 BmSKSVmhuH4 상세 재확인. 본문·게시일 2018-08-10·좋아요 159·댓글 26 확인; 조회수는 미노출이라 recent12 중앙값·최고조회수는 추정하지 않았고 data CSV 미수정.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-87 (2026-08-08T16:12:24+09:00): knjbio.official 릴스 11개와 조회수 1622·272·199·196·137·453·337·250·250·289·333 재확인. 새 12번째 릴스 미노출로 recent12·계정 중앙값·최고조회수·평소좋아요율은 미확정. data CSV 미수정, QUEUE.csv 시도횟수 12·보류 갱신.
+
+
+- 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-101 (2026-08-08T16:56:53+09:00): tony71004 로그인 read-only 재확인에서 프로필 릴스 6개와 조회수 5개를 확인했습니다. BmSKSVmhuH4 상세에서도 조회수는 미노출이고 추가 릴스가 없어 recent12·계정 지표를 추정하지 않았습니다. data CSV는 변경하지 않았고 QUEUE.csv 시도 횟수는 11회에서 12회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-102 (2026-08-08T17:00:12+09:00): jjing_yaksa 로그인 read-only 재확인에서 프로필 릴스 3개와 조회수 1180·1969·845를 확인했습니다. 추가 릴스가 없어 recent12·계정 지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 10회에서 11회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-103 (2026-08-08T17:02:04+09:00): spa_official2 로그인 read-only 재확인에서 /reels/가 페이지를 사용할 수 없음 화면을 반환했습니다. 계정·릴스·지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 12회에서 13회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-104 (2026-08-08T17:04:06+09:00): shared browser lease를 확보하지 못해 knjbio.official Instagram 페이지를 읽지 않았습니다. 큐·data CSV·계정 지표는 변경하지 않고 다음 read-only 배치로 재시도합니다.
+
+
+- 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-105 (2026-08-08T17:06:19+09:00): lemonpharmacy38 로그인 read-only 재확인에서 게시물 5·팔로워 508·팔로우 605와 릴스 6개(조회수 87·127·121·144·124·153)를 확인했습니다. 새 릴스가 없어 recent12·계정 지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 10회에서 11회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-106 (2026-08-08T17:08:13+09:00): innerdew.official 로그인 read-only 재확인에서 게시물 8·팔로워 280·팔로우 0과 릴스 5개(조회수 217·33000·294·316·23000)를 확인했습니다. 새 릴스가 없어 recent12·계정 지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 11회에서 12회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-LEASE-UNAVAILABLE-107 (2026-08-08T17:09:59+09:00): shared browser lease를 확보하지 못해 pharmacyinpalm_official Instagram 페이지를 읽지 않았습니다. 큐·data CSV·계정 지표는 변경하지 않고 다음 read-only 배치로 재시도합니다.
+
+
+- 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-108 (2026-08-08T17:12:56+09:00): knjbio.official 로그인 read-only 재확인에서 게시물 245·팔로워 1006·팔로우 418과 릴스 11개(조회수 1622·272·199·196·137·453·337·250·250·289·333)를 확인했습니다. 12번째 릴스가 없어 recent12·계정 지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 13회에서 14회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-109 (2026-08-08T17:14:49+09:00): pharmacyinpalm_official 로그인 read-only 재확인에서 게시물 10·팔로워 188·팔로우 486과 릴스 1개(조회수 98)를 확인했습니다. 릴스 탭과 추가 릴스가 없어 recent12·계정 지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 11회에서 12회로 갱신했습니다.
+
+
+- 20260808-E1-LOGIN-YU-YAK-UNRESOLVED-CONTENT-110 (2026-08-08T17:17:13+09:00): YUYAK-DIzmDd_Ttws 상세에서 좋아요 1.6천·댓글 124·리포스트 5·게시일 2025-04-24를 확인했지만 조회수는 계속 미노출이었습니다. 배수·등급·썸네일과 data CSV는 갱신하지 않았습니다.
+
+
+- 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-111 (2026-08-08T17:19:01+09:00): spa_official2 로그인 read-only 재확인에서 /reels/가 페이지를 사용할 수 없음 화면을 반환했습니다. 계정·릴스·지표를 추정하지 않았고, data CSV는 변경하지 않았습니다. QUEUE.csv 시도 횟수는 13회에서 14회로 갱신했습니다.
+- 2026-08-08T17:21:49+09:00 체크포인트 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-112: tony71004 프로필 144게시물·팔로워 5001·팔로우 3480, 릴스 6개(조회수 5579·1535·1840·1540·1519·미노출)와 BmSKSVmhuH4 상세 좋아요 159·댓글 26·게시일 2018-08-10을 확인했습니다. 조회수 미노출로 보류를 유지했고 QUEUE.csv만 시도 12→13으로 갱신했습니다.
+- 2026-08-08T17:27:42+09:00 체크포인트 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-113: jjing_yaksa 프로필 43게시물·팔로워 1119·팔로우 376, 릴스 3개 조회수 1180·1969·845를 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 11→12로 갱신했습니다.
+- 2026-08-08T17:30:10+09:00 체크포인트 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-114: lemonpharmacy38 프로필 5게시물·팔로워 508·팔로우 605, 릴스 6개 조회수 89·127·121·144·124·153을 확인했습니다. 첫 릴스가 87→89로 확인됐고, 추가 릴스 미노출로 보류를 유지했습니다. QUEUE.csv만 시도 11→12로 갱신했습니다.
+- 2026-08-08T17:33:14+09:00 체크포인트 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-115: innerdew.official 프로필 8게시물·팔로워 280·팔로우 0, 릴스 5개 조회수 217·33000·294·316·23000을 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 12→13으로 갱신했습니다.
+- 2026-08-08T17:35:53+09:00 체크포인트 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-116: pharmacyinpalm_official 프로필 10게시물·팔로워 188·팔로우 486, 릴스 1개 조회수 98을 확인했습니다. 릴스 탭과 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 12→13으로 갱신했습니다.
+- 2026-08-08T17:38:20+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-117: shared browser lease unavailable로 knjbio.official을 읽지 못했습니다. Instagram 제한으로 판정하지 않았고 큐·data CSV는 변경하지 않았습니다.
+- 2026-08-08T17:39:56+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-118: knjbio.official 프로필 245게시물·팔로워 1006·팔로우 418, 릴스 11개 조회수 1622·272·199·196·137·453·337·250·250·289·333을 확인했습니다. 12번째 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 14→15로 갱신했습니다.
+- 2026-08-08T17:42:40+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-119: shared browser lease unavailable로 spa_official2를 읽지 못했습니다. Instagram 제한으로 판정하지 않았고 큐·data CSV는 변경하지 않았습니다.
+- 2026-08-08T17:43:59+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-120: spa_official2 /reels/가 페이지를 사용할 수 없음 화면을 다시 반환했습니다. 계정·릴스·지표를 추정하지 않았고 QUEUE.csv만 시도 14→15로 갱신했습니다.
+- 2026-08-08T17:46:09+09:00 체크포인트 20260808-E1-LOGIN-YU-YAK-UNRESOLVED-CONTENT-121: YUYAK-DIzmDd_Ttws 본문·캡션·좋아요 1.6천·댓글 124·리포스트 5·게시일 2025-04-24를 확인했습니다. 조회수 미노출로 배수·등급·썸네일을 갱신하지 않았습니다.
+- 2026-08-08T17:48:00+09:00 체크포인트 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-122: jjing_yaksa 프로필 43게시물·팔로워 1119·팔로우 376, 릴스 3개 조회수 1180·1969·845를 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 12→13으로 갱신했습니다.
+- 2026-08-08T17:50:18+09:00 체크포인트 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-123: lemonpharmacy38 프로필 5게시물·팔로워 508·팔로우 605, 릴스 6개 조회수 89·127·121·144·124·153을 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 12→13으로 갱신했습니다.
+- 2026-08-08T17:54:13+09:00 체크포인트 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-124: tony71004 프로필 144게시물·팔로워 5001·팔로우 3480, 릴스 6개 조회수 5579·1535·1840·1540·1519·미노출 1개를 확인했습니다. BmSKSVmhuH4 좋아요 159·댓글 26·게시일 2018-08-10은 확인했지만 상세 조회수와 추가 릴스가 없어 보류를 유지했습니다. QUEUE.csv만 시도 13→14로 갱신했고 data CSV는 변경하지 않았습니다.
+- 2026-08-08T17:58:46+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-125: shared browser lease unavailable로 spa_official2를 읽지 못했습니다. Instagram 제한으로 판정하지 않았고 큐·지표·data CSV를 변경하지 않았습니다. 다음 lease 가능 배치에서 재시도합니다.
+- 2026-08-08T18:00:18+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-126: spa_official2 /reels/가 페이지를 사용할 수 없음 화면을 다시 반환했습니다. 릴스·계정 지표를 추정하지 않았고 QUEUE.csv만 시도 15→16으로 갱신했습니다. data CSV는 변경하지 않았으며 탭·lease를 정리했습니다.
+- 2026-08-08T18:03:01+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-127: knjbio.official 프로필 245게시물·팔로워 1006·팔로우 418, 릴스 11개 조회수 1622·272·199·196·137·453·337·250·250·289·333을 확인했습니다. 12번째 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 15→16으로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:05:12+09:00 체크포인트 20260808-E1-LOGIN-YU-YAK-UNRESOLVED-CONTENT-128: YUYAK-DIzmDd_Ttws 본문·좋아요 1.6천·댓글 124·리포스트 5·게시일 2025-04-24를 확인했지만 조회수는 미노출이었습니다. 계정 recent12 밖이라 배수·등급·썸네일을 갱신하지 않았고 data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 2026-08-08T18:06:50+09:00 체크포인트 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-129: lemonpharmacy38 프로필 5게시물·팔로워 508·팔로우 605, 릴스 6개 조회수 89·127·121·144·124·153을 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 13→14로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:08:55+09:00 체크포인트 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-130: innerdew.official 프로필 8게시물·팔로워 280·팔로우 0, 릴스 5개 조회수 217·33000·294·316·23000을 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 13→14로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:10:30+09:00 체크포인트 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-131: pharmacyinpalm_official 프로필 10게시물·팔로워 188·팔로우 486, 릴스 1개 조회수 98을 확인했습니다. 릴스 탭·추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 13→14로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:12:30+09:00 체크포인트 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-132: jjing_yaksa 프로필 43게시물·팔로워 1119·팔로우 376, 릴스 3개 조회수 1180·1969·845를 확인했습니다. 추가 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 13→14로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:14:35+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-133: spa_official2 /reels/가 페이지를 사용할 수 없음 화면을 다시 반환했습니다. 릴스·계정 지표를 추정하지 않았고 QUEUE.csv만 시도 16→17로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:16:26+09:00 체크포인트 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-134: tony71004 프로필 144게시물·팔로워 5001·팔로우 3480, 릴스 6개와 조회수 5579·1535·1840·1540·1519·미노출 1개를 확인했습니다. BmSKSVmhuH4 상세에서도 조회수 미노출과 추가 릴스 부재를 확인해 보류를 유지했고 QUEUE.csv만 시도 14→15로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:18:35+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-135: knjbio.official 프로필 245게시물·팔로워 1006·팔로우 418, 릴스 11개 조회수 1622·272·199·196·137·453·337·250·250·289·333을 확인했습니다. 12번째 릴스 미노출로 보류를 유지했고 QUEUE.csv만 시도 16→17로 갱신했습니다. data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:21:53+09:00 체크포인트 20260808-E1-LOGIN-YU-YAK-UNRESOLVED-CONTENT-136: YUYAK-DIzmDd_Ttws 본문·좋아요 1.6천·댓글 124·리포스트 5·게시일 2025-04-24를 확인했지만 조회수는 미노출이었습니다. 계정 recent12 밖이라 배수·등급·썸네일을 갱신하지 않았고 data CSV·QUEUE.csv는 변경하지 않았습니다.
+- 2026-08-08T18:24:05+09:00 체크포인트 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-137: lemonpharmacy38 프로필 5게시물·팔로워 508·팔로우 605, 릴스 6개 조회수 90·127·121·144·124·153을 확인했습니다. 첫 릴스가 89→90으로 확인됐고 추가 릴스 미노출로 보류를 유지했습니다. QUEUE.csv만 시도 14→15로 갱신했고 data CSV는 변경하지 않았습니다.
+- 2026-08-08T18:28:00+09:00 체크포인트 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-138: innerdew.official 릴스 5개와 조회수 217·33000·294·316·23000을 재확인했습니다. 추가 릴스 미노출로 recent12·계정 지표는 보류했고 QUEUE.csv만 14→15회로 갱신했습니다.
+- 2026-08-08T18:34:40+09:00 체크포인트 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-139: jjing_yaksa 릴스 3개와 조회수 1180·1969·845를 재확인했습니다. 추가 릴스 미노출로 recent12·계정 지표는 보류했고 QUEUE.csv만 14→15회로 갱신했습니다.
+- 2026-08-08T18:37:35+09:00 체크포인트 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-140: pharmacyinpalm_official 알려진 릴스 1개와 조회수 98을 재확인했습니다. 릴스 탭·추가 릴스 미노출로 recent12·계정 지표는 보류했고 QUEUE.csv만 14→15회로 갱신했습니다.
+- 2026-08-08T18:39:45+09:00 체크포인트 20260808-E1-LOGIN-TONY71004-DETAIL-BmSKSVmhuH4-VIEWS-UNEXPOSED-141: tony71004 BmSKSVmhuH4 상세의 좋아요 159·댓글 26·게시일 2018-08-10을 재확인했지만 조회수와 추가 릴스는 미노출이었습니다. recent12·계정 지표는 보류했고 QUEUE.csv만 15→16회로 갱신했습니다.
+- 2026-08-08T18:42:55+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-142: shared browser lease unavailable로 knjbio.official 확인을 다음 배치로 넘겼습니다. 큐·data CSV 미변경이며 blocked로 기록하지 않았습니다.
+- 2026-08-08T18:44:20+09:00 체크포인트 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-143: knjbio.official 릴스 11개와 조회수를 재확인했습니다. 12번째 릴스 미노출로 recent12·계정 지표는 보류했고 QUEUE.csv만 17→18회로 갱신했습니다.
+- 2026-08-08T18:47:20+09:00 체크포인트 20260808-E1-LOGIN-SPA-OFFICIAL2-LEASE-UNAVAILABLE-144: shared browser lease unavailable로 spa_official2 확인을 다음 배치로 넘겼습니다. 큐·data CSV 미변경이며 blocked로 기록하지 않았습니다.
+- 2026-08-08T18:48:50+09:00 체크포인트 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-145: lemonpharmacy38 첫 릴스 조회수 90→91을 확인했습니다. 추가 릴스 미노출로 recent12·계정 지표는 보류했고 QUEUE.csv만 15→16회로 갱신했습니다.
+- 2026-08-08T18:55:50+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-146: innerdew.official은 공개 릴스 5개까지 직접 확인했다. recent12 미완료이므로 중앙값·최고조회수·평소 좋아요율·계정 등급을 추정하지 않았다. 다음 read-only 배치에서 남은 보류 계정을 재확인한다.
+- 2026-08-08T18:58:43+09:00 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-147: spa_official2는 페이지 unavailable 상태를 재확인했다. 릴스·recent12·계정 지표를 추정하지 않았고 다음 read-only 배치에서 재시도한다.
+- 2026-08-08T19:02:13+09:00 20260808-E1-LOGIN-TONY71004-REELS-UNEXPOSED-148: tony71004의 프로필 지표를 재확인했지만 릴스 카드·프로필 릴스 탭이 노출되지 않았다. 조회수와 recent12는 보류로 유지한다.
+- 2026-08-08T19:04:41+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-149: pharmacyinpalm_official은 공개 릴스 1개와 조회수 98까지 확인했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:07:01+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-150: jjing_yaksa는 공개 릴스 3개와 조회수 1180·1969·845까지 확인했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:09:09+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-151: knjbio.official은 다른 작업의 lease 점유로 read-only 확인을 수행하지 못했다. blocked가 아닌 재시도 대기로 기록했다.
+- 2026-08-08T19:11:29+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-152: knjbio.official은 공개 릴스 11개와 조회수 1622·272·199·196·137·453·337·250·250·289·333까지 확인했다. 12번째 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:13:54+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-153: lemonpharmacy38은 릴스 6개까지 확인했으며 팔로워 508→509, 첫 릴스 조회수 91→92 변화를 기록했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:16:16+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-154: innerdew.official은 릴스 5개와 조회수 217·33000·294·316·23000을 재확인했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:18:48+09:00 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-155: tony71004는 릴스 6개 중 5개 조회수까지 확인했고 BmSKSVmhuH4 조회수는 계속 미노출이다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:21:23+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-156: pharmacyinpalm_official은 공개 릴스 1개와 조회수 98을 재확인했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:23:41+09:00 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-157: spa_official2는 unavailable 상태를 재확인했다. 릴스·recent12·계정 지표를 추정하지 않고 다음 read-only 배치로 넘겼다.
+- 2026-08-08T19:26:03+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-158: jjing_yaksa는 릴스 3개와 조회수 1180·1969·845를 재확인했다. 추가 릴스 미노출로 recent12·계정 지표는 보류한다.
+- 2026-08-08T19:28:10+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-LEASE-UNAVAILABLE-159: knjbio.official은 다른 작업의 lease 점유로 read-only 확인을 수행하지 못했다. blocked가 아닌 재시도 대기로 기록했다.
+- 2026-08-08T19:35:13+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-160: knjbio.official 릴스 11개 조회수 1622·272·199·196·137·453·337·250·250·289·333를 재확인했으나 12번째 릴스 미노출로 recent12·계정 지표는 보류했다. 탭 종료 뒤 lease 반납 ownership mismatch를 기록했다.
+- 2026-08-08T19:39:14+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-161: lemonpharmacy38 릴스 6개 조회수 93·127·121·144·124·153를 확인했고 첫 조회수 92→93을 기록했다. 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:42:02+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-162: innerdew.official 릴스 5개 조회수 217·33000·294·316·23000를 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:44:55+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-163: pharmacyinpalm_official 릴스 1개 조회수 98을 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:47:40+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-164: jjing_yaksa 릴스 3개 조회수 1180·1969·845를 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:50:35+09:00 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-165: tony71004 릴스 6개 중 5개 조회수 5579·1535·1840·1540·1519를 확인했으나 BmSKSVmhuH4 조회수·추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:53:22+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-166: lemonpharmacy38 릴스 6개 조회수 94·127·121·144·124·153를 확인했고 첫 조회수 93→94를 기록했다. 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T19:55:55+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-LEASE-UNAVAILABLE-167: innerdew.official은 다른 작업의 shared browser lease 점유로 확인하지 못했다. blocked가 아닌 재시도 대기로 기록했다.
+- 2026-08-08T19:58:38+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-168: innerdew.official 릴스 5개 조회수 217·33000·294·316·23000를 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T20:01:13+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-169: pharmacyinpalm_official 릴스 1개 조회수 98을 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T20:04:02+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-170: jjing_yaksa 릴스 3개 조회수 1180·1969·845를 재확인했으나 추가 릴스 미노출로 recent12·계정 지표는 보류했다.
+- 2026-08-08T20:07:39+09:00 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-171: spa_official2 /reels/ unavailable 상태를 재확인했다. 수치를 추정하지 않고 다음 read-only 배치로 넘겼다.
+- 2026-08-08T20:14:53+09:00 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-172: tony71004 릴스 6개와 노출 조회수 5개를 재확인했으나 추가 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:19:21+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-173: lemonpharmacy38 릴스 6개와 조회수 6개를 재확인했고 첫 조회수는 94→95로 증가했다. 추가 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:22:22+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-174: innerdew.official 릴스 5개와 조회수 5개를 재확인했고 3.3만·2.3만 표기를 33000·23000으로 정규화했다. 추가 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:25:28+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-175: pharmacyinpalm_official 릴스 1개와 조회수 98을 재확인했으나 추가 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:28:25+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-176: jjing_yaksa 릴스 3개와 조회수 1180·1969·845를 재확인했으나 추가 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:31:37+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-177: knjbio.official 릴스 11개와 조회수 11개를 재확인했으나 12번째 릴스가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:34:31+09:00 20260808-E1-LOGIN-SPA-OFFICIAL2-REELS-UNAVAILABLE-178: spa_official2 프로필과 /reels/ 모두 unavailable을 반환해 수치 추정 없이 보류를 유지했다.
+- 2026-08-08T20:36:54+09:00 20260808-E1-LOGIN-TONY71004-LEASE-UNAVAILABLE-179: shared browser lease 점유로 tony71004 확인을 실행하지 못해 queue hold를 유지하고 다음 배치로 재시도한다.
+- 2026-08-08T20:39:43+09:00 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-180: tony71004 릴스 6개와 노출 조회수 5개를 재확인했으나 추가 릴스와 미노출 조회수가 없어 recent12 미완료를 유지했다.
+- 2026-08-08T20:46:24+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-181: lemonpharmacy38 프로필 5·509·605, 릴스 6개 조회수 95·127·121·144·124·153 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 20→21, raw 2363→2364, data CSV 변경 없음.
+- 2026-08-08T20:49:34+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-RECENT12-PARTIAL-182: innerdew.official 프로필 8·280·0, 릴스 5개 조회수 217·33000·294·316·23000 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 20→21, raw 2364→2365, data CSV 변경 없음.
+- 2026-08-08T20:52:13+09:00 20260808-E1-LOGIN-PHARMACYINPALM-OFFICIAL-RECENT12-PARTIAL-183: pharmacyinpalm_official 프로필 10·188·486, 제품/서비스, 릴스 1개 Ce2MIsmvzVC 조회수 98 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 20→21, raw 2365→2366, data CSV 변경 없음.
+- 2026-08-08T20:54:28+09:00 20260808-E1-LOGIN-JJING-YAKSA-LEASE-UNAVAILABLE-184: shared browser lease가 comm-radar-7에 점유되어 jjing_yaksa read-only를 실행하지 못함. 오프라인 fallback 기록, QUEUE.csv 시도 20 유지, raw 2366→2367, data CSV 변경 없음.
+- 2026-08-08T20:57:25+09:00 20260808-E1-LOGIN-JJING-YAKSA-RECENT12-PARTIAL-185: jjing_yaksa 프로필 43·1119·376, 디지털 크리에이터, 릴스 3개 조회수 1180·1969·845 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 20→21, raw 2367→2368, data CSV 변경 없음.
+- 2026-08-08T21:01:10+09:00 20260808-E1-LOGIN-KNJBIO-OFFICIAL-RECENT12-PARTIAL-186: knjbio.official 프로필 245·1006·418, 건강/뷰티, 릴스 11개 조회수 1622·272·199·196·137·453·337·250·250·289·333 확인. 12번째 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 21→22, raw 2368→2369, data CSV 변경 없음.
+- 2026-08-08T21:03:48+09:00 20260808-E1-LOGIN-SPA-OFFICIAL2-UNAVAILABLE-187: spa_official2 프로필과 /reels/ 모두 페이지 사용 불가 화면. 릴스·계정 지표 미확인, QUEUE.csv 시도 21→22, raw 2369→2370, data CSV 변경 없음.
+- 2026-08-08T21:06:51+09:00 20260808-E1-LOGIN-TONY71004-RECENT12-PARTIAL-188: tony71004 프로필 144·5001·3480, 릴스 6개 조회수 5579·1535·1840·1540·1519와 미노출 1개 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 21→22, raw 2370→2371, data CSV 변경 없음.
+- 2026-08-08T21:09:04+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-LEASE-UNAVAILABLE-189: shared browser lease가 comm-radar-7에 점유되어 lemonpharmacy38 read-only를 실행하지 못함. 오프라인 fallback 기록, QUEUE.csv 시도 21 유지, raw 2371→2372, data CSV 변경 없음.
+- 2026-08-08T21:12:11+09:00 20260808-E1-LOGIN-LEMONPHARMACY38-RECENT12-PARTIAL-190: lemonpharmacy38 프로필 5·509·605, 건강/뷰티, 릴스 6개 조회수 95·127·121·144·124·153 확인. 추가 릴스가 없어 recent12 미완료 유지. QUEUE.csv 시도 21→22, raw 2372→2373, data CSV 변경 없음.
+- 2026-08-08T21:14:23+09:00 20260808-E1-LOGIN-INNERDEW-OFFICIAL-LEASE-UNAVAILABLE-191: shared browser lease가 comm-radar-7에 점유되어 innerdew.official read-only를 실행하지 못함. 오프라인 fallback 기록, QUEUE.csv 시도 21 유지, raw 2373→2374, data CSV 변경 없음.
+- 2026-08-09T03:00:54+09:00 20260809-E0-OFFLINE-OPEN-ITEM-RECONCILE-310: 302~309 이후 최신 원장·큐·open item을 교차 감사. 보류 큐 7건은 시도 37회, YUYAK 조회수는 미노출, 안전한 CSV 보완 0건. verifier `failed=[]`, 금지 경로 무변경.
+- 2026-08-09T03:08:10+09:00 20260809-E1-SCHEDULED-SSOFIT-YAKSA-RECENT12-311: ssofit_yaksa 재방문에서 12개 릴스 조회수와 프로필 게시물 981을 직접 확인했다. accounts.csv median 26500·max 179000을 반영했고, raw·known ledger를 append-only로 갱신했다. contents/formats/topics·QUEUE.csv와 금지 경로는 변경하지 않았다.
+
+2026-08-09T03:16:47+09:00 20260809-E1-LOGIN-SPRING-PHARMY-RECENT12-312: spring_pharmy 새 직접 증거 반영. 프로필·릴스 read-only 확인으로 accounts.csv 지표 4개를 갱신하고 shortcode 12건을 ledger에 추가했다. raw 2490→2491, QUEUE.csv 미수정, verifier 재실행 필요.
+2026-08-09T03:21:09+09:00 20260809-E0-OFFLINE-ACCOUNT-MINED-DATE-FIX-313: spring_pharmy 마지막정면채굴일시를 실제 CSV 헤더에 맞춰 보정했다. raw 2491줄 유지, QUEUE.csv 미수정.
+2026-08-09T03:24:34+09:00 20260809-E1-LOGIN-GGOGI-YAKSA-NO-REELS-314: ggogi_yaksa 프로필 재확인에서 새 릴스·조회수 없음 확인. 게시물수만 갱신하고 조회수 추정 없이 보류 사유를 유지했다.
+2026-08-09T03:28:26+09:00 20260809-E1-LOGIN-IVYWELLNESS-RECENT5-PARTIAL-315: ivywellness_official 새 직접 증거 반영. 릴스 5개 조회수와 smartstore 링크를 기록했으며 recent12 미완료 수치는 추정하지 않았다.
+2026-08-09T03:31:59+09:00 20260809-E1-LOGIN-NUTRII-NO-REELS-316: nutrii_official 현재 프로필에서 새 릴스·조회수 없음 확인. 계정 지표 변화만 반영하고 수치는 추정하지 않았다.
+2026-08-09T03:34:32+09:00 20260809-E1-LOGIN-PEURAJO-NO-REELS-317: peurajo 현재 프로필에서 릴스·조회수 없음 확인. 계정 지표와 링크 근거만 반영하고 수치는 추정하지 않았다.
+2026-08-09T03:37:12+09:00 20260809-E1-LOGIN-MENTOR-PHARM-RECENT12-318: mentor_pharm 최근12개 완전 증거 반영. 조회수 중앙값 38500, 최고조회수 3612000, 새 shortcode 10건 기록, QUEUE.csv 미수정.
+2026-08-09T03:40:16+09:00 20260809-E1-LOGIN-EVA-PHARMA-RECENT12-319: eva.pharma 해외 제약 계정 최근12개 완전 증거 반영. 조회수 중앙값 35000, 최고조회수 208000, shortcode 12건 기록, QUEUE.csv 미수정.
+2026-08-09T03:43:03+09:00 20260809-E1-LOGIN-UM-RADYFHS-RECENT12-320: um_radyfhs 해외 보건의료대학 계정 최근12개 완전 증거 반영. 조회수 중앙값 4720.5, 최고조회수 21000, shortcode 12건 기록, QUEUE.csv 미수정.
+2026-08-09T03:46:22+09:00 20260809-E1-LOGIN-BBUUU-YAKSA-RECENT9-PARTIAL-321: bbuuu_yaksa 릴스 9개만 노출되어 recent12 미완료. 기존 shortcode 중복 없이 조회수 증거와 게시물수 변화만 기록했다.
+
+
+## 2026-08-09T03:50:41+09:00 — uncpharmacy
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 1733·팔로워 5436·팔로우 114·캠퍼스 건물
+- 최근12 조회수 6711 · 3389 · 3164 · 1968 · 3585 · 2226 · 3147 · 6342 · 6732 · 5046 · 1.6만 · 2만; 중앙값 4315.5; 최고조회수 20000
+- accounts.csv 갱신: 팔로워 5391→5436, 게시물 1730→1733, 중앙값 공란→4315.5, 최고조회수 공란→20000
+- raw 2499→2500; known_items 12건·known_shortcodes 12건 추가; QUEUE.csv 미수정
+- 미확인: 최근30일 게시수·콘텐츠 반응 수·콘텐츠별 광고 여부·게시일
+## 2026-08-09T03:56:35+09:00 — leidenmedicine
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 259·팔로워 2360·팔로우 346·대학교
+- 최근12 조회수 8695 · 8557 · 442 · 1만 · 1.3만 · 959 · 1270 · 1108 · 537 · 4077 · 972 · 494; 중앙값 1189; 최고조회수 13000
+- accounts.csv 갱신: 팔로워 2364→2360, 게시물 259→259, 중앙값 공란→1189, 최고조회수 공란→13000
+- raw 2500→2501; known_items 12건·known_shortcodes 12건 추가; QUEUE.csv 미수정
+- 미확인: 콘텐츠 반응 수·콘텐츠별 광고 여부·게시일
+## 2026-08-09T03:59:41+09:00 — wellness_pharmacist_
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 66·팔로워 156·팔로우 133·개인 블로그
+- 릴스 3/12 조회수 353 · 205 · 2062; recent12 미완료; 중앙값·최고조회수 공란
+- accounts.csv 갱신: 팔로워 157→156, 게시물 66→66, 마지막 shortcode DbGF0vkkUaT→DZFpEZkxRDR
+- raw 2501→2502; known_items 3건·known_shortcodes 3건 추가; QUEUE.csv 미수정
+- 미확인: recent12 나머지 9개·최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+## 2026-08-09T04:01:49+09:00 — innovationcompounding
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 380·팔로워 804·팔로우 243·의료 및 건강
+- 릴스 10/12 조회수 57 · 95 · 99 · 90 · 58 · 71 · 44 · 37 · 54 · 3221; recent12 미완료; 중앙값·최고조회수 공란
+- accounts.csv 갱신: 마지막 shortcode DaSu-ZtDfMY→C2NYDOEslLL
+- raw 2502→2503; known_items 10건·known_shortcodes 10건 추가; QUEUE.csv 미수정
+- 미확인: recent12 나머지 2개·최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+## 2026-08-09T04:03:57+09:00 — nutripharma_2019
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 133·팔로워 542·팔로우 201·건강/뷰티
+- 릴스 4/12 조회수 108 · 60 · 128 · ; 네 번째 미노출; recent12 미완료; 중앙값·최고조회수 공란
+- accounts.csv 갱신: 마지막 shortcode DAYMzMWT1eF→CRD4mxsj96O
+- raw 2503→2504; known_items 4건·known_shortcodes 4건 추가; QUEUE.csv 미수정
+- 미확인: recent12 나머지 8개·표시되지 않은 조회수 1개·최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+## 2026-08-09T04:05:59+09:00 — inbodypharm
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 60·팔로워 299·팔로우 433·약국
+- 릴스 8/12 조회수 711 · 803 · 407 · 259 · 165 · 492 · 9994 · 379; recent12 미완료; 중앙값·최고조회수 공란
+- accounts.csv 갱신: 팔로워 298→299, 게시물 60→60, 마지막 shortcode DUpuZzykeE0→DbAeQwnRWWX
+- raw 2504→2505; known_items 8건·known_shortcodes 8건 추가; QUEUE.csv 미수정
+- 미확인: recent12 나머지 4개·최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+## 2026-08-09T04:08:06+09:00 — cph_qu
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 982·팔로워 3263·팔로우 48·College of Pharmacy 공식 계정
+- 최근12 조회수 2005 · 1127 · 1644 · 5760 · 4362 · 2918 · 2007 · 1884 · 5524 · 8260 · 4021 · 4340; 중앙값 3469.5; 최고조회수 8260
+- accounts.csv 갱신: 팔로워 3257→3263, 게시물 982→982, 중앙값 공란→3469.5, 최고조회수 공란→8260
+- raw 2505→2506; known_items 12건·known_shortcodes 12건 추가; QUEUE.csv 미수정
+- 미확인: 최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+## 2026-08-09T04:13:23+09:00 — masaryk_pharmacy
+
+- 로그인 read-only 프로필·릴스 탭 직접 확인
+- 프로필 게시물 287·팔로워 1612·팔로우 197·Masaryk University 약학 공식 계정
+- 릴스 링크·조회수 0개 노출; recent12 미완료; 기존 중앙값·최고조회수 유지
+- accounts.csv 갱신: 팔로워 1613→1612, 게시물 287→287
+- raw 2506→2507; known ledger 추가 없음; QUEUE.csv 미수정
+- 미확인: recent12 조회수·중앙값·최고조회수·최근30일 게시수·콘텐츠 반응·광고 여부·게시일
+
+
+## 2026-08-09T04:21:11+09:00 — knjbio.official 보류 재확인
+
+knjbio.official는 프로필 245게시물·팔로워 1007·팔로우 418, 건강/뷰티 카테고리와 www.knjbio.com 링크를 보였다. 릴스는 11개(1622·272·199·196·137·453·337·250·250·289·333)만 확인됐고 스크롤 뒤에도 12번째 릴스가 노출되지 않아 recent12 중앙값·최고조회수·평소좋아요율을 추정하지 않았다. accounts.csv와 QUEUE.csv만 갱신했으며 신규 ledger 항목은 없다.
+
+
+## 2026-08-09T04:29:03+09:00 — lemonpharmacy38 보류 재확인
+
+lemonpharmacy38는 프로필 5게시물·팔로워 507·팔로우 605, 건강/뷰티 카테고리와 레몬약국·Naver Place 링크를 보였다. 릴스는 6개(106·127·121·144·124·153)만 확인됐고 스크롤 뒤 추가 릴스가 노출되지 않아 recent12 지표를 추정하지 않았다. 원장과 큐를 갱신했으며 신규 shortcode·ledger 항목은 없다.
+
+
+## 2026-08-09T04:33:58+09:00 — innerdew.official 보류 재확인
+
+innerdew.official는 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀와 약사 누나×이너뷰티 대표 남동생 bio를 보였다. 릴스는 5개(221·3.3만·294·316·2.3만)만 확인됐고 스크롤 뒤 추가 릴스가 노출되지 않아 recent12 지표를 추정하지 않았다. 원장과 큐를 갱신했으며 신규 shortcode·ledger 항목은 없다.
+
+
+## 2026-08-09T04:37:50+09:00 — pharmacyinpalm_official 보류 재확인
+
+pharmacyinpalm_official는 프로필 10게시물·팔로워 188·팔로우 485, 제품/서비스 카테고리와 drxsolution.co.kr 링크를 보였다. 릴스는 Ce2MIsmvzVC 1개(98)만 확인됐고 스크롤 뒤 추가 릴스가 노출되지 않아 recent12 지표를 추정하지 않았다. 원장과 큐를 갱신했으며 신규 shortcode·ledger 항목은 없다.
+
+
+## 2026-08-09T04:41:38+09:00 — tony71004 보류 재확인
+
+tony71004는 프로필 144게시물·팔로워 5002·팔로우 3480, 약국/의료현장 카테고리와 약사툰·상담차트 bio를 보였다. 릴스 6개(5579·1535·1840·1540·1519·15926)를 확인했고 BmSKSVmhuH4 조회수 15926이 새로 노출됐다. 추가 릴스가 없어 recent12 지표는 추정하지 않았으며, 기존 ledger 재확인으로 신규 항목은 없다.
+
+
+## 2026-08-09T04:51:05+09:00 — jjing_yaksa 보류 재확인
+
+jjing_yaksa는 프로필 43게시물·팔로워 1119·팔로우 376, 디지털 크리에이터 카테고리와 찡약사 툰·일상찡툰 bio를 보였다. 릴스 3개(1181·1970·845)만 확인됐고 스크롤 뒤 추가 릴스가 노출되지 않아 recent12 지표를 추정하지 않았다. 기존 ledger 재확인으로 신규 항목은 없고 contents.csv 신규 행도 없다.
+
+
+## 2026-08-09T04:54:52+09:00 — spa_official2 접근 불가 재확인
+
+프로필과 /reels/가 모두 페이지 사용 불가 화면을 반환해 계정 지표와 콘텐츠를 수집하지 않았다. 수치를 추정하지 않고 보류 사유만 raw와 큐에 기록했으며, 다음 read-only 배치에서 재시도한다.
+
+- 2026-08-09T05:00:15+09:00 20260809-E1-LOGIN-YUYAK-DIZMDD-TTWS-DETAIL-337: YUYAK-DIzmDd_Ttws 상세 재확인에서 HTML meta 좋아요 1594·댓글 124·리포스트 5·게시일 2025-04-24 및 대표 이미지를 확인했다. 조회수는 계속 미노출이고 최근12 밖이라 배수·등급은 보류한다. canonical thumbnail 저장, contents.csv·raw·상태·감사보고서 갱신, ledger 신규 0건.
+
+- 2026-08-09T05:08:49+09:00 20260809-E1-LOGIN-SPA-OFFICIAL2-UNAVAILABLE-338: spa_official2 프로필·/reels/ 모두 unavailable 화면을 재확인. 시도 39회, 보류 유지; 계정 지표·릴스·조회수 추정 없음, 신규 ledger 0건.
+
+- 2026-08-09T05:14:04+09:00 20260809-E1-LOGIN-DRWONGU-DAY14YNHYIA-THUMB-339: dr.wongu A급 Day14YnhYIa 대표 이미지를 canonical 원장에 저장했다. 본문 표시 지표·게시일과 HTML meta가 충돌해 기존 canonical 값을 보존했고 신규 shortcode는 추가하지 않았다.
+
+- 2026-08-09T05:17:54+09:00 20260809-E1-LOGIN-DRPARKSKIN-DASJ1OETPVJ-THUMB-340: dr_park_skin A급 DaSj1oetPvj 대표 이미지와 기존 지표를 직접 재확인했다. canonical 썸네일 저장, 신규 shortcode 0건.
+
+- 2026-08-09T05:17:54+09:00 20260809-E0-OFFLINE-DRPARKSKIN-DASJ1OETPVJ-METRIC-CORRECTION-341: dr_park_skin DaSj1oetPvj 좋아요 원장값 415를 직전 exact 본문·HTML meta 관측값 416으로 보정했다.
+
+- 2026-08-09T05:22:39+09:00 20260809-E1-LOGIN-LOVEPLAN-DBJXYHOMLF-THUMB-342: loveplan__ A급 DbjxyHOM_LF 대표 이미지를 canonical 원장에 저장했다. 미노출 지표와 게시일 충돌은 추정하지 않았다.
+
+- 2026-08-09T05:25:52+09:00 20260809-E1-LOGIN-NHISKOREA-DA2P5PUT6QC-THUMB-343: nhis_korea A급 Da2P5puT6qC 지표와 대표 이미지를 직접 재확인했다. 좋아요 834→844 보정, 신규 shortcode 0건.
+
+- 2026-08-09T05:28:37+09:00 20260809-E1-LOGIN-MEDICALKOREA-DBC0XBHO5E-THUMB-344: medicalkoreaofficial A급 DbC0Xb_ho5e 대표 이미지와 광고·콘텐츠 지표를 재확인했다. 좋아요는 충돌로 빈칸 유지, 신규 shortcode 0건.
+
+- 2026-08-09T05:31:35+09:00 20260809-E1-LOGIN-MYYAKSA-DBNUYQJJWN0-THUMB-345: myyaksa A급 DbnUYqJJWN0 지표와 대표 이미지를 직접 재확인했다. 좋아요 687→935·댓글 143→188 보정, 신규 shortcode 0건.
+
+- 2026-08-09T05:34:39+09:00 20260809-E1-LOGIN-DRHAIRLEE-DWDAKYWEPJJ-THUMB-346: dr.hair_lee S급 DWDAkYwEpjj 지표와 대표 이미지를 직접 재확인했다. 좋아요 3400→3413 보정, 신규 shortcode 0건.
+
+
+## 2026-08-09T07:35:40+09:00 — 썸네일 누락 풀 오프라인 감사
+
+접근 가능한 누락 썸네일을 모두 점검한 결과 JESSI-DbcN6jJwjJO와 JESSI-DbFt3HARR7_ 2건만 남았습니다. 두 항목은 이전 로그인 read-only 확인에서 직접 게시물과 원본 미디어를 사용할 수 없어 명시적 보류로 유지하며 즉시 중복 재수집하지 않습니다. raw 2,554건, data CSV, QUEUE.csv, known_items는 변경하지 않았습니다. 최신 verifier는 IN_PROGRESS·실패 0건·canonical open item 5건입니다. 다음 안전한 비-JESSI 큐 또는 콘텐츠 풀을 계속 처리합니다.
+## 2026-08-09T07:46:39+09:00 — toad_pharm 판매형 게시물 보류
+
+toad_pharm Dbo5ml1k-LF 상세에서 공동구매·할인·구매 유도 본문을 확인해 canonical 콘텐츠 레퍼런스에서 제외했습니다. 화면 지표와 HTML meta가 충돌해 수치는 canonical CSV에 쓰지 않았고 raw·known ledger·checkpoint만 갱신했습니다. 탭은 닫았으나 lease 반납은 ownership mismatch로 거부됐습니다.
+## 2026-08-09T07:51:29+09:00 — yulbang_counseling 교육형 콘텐츠 추가
+
+yulbang_counseling DQtHtS0gYpL은 약국 이전과 상담 공간을 소개하는 교육·신뢰형 릴스로 확인했습니다. 프로필 그리드 조회수 636과 상세 좋아요 15·댓글 3·리포스트 1을 기록하고 canonical 콘텐츠 행·대표 이미지를 추가했습니다. 화면 게시일 2025-11-06과 HTML meta 2025-11-05 충돌은 추정하지 않고 공란으로 유지했습니다.
+
+## 2026-08-09T07:58:57+09:00 — minish_dental.hospital 콘텐츠 추가
+
+minish_dental.hospital C0TlQUHva1k를 로그인 read-only 릴스 DOM에서 확인했습니다. 기존 프로필 그리드 조회수 14,000, 좋아요 1, 댓글 7, 게시일 2023-12-01을 기록해 canonical 콘텐츠 행을 추가했습니다. 판매·협찬·가격·구매 유도 문구 없이 미니쉬 브랜드 해시태그 중심이라 광고아님·유료도달 의심 아니오로 분류했습니다. 화면 캡처는 CDP 시간초과로 저장하지 않았고 썸네일도 저장하지 않았습니다. QUEUE.csv는 변경하지 않았으며 lease 반납은 ownership mismatch로 거부됐습니다.
+
+
+## 2026-08-09T08:04:24+09:00 — minish_dental.hospital 협업형 게시물 보류
+
+Cpmj-WuA18H는 #미니쉬치과병원·#용지니어스키친·#정용진 해시태그와 댓글 35·게시일 2023-03-10만 확인됐습니다. 의료 정보·시술 설명이 없어 canonical 행은 만들지 않고 excluded_format_only로 raw·known ledger·checkpoint만 갱신했습니다. QUEUE.csv와 data CSV는 변경하지 않았고 lease는 정상 반납했습니다.
+
+
+## 2026-08-09T08:06:51+09:00 — minish_dental.hospital 스포츠 협업형 게시물 보류
+
+DXG6HZsP9R5는 minish_dr.kwak 명의로 표시되며 #치과·#국가대표·#올림픽·#월드컵·#야구 해시태그와 좋아요 101·댓글 4·리포스트 1만 확인됐습니다. 의료 설명이 없어 excluded_format_only로 raw·known ledger·checkpoint만 갱신했고 canonical CSV와 QUEUE.csv는 변경하지 않았습니다.
+
+
+## 2026-08-09T08:09:03+09:00 — minish_dental.hospital 구강건강 콘텐츠 추가
+
+DW04DlaTWTq는 #입속세균·#입냄새·#입냄새제거·#가글·#생활꿀팁을 사용한 구강건강 교육형 릴스로 확인했습니다. 기존 조회수 6,012와 로그인 DOM 좋아요 135·댓글 14·리포스트 11·게시일 2026-04-07을 기록해 canonical 콘텐츠 행을 추가했습니다. 캡션·영상 자막은 노출되지 않아 해시태그 기반 분류로 남겼고 썸네일은 저장하지 않았습니다.
+
+
+## 2026-08-09T08:12:01+09:00 — minish_dental.hospital 의료진 페이크 다큐 형식 추가
+
+DWV_6kKgazr는 #치과의사·#치위생사·#페이크다큐·#박사 해시태그가 명시된 의료진 직군 상황극형 릴스입니다. 기존 조회수 15,000과 로그인 DOM 좋아요 109·댓글 3·리포스트 4·게시일 2026-03-26을 기록해 F급 형식 레퍼런스 canonical 행을 추가하고 약사 직군 이식 후보로 표시했습니다. 캡션·영상 자막은 노출되지 않아 해시태그와 형식 중심으로 분류했고 썸네일은 저장하지 않았습니다.
+
+
+## 2026-08-09T08:14:51+09:00 — minish_dental.hospital 잇몸 건강 콘텐츠 추가
+
+DVsgl61PH-6는 #잇몸약·#치아상식·#치주질환·#잇몸관리 해시태그를 사용한 구강건강 정보형 릴스로 확인했습니다. 기존 조회수 7,848과 로그인 DOM 좋아요 71·댓글 2·게시일 2026-03-10을 기록해 canonical 행을 추가했습니다. 리포스트 수는 미노출로 공란 유지했고 캡션·영상 자막과 썸네일은 저장하지 않았습니다.
+
+
+## 2026-08-09T08:20:00+09:00 — tony71004 누락 콘텐츠 행 오프라인 복원
+
+기존 raw에 확정된 BmSKSVmhuH4 상세 지표와 프로필 그리드 조회수를 대조해 canonical 콘텐츠 행을 추가했습니다. 조회수 15,926·좋아요 159·댓글 26을 기록했고 화면 게시일 2018-08-10과 metadata 2018-08-09 충돌은 공란으로 유지했습니다. known shortcode 재수집과 QUEUE.csv 변경은 없었습니다.
+
+
+## 2026-08-09T08:25:00+09:00 — jjing_yaksa 누락 콘텐츠 행 오프라인 복원
+
+기존 raw의 CMtyYjPntVd 상세 캡션·해시태그·좋아요 154·게시일 2021-03-22와 프로필 조회수 1,181을 대조해 canonical 행을 추가했습니다. 타임랩스·약사툰 형식 F급·이식 후보 예로 기록했고 댓글·리포스트는 공란 유지했습니다. known ledger·QUEUE.csv는 변경하지 않았습니다.
+
+
+## 2026-08-09T08:26:33+09:00 — lilly_yaksa 광고 판정 재확인
+
+DbNTJ35vXXa 상세를 로그인 read-only로 재확인했습니다. 화면 좋아요 1.8천·댓글 38·리포스트 184·게시일 7월 25일이 보였고 기존 raw 1.7천·댓글 37과 충돌했습니다. 화면 광고 표기는 없지만 공동 게시 계정·제품 추천·판매 맥락 때문에 광고 판정 불명과 canonical 보류를 유지했습니다.
+
+
+- 2026-08-09T08:32:50+09:00 20260809-E1-LOGIN-YONGSANINT-DGEOFTVSPLD-AD-RECHECK-389: yongsanint DGEoFTvSplD 로그인 read-only 재확인. 조회수 149000, 좋아요 676, 댓글 7, 게시일 2025-02-15와 복부초음파 정보 본문을 확인했다. 광고 표기는 없었지만 병원 내원 문의·병원 안내 맥락과 90일 기준 이탈로 canonical 보류, raw만 추가했다. data CSV·QUEUE.csv 미수정. 탭은 닫았고 lease는 만료 후 ownership mismatch로 해제 거부됨.
+
+- 2026-08-09T08:36:40+09:00 20260809-E1-LOGIN-GUNGINAM-DL9W0F4YPU-AD-RECHECK-390: gunginam_tv DL9w0F4yp_u 로그인 read-only 재확인. 조회수 156000, 좋아요 564, 댓글 26, 리포스트 8, 게시일 2025-07-11과 호박즙·영양제 성분 경고 본문을 확인했다. 본문 광고 표기는 없었으나 연관 게시물에 상담·구매·이벤트·자체 제품 출시가 표시되고 90일 기준도 이탈해 canonical 보류, raw만 추가했다. data CSV·QUEUE.csv 미수정. lease released.
+
+- 2026-08-09T08:39:58+09:00 20260809-E1-LOGIN-CONNECTCARE-DZEEUIKIBYX-RECHECK-391: connectcare_official DZeEUiKIbyX 로그인 read-only 재확인. 조회수 280, 좋아요 4, 댓글 0, 게시일 2026-06-12와 산수유 잎·흑색종 전임상 연구 본문을 확인했다. 광고 표기 없음, 조회수 gate 미달 및 의학적 근거·영상 구조 검토 필요로 canonical 보류, raw만 추가했다. data CSV·QUEUE.csv 미수정. lease released.
+
+- 2026-08-09T08:42:41+09:00 20260809-E1-LOGIN-SHINY-JJEONG-DBARVNHZNUA-RECHECK-392: shiny_jjeong DbarvnhznuA 로그인 read-only 재확인. 조회수 1638, 약물 안전 본문, 해시태그를 확인했으나 좋아요 미노출·댓글 기존 2 대 화면 0·게시일 기존 2026-07-31 대 화면 2026-07-30 충돌을 보존했다. 광고 표기와 해당 게시물 판매 CTA 없음. gate 미달 및 의학적 근거·영상 구조 검토 필요로 canonical 보류, raw만 추가. data CSV·QUEUE.csv 미수정. lease released.
+
+- 2026-08-09T08:45:36+09:00 20260809-E1-LOGIN-GANGDONG-KYUNGHEE-DAKBZ5MSR2V-RECHECK-393: gangdong_kyunghee DakBZ5msr2v 로그인 read-only 재확인. 조회수 1514, PET-CT·CT 비교 본문, 댓글 없음, 리포스트 1, 게시일 2026-07-09 확인. 좋아요 미노출. 광고 표기 없음. gate 미달 및 실제 영상 구조·포맷 신규성 미확정으로 canonical 보류, raw만 추가. data CSV·QUEUE.csv 미수정. lease released.
+
+- 2026-08-09T08:48:23+09:00 20260809-E1-LOGIN-ONEUL-PHARMACY-DBHGFCAAZCF-RECHECK-394: oneul_pharmacy DbhGfCAAZCf 로그인 read-only 재확인. 동남아 여행 상비약 캐러셀, 좋아요 2.6천, 댓글 81, 리포스트 938, 게시일 6일 전 확인. 조회수 미노출, 기존 exact 날짜 2026-08-02 보존. 게시물 광고 표기는 없었으나 연관 게시물에 공동구매·제품 판매가 있어 canonical 보류, raw만 추가. data CSV·QUEUE.csv 미수정. lease released.
+
+## 2026-08-09T08:57:39+09:00 — zeroderma_official 광고·프로모션 맥락 재확인
+
+DbS0-ckTaV_ 상세에서 결혼 전 시술 일정·주의 본문, 조회수 51,000, 좋아요 147·댓글 240·리포스트 41, 게시일 2026-07-27을 확인했습니다. 게시물 자체에는 광고 표기와 예약 CTA가 없었지만 연관 게시물에 8월 병원 이벤트·예약·시술 프로그램 홍보가 직접 노출됐습니다. 광고 판정·유료도달 의심은 불명으로 유지하고 clinic promotion context로 canonical 행을 추가하지 않았습니다. raw만 추가했으며 data CSV·QUEUE.csv는 수정하지 않았고 lease는 released입니다.
+
+## 2026-08-09T09:01:13+09:00 — seoulacehospital 병원 서비스 홍보 맥락 재확인
+
+DXVgbgkk-Lj 상세에서 스마트 병동·간호사 Q&A 본문, 조회수 115,000, 좋아요 379·댓글 23·리포스트 14, 게시일 2026-04-20을 확인했습니다. 게시물 자체 광고 표기는 없었지만 공식 병원 서비스·환자 케어 소개와 연관 병원 홍보가 확인되어 광고 판정·유료도달 의심은 불명으로 유지했습니다. 90일 기준 이탈로 canonical 행은 추가하지 않았고 raw만 추가했습니다. data CSV·QUEUE.csv는 수정하지 않았습니다. 탭은 닫혔지만 lease는 만료 후 ownership mismatch로 반납되지 않았습니다.
+
+## 2026-08-09T09:02:30+09:00 — modu_pharm 오프라인 기존 근거 보류
+
+C_Ku_PcBGBR는 공유 브라우저 lease가 다른 task에 묶여 새 화면을 열지 않았습니다. 기존 raw의 조회수 83,000·좋아요 346·댓글 15·게시일 2024-08-27과 병원약사 현장 공감 TOP3, 플랫폼·교육 모집·제품 안내 맥락만 대조했습니다. 새 지표·구조·썸네일은 추정하지 않고 90일 기준 이탈 보류를 유지했습니다. data CSV·QUEUE.csv는 수정하지 않았습니다.
+
+## 2026-08-09T09:10:11+09:00 — snubh_official 병원 현장 스토리 재확인
+
+DYBJamVppZv 상세에서 응급 수술·의료진 현장 스토리 본문, 조회수 98,000, 좋아요 799·댓글 8·리포스트 19, 게시일 2026-05-07을 확인했습니다. 게시물과 연관 게시물에 광고·협찬·제품·판매·예약 CTA가 없어 광고아님·유료도달 의심 아니오를 유지했습니다. 기존 병원 현장 스토리 포맷과 중복되어 canonical 행은 추가하지 않았고, data CSV·QUEUE.csv는 수정하지 않았습니다.
+
+## 2026-08-09T09:14:49+09:00 — dr_park_skin 제품 비추천 시리즈 재확인
+
+DanJm9ds_i6 상세에서 다이소 비추템 2탄 본문, 기존 조회수 173,000, 화면 좋아요 696·댓글 31·리포스트 39, 게시일 2026-07-10을 확인했습니다. 광고·협찬 표기와 직접 판매 CTA는 없었지만 제품 경험 댓글이 있어 광고 판정·유료도달 의심은 불명으로 유지했습니다. 동일 계정의 기존 제품 비추천 시리즈와 중복되어 canonical 행은 추가하지 않았고 data CSV·QUEUE.csv는 수정하지 않았습니다.
+
+## 2026-08-09T09:18:55+09:00 — readyyoungpharmacy_global 커머스 협업 재확인
+
+Dbk-1joIfoo 상세에서 kellykorea_official과의 공동 게시, 명동 레디영약국 위치, K-beauty 제품, 무료 다국어 피부 분석·사진, 현재 프로모션, 방문·저장 유도를 확인했습니다. 화면 지표는 좋아요 7.9천·댓글 46·리포스트 78이었고 기존 게시일 2026-08-04를 유지했습니다. 광고·협업 및 유료도달 의심 예로 기록하고 명시적 약국 커머스 프로모션으로 canonical에서 제외했습니다. data CSV·QUEUE.csv는 수정하지 않았고 lease는 released입니다.
+
+## 2026-08-09T09:22:59+09:00 — cellmed.official 브랜드 협업 재확인
+
+DaJtdlYCJ87 상세에서 run.pharmacist와의 공동 게시, 여름철 러닝 3가지 팁, 조회수 455,000, 화면 좋아요 924·댓글 20·리포스트 2, 게시일 2026-06-29를 확인했습니다. 캡션·댓글·연관 게시물에서 셀메드 브랜드·철분제·제품 구매·약국 방문·홈쇼핑·광고모델 신호가 확인되어 광고·협업·유료도달 의심 예로 기록하고 canonical에서 제외했습니다. data CSV·QUEUE.csv는 수정하지 않았고 lease는 released입니다.
+
+- 2026-08-09T09:29:42+09:00 | 20260809-E1-LOGIN-BPA-ANTIDRUG-DBU1KBG1UK-RECHECK-402 | E1 로그인 read-only: bpa_antidrug / DbU1KBgE1UK 공동 게시(yaksarani) 재확인. 조회수 미노출, 좋아요 15, 댓글 없음, 게시일 2026-07-28. 공공 약물예방 캡션·4단계 행동수칙 확인. 기존 canonical 행·썸네일 유지, CSV·큐·known_items 미수정. 광고아님·유료 도달 불명·gate 판정불가(지표없음) 유지. 탭은 닫았고 lease 해제 요청은 다른 owner 선점으로 ownership mismatch 거부됨.
+- 2026-08-09T09:34:34+09:00 | 20260809-E1-LOGIN-NMC-DBIPOJHSUIN-EXCLUDED-403 | E1 로그인 read-only: nmc_official / DbIPOjHsUIn 재확인. 기존 조회수 1,507, 화면 좋아요 27, 댓글 없음, 게시일 2026-07-23. 내원객 감사 사연·간호사 소개 기관 브랜딩 릴스라 canonical 미추가. CSV·큐·known_items 미수정. 광고아님·유료 도달 불명·gate 미달 유지. 탭은 닫았고 lease 해제 요청은 다른 owner 해제로 ownership mismatch 거부됨.
+- 2026-08-09T09:37:53+09:00 | 20260809-E1-LOGIN-MIZMEDI-DUKE9GKNSK-EXCLUDED-404 | E1 로그인 read-only: mizmedi_hospital / DUke9gKknsk 재확인. 기존 조회수 42,000, 화면 좋아요 115·댓글 1·리포스트 5, 게시일 2026-02-10. 산부인과 의사 병원 스토리·유튜브/홈페이지 CTA 포맷이라 90일 창 밖 및 형식 제외. CSV·큐·known_items 미수정. 광고아님·유료 도달 불명·gate 통과 유지. 탭 닫음·lease released.
+- 2026-08-09T09:41:04+09:00 | 20260809-E1-LOGIN-HELLOHEALTH-DYN1NWVBTSL-EXCLUDED-405 | E1 로그인 read-only: hello_health_pr / DYn1nWVBTSL 재확인. 기존 조회수 1,208, 화면 좋아요 16·댓글 없음, 게시일 2026-05-22. 소아응급·권역응급·심뇌혈관 센터 소개 기관 영상이라 canonical 미추가. CSV·큐·known_items 미수정. 광고아님·유료 도달 불명·gate 미달 유지. 탭 닫음·lease released.
+- 2026-08-09T09:44:15+09:00 | 20260809-E1-LOGIN-GOODHOSPITALS-DBJGDGXVJ-EXCLUDED-406 | E1 로그인 read-only: goodhospitals / Dbj_g-dgXVj 재확인. 기존 조회수 8,785, 화면 좋아요 146·댓글 6·리포스트 1, 게시일은 기존 2026-08-03 유지(화면 5일 전). 공식 병원 공동 게시·직원 공모전 브랜딩이라 canonical 미추가. CSV·큐·known_items 미수정. 광고아님·유료 도달 불명·gate 미달 유지. 탭 닫음·lease released.
+- 2026-08-09T09:48:43+09:00 | 20260809-E1-LOGIN-MARIABABY-DBZ2NFUBLEN-EXCLUDED-407 | E1 로그인 read-only: mariababy_official / DbZ2NFuBlEn 재확인. 기존 조회수 14,000, 화면 좋아요 71·댓글 1·리포스트 1. 화면 게시일 2026-07-30과 기존 후보 2026-07-29 충돌을 raw에 기록. 난임 경험·생활 습관 포맷과 gate 미달로 canonical 미추가. CSV·큐·known_items 미수정. 광고아님·유료 도달 불명. 탭 닫음·lease released.
+- 2026-08-09T09:52:05+09:00 | 20260809-E1-LOGIN-KHIS-DRIZXLTJK6V-EXCLUDED-408 | E1 로그인 read-only: khis_insta / DRizxLtjk6v 재확인. 기존 조회수 585, 화면 좋아요 21·댓글 없음, 게시일 2025-11-27. #홍보·나의건강기록 앱 다운로드 CTA 확인. 홍보성 앱 콘텐츠·최근성 미충족·gate 미달로 canonical 미추가. CSV·큐·known_items 미수정. 유료 도달 불명. 탭 닫음·lease released.
+- 2026-08-09T09:56:07+09:00 | 20260809-E1-LOGIN-PRIEF-DUVNINQGSY-EXCLUDED-409 | E1 로그인 read-only: prief_official / DUVNinQgSy- 재확인. 기존 조회수 9,113, 공동 게시 n0stalgic_memory, 화면 좋아요 36·댓글 1·리포스트 1, 게시일 2026-02-04. 피나스테리드 복약지도·프리프 ETC 강의 CTA 확인. 교육 플랫폼 홍보·gate 미달로 canonical 미추가. CSV·큐·known_items 미수정. 광고·공구 판정·유료 도달 불명. 탭 닫음·lease released.
+- 2026-08-09T13:58:30+09:00 | 20260809-E1-LOGIN-DRJOSHAXE-DBYM1NQMA25-DISCOVERY-450 | 해외 대형 인증 의사 계정 drjoshaxe의 갑상선 증상 체크리스트 게시물(팔로워 154.5만, 좋아요 820·댓글 382·리포스트 16)을 raw-only A/보류로 보존. 의료 주장·조회수 미노출을 추가 검증 대상으로 남겼고 canonical CSV·QUEUE는 미변경.
+- 2026-08-09T14:05:15+09:00 | 20260809-E1-LOGIN-MEDICALNEWSROOM-DBZBDRSJXNO-DISCOVERY-451 | medical_newsroom의 신규 왼팔 통증·심장 응급 신호 캐러셀(팔로워 18.5만, 좋아요 31·댓글 없음·리포스트 1)을 raw-only F/보류로 보존. 캐러셀 조회수 미노출·날짜 표현 충돌을 기록했고 canonical CSV·QUEUE는 미변경. 탭은 닫혔으나 lease 해제 요청은 ownership mismatch로 거부됨.
+- 2026-08-09 14:16 · 20260809-E1-LOGIN-YAKDANGDANG-DBZGAA7XSRQ-DISCOVERY-452: yakdangdang/Dbzgaa7xsRQ 신규 확인. 인증 국내 약사 10.9만 팔로워, 1시간 전 비타민D 츄어블 품절 릴스, 조회수 3,081(프로필 그리드), 좋아요 67·댓글 19. 광고·공구형·유료 도달 불명. FMT-GROUPBUY-DEADLINE-001 변형으로 raw-only 보존; CSV·QUEUE 미변경.
+- 2026-08-09 14:25 · 20260809-E1-LOGIN-YAKDANGDANG-DBXKAT6R0WU-DISCOVERY-453: yakdangdang/DbxKAt6R0Wu 신규 확인. 인증 국내 약사 10.9만 팔로워, 23시간 전 비타민D 릴스, 조회수 4.8만(compact 표시)·좋아요 225·댓글 205·리포스트 11. 광고·공구형·유료 도달 불명. FMT-GROUPBUY-DEADLINE-001 중복 및 의학적 정확성 보류로 raw-only 보존; CSV·QUEUE 미변경.
+- 2026-08-09T14:31:17+09:00 · 20260809-E1-LOGIN-GOOD-YAKSA-DBKFHR_PW7Q-DISCOVERY-454: good.yaksa/DbKfhR_pW7Q 신규 확인. 인증 국내 약사 계정(팔로워 29만), 탈모약 점수표 릴스에서 조회수 740,000(프로필 recent12 그리드), 좋아요 3.8천(compact)·댓글 289·리포스트 481 확인. FMT-DRUG-SCORE-COMPARISON-001과 중복되고 효능·복용 주장의 근거 검토가 필요해 미판정/보류 raw-only로 보존; CSV·QUEUE 미변경.
+- 2026-08-09T14:40:03+09:00 · 20260809-E1-LOGIN-GOOD-YAKSA-DBK6QVOZ6E_-DISCOVERY-455: good.yaksa/Dbk6QVoz6E_ 신규 확인. 인증 국내 약사 계정(팔로워 29만), 피부 고민별 성분 7개 매칭 릴스에서 조회수 152,000(프로필 recent12 그리드), 좋아요 609·댓글 48·리포스트 67 확인. FMT-SKIN-EXPERT-LIST-001·FMT-SKIN-COMBINATION-CAUTION-001과 중복되고 성분 효능·사용 주장의 근거 검토가 필요해 미판정/보류 raw-only로 보존; CSV·QUEUE 미변경.
+- 2026-08-09T14:44:22+09:00 · 20260809-E1-LOGIN-GOOD-YAKSA-DBXDISZPUY_-DISCOVERY-456: good.yaksa/DbXdIszpuy- 신규 확인. 인증 국내 약사 계정(팔로워 29만), 아젤라산 사용 안내 릴스에서 조회수 402,000(프로필 recent12 그리드), 좋아요 2.1천(compact)·댓글 291·리포스트 195 확인. FMT-QUESTION-CONTRAINDICATION-GUIDE-001·FMT-SKIN-COMBINATION-CAUTION-001·FMT-SKIN-ABSORPTION-QUESTION-001과 중복되고 의약품·임신·수유 안전성 주장의 근거 검토가 필요해 미판정/보류 raw-only로 보존; CSV·QUEUE 미변경.
+- 2026-08-09T14:48:30+09:00 · 20260809-E1-LOGIN-GOOD-YAKSA-DBU8JWYJVJO-DISCOVERY-457: good.yaksa/DbU8JWyJVJo 신규 확인. 인증 국내 약사 계정(팔로워 29만), 블랙헤드 성분 점수표 릴스에서 조회수 422,000(프로필 recent12 그리드), 좋아요 1.8천(compact)·댓글 81·리포스트 148 확인. FMT-PRODUCT-SCORECARD-001·FMT-SKIN-EXPERT-LIST-001과 중복되고 성분 효능·청소년 사용 주장의 근거 검토가 필요해 미판정/보류 raw-only로 보존; CSV·QUEUE 미변경.
+- 2026-08-10T04:21:50+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-563 | jjing_yaksa 프로필 43·1119·376, 하이라이트 6개, 12개 링크 확인. 11개 게시물은 기준일 이전, 릴스 날짜 미노출. /reels/ 빈 tabpanel로 recent12 미완료. raw 2869->2870, known 1839->1843, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: spa_official2.
+- 2026-08-10T04:29:31+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-564 | spa_official2 프로필과 /reels/ 모두 "페이지를 사용할 수 없습니다" 화면. 계정 지표·릴스·recent12 미확인, 수치 추정 없음. raw 2870->2871, known 1843->1844, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: knjbio.official.
+- 2026-08-10T04:33:11+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-565 | knjbio.official 프로필 245·1006·418, 건강/뷰티·www.knjbio.com·하이라이트 10개. 프로필 링크 12개는 기존 raw에 있고 /reels/는 빈 tabpanel. recent12 미완료, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: lemonpharmacy38.
+- 2026-08-10T04:37:32+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-566 | lemonpharmacy38 프로필 5·510·609, 건강/뷰티·Naver Place·Threads. 릴스 5개 캡션 신호 확인, /reels/ 빈 tabpanel과 조회수·날짜 미노출로 recent12 미완료. raw 2872->2873, known 1845->1847, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: innerdew.official.
+- 2026-08-10T04:41:31+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-567 | innerdew.official 프로필 8·280·0, 약사·이너뷰티·영양제 bio·Threads. 정적 게시물 3개와 릴스 5개 캡션 신호 확인, /reels/ 빈 tabpanel과 날짜·조회수 미노출로 recent12 미완료. raw 2873->2874, known 1847->1851, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: pharmacyinpalm_official.
+
+## 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-RECHECK-568 — pharmacyinpalm_official 로그인 재확인
+
+- observed_at: 2026-08-10T04:46:29+09:00
+- profile: 10 posts / 188 followers / 485 following; 제품/서비스; 약국 플랫폼·가족 건강지킴이 bio; drxsolution.co.kr
+- visible content: 10 profile-grid links (one reel, nine posts); explicit dates 2022-05-11 through 2024-03-14; all exact links already in raw
+- reels: no profile Reels tab link; direct /reels/ redirected to profile; no new 12th reel or views
+- disposition: hold; recent12 not inferred; canonical CSV unchanged
+- ledger: raw 2874 -> 2875; known_items 1851 -> 1852; account hold line added
+- queue: 시도횟수 38 -> 39; 보류 유지; next handle tony71004
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-569 — tony71004 로그인 재확인
+
+- observed_at: 2026-08-10T04:54:18+09:00
+- profile: 144 posts / 5,002 followers / 3,480 following; 약사툰; 약사 일상툰·육아 bio; Threads·상담차트
+- visible content: 12 dated posts from 2021-08-25 through 2022-04-21; all before the 2023-08-10 three-year window and all exact links already in raw/known
+- reels: no profile Reels tab; direct /reels/ redirected to profile with no reel link; recent12 incomplete
+- disposition: hold; canonical CSV unchanged
+- ledger: raw 2875 -> 2876; known_items 1852 -> 1853; account hold line added
+- queue: 시도횟수 38 -> 39; 보류 유지; next handle jjing_yaksa
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-570 — jjing_yaksa 로그인 재확인
+
+- observed_at: 2026-08-10T04:58:58+09:00
+- profile: 43 posts / 1,119 followers / 376 following; 디지털 크리에이터·약사툰 bio; 하이라이트 6개
+- visible content: 12 links; 11 posts dated 2021-02-19 through 2021-05-09 before the 2023-08-10 three-year window, one undated reel; all exact links already in raw/known
+- reels: profile Reels tab link visible; direct /reels/ empty tabpanel with no reel links; recent12 incomplete
+- disposition: hold; canonical CSV unchanged
+- ledger: raw 2876 -> 2877; known_items 1853 -> 1854; account hold line added
+- queue: 시도횟수 39 -> 40; 보류 유지; next handle spa_official2
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-571 — spa_official2 접근 불가 재확인
+
+- observed_at: 2026-08-10T05:03:23+09:00
+- profile and /reels/: 모두 Instagram의 페이지 사용 불가 화면; 계정 지표·콘텐츠·릴스·recent12 미확인
+- disposition: hold; 수치·콘텐츠 추정 없음; canonical CSV unchanged
+- ledger: raw 2877 -> 2878; known_items 1854 -> 1855; account hold line added
+- queue: 시도횟수 40 -> 41; 보류 유지; next handle knjbio.official
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-572 — knjbio.official 로그인 재확인
+
+- observed_at: 2026-08-10T05:06:53+09:00
+- profile: 245 posts / 1,006 followers / 418 following; 건강/뷰티·프리미엄 건강기능식품 bio; www.knjbio.com·하이라이트 10개
+- visible content: 12 links dated 2025-08-22 through 2026-05-21; all exact links already in raw, two shared links; canonical content rows unchanged
+- reels: profile Reels tab visible; direct /reels/ empty tabpanel with no reel links; recent12 incomplete
+- disposition: hold; canonical CSV unchanged
+- ledger: raw 2878 -> 2879; known_items 1855 -> 1856; account hold line added
+- queue: 시도횟수 39 -> 40; 보류 유지; next handle lemonpharmacy38
+- browser: tab finalized; lease released
+
+- 2026-08-10T05:13:51+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-573 | lemonpharmacy38 프로필 5·510·609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제·Naver Place·Threads 확인. 프로필 릴스 5개는 기존 원장과 일치했고 /reels/ 빈 tabpanel로 추가 릴스·조회수·날짜가 없어 recent12 미완료. HTML meta 509·632 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: innerdew.official.
+
+- 2026-08-10T05:19:40+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-574 | innerdew.official 프로필 8·280·0, InnerDew 이너듀·약사 누나×이너뷰티 대표 남동생·다이어트/피부 고민 영양제 bio·Threads 확인. 프로필 링크 8개(릴스 5·게시물 3)는 기존 원장과 일치했고 /reels/ 빈 tabpanel로 추가 릴스·날짜·조회수가 없어 recent12 미완료. data CSV 미수정, QUEUE 보류 유지, lease released. 다음: pharmacyinpalm_official.
+
+- 2026-08-10T05:24:18+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-575 | pharmacyinpalm_official 프로필 10·188·485, 내손안의약국·제품/서비스·약국 플랫폼/단골약사 bio·drxsolution.co.kr 확인. 10개 링크(릴스 1·게시물 9)는 기존 raw와 일치했고 Reels 탭 미노출·직접 /reels/ 프로필 리디렉션으로 recent12 미완료. HTML meta following 501 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: tony71004.
+
+- 2026-08-10T05:28:21+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-576 | tony71004 프로필 144·5002·3480, 약사툰·약국/약사 10년차·약사 일상툰·육아 bio·Threads·상담차트 확인. 프로필 링크 12개는 기존 raw/known과 일치했고 Reels 탭 미노출·직접 /reels/ 프로필 리디렉션으로 recent12 미완료. HTML meta following 3589 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: jjing_yaksa.
+
+- 2026-08-10T05:31:20+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-577 | jjing_yaksa 프로필 43·1119·376, 디지털 크리에이터·약사툰·일러스트 bio·하이라이트 6개 확인. 링크 12개(게시물 11·릴스 1)는 기존 raw/known과 일치했고 /reels/ 빈 tabpanel로 recent12 미완료. HTML meta following 394 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: spa_official2.
+
+- 2026-08-10T05:34:24+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-578 | spa_official2 프로필·직접 /reels/ 모두 Instagram 페이지 사용 불가 화면. 계정 지표·콘텐츠·릴스·recent12 미확인, 수치 추정 없음. raw 2884->2885, known 1861->1862, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: knjbio.official.
+
+- 2026-08-10T05:37:44+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-579 | knjbio.official 프로필 245·1006·418, 김남주바이오·건강/뷰티·프리미엄 건강기능식품·www.knjbio.com·하이라이트 10개 확인. 링크 10개는 기존 raw와 일치했고 Reels 탭은 보였지만 /reels/ 빈 tabpanel로 recent12 미완료. data CSV 미수정, QUEUE 보류 유지, lease released. 다음: lemonpharmacy38.
+
+- 2026-08-10T05:40:32+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-580 | lemonpharmacy38 프로필 5·510·609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제·Naver Place 확인. 릴스 5개는 기존 raw/known과 일치했고 직접 /reels/가 프로필에 남아 추가 릴스·날짜·조회수가 없어 recent12 미완료. HTML meta 509·632 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: innerdew.official.
+
+- 2026-08-10T05:44:09+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-581 | innerdew.official 프로필 8·280·0, InnerDew 이너듀·약사 누나×이너뷰티 대표 남동생·다이어트/피부 고민 영양제 bio 확인. 링크 8개(릴스 5·게시물 3)는 기존 raw/known과 일치했고 직접 /reels/가 프로필에 남아 추가 릴스·날짜·조회수가 없어 recent12 미완료. data CSV 미수정, QUEUE 보류 유지, lease released. 다음: pharmacyinpalm_official.
+
+- 2026-08-10T05:46:56+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-582 | pharmacyinpalm_official 프로필 10·188·485, 내손안의약국·제품/서비스·약국 플랫폼/단골약사 bio·drxsolution.co.kr 확인. 10개 링크(릴스 1·게시물 9)는 기존 raw와 일치했고 직접 /reels/가 프로필에 남아 릴스·날짜·조회수가 없어 recent12 미완료. HTML meta following 501 충돌은 참고 정보로만 보존, data CSV 미수정, QUEUE 보류 유지, lease released. 다음: tony71004.
+
+## 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-583 — tony71004 로그인 재확인
+
+- observed_at: 2026-08-10T05:55:44+09:00
+- profile: 144 posts / 5,002 followers / 3,480 following; 약사툰; 약사 일상툰·육아 bio; Threads·상담차트
+- visible content: 프로필 그리드 12개 링크; 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 미노출; 직접 /reels/ URL은 유지됐지만 프로필 DOM이 표시되고 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 following 3,589는 visible UI 3,480과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2889 -> 2890; known_items 1866 -> 1867; account hold line added
+- queue: 시도횟수 40 -> 41; 보류 유지; next handle jjing_yaksa
+- browser: tab finalized; lease release returned ownership mismatch; no retry
+
+## 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-584 — jjing_yaksa 로그인 재확인
+
+- observed_at: 2026-08-10T05:59:28+09:00
+- profile: 43 posts / 1,119 followers / 376 following; 약사 크리에이터 찡순 <찡약사 툰>; 디지털 크리에이터; 하이라이트 6개
+- visible content: 프로필 그리드 12개 링크(게시물 11개·릴스 1개); 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 링크와 CLxxmnrnFXE 1개 확인; 직접 /reels/ URL은 유지됐지만 프로필 DOM이 표시되고 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 following 394는 visible UI 376과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2890 -> 2891; known_items 1867 -> 1868; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle spa_official2
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-585 — spa_official2 접근 불가 재확인
+
+- observed_at: 2026-08-10T06:02:09+09:00
+- profile and /reels/: 모두 Instagram의 페이지 사용 불가 화면; 계정 지표·콘텐츠·릴스·recent12 미확인
+- disposition: hold; 수치·콘텐츠 추정 없음; canonical CSV unchanged
+- ledger: raw 2891 -> 2892; known_items 1868 -> 1869; account hold line added
+- queue: 시도횟수 42 -> 43; 보류 유지; next handle knjbio.official
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-586 — knjbio.official 로그인 재확인
+
+- observed_at: 2026-08-10T06:04:50+09:00
+- profile: 245 posts / 1,006 followers / 418 following; 김남주바이오; 건강/뷰티·프리미엄 건강기능식품 bio; www.knjbio.com·하이라이트 10개
+- visible content: 프로필 그리드 10개 링크; 모두 기존 raw 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 링크는 보였지만 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 1,007 followers / 438 following은 visible UI 1,006 / 418과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2892 -> 2893; known_items 1869 -> 1870; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle lemonpharmacy38
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-587 — lemonpharmacy38 로그인 재확인
+
+- observed_at: 2026-08-10T06:07:33+09:00
+- profile: 5 posts / 510 followers / 609 following; 참약사 레몬약국; 건강/뷰티; AI 분석·맞춤형 영양제 bio; Naver Place
+- visible content: 프로필 릴스 링크 5개; 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 추가 릴스 링크 없음; recent12 incomplete
+- note: HTML meta description의 509 followers / 632 following은 visible UI 510 / 609와 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2893 -> 2894; known_items 1870 -> 1871; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle innerdew.official
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-588 — innerdew.official 로그인 재확인
+
+- observed_at: 2026-08-10T06:10:26+09:00
+- profile: 8 posts / 280 followers / 0 following; InnerDew 이너듀; 약사 누나×이너뷰티 대표 남동생; 다이어트·피부 고민 영양제 bio
+- visible content: 프로필 그리드 8개 링크(릴스 5개·정적 게시물 3개); 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 링크는 보였지만 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 추가 릴스 링크 없음; recent12 incomplete
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2894 -> 2895; known_items 1871 -> 1872; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle pharmacyinpalm_official
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-589 — pharmacyinpalm_official 로그인 재확인
+
+- observed_at: 2026-08-10T06:12:51+09:00
+- profile: 10 posts / 188 followers / 485 following; 내손안의약국; 제품/서비스; 약국 플랫폼·단골약사 건강지킴이 bio; drxsolution.co.kr
+- visible content: 프로필 그리드 10개 링크(릴스 1개·정적 게시물 9개); 모두 기존 raw 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 미노출; 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 following 501은 visible UI 485와 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2895 -> 2896; known_items 1872 -> 1873; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle tony71004
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-590 — tony71004 로그인 재확인
+
+- observed_at: 2026-08-10T06:14:56+09:00
+- profile: 144 posts / 5,002 followers / 3,480 following; 약사툰; 약사 일상툰·육아 bio; Threads·상담차트
+- visible content: 프로필 그리드 12개 링크; 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 미노출; 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 following 3,589는 visible UI 3,480과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2896 -> 2897; known_items 1873 -> 1874; account hold line added
+- queue: 시도횟수 41 -> 42; 보류 유지; next handle jjing_yaksa
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-591 — jjing_yaksa 로그인 재확인
+
+- observed_at: 2026-08-10T06:17:13+09:00
+- profile: 43 posts / 1,119 followers / 376 following; 약사 크리에이터 찡순 <찡약사 툰>; 디지털 크리에이터; 하이라이트 6개
+- visible content: 프로필 그리드 12개 링크(게시물 11개·릴스 1개); 모두 기존 raw/known 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 링크와 CLxxmnrnFXE 1개 확인; 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 following 394는 visible UI 376과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2897 -> 2898; known_items 1874 -> 1875; account hold line added
+- queue: 시도횟수 42 -> 43; 보류 유지; next handle spa_official2
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-592 — spa_official2 접근 불가 재확인
+
+- observed_at: 2026-08-10T06:21:52+09:00
+- profile and /reels/: 모두 Instagram의 페이지 사용 불가 화면; 계정 지표·콘텐츠·릴스·recent12 미확인
+- disposition: hold; 수치·콘텐츠 추정 없음; canonical CSV unchanged
+- ledger: raw 2898 -> 2899; known_items 1875 -> 1876; account hold line added
+- queue: 시도횟수 43 -> 44; 보류 유지; next handle knjbio.official
+- browser: tab finalized; lease released
+
+## 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-593 — knjbio.official 로그인 재확인
+
+- observed_at: 2026-08-10T06:24:03+09:00
+- profile: 245 posts / 1,006 followers / 418 following; 김남주바이오; 건강/뷰티·프리미엄 건강기능식품 bio; www.knjbio.com·하이라이트 10개
+- visible content: 프로필 그리드 10개 링크; 모두 기존 raw 원장과 일치; 이 배치에서 날짜·캡션·조회수 미노출
+- reels: 프로필 Reels 탭 링크는 보였지만 직접 /reels/ URL은 유지됐고 프로필 DOM이 표시되며 릴스 링크 0개; recent12 incomplete
+- note: HTML meta description의 1,007 followers / 438 following은 visible UI 1,006 / 418과 충돌해 참고 정보로만 보존
+- disposition: hold; canonical CSV unchanged; recent12 metrics not inferred
+- ledger: raw 2899 -> 2900; known_items 1876 -> 1877; account hold line added
+- queue: 시도횟수 42 -> 43; 보류 유지; next handle lemonpharmacy38
+- browser: tab finalized; lease released
+
+- 2026-08-10T06:30:10+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-594 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5게시물·팔로워 510·팔로우 609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제 bio·Naver Place 확인. 프로필 릴스 5개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 509/632는 화면 수치와 충돌해 참고 정보로만 보존. raw 2900→2901, known 1877→1878, CSV 미변경.
+
+- 2026-08-10T06:34:56+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-595 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀와 약사×이너뷰티 bio 확인. 릴스 5개·게시물 3개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. lease 반납 명령은 ownership mismatch였으나 lease 파일 최종 상태는 released. raw 2901→2902, known 1878→1879, CSV 미변경.
+
+- 2026-08-10T06:38:09+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-596 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10게시물·팔로워 188·팔로우 485, 내손안의약국·제품/서비스·drxsolution.co.kr 확인. 릴스 1개·게시물 9개 링크는 기존 raw와 일치했으나 게시물 9개는 known에 없고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 팔로우 501은 화면 485와 충돌해 참고값으로 보존. raw 2902→2903, known 1879→1880, CSV 미변경.
+
+- 2026-08-10T06:41:04+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-597 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 약사툰·약국/약사 10년차·일상 만화·육아 bio·Threads·상담차트 확인. 프로필 링크 12개는 기존 raw/known과 일치했고 릴스 탭·직접 /reels/ 추가 링크가 없어 recent12 미완료 보류. HTML meta 팔로우 3589는 화면 3480과 충돌해 참고값으로 보존. raw 2903→2904, known 1880→1881, CSV 미변경.
+
+- 2026-08-10T06:43:54+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-598 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 약사 크리에이터 찡순·디지털 크리에이터·약툰/일러스트 bio·하이라이트 6개 확인. 링크 12개는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 팔로우 394는 화면 376과 충돌해 참고값으로 보존. raw 2904→2905, known 1881→1882, CSV 미변경.
+
+- 2026-08-10T06:46:25+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-599 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 페이지 사용 불가 화면을 반환해 계정 지표·콘텐츠·recent12를 확인하지 못했다. 수치와 콘텐츠를 추정하지 않고 보류. raw 2905→2906, known 1882→1883, CSV 미변경.
+
+- 2026-08-10T06:48:54+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-600 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 김남주바이오·건강/뷰티·www.knjbio.com·하이라이트 10개 확인. 링크 10개는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 1007/438은 화면 1006/418과 충돌해 참고값으로 보존. raw 2906→2907, known 1883→1884, CSV 미변경.
+
+- 2026-08-10T06:51:37+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-601 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5게시물·팔로워 510·팔로우 609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제·Naver Place 확인. 릴스 5개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 509/632는 화면 510/609와 충돌해 참고값으로 보존. raw 2907→2908, known 1884→1885, CSV 미변경.
+
+- 2026-08-10T06:53:59+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-602 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀·약사×이너뷰티 bio 확인. 릴스 5개·게시물 3개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. raw 2908→2909, known 1885→1886, CSV 미변경.
+
+- 2026-08-10T06:56:31+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-603 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10게시물·팔로워 188·팔로우 485, 내손안의약국·제품/서비스·drxsolution.co.kr 확인. 릴스 1개·게시물 9개 링크는 기존 raw와 일치했으나 게시물 9개는 known에 없고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 팔로우 501은 화면 485와 충돌해 참고값으로 보존. raw 2909→2910, known 1886→1887, CSV 미변경.
+
+- 2026-08-10T06:58:52+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-604 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 약사툰·약국/약사 10년차·일상 만화·육아 bio·Threads·상담차트 확인. 프로필 링크 12개는 기존 raw/known과 일치했고 릴스 탭·직접 /reels/ 추가 링크가 없어 recent12 미완료 보류. HTML meta 팔로우 3589는 화면 3480과 충돌해 참고값으로 보존. raw 2910→2911, known 1887→1888, CSV 미변경.
+
+- 2026-08-10T07:02:28+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-605 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 약사 크리에이터 찡순·디지털 크리에이터·약툰/일러스트 bio·하이라이트 6개 확인. 링크 12개는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 팔로우 394는 화면 376과 충돌해 참고값으로 보존. raw 2911→2912, known 1888→1889, CSV 미변경.
+
+- 2026-08-10T07:05:01+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-606 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 페이지 사용 불가 화면을 반환해 계정 지표·콘텐츠·recent12를 확인하지 못했다. 수치와 콘텐츠를 추정하지 않고 보류. raw 2912→2913, known 1889→1890, CSV 미변경.
+
+- 2026-08-10T07:07:29+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIOOFFICIAL-RECHECK-607 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 김남주바이오·건강/뷰티·www.knjbio.com·하이라이트 10개 확인. 링크 10개는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 1007/438은 화면 1006/418과 충돌해 참고값으로 보존. raw 2913→2914, known 1890→1891, CSV 미변경.
+
+- 2026-08-10T07:10:18+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-608 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5게시물·팔로워 510·팔로우 609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제·Naver Place 확인. 릴스 5개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료 보류. HTML meta 509/632는 화면 510/609와 충돌해 참고값으로 보존. raw 2914→2915, known 1891→1892, CSV 미변경.
+
+- 2026-08-10T07:15:25+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-609 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀·약사 누나×이너뷰티 대표 남동생·다이어트/피부 고민 영양제 정보 bio·Threads 확인. 릴스 5개·정적 게시물 3개 등 8개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2915→2916, known 1892→1893, CSV 미변경.
+
+- 2026-08-10T07:18:48+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-610 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10게시물·팔로워 188·팔로우 485, 내손안의약국·제품/서비스·약국 플랫폼/단골약사 건강지킴이 bio·drxsolution.co.kr 확인. 릴스 1개·정적 게시물 9개는 raw에 있었고 릴스 1개만 known에 있으며 정적 게시물 9개는 known 미수록으로 콘텐츠 미추가. 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2916→2917, known 1893→1894, CSV 미변경.
+
+- 2026-08-10T07:21:39+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-611 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 약사툰·약국/약사 10년차·약사 일상툰·육아 bio·Threads·상담차트 하이라이트 확인. 그리드 12개 게시물 링크는 기존 raw/known과 일치했고 프로필 Reels 탭과 직접 /reels/ 추가 릴스가 없어 recent12 미완료로 보류. HTML meta 팔로우 3589는 충돌 참고값으로 보존. raw 2917→2918, known 1894→1895, CSV 미변경.
+
+- 2026-08-10T07:24:26+09:00 | 20260810-E1-LOGIN-QUEUE-JJING-YAKSA-RECHECK-612 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 약사 크리에이터 찡순 <찡약사 툰>·디지털 크리에이터·약사툰/일러스트 bio·하이라이트 6개 확인. 그리드 12개 링크(게시물 11·릴스 1)는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. HTML meta 팔로우 394는 충돌 참고값으로 보존. raw 2918→2919, known 1895→1896, CSV 미변경.
+
+- 2026-08-10T07:26:52+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-613 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 Instagram 페이지 사용 불가 화면을 반환해 계정 지표·콘텐츠·릴스·recent12를 확인하지 못함. 수치와 콘텐츠를 추정하지 않고 보류 유지. raw 2919→2920, known 1896→1897, CSV 미변경.
+
+- 2026-08-10T07:30:31+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-614 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 김남주바이오·건강/뷰티·프리미엄 건강기능식품 bio·www.knjbio.com·하이라이트 10개 확인. 그리드 게시물 10개는 raw에 있었지만 known_items에는 없어 콘텐츠 미추가했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. HTML meta 1007/438은 충돌 참고값으로 보존. raw 2920→2921, known 1897→1898, CSV 미변경.
+
+- 2026-08-10T07:34:16+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-615 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5게시물·팔로워 510·팔로우 609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제 bio·Naver Place 확인. 릴스 5개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. HTML meta 509/632는 충돌 참고값으로 보존. raw 2921→2922, known 1898→1899, CSV 미변경.
+
+- 2026-08-10T07:36:49+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-616 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀·약사 누나×이너뷰티 대표 남동생·다이어트/피부 고민 영양제 정보 bio·Threads 확인. 릴스 5개·정적 게시물 3개 등 8개 링크는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2922→2923, known 1899→1900, CSV 미변경.
+
+- 2026-08-10T07:39:25+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-617 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10게시물·팔로워 188·팔로우 485, 내손안의약국·제품/서비스·약국 플랫폼/단골약사 건강지킴이 bio·drxsolution.co.kr 확인. 릴스 1개·정적 게시물 9개는 raw에 있었고 릴스 1개만 known에 있으며 정적 게시물 9개는 known 미수록으로 콘텐츠 미추가. 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2923→2924, known 1900→1901, CSV 미변경.
+
+- 2026-08-10T07:43:00+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-618 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 약사툰·약국/약사 10년차·약사 일상툰·육아 bio·Threads·상담차트 하이라이트 확인. 그리드 12개 게시물 링크는 기존 raw/known과 일치했고 프로필 Reels 탭과 직접 /reels/ 추가 릴스가 없어 recent12 미완료로 보류. HTML meta 팔로우 3589는 충돌 참고값으로 보존. raw 2924→2925, known 1901→1902, CSV 미변경.
+
+- 2026-08-10T07:45:26+09:00 | 20260810-E1-LOGIN-QUEUE-JJING-YAKSA-RECHECK-619 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 약사 크리에이터 찡순 <찡약사 툰>·디지털 크리에이터·약사툰/일러스트 bio·하이라이트 6개 확인. 그리드 12개 링크(게시물 11·릴스 1)는 기존 raw/known과 일치했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. HTML meta 팔로우 394는 충돌 참고값으로 보존. raw 2925→2926, known 1902→1903, CSV 미변경.
+
+- 2026-08-10T07:47:31+09:00 | 20260810-E1-LOGIN-QUEUE-SPAOFFICIAL2-RECHECK-620 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 Instagram 페이지 사용 불가 화면을 반환해 계정 지표·콘텐츠·릴스·recent12를 확인하지 못함. 수치와 콘텐츠를 추정하지 않고 보류 유지. raw 2926→2927, known 1903→1904, CSV 미변경.
+
+- 2026-08-10T07:49:51+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-621 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 김남주바이오·건강/뷰티·프리미엄 건강기능식품 bio·www.knjbio.com·하이라이트 10개 확인. 그리드 게시물 10개는 raw에 있었지만 known_items에는 없어 콘텐츠 미추가했고 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. HTML meta 1007/438은 충돌 참고값으로 보존. raw 2927→2928, known 1904→1905, CSV 미변경.
+
+- 2026-08-10T07:51:30+09:00 | 20260810-E0-OFFLINE-CORRECTION-KNJBIO-OFFICIAL-RECHECK-621 | E0 오프라인 exact known_items 보정 | knjbio.official: 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-621의 문자열 포함 플래그를 점검해 화면 게시물 10개가 raw에는 있으나 exact post/reel known 레코드는 0건임을 확인. 원본 raw·큐·CSV는 수정하지 않고 보류 사유를 보정. raw 2928→2929, known 1905→1906.
+
+- 2026-08-10T07:54:26+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-622 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5게시물·팔로워 510·팔로우 609, 참약사 레몬약국·건강/뷰티·AI 분석/맞춤형 영양제 bio·Naver Place 확인. 릴스 5개는 raw에 있었고 exact known 레코드는 4개, Dbw2TYETLYp는 미수록으로 콘텐츠 미추가. 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2929→2930, known 1906→1907, CSV 미변경.
+
+- 2026-08-10T07:57:08+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-623 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8게시물·팔로워 280·팔로우 0, InnerDew 이너듀·약사 누나×이너뷰티 대표 남동생·다이어트/피부 고민 영양제 정보 bio·Threads 확인. 8개 링크는 raw에 있었고 exact known 레코드는 릴스 5개, 정적 게시물 3개는 미수록으로 콘텐츠 미추가. 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2930→2931, known 1907→1908, CSV 미변경.
+
+- 2026-08-10T08:01:24+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-624 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10게시물·팔로워 188·팔로우 485, 내손안의약국·제품/서비스·약국 플랫폼/단골약사 건강지킴이 bio·drxsolution.co.kr 확인. 10개 링크는 raw에 있었고 exact known 레코드는 릴스 1개, 정적 게시물 9개는 미수록으로 콘텐츠 미추가. 직접 /reels/는 프로필 DOM만 표시해 recent12 미완료로 보류. raw 2931→2932, known 1908→1909, CSV 미변경.
+
+- 2026-08-10T08:08:18+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-625 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 12개 그리드 게시물 링크는 raw/known과 일치. 직접 /reels/ URL은 유지됐고 프로필 DOM과 릴스 6개 링크가 표시됐으며 조회수 5개만 노출. recent12 미완료로 보류 유지, CSV 미변경. 탭 정리 후 lease 반납은 소유권 불일치로 거절됨.
+
+- 2026-08-10T08:13:07+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-626 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 12개 링크(게시물 11·릴스 1)는 raw/known과 일치. 직접 /reels/에서 릴스 3개와 조회수 1181·1970·845 확인. recent12 미완료로 보류 유지, CSV 미변경.
+
+- 2026-08-10T08:15:58+09:00 | 20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-627 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 페이지 사용 불가 화면. 계정 지표·콘텐츠·릴스·recent12 미확인, 보류 유지, CSV 미변경.
+
+- 2026-08-10T08:19:47+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-628 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 정적 게시물 10개는 raw에 있으나 exact known 미수록. 직접 /reels/에서 릴스 11개와 조회수 11개 확인. recent12 미완료로 보류 유지, CSV 미변경.
+
+- 2026-08-10T08:23:25+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-629 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 릴스 5개·직접 /reels/ 릴스 6개(추가 DbkA0BZzf0G)와 조회수 6개 확인, 모두 raw/known과 일치. recent12 미완료로 보류 유지, CSV 미변경.
+
+- 2026-08-10T08:27:22+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-630 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8개 링크(릴스 5·정적 게시물 3)는 raw와 일치. 릴스 exact 5개, 정적 게시물 exact 0개. 직접 /reels/ 추가 링크·조회수 없음. recent12 미완료로 보류 유지, CSV 미변경.
+
+- 2026-08-10T08:30:25+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-631 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10개 링크(릴스 1·정적 게시물 9)는 raw와 일치. exact 릴스 1개·정적 게시물 0개, 직접 /reels/에서 Ce2MIsmvzVC 조회수 98 확인. recent12 미완료로 보류 유지, CSV 미변경.
+- 2026-08-10T08:32:36+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-632 | E1 로그인 read-only 재확인 | tony71004: 프로필 144게시물·팔로워 5002·팔로우 3480, 그리드 정적 게시물 12개는 기존 raw/known과 일치. 직접 /reels/ 6개 링크와 조회수 5개(5579·1535·1840·1540·1519), 1개 미노출 확인. recent12 미완료·CSV 미수정·lease 반납 소유권 불일치
+- 2026-08-10T08:42:26+09:00 | 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-633 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 43게시물·팔로워 1119·팔로우 376, 12개 링크(게시물 11·릴스 1)는 기존 raw/known과 일치. 직접 /reels/ 릴스 3개와 조회수 1181·1970·845 확인. HTML meta 팔로우 394 충돌, recent12 미완료·CSV 미수정·lease 정상 반납
+- 2026-08-10T08:45:59+09:00 | 20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-634 | E1 로그인 read-only 재확인 | spa_official2: 프로필과 직접 /reels/ 모두 페이지 불가 화면(“죄송합니다. 페이지를 사용할 수 없습니다. 클릭하신 링크가 잘못되었거나 페이지가 삭제되었습니다.”). 계정 지표·콘텐츠·릴스·recent12 미확인, 수치 추정 없음·CSV 미수정·lease 정상 반납
+- 2026-08-10T08:49:39+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-635 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245게시물·팔로워 1006·팔로우 418, 정적 링크 10개는 raw에 있으나 exact 행 없음. 직접 /reels/ 릴스 11개·조회수 1624·272·199·196·137·453·337·250·250·289·333은 기존 exact known. HTML meta 1007/438 충돌, recent12 미완료·CSV 미수정·lease 정상 반납
+- 2026-08-10T08:53:43+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-636 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 5 릴스·팔로워 510·팔로우 609, 직접 /reels/ 6개·조회수 112·132·126·145·124·153 확인. DbkA0BZzf0G는 프로필 미노출 직접 릴스. 모두 기존 exact known, HTML meta 509/632 충돌, recent12 미완료·CSV 미수정·lease 정상 반납
+- 2026-08-10T08:57:09+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEWOFFICIAL-RECHECK-637 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8개 링크(릴스 5·정적 3), 직접 /reels/ 릴스 5개·조회수 표시 221·3.3만·294·316·2.3만. 릴스 exact 5개·정적 exact 0개, HTML meta 화면 일치, recent12 미완료·CSV 미수정·lease 반납 소유권 불일치
+- 2026-08-10T09:04:13+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-638 | E1 로그인 read-only 재확인 | pharmacyinpalm_official: 프로필 10개 링크(릴스 1·정적 9), 직접 /reels/ 릴스 1개·조회수 98, exact known 릴스 1·정적 0, 화면 팔로우 485·HTML meta 501 충돌, recent12 미완료, 큐 48→49, 탭 종료·lease 반납 완료
+- 2026-08-10T09:08:15+09:00 | 20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-639 | E1 로그인 read-only 재확인 | tony71004: 프로필 정적 게시물 12개 raw/known 일치, 직접 /reels/ 릴스 6개·조회수 5개(5579·1535·1840·1540·1519), HTML meta 팔로우 3589·화면 3480 충돌, recent12 미완료, 큐 48→49, 탭 종료·lease 반납 완료
+- 2026-08-10T09:13:02+09:00 | 20260810-E1-LOGIN-QUEUE-JJING-YAKSA-RECHECK-640 | E1 로그인 read-only 재확인 | jjing_yaksa: 프로필 12개 링크(게시물 11·릴스 1) raw/known 일치, 직접 /reels/ 릴스 3개·조회수 1181·1970·845, HTML meta 팔로우 394·화면 376 충돌, recent12 미완료, 큐 49→50, 탭 종료·lease 반납 완료
+- 2026-08-10T09:15:29+09:00 | 20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-641 | E1 로그인 read-only 재확인 | spa_official2: 프로필·직접 /reels/ 모두 페이지 사용 불가, 계정 지표·콘텐츠·릴스·recent12 미확인, 수치 추정 없음, 큐 50→51, 탭 종료·lease 반납 완료
+- 2026-08-10T09:18:03+09:00 | 20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-642 | E1 로그인 read-only 재확인 | knjbio.official: 프로필 245/1006/418, 그리드 정적 링크 10개 raw 존재·exact 0, 직접 /reels/ 릴스 11개·조회수 1624·272·199·196·137·453·337·250·250·289·333, HTML meta 1007/438 충돌, recent12 미완료, 큐 49→50, 탭 종료·lease 반납 완료
+- 2026-08-10T09:21:39+09:00 | 20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-643 | E1 로그인 read-only 재확인 | lemonpharmacy38: 프로필 릴스 5개·직접 /reels/ 릴스 6개, 조회수 112·132·126·145·124·153, 모두 기존 exact known, recent12 미완료, 큐 49→50, 탭 종료·lease 반납 완료
+- 2026-08-10T09:25:27+09:00 | 20260810-E1-LOGIN-QUEUE-INNERDEW-OFFICIAL-RECHECK-644 | E1 로그인 read-only 재확인 | innerdew.official: 프로필 8개 링크(릴스 5·정적 3), 직접 /reels/ 릴스 5개·조회수 221·3.3만·294·316·2.3만, 기존 exact known과 일치, recent12 미완료, 큐 49→50, 탭 종료·lease 반납 완료
+- 2026-08-10T09:29:22+09:00 | 20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-645 | E1 로그인 read-only 2차 재확인 | pharmacyinpalm_official: 프로필 10개 링크, 직접 /reels/ 릴스 1개·조회수 98, 기존 기록과 일치, HTML meta 팔로우 501·화면 485 충돌, recent12 미완료, 큐 49→50, 탭 종료·lease 반납 완료
+- 2026-08-10T09:30:30+09:00 | 20260810-FULL-QUEUE-AUDIT-20260810-093030 | 전체 감사 통과 | 큐 347개(완료 340·보류 7), raw 2,953줄, known_items 1,930줄, 캐노니컬 CSV 4개 행 수·BOM 검증 완료; 다음 작업은 보류 계정 상태 변화 또는 신규 큐 감지 시 로그인 read-only 재확인
+
+## 2026-08-10T00:53:08.098Z | 20260810-E1-LOGIN-NEW-CANDIDATES-RECHECK-147-COMMITTED
+- 신규 후보 4개(woojjujju_yaksa, mina_yaksa, dubu_yaksa, drjoshaxe)를 기존 discovery report에서 dedupe 후 큐 348–351에 반영하고 E1 로그인 read-only로 프로필·후보 게시물을 직접 재확인했다.
+- accounts.csv 4행과 contents.csv 4행을 append했다. 등급은 woojjujju_yaksa·mina_yaksa·dubu_yaksa F, drjoshaxe A로 기록했으며 조회수·최근12 중앙값·게시 연도 미노출을 그대로 남겼다.
+- QUEUE.csv는 351행 기준 완료 344·보류 7이다. raw observations·known_items·state·개별 report를 갱신했고 썸네일·계정 행동·DM·팔로우는 수행하지 않았다.
+
+## 2026-08-10T00:54:29.541Z | 20260810-E1-LOGIN-NEW-CANDIDATES-RECHECK-147-COMMITTED-VERIFIER
+- 독립 검증 통과: raw JSONL 2,957행 파싱, accounts.csv 395행·contents.csv 370행·QUEUE.csv 351행, 큐 완료 344·보류 7, 신규 4개 핸들·shortcode·known ledger·보고서·백업·금지 경로 상태를 확인했다.
+## 2026-08-10 10:15 추가 인수인계
+
+- 새 검색어 `약사 편두통`의 `malti_yaksa / DV4vYF3E27S`는 기존 계정 원장과 큐에 이미 있어 계정 중복을 피했다.
+- 게시 시점 21주·조회수 미노출로 raw-only 미달 보류. 다음 작업은 같은 검색 결과의 미확인 shortcode exact dedupe 후 직접 확인이다.
+## 2026-08-10 10:23 추가 인수인계
+- 522 배치 deferred 결과 중 `DUeXvL0k_8Y`를 exact dedupe 후 직접 확인했다. 계정은 기존 canonical `toad_pharm`이며 콘텐츠는 26주 경과라 raw-only F 보류 처리했다.
+- 나머지 신규 가능 shortcode는 다음 짧은 read-only 배치에서 확인한다. 기존 canonical·큐와 금지 경로는 변경하지 않았다.
+## 2026-08-10 10:32 추가 인수인계
+- 522 배치의 신규 shortcode `Dbs3c0rPLhB`를 직접 확인해 `kimjejo_pharma` 계정과 콘텐츠를 canonical에 추가하고 큐 353번을 완료 처리했다.
+- 현재 canonical은 accounts 397행·contents 372행, 큐는 353행(완료 346·보류 7·대기 0)이다. 남은 522 신규 가능 shortcode는 다음 배치에서 계속 확인한다.
+## 2026-08-10 10:37 추가 인수인계
+- 522 배치의 신규 shortcode `Dau6zjSKRCV`를 직접 확인해 `yaksa.park` 계정과 콘텐츠를 canonical에 추가하고 큐 354번을 완료 처리했다.
+- 현재 canonical은 accounts 398행·contents 373행, 큐는 354행(완료 347·보류 7·대기 0)이다. 남은 522 신규 가능 shortcode는 다음 배치에서 계속 확인한다.
+## 2026-08-10 10:43 추가 인수인계
+- 522 배치의 신규 shortcode `DTma_cLkdeR`를 직접 확인해 `onbomclinic` 계정을 canonical에 추가하고 큐 355번을 완료 처리했다. 콘텐츠는 최근 90일 밖이라 CSV에는 넣지 않았다.
+- 현재 canonical은 accounts 399행·contents 373행, 큐는 355행(완료 348·보류 7·대기 0)이다. 남은 522 신규 가능 shortcode는 다음 배치에서 계속 확인한다.
+## 2026-08-10 10:50 추가 인수인계
+- 522 배치의 `DWDRxnaEVIk`를 기존 계정 `youjin_yaksa`에서 직접 확인했다. 20주 경과·조회수 미노출로 콘텐츠 CSV에는 추가하지 않고 raw-only F 보류 처리했다.
+- 현재 canonical은 accounts 399행·contents 373행, 큐는 355행(완료 348·보류 7·대기 0)이다. 남은 신규 가능 shortcode는 다음 배치에서 계속 확인한다.
+## 2026-08-10 10:54 추가 인수인계
+- 522 배치의 `DX81JYoyVd0`를 기존 계정 `little_yaksa`에서 직접 확인했다. 13주 경과·조회수 미노출로 콘텐츠 CSV에는 추가하지 않고 raw-only F 보류 처리했다.
+- 현재 canonical은 accounts 399행·contents 373행, 큐는 355행(완료 348·보류 7·대기 0)이다. 기존 계정 지표 충돌은 raw에 보존하고 다음 작업을 이어간다.
+## 2026-08-10 10:58 추가 인수인계
+- 522 배치의 신규 shortcode `DZ9sHlRht_O`를 직접 확인해 `yak_minam` 계정과 콘텐츠를 canonical에 추가하고 큐 356번을 완료 처리했다.
+- 현재 canonical은 accounts 400행·contents 374행, 큐는 356행(완료 349·보류 7·대기 0)이다. 남은 신규 가능 shortcode는 다음 배치에서 계속 확인한다.
+## 2026-08-10 11:07 추가 인수인계
+- 522 배치의 신규 shortcode `C151KxBRn2T`를 직접 확인해 `buddy_yaksa` 계정과 QUEUE 357번을 canonical에 추가했다. 게시물은 2024-01-10·134주·좋아요 76·댓글 21·리포스트·조회수 미노출로 콘텐츠 CSV에는 추가하지 않았다.
+- 현재 canonical은 accounts 401행·contents 374행, 큐는 357행(완료 350·보류 7·대기 0)이다. 남은 신규 가능 shortcode는 `DLEr9r-g9WD`, `CxxuEu5J1O1`, `DY9ZrtBzAy9`이다.
+## 2026-08-10 11:15 추가 인수인계
+- 522 배치의 신규 shortcode `DLEr9r-g9WD`를 직접 확인해 `yaksa_tips` 계정과 QUEUE 358번을 canonical에 추가했다. 게시물은 2025-06-19·59주·좋아요 약 3.8천·댓글 104·리포스트 291·조회수 미노출로 콘텐츠 CSV에는 추가하지 않았다.
+- 프로필 공동구매 일정·외부 링크 때문에 유료도달 의심은 있음으로 기록했지만 게시물 광고 라벨은 확인하지 못했다. 현재 canonical은 accounts 402행·contents 374행, 큐는 358행(완료 351·보류 7·대기 0)이다.
+- 남은 신규 가능 shortcode는 `CxxuEu5J1O1`, `DY9ZrtBzAy9`이다.
+## 2026-08-10 11:21 추가 인수인계
+- 522 배치의 신규 shortcode `CxxuEu5J1O1`를 직접 확인해 `yakstagram_` 계정과 QUEUE 359번을 canonical에 추가했다. 게시물은 2023-09-29·149주·좋아요 875·댓글 60·리포스트 2·조회수 미노출이다.
+- 캡션 말미의 유산균 최저가 공동구매 일정과 프로필 할인 링크 때문에 광고·공구·유료도달 의심 있음으로 기록했다. 최근 90일 밖이라 콘텐츠 CSV에는 추가하지 않았다.
+- 현재 canonical은 accounts 403행·contents 374행, 큐는 359행(완료 352·보류 7·대기 0)이다. 남은 신규 가능 shortcode는 `DY9ZrtBzAy9`이다.
+## 2026-08-10 11:23 추가 인수인계
+- 522 배치의 마지막 신규 shortcode `DY9ZrtBzAy9`를 직접 확인해 기존 `salt.yaksa` 계정은 덮어쓰지 않고 QUEUE 360번을 추가했다. 게시물은 10주·6월 5일·좋아요 약 3.5천·댓글 약 9.7천·리포스트 85·조회수 미노출이다.
+- `#파트너스`·댓글 영양제 CTA·프로필 상품 링크가 있어 광고·제휴 raw-only로 보류했으며 콘텐츠 CSV에는 추가하지 않았다. 현재 canonical은 accounts 403행·contents 374행, 큐는 360행(완료 353·보류 7·대기 0)이다. 직접 확인 게시물 240개와 기존 계정 행 237개의 차이는 덮어쓰지 않았다.
+- 522 배치의 남은 신규 shortcode는 없다. 다음 작업은 exact ledger 확인 후 rate_recollect eligible 시점과 기존 보류 큐 변화만 점검한다.
+## 2026-08-10 11:37 오프라인 감사
+- canonical 원장과 큐를 다시 읽어 accounts 403·contents 374·formats 132·topics 85·QUEUE 360행(완료 353·보류 7)을 확인했다.
+- 콘텐츠 ID·shortcode 중복은 0건, contents의 `등급`·`등급근거` 공란은 0건이다. 계정 핸들 중복 11건과 계정의 최근30일 게시수·평소좋아요율 공란을 다음 수정 단위로 분리했다.
+- 이번 감사는 읽기 전용이었고 CSV·raw·QUEUE는 수정하지 않았다. 상세 결과는 `report/offline_canonical_audit_543.md`에 남겼다.
+## 2026-08-10 11:41 오프라인 중복 핸들 대조
+- accounts.csv 중복 핸들 11개 그룹을 대조했다. 최근 Instagram 확인 행과 기존 공개 웹 후보 행의 팔로워·표시명 충돌을 기록했지만 §14의 행 삭제 금지 규칙에 따라 원장은 수정하지 않았다.
+- 상세 결과는 `report/offline_duplicate_handles_544.md`에 남겼다. 다음은 최근30일게시수·평소좋아요율 근거 대조다.
+
+## 2026-08-10 11:47 오프라인 계정 지표 근거 대조
+- `최근30일게시수` 공란 계정 254행과 raw 프로필 지표를 대조했으나 안전한 입력 후보는 0건이었다.
+- `평소좋아요율` 공란 계정 361행과 콘텐츠 계정평소좋아요율을 대조했으나 안전한 입력 후보는 0건이었다.
+- 값 추정 없이 CSV·raw·QUEUE를 수정하지 않았다. 상세 결과는 `report/offline_recent30_like_evidence_545.md`에 남겼다.
+## 2026-08-10 11:59 계정 중복 정정
+- `yuni__yaksa` 기존 canonical 행을 신규 검색 전 exact dedupe에서 놓쳐 계정 행 1개가 추가됐다. 현재 같은 핸들 2행이며, §14 행 삭제 금지 규칙에 따라 두 행을 보존하고 중복 이력으로 표시했다.
+- 상세 정정은 `report/offline_yuni_duplicate_correction_547.md`와 raw correction observation에 남겼다.
+## 2026-08-10 12:07 good.yaksa 후보 재확인
+- `DWlhT2gE3L0`를 확인했다. 기존 `good.yaksa` 계정은 canonical에 있어 계정 행을 추가하지 않았고, 18주 전 성분 정리 릴스는 raw-only F 보류했다.
+- QUEUE 362번을 완료 처리했다. 브라우저 탭은 닫았으나 lease 반납 소유권 불일치는 raw·state·보고서에 남겼다.
+## 2026-08-10 12:12 very_good_tip 후보 보류
+- `CyQLMvkJpQ5`는 일반 꿀팁 저장소의 147주 전 유산균 추천 슬라이드여서 의료 전문 계정·canonical 콘텐츠로 추가하지 않았다.
+- QUEUE 363번을 보류 처리하고 raw-only 기록을 남겼다. lease 반납 소유권 불일치도 기록했다.
+## 2026-08-10 12:16 iam_yaksa 후보 재확인
+- `DWls1p5kZjY`는 기존 `iam_yaksa` 계정의 18주 전 유산균 선택 기준 릴스여서 raw-only F 보류했다.
+- QUEUE 364번을 완료 처리하고 계정·콘텐츠 CSV는 수정하지 않았다. lease는 정상 반납했다.
+## 2026-08-10 12:20 little_yaksa 후보 재확인
+- `DWSmVytyJX2`는 기존 `little_yaksa` 계정의 19주 전 영양제 순위 분석 릴스여서 raw-only F 보류했다. 본문 광고·협찬 없음 명시는 광고아님으로 보존했다.
+- QUEUE 365번을 완료 처리하고 lease를 정상 반납했다.
+## 2026-08-10 12:23 yakstory119 후보 재확인
+- `CxXJbrFRaUQ`는 기존 `yakstory119` 계정의 150주 전 유산균 추천 릴스여서 raw-only F 보류했다.
+- QUEUE 366번을 완료 처리하고 계정·콘텐츠 CSV는 수정하지 않았다. lease를 정상 반납했다.
+## 2026-08-10 12:30 ssofit_yaksa 후보 재확인
+- `DYevRZwyJJq`는 기존 `ssofit_yaksa` 계정의 최근 90일 유산균 라벨 6항목 체크리스트 게시물이다. F급 콘텐츠 1행과 신규 포맷 1행을 추가했다.
+- 프로필 공동구매·판매링크 운영은 계정 상업 맥락으로 보존했으며 게시물 광고판정·유료도달은 불명이다. QUEUE 367번 완료, 탭 종료·lease 반납 완료.
+## 2026-08-10 12:43 dr.microbiome 후보 재확인
+- `DUFUIzNEc3Z`는 신규 공식 마이크로바이옴 R&D 센터 계정의 27주 전 유산균 균주 홍보 게시물이다. 계정 프로필만 canonical에 추가하고 콘텐츠는 최근 90일 밖이라 raw-only F로 보류했다.
+- `accounts.csv` 1행과 QUEUE 368번 반영, 좋아요 비정량·댓글 8·리포스트 1·조회수 미노출, 탭 종료·lease 반납 완료.
+## 2026-08-10 12:49 jasin_yaksa 후보 재확인
+- `C5iJuRsv5_i`는 기존 약사 계정의 121주 전 유산균 선택 기준 릴스여서 콘텐츠 원장에는 추가하지 않고 raw-only F로 보류했다.
+- 좋아요 2.6천·댓글 1.5만·리포스트 2·조회수 미노출, DM·제품 문의 CTA 확인. QUEUE 369번 완료, 계정 행 유지, 탭 종료·lease 반납 완료.
+## 2026-08-10 12:53 gureumpharm 후보 재확인
+- `C6I-P0WPRtA`는 기존 약사 계정의 119주 전 포스트바이오틱스 설명 릴스여서 콘텐츠 원장에는 추가하지 않고 raw-only F로 보류했다.
+- 좋아요 458·댓글 189·리포스트·조회수 미노출, 기능성·농축도·섭취법 설명 확인. QUEUE 370번 완료, 계정 행 유지, 탭 종료·lease 반납 완료.
+## 2026-08-10 12:57–13:21 후속 후보 처리
+- QUEUE 371–375·377번은 기존 계정의 최근 90일 밖 게시물 6건으로 raw-only F 보류했다. 계정 행은 유지했다.
+- QUEUE 376번 `Db0PBj2vgVo`는 `hisutamine`의 17시간 전 다이소 영양제 사요·안 사요 비교 릴스로, `FMT-BUY-DONTBUY-001`에 연결해 `contents.csv`에 F·게이트 통과 1행을 추가했다.
+- 누적 상태: raw 2,993건, accounts 405건, contents 376건, formats 133건, topics 85건, QUEUE 377건(완료 369·보류 8·대기 0). 콘텐츠 ID·shortcode 중복은 0건이다.
+- 13:31 `약사 비타민` 재검색용 shared lease는 다른 작업이 점유해 브라우저 호출 없이 재시도 대기로 기록했다. 현재 next action은 lease 확보 후 exact dedupe와 로그인 read-only 검색 재개다.
+## 2026-08-10 13:42–13:48 브라우저 availability 재시도
+- `yaksa__bubu` 재방문을 위해 shared lease를 재확인했다. 세 번은 다른 작업이 점유했고, 한 번은 lease 확보 후 실제 브라우저 호출에서 `Browser is not available`이 반환됐다.
+- 탭 생성 전 실패해 lease를 즉시 반납했고 canonical 원장과 QUEUE는 변경하지 않았다. 현재 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-570-COMMITTED`이며, 브라우저가 정상화되면 같은 계정부터 재개한다.
+## 2026-08-10 13:51 브라우저 재시도
+- lease 확보 후에도 `Browser is not available` 오류가 반복됐다. 탭은 생성되지 않았고 lease를 반납했으며 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-571-COMMITTED`다.
+## 2026-08-10 13:53 브라우저 재시도
+- lease 확보 후 동일한 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-572-COMMITTED`다.
+## 2026-08-10 13:55 lease 재시도
+- `comm-radar 7-day collection`이 shared lease를 점유해 브라우저 호출을 하지 못했다. 원장·QUEUE는 변경하지 않았고 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-573-COMMITTED`다.
+## 2026-08-10 13:57 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 재발했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-574-COMMITTED`다.
+## 2026-08-10 13:58 브라우저 재시도
+- lease 확보 후 동일한 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-575-COMMITTED`다.
+## 2026-08-10 14:00 lease 재시도
+- `comm-radar business support check`가 shared lease를 점유해 브라우저 호출을 하지 못했다. 원장·QUEUE는 변경하지 않았고 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-576-COMMITTED`다.
+## 2026-08-10 14:02 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-577-COMMITTED`다.
+## 2026-08-10 14:04 브라우저 재시도
+- lease 확보 후 동일한 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-578-COMMITTED`다.
+## 2026-08-10 14:05 브라우저 재시도
+- lease 확보 후 동일한 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-579-COMMITTED`다.
+## 2026-08-10 14:07 브라우저 재시도
+- 연결된 인앱 브라우저 도구는 Node 기반 하나이며, lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-580-COMMITTED`다.
+## 2026-08-10 14:08 오프라인 무결성 감사
+- raw·CSV·QUEUE·known ledger를 대조했다. raw 2,993건 유효, accounts 405·contents 376·formats 133·topics 85, QUEUE 377건(완료 369·보류 8·대기 0), canonical content ID 중복 0건이다.
+- `known_shortcodes.txt`의 기존 `DKzjqPkPmpK` 중복 1건은 append-only 규칙상 보존했고, 금지 경로는 최신 관측 수정 시각이 2026-08-06 18:21:50으로 이번 작업 이후 변경되지 않았다. checkpoint는 `20260810-E0-OFFLINE-INTEGRITY-AUDIT-581-COMMITTED`다.
+## 2026-08-10 14:10 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-582-COMMITTED`다.
+## 2026-08-10 14:12 lease 재시도
+- `comm-radar 7일 정보 수집 루프`가 shared lease를 점유해 브라우저 호출을 하지 못했다. 원장·QUEUE는 변경하지 않았고 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-583-COMMITTED`다.
+## 2026-08-10 14:14 lease 재시도
+- `comm-radar 7일 정보 수집 루프`가 shared lease를 계속 점유해 브라우저 호출을 하지 못했다. 원장·QUEUE는 변경하지 않았고 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-584-COMMITTED`다.
+## 2026-08-10 14:16 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-585-COMMITTED`다.
+## 2026-08-10 14:18 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-586-COMMITTED`다.
+## 2026-08-10 14:19 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-587-COMMITTED`다.
+## 2026-08-10 14:21 lease 재시도
+- `comm-radar 7일 정보 수집 루프`가 shared lease를 점유해 브라우저 호출을 하지 못했다. 원장·QUEUE는 변경하지 않았고 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-588-COMMITTED`다.
+## 2026-08-10 14:22 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-589-COMMITTED`다.
+## 2026-08-10 14:24 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-590-COMMITTED`다.
+## 2026-08-10 14:28 브라우저 재시도
+- lease 확보 후 `Browser is not available` 오류가 발생했다. 탭 생성 전 lease를 반납했고 원장·QUEUE는 변경하지 않았다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-592-COMMITTED`다.
+## 2026-08-10 14:31 브라우저 재시도·보류 근거 감사
+- 기존 탭 조회도 `Browser is not available` 오류로 실패했다. 보류 8건을 raw와 대조했지만 신규 콘텐츠나 안전한 상태 변경은 없었다. 최신 checkpoint는 `20260810-E1-OFFLINE-BROWSER-UNAVAILABLE-593-COMMITTED`다.
+## 2026-08-10 14:50 spa_official2 재확인
+- 로그인 세션에서 프로필과 직접 `/reels/`의 페이지 사용 불가 화면을 다시 확인했다. 해당 계정의 지표·콘텐츠·릴스·recent12는 미확인으로 유지한다.
+- QUEUE 192번은 보류 상태를 유지하고 시도 51→52로 갱신했다. raw·data CSV·known 목록과 금지된 사이트용 경로는 변경하지 않았다. lease 반납은 ownership mismatch였고 중단 조건은 아니다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-646-COMMITTED`. 다음 작업은 다른 보류 항목의 상태 변화 확인 또는 오프라인 무결성 감사다.
+## 2026-08-10 14:56 knjbio.official 재확인
+- 프로필 245게시물·팔로워 1006·팔로우 418과 직접 `/reels/` 릴스 11개·조회수를 확인했다. 릴스는 기존 known과 일치하고 recent12는 미확인으로 유지한다.
+- QUEUE 221번은 보류 상태를 유지하고 시도 50→51로 갱신했다. canonical CSV·raw·known 목록과 금지된 사이트용 경로는 변경하지 않았고 탭 종료·lease 반납을 완료했다.
+- 중단 조건인 Instagram 계정 제한·차단·로그아웃·사용자 명시적 중단은 확인되지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-647-COMMITTED`. 다음 작업은 다른 보류 항목 상태 변화 확인 또는 오프라인 무결성 감사다.
+## 2026-08-10 15:04 lemonpharmacy38 재확인
+- 프로필 5게시물·팔로워 511·팔로우 610과 직접 `/reels/` 릴스 6개·조회수 113·132·126·146·124·154를 확인했다. 기존 known 릴스 6개와 일치하고 recent12는 미확인으로 유지한다.
+- QUEUE 250번은 보류 상태를 유지하고 시도 50→51로 갱신했다. canonical CSV·raw·known 목록과 금지된 사이트용 경로는 변경하지 않았고 탭 종료·lease 반납을 완료했다.
+- 중단 조건인 Instagram 계정 제한·차단·로그아웃·사용자 명시적 중단은 확인되지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-648-COMMITTED`. 다음 작업은 다른 보류 항목 상태 변화 확인 또는 오프라인 무결성 감사다.
+## 2026-08-10 15:07 innerdew.official lease 대기·오프라인 대조
+- shared lease를 30초 기다렸으나 `clinic-radar 조사 루프`가 점유해 브라우저 호출 없이 오프라인 대조로 전환했다. 기존 릴스 5개와 정적 게시물 3개 링크는 known/raw에 있고 recent12는 미확인이다.
+- raw·data CSV·QUEUE·known 목록은 변경하지 않았다. 브라우저 점유는 blocked나 중단 사유가 아니며, 다음 작업은 lease 확보 후 로그인 read-only 재확인이다.
+- 최신 checkpoint: `20260810-E0-OFFLINE-LEASE-BUSY-INNERDEW-649-COMMITTED`.
+## 2026-08-10 15:09 pharmacyinpalm_official 재확인
+- 프로필 10게시물·팔로워 188·팔로우 485와 직접 `/reels/` 릴스 1개·조회수 98을 확인했다. 기존 known 릴스 1개와 일치하고 recent12는 미확인으로 유지한다.
+- QUEUE 266번은 보류 상태를 유지하고 시도 50→51로 갱신했다. canonical CSV·raw·known 목록과 금지된 사이트용 경로는 변경하지 않았고 탭 종료·lease 반납을 완료했다.
+- 중단 조건인 Instagram 계정 제한·차단·로그아웃·사용자 명시적 중단은 확인되지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-650-COMMITTED`. 다음 작업은 다른 보류 항목 상태 변화 확인 또는 오프라인 무결성 감사다.
+## 2026-08-10 15:13 innerdew.official 재확인
+- 프로필 8게시물·팔로워 280·팔로우 0과 직접 `/reels/` 릴스 5개·조회수 221·3.3만·294·316·2.3만을 확인했다. 기존 known 릴스 5개와 일치하고 recent12는 미확인으로 유지한다.
+- 바이오의 협찬·광고 관련 상업 맥락을 확인했지만 새 콘텐츠 판정은 하지 않았다. QUEUE 261번은 보류 상태를 유지하고 시도 50→51로 갱신했다. canonical CSV·raw·known 목록과 금지된 사이트용 경로는 변경하지 않았고 탭 종료·lease 반납을 완료했다.
+- 중단 조건인 Instagram 계정 제한·차단·로그아웃·사용자 명시적 중단은 확인되지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-INNERDEW-OFFICIAL-RECHECK-651-COMMITTED`. 다음 작업은 남은 보류 항목 상태 변화 확인 또는 오프라인 무결성 감사다.
+## 2026-08-10 15:18 tony71004 lease 대기·오프라인 대조
+- shared lease가 `comm-radar browse ppomppu insurance batch` 작업에 점유되어 브라우저 호출 없이 오프라인 대조로 전환했다. 기존 큐 근거와 known/raw에는 프로필 정적 게시물 12개 링크와 직접 `/reels/`에서 확인된 릴스 6개가 있으며, recent12는 미확인이다.
+- QUEUE 343번은 보류·시도 49를 유지했다. raw·data CSV·known 목록과 금지된 사이트용 경로는 변경하지 않았다. 브라우저 점유는 blocked나 중단 사유가 아니다.
+- 최신 checkpoint: `20260810-E0-OFFLINE-LEASE-BUSY-TONY71004-652-COMMITTED`. 다음 작업은 lease 확보 후 로그인 read-only 재확인이다.
+## 2026-08-10 15:25 jjing_yaksa 재확인
+- 프로필 43게시물·팔로워 1119·팔로우 376과 약사 크리에이터·디지털 크리에이터 bio를 확인했다. 기존 프로필 링크 12개와 직접 `/reels/` 릴스 3개(조회수 1181·1970·845)는 raw/known과 exact 일치했다.
+- HTML meta 팔로우 394와 화면 376이 충돌했고 recent12는 미확인이다. 유료 도달 의심과 포맷 소진도는 추정하지 않았다. QUEUE 344번은 보류·시도 50→51로 갱신했다.
+- raw 관측 1건과 known account ledger 1건을 append했고 새 canonical 콘텐츠 행·이미지는 추가하지 않았다. 누적 raw 2994건·known 1977건·QUEUE 377행(완료 369·보류 8)이다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-653-COMMITTED`. 다음 작업은 남은 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 15:30 very_good_tip 재확인
+- 일반 꿀팁 저장소 프로필에서 게시물 1.3만·팔로워 36.1만·팔로우 0·홍보/제휴 카카오톡 링크를 확인했다. 직접 `/reels/` 12개와 조회수를 기록했고, `Db1_Gn5gPBd`에는 `(광고)`·판매 기간·판매가가 명시됐다.
+- 비의료 일반 꿀팁·여행·엑셀·청년혜택 중심이라 계정·콘텐츠 등급은 `제외`, canonical CSV는 추가하지 않았다. raw 관측 1건과 known ledger 13건을 append했고 유료 도달은 계정 전체로 확대 추정하지 않았다.
+- QUEUE 363번은 보류·시도 1→2로 갱신했다. 누적 raw 2995건·known 1990건·QUEUE 377행(완료 369·보류 8)이다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-VERY-GOOD-TIP-RECHECK-654-COMMITTED`. 다음 작업은 남은 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 15:34 spa_official2 재확인
+- 프로필과 직접 `/reels/` 모두 페이지 사용 불가 화면을 반환했다. 계정 지표·콘텐츠·릴스·recent12·등급·유료 도달·포맷 소진도는 미확인으로 유지한다.
+- QUEUE 192번은 보류·시도 52→53으로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 canonical CSV와 금지 경로는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-655-COMMITTED`. 다음 작업은 남은 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 15:37 knjbio.official 재확인
+- 프로필 245게시물·팔로워 1006·팔로우 418과 건강/뷰티·김남주바이오 상품 링크를 확인했다. 기존 accounts.csv 분류와 B 등급은 유지한다.
+- 직접 `/reels/` 11개와 기존 조회수를 확인했으며 모두 known과 일치했다. 정적 링크 10개는 raw에 있으나 exact 콘텐츠 행이 없어 canonical 콘텐츠 CSV는 추가하지 않았다.
+- HTML meta 1007/438과 화면 1006/418이 충돌했고 recent12·유료 도달·포맷 소진도는 미확인이다. QUEUE 221번은 보류·시도 51→52로 갱신했다.
+- raw 관측 1건과 known account ledger 1건을 append했다. 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-656-COMMITTED`.
+## 2026-08-10 15:41 lemonpharmacy38 lease 대기·오프라인 대조
+- shared lease가 `comm-radar 7일 정보 수집 루프`에 점유되어 브라우저 호출 없이 오프라인 대조로 전환했다. 기존 direct `/reels/` 릴스 6개와 recent12 미확인 상태를 유지한다.
+- QUEUE 250번은 보류·시도 51을 유지했다. raw·known·data CSV·금지 경로는 변경하지 않았고 브라우저 점유는 blocked나 중단 사유가 아니다.
+- 최신 checkpoint: `20260810-E0-OFFLINE-LEASE-BUSY-LEMONPHARMACY38-657-COMMITTED`. 다음 작업은 lease 확보 후 로그인 read-only 재확인이다.
+## 2026-08-10 15:45 innerdew.official lease 대기·오프라인 대조
+- shared lease가 `comm-radar 7일 정보 수집 루프`에 점유되어 브라우저 호출 없이 오프라인 대조로 전환했다. 기존 릴스 5개·정적 링크 3개와 recent12 미확인 상태를 유지한다.
+- QUEUE 261번은 보류·시도 51을 유지했다. raw·known·data CSV·금지 경로는 변경하지 않았고 브라우저 점유는 blocked나 중단 사유가 아니다.
+- 최신 checkpoint: `20260810-E0-OFFLINE-LEASE-BUSY-INNERDEW-OFFICIAL-658-COMMITTED`. 다음 작업은 lease 확보 후 로그인 read-only 재확인이다.
+## 2026-08-10 15:49 innerdew.official 재확인
+- 프로필 8게시물·팔로워 280·팔로우 0과 협찬·광고 언급 bio, Threads를 확인했다. 기존 raw 링크 8개와 기존 known 릴스 5개(조회수 221·3.3만·294·316·2.3만)는 일치했다.
+- 정적 게시물 3개는 raw-only 상태를 유지했고 recent12·유료 도달·포맷 소진도는 미확인이다. 기존 accounts.csv B 등급과 분류를 유지하고 canonical 콘텐츠 행은 추가하지 않았다.
+- QUEUE 261번은 보류·시도 51→52로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-INNERDEW-OFFICIAL-RECHECK-659-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 15:52 pharmacyinpalm_official 재확인
+- 프로필 10게시물·팔로워 188·팔로우 485와 약국 플랫폼·건강지킴이 bio, `drxsolution.co.kr` 링크를 확인했다. 기존 분류와 B 등급은 유지한다.
+- 기존 raw 링크 10개와 기존 known 릴스 1개(조회수 98)는 일치했다. 정적 게시물 9개는 raw-only, recent12·유료 도달·포맷 소진도는 미확인이다.
+- QUEUE 266번은 보류·시도 51→52로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-660-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 15:55 tony71004 재확인
+- 프로필 144게시물·팔로워 5002·팔로우 3480과 `약사툰` bio, Threads, 상담차트 하이라이트를 확인했다. 기존 계정 분류 `약국·의료현장`과 등급 공란은 유지한다.
+- 기존 raw·known 프로필 링크 12개와 직접 `/reels/` 릴스 6개를 재확인했다. 조회수 5개는 5579·1535·1840·1540·1519로 노출됐고 `BmSKSVmhuH4` 조회수는 미노출이다. HTML meta 팔로우 3589와 화면 수치 3480이 충돌하고 recent12·유료 도달·포맷 소진도는 미확인이라 canonical 콘텐츠 행은 추가하지 않았다.
+- QUEUE 343번은 보류·시도 49→50으로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-661-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:04 spa_official2 재확인
+- 프로필과 직접 `/reels/` 모두 페이지 사용 불가 화면을 반환했다. 계정 지표·콘텐츠·릴스·recent12·등급·유료 도달·포맷 소진도는 미확인으로 유지하고 추정하지 않았다.
+- QUEUE 192번은 보류·시도 53→54로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 canonical CSV와 금지 경로는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-662-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:08 knjbio.official 재확인
+- 프로필 245게시물·팔로워 1006·팔로우 418, 건강/뷰티·김남주바이오·www.knjbio.com 링크를 확인했다. 기존 계정 분류와 B 등급을 유지한다.
+- 계정 자체 정적 링크 10개·태그 외부 게시물 2개와 직접 `/reels/` 릴스 11개·조회수 1624·272·199·196·137·453·337·250·250·289·333은 기존 raw/known과 일치했다. HTML meta 1007/438과 화면 1006/418이 충돌했고 recent12·유료 도달·포맷 소진도는 미확인이라 canonical 콘텐츠 행을 추가하지 않았다.
+- QUEUE 221번은 보류·시도 52→53으로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-663-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 knjbio.official 큐 설명 정정
+- QUEUE 221번의 조회수 목록 중복 표기를 raw·checkpoint 663 근거와 맞게 정정했다. 시도 횟수·상태·처리 시각·원장 CSV는 변경하지 않았다.
+## 2026-08-10 16:16 lemonpharmacy38 재확인·신규 릴스 추가
+- 프로필 6게시물·팔로워 511·팔로우 610과 맞춤형 영양제·Naver Place·Threads를 확인했다. 직접 `/reels/` 7개 중 `Db2cRtyTwFp`가 기존 raw/known에 없는 신규 릴스로 노출됐다.
+- `Db2cRtyTwFp`의 제목·해시태그·3분 전·조회수 1·댓글 없음만 확인해 `contents.csv`에 F/미달 행을 추가했다. 계정 중앙조회수·평소 좋아요율·본문 구조·광고 여부·유료 도달은 추정하지 않았다.
+- QUEUE 250번은 보류·시도 51→52로 갱신했다. raw 1건·known shortcode 1건·known ledger 2건을 append했고 금지 경로는 변경하지 않았다. lease 반납 ownership mismatch는 중단 조건이 아니다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-LEMONPHARMACY38-RECHECK-664-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:25 innerdew.official 재확인
+- 프로필 8게시물·팔로워 280·팔로우 0과 협찬·광고 언급 bio, Threads를 확인했다. 기존 raw 링크 8개와 직접 `/reels/` 릴스 5개·조회수 221·3.3만·294·316·2.3만은 일치했다.
+- 정적 게시물 3개는 raw-only 상태를 유지했고 recent12·유료 도달·포맷 소진도는 미확인이다. 기존 B 등급·분류를 유지하고 canonical 콘텐츠 행은 추가하지 않았다.
+- QUEUE 261번은 보류·시도 52→53으로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-INNERDEW-OFFICIAL-RECHECK-665-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:30 pharmacyinpalm_official 재확인
+- 프로필 10게시물·팔로워 188·팔로우 485, 제품/서비스·약국 플랫폼·건강지킴이 bio와 drxsolution.co.kr 링크를 확인했다. 기존 raw 링크 10개와 직접 /reels/ 릴스 1개·조회수 98은 일치했다.
+- 정적 게시물 9개는 raw-only 상태를 유지했고 recent12·유료 도달·포맷 소진도는 미확인이다. 기존 B 등급·분류를 유지하고 canonical 콘텐츠 행은 추가하지 않았다.
+- QUEUE 266번은 보류·시도 52→53으로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-PHARMACYINPALM-OFFICIAL-RECHECK-666-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:45 tony71004 재확인
+- 프로필 144게시물·팔로워 5002·팔로우 3480, 약사툰 bio·Threads·상담차트 하이라이트를 확인했다. 기존 정적 프로필 링크 12개와 직접 /reels/ 릴스 6개는 raw/known과 일치했다.
+- 조회수 5579·1535·1840·1540·1519는 노출됐고 BmSKSVmhuH4는 미노출이었다. 기존 약국·의료현장 분류와 등급 공란을 유지하고 recent12·유료 도달·포맷 소진도는 미확인으로 두었다.
+- QUEUE 343번은 보류·시도 50→51로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: `20260810-E1-LOGIN-QUEUE-TONY71004-RECHECK-667-COMMITTED`. 다음 작업은 다른 보류 계정 상태 변화 확인 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 16:57 jjing_yaksa 재확인
+- 프로필 43게시물·팔로워 1119·팔로우 376, 약사 크리에이터 찡순·디지털 크리에이터 bio와 하이라이트 6개를 확인했다. 기존 프로필 링크 12개와 직접 /reels/ 릴스 3개·조회수 1181·1970·845는 raw/known과 일치했다.
+- 기존 약국·의료현장·생활습관 분류와 등급 공란을 유지하고 recent12·유료 도달·포맷 소진도는 미확인으로 두었다. canonical 콘텐츠 행은 추가하지 않았다.
+- QUEUE 344번은 보류·시도 51→52로 갱신했다. raw 관측 1건과 known account ledger 1건을 append했고 금지 경로와 data CSV는 변경하지 않았다.
+- 최신 checkpoint: 20260810-E1-LOGIN-QUEUE-JJINGYAKSA-RECHECK-668-COMMITTED. 다음 작업은 다른 보류 계정 상태 변화 또는 lease 실패 시 오프라인 대조다.
+## 2026-08-10 17:05 very_good_tip 재확인
+
+- 17:05 E1 로그인 read-only 재확인: `very_good_tip`은 `꿀팁 저장소` 일반 생활정보·여행·엑셀·청년혜택 중심의 비의료 계정이다. 게시물 1.3만·팔로워 36.1만·팔로우 0, 카카오톡 홍보/제휴 링크를 확인했다.
+- 최신 프로필 링크 12개 중 새 정적 게시물 11개는 raw/known ledger에만 추가했다. 직접 `/reels/` 12개는 기존 항목과 일치했다. `Db1_Gn5gPBd`는 `(광고)`·판매 기간·판매가·구성 표시가 있어 광고로 기록했지만 계정 전체 유료도달은 불명으로 유지했다.
+- 메디컬 레퍼런스 기준 F/미달, 포맷 소진도 미판정, account/content CSV 미추가. QUEUE 363 시도 3으로 갱신.
+
+
+## 2026-08-10 17:12 무결성 후검
+
+- 669 신규 raw 마지막 줄은 JSON 파싱을 통과했다.
+- 기존 raw 백업 기준 JSON 형식 오류 1,328줄은 원문 보존 규칙에 따라 수정하지 않았다. 이번 작업에서 추가한 669 관측 줄만 ASCII 안전 JSON으로 교정했다.
+- 새 shortcode 11개는 raw/known에 각각 1회이며 known exact duplicate는 0이다. state.json은 유효 JSON이다.
+- source data CSV 4개는 UTF-8 BOM·행 수·컬럼 수를 유지했고 금지 경로 `C:\\dev\\pharm-social-intelligence\\public\\data\\`는 무변경이다.
+
+
+## 2026-08-10 17:20 spa_official2 재확인
+
+- 프로필과 직접 `/reels/` 모두 페이지 사용 불가 화면. 계정 지표·콘텐츠·recent12·등급·유료도달·포맷 소진도는 추정하지 않고 보류 유지.
+- raw와 known account ledger에 재확인 1건씩 append. QUEUE 192 시도 55. data CSV와 금지 경로는 무변경.
+
+
+## 2026-08-10 17:23 spa_official2 무결성 후검
+
+- 671 신규 raw 마지막 줄 JSON 파싱 통과, known 1건·QUEUE 192 시도 55 확인.
+- 기존 raw 형식 오류 1,328줄은 보존. data CSV BOM·행·컬럼과 금지 경로 public/data 무변경.
+
+
+## 2026-08-10 17:25 knjbio.official 재확인
+
+- 건강/뷰티·건강기능식품 브랜드 계정. 게시물 245·팔로워 1005·팔로우 418·공식 웹사이트·하이라이트 10개 확인.
+- 기존 raw의 계정 정적 링크 10개와 태그 외부 게시물 2개, 기존 known의 릴스 11개를 재확인했다. recent12는 불완전해 중앙값·최고조회수는 추정하지 않았다.
+- 기존 B 등급·유료도달 불명·포맷 소진도 미판정 유지. QUEUE 221 시도 54, canonical CSV 미변경.

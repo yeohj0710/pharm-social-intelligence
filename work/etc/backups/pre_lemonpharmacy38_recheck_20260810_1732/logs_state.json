@@ -1,0 +1,185 @@
+{
+    "schema_version":  "1.0",
+    "goal_started_at":  "2026-08-04T18:53:53+09:00",
+    "last_checkpoint_at":  "2026-08-10T17:25:39+09:00",
+    "block_index":  239,
+    "current_block":  "E1 login read-only recheck knjbio.official",
+    "next_engine":  "E1",
+    "current_checkpoint":  "20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-673",
+    "source_of_truth":  {
+                            "source_drive":  "G:",
+                            "source_folder":  "canonical medical reference mining folder from user path",
+                            "raw_file":  "raw/observations.jsonl",
+                            "data_files":  "data/*.csv",
+                            "known_items":  "logs/known_items.txt",
+                            "known_shortcodes":  "logs/known_shortcodes.txt"
+                        },
+    "queue_paths":  {
+                        "queue":  "C:/dev/pharm-social-intelligence/work/QUEUE.csv",
+                        "progress":  "C:/dev/pharm-social-intelligence/work/PROGRESS.md"
+                    },
+    "queue_snapshot":  {
+                           "total_rows":  377,
+                           "completed_rows":  369,
+                           "hold_rows":  [
+                                             {
+                                                 "row":  192,
+                                                 "handle":  "spa_official2",
+                                                 "attempt":  55
+                                             },
+                                             {
+                                                 "row":  221,
+                                                 "handle":  "knjbio.official",
+                                                 "attempt":  54
+                                             },
+                                             {
+                                                 "row":  250,
+                                                 "handle":  "lemonpharmacy38",
+                                                 "attempt":  52
+                                             },
+                                             {
+                                                 "row":  261,
+                                                 "handle":  "innerdew.official",
+                                                 "attempt":  53
+                                             },
+                                             {
+                                                 "row":  266,
+                                                 "handle":  "pharmacyinpalm_official",
+                                                 "attempt":  53
+                                             },
+                                             {
+                                                 "row":  343,
+                                                 "handle":  "tony71004",
+                                                 "attempt":  51
+                                             },
+                                             {
+                                                 "row":  344,
+                                                 "handle":  "jjing_yaksa",
+                                                 "attempt":  52
+                                             },
+                                             {
+                                                 "row":  363,
+                                                 "handle":  "very_good_tip",
+                                                 "attempt":  3
+                                             }
+                                         ]
+                       },
+    "latest_very_good_tip_recheck_669":  {
+                                             "checkpoint":  "20260810-E1-LOGIN-QUEUE-VERY-GOOD-TIP-RECHECK-669-COMMITTED",
+                                             "observed_at":  "2026-08-10T17:05:59+09:00",
+                                             "engine":  "E1",
+                                             "status":  "complete_hold",
+                                             "handle":  "very_good_tip",
+                                             "category":  "health-adjacent non-medical repost",
+                                             "grade":  "F",
+                                             "grade_basis":  "General lifestyle-information account; below medical-reference gate",
+                                             "followers":  361000,
+                                             "posts":  "13k",
+                                             "following":  0,
+                                             "new_profile_static_shortcodes":  [
+                                                                                   "DaEs5e1DZt6",
+                                                                                   "DafJeJzjV0E",
+                                                                                   "DaU2T7pCDrK",
+                                                                                   "Db2evqhGuSX",
+                                                                                   "Db2ZCxLD6OR",
+                                                                                   "Db2UeERjn5P",
+                                                                                   "Db2QCF4GjCp",
+                                                                                   "Db12MjeGirP",
+                                                                                   "Dbwr-ajjzQW",
+                                                                                   "DbvE_Iwj08w",
+                                                                                   "Dbu9Q31mhVy"
+                                                                               ],
+                                             "direct_reels":  12,
+                                             "direct_reels_already_known":  12,
+                                             "visible_views":  [
+                                                                   "2.837m",
+                                                                   "4.228m",
+                                                                   "4.252m",
+                                                                   "5269",
+                                                                   "51k",
+                                                                   "64k",
+                                                                   "60k",
+                                                                   "53k",
+                                                                   "27k",
+                                                                   "10k",
+                                                                   "18k",
+                                                                   "31k"
+                                                               ],
+                                             "ad_shortcode":  "Db1_Gn5gPBd",
+                                             "ad_evidence":  "Ad label with sales period, price, and package",
+                                             "paid_reach_suspicion":  "unknown",
+                                             "format_exhaustion":  "unassessed",
+                                             "raw_before":  3007,
+                                             "raw_after":  3008,
+                                             "known_lines_added":  12,
+                                             "checkpoint_lines_after":  642,
+                                             "data_csv_modified":  false,
+                                             "forbidden_path_modified":  false,
+                                             "browser_available":  true,
+                                             "session_logged_in":  true,
+                                             "read_only":  true,
+                                             "tab_closed":  true,
+                                             "lease_released":  true,
+                                             "stop_condition":  "none",
+                                             "next_action":  "Continue with the next safe queue item; compare against known raw before recording only new items"
+                                         },
+    "restart_note":  "Compacted to valid UTF-8 JSON after a backup. The pre-rewrite detailed state is recoverable from C:/dev/pharm-social-intelligence/work/etc/backups/pre_very_good_tip_recheck_20260810_1706/state.json.",
+    "next_action":  "Continue with the next safe hold or content-pool item; do not infer unavailable account data",
+    "latest_spa_official2_recheck_671":  {
+                                             "checkpoint":  "20260810-E1-LOGIN-QUEUE-SPA-OFFICIAL2-RECHECK-671",
+                                             "observed_at":  "2026-08-10T17:20:45+09:00",
+                                             "engine":  "E1",
+                                             "status":  "complete_hold",
+                                             "handle":  "spa_official2",
+                                             "page_available":  false,
+                                             "profile_available":  false,
+                                             "reels_available":  false,
+                                             "metrics_observed":  false,
+                                             "content_observed":  false,
+                                             "recent12_complete":  false,
+                                             "grade":  "unresolved",
+                                             "paid_reach_suspicion":  "unresolved",
+                                             "format_exhaustion":  "unresolved",
+                                             "raw_before":  3008,
+                                             "raw_after":  3009,
+                                             "known_lines_added":  1,
+                                             "checkpoint_lines_after":  643,
+                                             "data_csv_modified":  false,
+                                             "forbidden_path_modified":  false,
+                                             "browser_available":  true,
+                                             "session_logged_in":  true,
+                                             "read_only":  true,
+                                             "tab_closed":  true,
+                                             "lease_released":  true,
+                                             "next_action":  "Continue with the next safe hold or content-pool item; do not infer unavailable account data"
+                                         },
+    "latest_knjbio_official_recheck_673":  {
+                                               "checkpoint":  "20260810-E1-LOGIN-QUEUE-KNJBIO-OFFICIAL-RECHECK-673",
+                                               "observed_at":  "2026-08-10T17:25:39+09:00",
+                                               "engine":  "E1",
+                                               "status":  "complete_hold",
+                                               "handle":  "knjbio.official",
+                                               "posts":  245,
+                                               "followers":  1005,
+                                               "following":  418,
+                                               "category":  "health_beauty_functional_food",
+                                               "reels_visible":  11,
+                                               "reels_already_known":  11,
+                                               "recent12_complete":  false,
+                                               "account_grade":  "B",
+                                               "paid_reach_suspicion":  "unknown",
+                                               "format_exhaustion":  "unassessed",
+                                               "raw_before":  3009,
+                                               "raw_after":  3010,
+                                               "known_lines_added":  1,
+                                               "checkpoint_lines_after":  645,
+                                               "data_csv_modified":  false,
+                                               "forbidden_path_modified":  false,
+                                               "browser_available":  true,
+                                               "session_logged_in":  true,
+                                               "read_only":  true,
+                                               "tab_closed":  true,
+                                               "lease_released":  true,
+                                               "next_action":  "Continue with the next safe hold or content-pool item; preserve unresolved recent12 status"
+                                           }
+}
