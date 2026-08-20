@@ -7,8 +7,10 @@
 //
 // vite build 가 dist 를 매번 비우므로 .vercel 링크를 그때마다 다시 넣는다.
 
-import { cpSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
+import { dirname, join, relative } from 'node:path';
 
 if (!existsSync('dist/index.html')) {
   console.error('dist/index.html 이 없다. npm run build 를 먼저 한다.');
@@ -20,8 +22,49 @@ if (!existsSync('.vercel/project.json')) {
   process.exit(1);
 }
 
-cpSync('.vercel', 'dist/.vercel', { recursive: true });
+function filesUnder(dir) {
+  if (!existsSync(dir)) return [];
+  const files = [];
+  for (const name of readdirSync(dir)) {
+    const path = join(dir, name);
+    if (statSync(path).isDirectory()) files.push(...filesUnder(path));
+    else files.push(path);
+  }
+  return files;
+}
+
+function payloadHash() {
+  const paths = [
+    ...filesUnder('dist'),
+    'vercel.json',
+    '.vercel/project.json',
+  ].filter(existsSync).sort();
+  const hash = createHash('sha256');
+  for (const path of paths) {
+    hash.update(relative('.', path).replaceAll('\\', '/'));
+    hash.update('\0');
+    hash.update(readFileSync(path));
+    hash.update('\0');
+  }
+  return hash.digest('hex');
+}
+
+const state = join('etc', 'codex-deploy-state', 'pharm-social.sha256');
+const current = payloadHash();
+const previous = existsSync(state) ? readFileSync(state, 'utf8').trim() : '';
+if (current === previous) {
+  console.log('배포할 변경 없음 — Vercel 배포를 건너뛴다.');
+  process.exit(0);
+}
+if (process.argv.includes('--check')) {
+  console.log('배포 산출물이 바뀌었다 — 실제 배포는 실행하지 않았다.');
+  process.exit(0);
+}
 
 // Node 24 는 윈도우에서 .cmd 를 직접 못 띄운다(EINVAL).
-// 인자 배열 대신 명령 한 줄을 셸에 넘긴다.
-execSync('npx vercel deploy --prod --yes', { cwd: 'dist', stdio: 'inherit' });
+// 이미 만든 dist 를 로컬에서 Vercel 산출물로 만든 뒤 prebuilt 로 올려
+// 같은 payload를 Vercel에서 다시 빌드하지 않는다.
+execSync('npx vercel build --prod --yes', { cwd: '.', stdio: 'inherit' });
+execSync('npx vercel deploy --prebuilt --prod --yes', { cwd: '.', stdio: 'inherit' });
+mkdirSync(dirname(state), { recursive: true });
+writeFileSync(state, `${current}\n`, 'utf8');

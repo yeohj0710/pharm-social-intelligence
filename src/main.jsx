@@ -4,12 +4,16 @@ import Papa from 'papaparse';
 import { ArrowUpRight, Menu, Search, X } from 'lucide-react';
 import './styles.css';
 
+const DATA_VERSION = __PHARM_DATA_VERSION__;
 const DATA_FILES = {
   accounts: '/data/accounts.csv',
   contents: '/data/contents.csv',
   formats: '/data/formats.csv',
   topics: '/data/topics.csv',
 };
+for (const key of Object.keys(DATA_FILES)) {
+  DATA_FILES[key] = `${DATA_FILES[key]}?v=${DATA_VERSION}`;
+}
 
 const NAV_ITEMS = [
   { id: 'overview', label: '요약' },
